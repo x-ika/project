@@ -1,0 +1,27 @@
+group 'com.simplejcode.tools'
+
+configurations {
+    testCompile.extendsFrom junit
+
+    compile.extendsFrom common_misc
+    compile.extendsFrom common_graphic_tools
+
+    compile.extendsFrom java_jna
+}
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'PaletteVisualizer'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}

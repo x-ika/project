@@ -1,0 +1,9 @@
+group 'com.simplejcode.var.solver'
+
+dependencies {
+    compile project(':solvers:tester')
+}
+
+configurations {
+    testCompile.extendsFrom junit
+}

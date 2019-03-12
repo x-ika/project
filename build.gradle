@@ -1,0 +1,121 @@
+//---------------------------------------------------------------------------------------
+// PROJECT
+
+group 'com.simplejcode.various'
+version '1.0'
+
+//---------------------------------------------------------------------------------------
+// IDEA
+
+apply plugin: 'idea'
+
+idea {
+    module {
+        excludeDirs = [file(".gradle"), file(".build"), file(".idea"), file(".out")]
+    }
+}
+
+//---------------------------------------------------------------------------------------
+// ALL
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+subprojects {
+
+    version '1.0'
+
+    def sub = projectDir.path.substring(rootProject.projectDir.path.length())
+    buildDir = new File(rootProject.projectDir, '.build/' + sub)
+
+    //-----------------------------------------------------------------------------------
+    // IDEA
+    apply plugin: 'idea'
+    idea {
+        module {
+//            inheritOutputDirs = true
+            outputDir = new File(rootProject.projectDir, '.out')
+            testOutputDir = new File(rootProject.projectDir, '.out')
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
+    // JAVA
+
+    if (new File(projectDir, "build.gradle").exists()) {
+
+        apply plugin: 'java'
+        sourceSets {
+            main.java.srcDirs = ['src']
+            //main.resources.srcDirs = ['resources']
+        }
+
+        tasks.withType(JavaCompile) {
+            sourceCompatibility = '10'
+            targetCompatibility = '10'
+        }
+
+    }
+
+    //-----------------------------------------------------------------------------------
+    // DEPENDENCIES
+
+    configurations {
+        junit
+
+        common_misc
+        common_net_tools
+        common_db_tools
+        common_graphic_tools
+        common_audio_video_tools
+        common_logical_analyzer
+
+        javax_media
+        javax_xml_bind
+        java_jna
+
+        lombok
+        apache_config
+        google_gson
+
+        doc4j
+        poi
+        // extract metadata info from image file
+        imageproc
+
+    }
+
+    dependencies {
+        junit 'junit:junit:4.12'
+
+        common_misc                'com.simplejcode.commons:misc:1.0'
+        common_net_tools           'com.simplejcode.commons:net-tools:1.0'
+        common_db_tools            'com.simplejcode.commons:db-tools:1.0'
+        common_graphic_tools       'com.simplejcode.commons:graphic-tools:1.0'
+        common_audio_video_tools   'com.simplejcode.commons:audio-video-tools:1.0'
+        common_logical_analyzer    'com.simplejcode.commons:logical-analyzer:1.0'
+
+        javax_media      'javax.media:jmf:2.1.1e'
+
+        javax_xml_bind   'javax.xml.bind:jaxb-api:2.1'
+        javax_xml_bind   'com.sun.xml.bind:jaxb-impl:2.2.11'
+        javax_xml_bind   'com.sun.xml.bind:jaxb-core:2.2.11'
+
+        java_jna         'net.java.dev.jna:jna:4.0.0'
+        java_jna         'net.java.dev.jna:jna-platform:4.0.0'
+
+        lombok           'org.projectlombok:lombok:1.18.2'
+        apache_config    'org.apache.commons:commons-configuration2:2.0'
+        google_gson      'com.google.code.gson:gson:2.8.5'
+
+        doc4j            'org.docx4j:docx4j:2.8.1'
+        poi              'org.apache.poi:poi:4.0.1'
+        imageproc        'com.drewnoakes:metadata-extractor:2.11.0'
+
+    }
+
+}

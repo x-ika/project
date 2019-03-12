@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://46.49.1.162/poker/client/">
+    <information>
+        <title>Poker Client</title>
+        <vendor>Irakli Merabishvili</vendor>
+        <description>Poker Program. pre-alpha version</description>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+" java-vm-args="-Xms64m -Xmx256m"/>
+        <jar href="poker-client.jar"/>
+        <jar href="graphictools.jar"/>
+        <jar href="nettools.jar"/>
+        <jar href="utils.jar"/>
+    </resources>
+    <application-desc main-class="client.Client"/>
+</jnlp>

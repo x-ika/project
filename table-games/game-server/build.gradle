@@ -1,0 +1,29 @@
+group 'com.simplejcode.var.table-games'
+
+dependencies {
+    compile project(':table-games:game-controller')
+}
+
+configurations {
+    testCompile.extendsFrom junit
+
+    compile.extendsFrom common_misc
+    compile.extendsFrom common_net_tools
+}
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'ika.games.gameserver.Server'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}

@@ -1,0 +1,255 @@
+import tapi.ProblemTester;
+
+import java.util.*;
+
+public class GO2013_3B_RaceTester extends ProblemTester {
+
+    public static int gcd(int n, int m) {
+        int big, little;
+        if (n < m) {
+            big = m;
+            little = n;
+        } else {
+            big = n;
+            little = m;
+        }
+        while (little != 0) {
+            int temp = little;
+            little = big % little;
+            big = temp;
+        }
+        return big;
+    }
+
+    public static int[] getPrimes(int max) {
+        double log = Math.log(max);
+        int[] p = new int[(int) (max / log * (1 + 1 / log + 2.51 / log / log))];
+        p[0] = 2;
+        int size = 1;
+        int[] sieve = getSieve(max);
+        for (int i = 3; i <= max; i += 2) {
+            if (check(sieve, i)) {
+                p[size++] = i;
+            }
+        }
+        int[] r = new int[size];
+        System.arraycopy(p, 0, r, 0, size);
+        return r;
+    }
+
+    public static int[] getSieve(int max) {
+        int[] r = new int[max + 64 >> 6];
+        r[0] = 1;
+        for (int x = 3; x * x <= max; x += 2) {
+            if (check(r, x)) {
+                for (int y = x * x; y <= max; y += x << 1) {
+                    r[y >> 6] |= 1 << (y >> 1 & 31);
+                }
+            }
+        }
+        return r;
+    }
+
+    private static boolean check(int[] sieve, int x) {
+        return (sieve[x >> 6] & 1 << (x >> 1 & 31)) == 0;
+    }
+
+    public static boolean isPrime(int[] sieve, int x) {
+        return x == 2 || (x & 1) == 1 && check(sieve, x);
+    }
+
+    public static long getInverse(long A, long p) {
+        long a = p;
+        long b = A;
+        long x = 1;
+        long y = 0;
+        while (b != 0) {
+            long t = b;
+            long q = a / t;
+            b = a - q * t;
+            a = t;
+            t = x;
+            x = y - q * t;
+            y = t;
+        }
+        return y < 0 ? y + p : y;
+    }
+
+    public static List<Long> getFactorization(long n, int[] p) {
+        List<Long> r = new ArrayList<Long>();
+        for (int i = 0; n != 1 && i < p.length; i++) {
+            while (n % p[i] == 0) {
+                r.add(1L * p[i]);
+                n /= p[i];
+            }
+        }
+        if (n > 1) {
+            r.add(n);
+        }
+        return r;
+    }
+
+    public static List<Long> getFactors(List<Long> primeDivisors) {
+        List<Long> res = new ArrayList<Long>();
+        go(1, 0, primeDivisors, res);
+        Collections.sort(res);
+        return res;
+    }
+
+    private static void go(long p, int i, List<Long> primeDivisors, List<Long> res) {
+        if (i == primeDivisors.size()) {
+            res.add(p);
+            return;
+        }
+        long v = primeDivisors.get(i);
+        int j = i;
+        while (j < primeDivisors.size() && v == primeDivisors.get(j)) {
+            j++;
+        }
+        while (i++ <= j) {
+            go(p, j, primeDivisors, res);
+            p *= v;
+        }
+    }
+
+    public static long fi(long n, int[] p) {
+        Set<Long> factors = new HashSet<Long>(getFactorization(n, p));
+        long ret = n;
+        for (long f : factors) {
+            ret /= f;
+            ret *= f - 1;
+        }
+        return ret;
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        for (int pp = 2; pp < 140; pp++) {
+            for (int a = 0; a < pp; a++) {
+                for (int b = 0; b < pp; b++) {
+                    
+                    int p = pp;
+
+                    int k = 1;
+
+                    Set<Integer> rems = new HashSet<Integer>();
+                    while (true) {
+                        int x = a * k - b * (k - 1);
+                        x = (x % p + p) % p;
+                        if (!rems.add(x)) {
+                            break;
+                        }
+                        k = 3 * k - 1;
+                        k %= p;
+                    }
+
+                    int res;
+                    int d = a - b;
+                    d = (d % p + p) % p;
+                    if (d == 0) {
+                        res = 1;
+                    } else {
+                        p /= gcd(d, p);
+                        k = 0;
+                        while (p % 3 == 0) {
+                            k++;
+                            p /= 3;
+                        }
+                        int s = (int) fi(p, getPrimes(p + 1));
+                        int min = -1;
+                        Set<Integer> xs = new HashSet<Integer>();
+                        for (int i = 1; i <= s+2; i++) {
+                            if (s % i == 0||true) {
+                                int sum = 0, pow = 1;
+                                for (int j = 0; j < i - 1; j++) {
+                                    sum -= pow;
+                                    pow *= 3;
+                                    pow %= p;
+                                }
+                                sum += pow;
+                                sum = (sum % p) + p;
+                                sum %= p;
+                                xs.add(sum);
+                                if (sum == 1 % p) {
+                                    min = i;
+                                    break;
+                                }
+                            }
+                        }
+                        if (min == -1) {
+                            System.out.println("bad");
+                        }
+                        res = k + xs.size();
+
+                        if (res != rems.size()) {
+                            System.out.printf("%d %d %d \n", a, b, pp);
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+        new GO2013_3B_RaceTester().run(args);
+    }
+
+    protected String getFileName() {
+        return "race";
+    }
+
+    public void generateTests() {
+        for (int i = 1; i <= 15; i++) {
+            int n, k, gap;
+            if (i < 6) {
+                n = 1000;
+                k = 5;
+                gap = 100;
+            } else if (i < 11) {
+                n = 1000000;
+                k = 10;
+                gap = 10000;
+            } else {
+                n = 1000000;
+                k = 10;
+                gap = 1000000 / 2;
+            }
+
+
+            startWriting(i);
+
+            inputWriter.printf("%d %d\n", n, k);
+            while (k-- > 0) {
+                inputWriter.println(nextPositive(gap));
+            }
+
+            endWriting();
+        }
+
+        for (int i = 16; i <= 20; i++) {
+            startWriting(i);
+            inputWriter.printf("1000000 1\n%d", i - 15);
+            endWriting();
+        }
+        startWriting(21);
+        inputWriter.println("999 5");
+        inputWriter.println("1\n28\n36\n72\n90");
+        endWriting();
+
+    }
+
+    public int test() {
+        int n = in.nextInt();
+        int m = in.nextInt();
+        int[] a = new int[n];
+        int[] b = new int[m];
+        for (int i = 0; i < n; i++) {
+            a[i] = in.nextInt();
+        }
+        for (int i = 0; i < m; i++) {
+            b[i] = in.nextInt();
+        }
+        return 0;
+    }
+}

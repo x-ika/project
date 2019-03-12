@@ -1,0 +1,16 @@
+class spamdetector.detector.students.adoli11.SandroDetector   100    0    0    0    10.698 100?
+class spamdetector.detector.students.assign3.SalomesSolver     50    0    0   50     0.335 85 (ruleIds.add(best); <-- incorrect)
+class spamdetector.detector.students.dato.DatosSolver           0    0    0  100    10.589 70 +2 (should be >= 0.5)
+class spamdetector.detector.students.eakhv.ElenesSolver       100    0    0    0    10.624 90
+class spamdetector.detector.students.eormo.EvgoDetector        99    0    0    1    10.709 80 +1
+class spamdetector.detector.students.gigi.GigiSolver          100    0    0    0    10.811 85
+class spamdetector.detector.students.Giglema.GiglemaSolver     49    0    0   51     1.241 80? +1 (incorrect weight update)
+class spamdetector.detector.students.gkoch.gkochSpamDetector  100    0    0    0    10.738 100
+class spamdetector.detector.students.gmati.GiosDetector        99    0    0    1    11.316 100
+class spamdetector.detector.students.kurid.KuridDetector       99    0    0    1    11.200 100?
+class spamdetector.detector.students.lgure.LashasDetector     100    0    0    0    10.666 90 +1
+class spamdetector.detector.students.mkapa.MyDetector          56    0    0   44     2.053 85 (where is bug?)
+class spamdetector.detector.students.sggol.SabasDetector        0    0    0  100     0.808 80 (extra trailing 0-s)
+class spamdetector.detector.students.tamuna.tamunasSolver     100    0    0    0    10.660 80 +1
+class spamdetector.detector.students.vmask11.VatoDetector     100    0    0    0    10.692 100?
+class spamdetector.detector.students.zgven.ZurasDetector       99    0    0    1    10.743 80 +1

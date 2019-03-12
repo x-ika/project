@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://10.11.11.115/domino/client/">
+    <information>
+        <title>Domino Client</title>
+        <vendor>Irakli Merabishvili</vendor>
+        <description>Domino Program. pre-alpha version</description>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+" java-vm-args="-Xms64m -Xmx256m"/>
+        <jar href="domino-client.jar"/>
+        <jar href="graphictools.jar"/>
+        <jar href="nettools.jar"/>
+        <jar href="utils.jar"/>
+    </resources>
+    <application-desc main-class="domino.client.Client"/>
+</jnlp>

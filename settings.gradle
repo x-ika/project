@@ -1,0 +1,57 @@
+rootProject.name = 'project'
+
+// various
+include 'billiard'
+include 'skileton'
+include 'tcutils'
+include 'math'
+include 'loto'
+include 'graphpainter'
+
+// tools
+include 'command-runner'
+include 'palette-visualizer'
+include 'exam-checker'
+include 'exam-tools'
+include 'excel-reader'
+include 'onjob-client'
+include 'queuemng:client'
+include 'queuemng:server'
+
+// programming challenge
+include 'pchallenge:common'
+include 'pchallenge:client'
+include 'pchallenge:server'
+include 'pchallenge:testers'
+
+// solvers
+include 'solvers:bluster'
+include 'solvers:brianbubs'
+include 'solvers:floodit'
+include 'solvers:minesweeper'
+include 'solvers:proover'
+include 'solvers:simplepoker'
+include 'solvers:spamdetector'
+include 'solvers:sudoku'
+include 'solvers:tester'
+include 'solvers:tetris'
+
+// table games
+include 'table-games:game-admin'
+include 'table-games:game-base'
+include 'table-games:game-client'
+include 'table-games:game-controller'
+include 'table-games:game-server'
+include 'table-games:games:checkers-client'
+include 'table-games:games:checkers-controller'
+include 'table-games:games:chess-client'
+include 'table-games:games:chess-controller'
+include 'table-games:games:domino-base'
+include 'table-games:games:domino-client'
+include 'table-games:games:domino-controller'
+include 'table-games:games:gomoku-client'
+include 'table-games:games:gomoku-controller'
+include 'table-games:games:joker-client'
+include 'table-games:games:joker-controller'
+include 'table-games:games:poker-client'
+include 'table-games:games:poker-controller'

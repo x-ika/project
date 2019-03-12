@@ -1,0 +1,2 @@
+Permissions: all-permissions
+Codebase: http://10.11.11.115/domino/client

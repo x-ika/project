@@ -1,0 +1,24 @@
+class sudoku.solver.students.adoli11.SandroSolver             105    0    0    0     0.086 110
+class sudoku.solver.students.ggigl.GiglemaSolver              105    0    0    0     0.191 100
+class sudoku.solver.students.gkoch.GkochSolver                105    0    0    0     0.079 120
+class sudoku.solver.students.Gmarg10Solver.Gmarg10Solver      105    0    0    0     4.557 100
+class sudoku.solver.students.lashagureshidzesudoku.Lashas...  105    0    0    0     1.733 100
+class sudoku.solver.students.EleneAkhvlediani.ElenesSolver    105    0    0    0     2.947 F
+class sudoku.solver.students.Evgeniormotsadze.Sudoku          105    0    0    0     3.201 100
+class sudoku.solver.students.GiorgiMatiashvili.MySolver       105    0    0    0     0.783 100
+class sudoku.solver.students.gpata11.Gpata11solver            100    5    0    0    62.721 70
+class sudoku.solver.students.GventsadzeZura.MySolver          105    0    0    0     1.813 100
+class sudoku.solver.students.KeshelavaTamari.tamunasSolver    105    0    0    0     2.917 F
+class sudoku.solver.students.mkapa.MySolver                   105    0    0    0    10.296 100
+class sudoku.solver.students.qetiuridiaassign2.kuridSolver    105    0    0    0     1.315 100
+class sudoku.solver.students.sggol.MySolver                   105    0    0    0     0.940 100
+class sudoku.solver.students.stsir11solver.stsir11solver      105    0    0    0     5.877 100
+class sudoku.solver.students.vmask.VatoSolver                 105    0    0    0     0.079 120
+
+https://gist.github.com/JenniferShola/5953863/raw/7b37c54c574d178cc0f6cd83ecc27b4222cde2d1/Sudoku.java
+https://github.com/zhili/cs108/blob/master/cs108hw3/Sudoku.java
+http://red-code.googlecode.com/svn/trunk/homework/cs108/hw3-db/Sudoku.java
+
+1+) size of each 3x3 part, size of the whole 9x9 puzzle
+2*) invoking the underlying recursive search akhvlediani<-->keshelava
+3!) ArrayList<spot> arr

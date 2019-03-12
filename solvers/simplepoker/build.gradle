@@ -1,0 +1,8 @@
+group 'com.simplejcode.var.solver'
+
+configurations {
+    testCompile.extendsFrom junit
+
+    compile.extendsFrom common_misc
+
+}

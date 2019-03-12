@@ -1,0 +1,113 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+private static DataReader in;
+private static PrintWriter out;
+    public static void main(String[] args) throws Exception {
+in = new DataReader("input.txt");
+out = new PrintWriter("output.txt");
+        test();
+    }
+
+     public static int test() {
+        long P = (int) 1e9 + 9;
+        long[] pow = new long[100100];
+        for (int i = 0; i < pow.length; i++) {
+            pow[i] = i == 0 ? 1 : P * pow[i - 1];
+        }
+
+        String s1 = in.nextToken();
+        String s2 = in.nextToken();
+        long[] h1 = getHash(s1, pow);
+        long[] h2 = getHash(s2, pow);
+
+        int q = in.nextInt();
+        for (int i = 0; i < q; i++) {
+
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int k = in.nextInt();
+
+            int min = 0, max = k + 1;
+            while (max - min > 1) {
+                int mid = min + max >> 1;
+                if (equals(h1, a, a + mid, h2, b, b + mid, pow)) {
+                    min = mid;
+                } else {
+                    max = mid;
+                }
+            }
+            int res = min == k ? 0 : Integer.signum(s1.charAt(a + min) - s2.charAt(b + min));
+
+out.println(res);
+//            if (res != out.nextInt()) {
+//                return 1;
+//            }
+
+        }
+out.close();
+
+        return 0;
+    }
+
+    private static boolean equals(long[] h1, int a1, int b1, long[] h2, int a2, int b2, long[] p) {
+        return (h1[b1] - h1[a1]) * p[a2] == (h2[b2] - h2[a2]) * p[a1];
+    }
+
+    private static long[] getHash(String s, long[] p) {
+        int n = s.length();
+        long[] h = new long[n + 1];
+        for (int i = 0; i < n; i++) {
+            h[i + 1] = h[i] + s.charAt(i) * p[i];
+        }
+        return h;
+    }
+}
+@SuppressWarnings({"EmptyCatchBlock"})
+class DataReader {
+
+    private BufferedReader in;
+    private StringTokenizer tokenizer = new StringTokenizer("");
+
+    public DataReader(String fileName) {
+        try {
+            in = new BufferedReader(new FileReader(fileName));
+        } catch (FileNotFoundException e) {
+        }
+    }
+
+    public String nextLine() {
+        try {
+            return in.readLine();
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
+    public String nextToken() {
+        while (!tokenizer.hasMoreTokens()) {
+            tokenizer = new StringTokenizer(nextLine());
+        }
+        return tokenizer.nextToken();
+    }
+
+    public int nextInt() {
+        return Integer.parseInt(nextToken());
+    }
+
+    public long nextLong() {
+        return Long.parseLong(nextToken());
+    }
+
+    public double nextDouble() {
+        return Double.parseDouble(nextToken());
+    }
+
+    public void close() throws IOException {
+        try {
+            in.close();
+        } catch (Exception e) {
+        }
+    }
+}

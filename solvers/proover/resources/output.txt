@@ -1,0 +1,25 @@
+Formula:
+   x & y | ~x & y | ~y & x | ~x & ~y
+   x & y | ~x & y | ~y & x | ~x & ~y
+   ((((x & y) | ((~x) & y)) | ((~y) & x)) | ((~x) & (~y)))
+ProofSearchTree: (YES)
+   (0)  --> x & y | ~x & y | ~y & x | ~x & ~y   by (->|)
+      (1)  --> x & y | ~x & y | ~y & x, ~x & ~y   by (->|)
+         (2)  --> ~x & ~y, x & y | ~x & y, ~y & x   by (->|)
+            (3)  --> ~x & ~y, ~y & x, x & y, ~x & y   by (->&)
+               (4)  --> ~y & x, x & y, ~x & y, ~x   by (->~)
+                  (5) x --> ~y & x, x & y, ~x & y   by (->&)
+                     (6) x --> x & y, ~x & y, ~y   by (->&)
+                        (7) x --> ~x & y, ~y, x   Axiom
+                        (7) x --> ~x & y, ~y, y   by (->~)
+                           (8) x, y --> ~x & y, y   Axiom
+                     (6) x --> x & y, ~x & y, x   Axiom
+               (4)  --> ~y & x, x & y, ~x & y, ~y   by (->~)
+                  (5) y --> ~y & x, x & y, ~x & y   by (->&)
+                     (6) y --> ~y & x, x & y, ~x   by (->&)
+                        (7) y --> ~y & x, ~x, x   by (->~)
+                           (8) y, x --> ~y & x, x   Axiom
+                        (7) y --> ~y & x, ~x, y   Axiom
+                     (6) y --> ~y & x, x & y, y   Axiom
+
+

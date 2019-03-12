@@ -1,0 +1,27 @@
+group 'com.simplejcode.tools'
+
+configurations {
+    testCompile.extendsFrom junit
+
+    compile.extendsFrom common_misc
+    compile.extendsFrom common_graphic_tools
+
+    compile.extendsFrom poi
+}
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'ExcelReader'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}

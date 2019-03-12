@@ -1,0 +1,39 @@
+{
+  "primaryDivId": "mob",
+  "groupByDivId": "class",
+  "templateFileName": "O15.jpg",
+  "divs": [
+    {
+      "id": "class",
+      "type": "SEQUENCE",
+      "length": 11,
+      "rangeStart": 2,
+      "sequenceNumber": 0,
+      "excelHeader": "Class"
+    },
+    {
+      "type": "SKIP",
+      "length": 9
+    },
+    {
+      "id": "mob",
+      "type": "NUMBER",
+      "length": 90,
+      "sequenceNumber": 1,
+      "excelHeader": "Mobile"
+    },
+    {
+      "type": "SKIP",
+      "length": 4
+    },
+    {
+      "id": "t",
+      "type": "TEST",
+      "length": 4,
+      "count": 15,
+      "height": 10,
+      "sequenceNumber": 2,
+      "excelHeader": "T"
+    }
+  ]
+}

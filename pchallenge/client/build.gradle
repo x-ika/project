@@ -1,0 +1,28 @@
+group 'com.simplejcode.var.pchallenge'
+
+dependencies {
+    compile project(':pchallenge:common')
+}
+
+configurations {
+    testCompile.extendsFrom junit
+
+    compile.extendsFrom common_graphic_tools
+}
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'api.Client'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}

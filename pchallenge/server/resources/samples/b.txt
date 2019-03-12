@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        PrintWriter out = new PrintWriter("sum.out");
+        Scanner in = new Scanner(new File("sum.in"));
+        int n = in.nextInt();
+        while (n-- > 0) {
+            int x = in.nextInt();
+            int y = in.nextInt();
+            out.println(x * y);
+        }
+        out.close();
+    }
+}

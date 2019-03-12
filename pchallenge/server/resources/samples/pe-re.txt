@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+int sign(int x) {
+return x / abs(x);
+}
+
+int main() {
+
+int* t = (int*)178907;
+int e = *t;
+
+//freopen("input.txt", "w", stdout);
+//printf("1000");
+//for (int i = 0; i < 1000; i++)
+//printf("0 0");
+
+freopen("input.txt", "r", stdin);
+freopen("output.txt", "w", stdout);
+
+int n;
+scanf("%d", &n);
+
+while (n-- >0) {
+
+int x, y;
+scanf("%d%d", &x, &y);
+printf("%d\n", abs(x * y) * sign(x) * sign(y) + e);
+
+}
+
+printf("16");
+return 0;
+}

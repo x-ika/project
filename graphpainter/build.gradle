@@ -1,0 +1,24 @@
+group 'com.simplejcode.var'
+
+configurations {
+    testCompile.extendsFrom junit
+
+    compile.extendsFrom common_graphic_tools
+}
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'MainFrame'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}

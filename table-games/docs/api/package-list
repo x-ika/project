@@ -1,0 +1,15 @@
+com.gelwins.accounts
+com.gelwins.base
+com.gelwins.base.logic
+com.gelwins.bingo.controller
+com.gelwins.bingo.logic
+com.gelwins.bots
+com.gelwins.gameserver
+com.gelwins.keno.controller
+com.gelwins.keno.logic
+com.gelwins.mixball.controller
+com.gelwins.mixball.logic
+com.gelwins.seka.controller
+com.gelwins.seka.logic
+com.gelwins.updown.controller
+com.gelwins.updown.logic

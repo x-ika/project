@@ -1,0 +1,31 @@
+group 'com.simplejcode.tools'
+
+configurations {
+    testCompile.extendsFrom junit
+
+    compile.extendsFrom common_misc
+    compile.extendsFrom common_graphic_tools
+    compile.extendsFrom common_audio_video_tools
+
+    compile.extendsFrom lombok
+    compile.extendsFrom apache_config
+    compile.extendsFrom google_gson
+    compile.extendsFrom poi
+}
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'examchecker.core.ExamCheckerController'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}

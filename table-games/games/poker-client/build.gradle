@@ -1,0 +1,9 @@
+group 'com.simplejcode.var.table-games'
+
+dependencies {
+    compile project(':table-games:game-client')
+}
+
+configurations {
+    testCompile.extendsFrom junit
+}

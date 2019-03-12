@@ -1,0 +1,16 @@
+class floodit.solver.students.adoli.MySolver                  139    0    1    0
+class floodit.solver.students.blomi.MySolver                   43   97    0    0
+class floodit.solver.students.eakhv.FloodIt                    53   87    0    0
+class floodit.solver.students.ggigl.QuickSolver                65   75    0    0
+class floodit.solver.students.gkoch.MySolver                  135    5    0    0
+class floodit.solver.students.gmarg.Solv                       34  104    0    2
+class floodit.solver.students.gpata.MySolver                  122   18    0    0
+class floodit.solver.students.kurid.MySolver                   52   88    0    0
+class floodit.solver.students.lgure.MySolver                    2   99   39    0
+class floodit.solver.students.mkapa11.MySolver                 19  121    0    0
+class floodit.solver.students.ndarj.MySolver                   17   88    0   35
+class floodit.solver.students.sggol.MySolver                   99   41    0    0
+class floodit.solver.students.stsir.MySolver                   32   81    0   27
+class floodit.solver.students.tkesh.MySolver                    0    0    0    0
+class floodit.solver.students.vmask.MySolver                  140    0    0    0
+class floodit.solver.students.zgven.MySolver                  116   23    1    0

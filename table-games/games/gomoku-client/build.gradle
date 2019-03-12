@@ -1,0 +1,26 @@
+group 'com.simplejcode.var.table-games'
+
+dependencies {
+    compile project(':table-games:game-client')
+}
+
+configurations {
+    testCompile.extendsFrom junit
+}
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'ika.games.gomoku.client.GomokuClient'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}

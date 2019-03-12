@@ -1,0 +1,12 @@
+
+1) Server  threads:
+	Main listener thread just listens fixed port and accepts socket connections.
+	Web listener thread listens 8080 port and redirects all connections to the main server.
+	Server update thread loads the needed controllers and updates them time to time.
+
+2) Game Threads:
+	Main controller thread loads application settings from the database and updates the lobby (controller.updateApp())
+	Room worker threads are created inside the room and used to process various game logics. Currenctly there are 2 types of games: 1 thread for whole game (bingo, seka) / 1 thread per player (keno, mixball).
+	Socket event handler thread (1 thread per connection) receives message from the network and calls the Controller.messageRecevied method.
+	There is also one thread which pings all socket connections.
+

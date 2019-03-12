@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: utils.jar nettools.jar
+Main-Class: ika.games.gameserver.Server
+
