@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.simplejcode.commons:net-tools:1.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/repository/com/simplejcode/commons/net-tools/1.0/net-tools-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

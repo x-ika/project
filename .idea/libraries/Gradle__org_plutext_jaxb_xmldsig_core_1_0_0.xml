@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.plutext:jaxb-xmldsig-core:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.plutext/jaxb-xmldsig-core/1.0.0/57514aa2f72111cfbc0a532ce88782735370e1e5/jaxb-xmldsig-core-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.plutext/jaxb-xmldsig-core/1.0.0/a41559be6a94177daf0813f63d6ec81b11b3c0d3/jaxb-xmldsig-core-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

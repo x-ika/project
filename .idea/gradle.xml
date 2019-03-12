@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:/soft/gradle-4.9" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/billiard" />
+            <option value="$PROJECT_DIR$/command-runner" />
+            <option value="$PROJECT_DIR$/exam-checker" />
+            <option value="$PROJECT_DIR$/exam-tools" />
+            <option value="$PROJECT_DIR$/excel-reader" />
+            <option value="$PROJECT_DIR$/graphpainter" />
+            <option value="$PROJECT_DIR$/loto" />
+            <option value="$PROJECT_DIR$/math" />
+            <option value="$PROJECT_DIR$/onjob-client" />
+            <option value="$PROJECT_DIR$/palette-visualizer" />
+            <option value="$PROJECT_DIR$/pchallenge" />
+            <option value="$PROJECT_DIR$/pchallenge/client" />
+            <option value="$PROJECT_DIR$/pchallenge/common" />
+            <option value="$PROJECT_DIR$/pchallenge/server" />
+            <option value="$PROJECT_DIR$/pchallenge/testers" />
+            <option value="$PROJECT_DIR$/queuemng" />
+            <option value="$PROJECT_DIR$/queuemng/client" />
+            <option value="$PROJECT_DIR$/queuemng/server" />
+            <option value="$PROJECT_DIR$/skileton" />
+            <option value="$PROJECT_DIR$/solvers" />
+            <option value="$PROJECT_DIR$/solvers/bluster" />
+            <option value="$PROJECT_DIR$/solvers/brianbubs" />
+            <option value="$PROJECT_DIR$/solvers/floodit" />
+            <option value="$PROJECT_DIR$/solvers/minesweeper" />
+            <option value="$PROJECT_DIR$/solvers/proover" />
+            <option value="$PROJECT_DIR$/solvers/simplepoker" />
+            <option value="$PROJECT_DIR$/solvers/spamdetector" />
+            <option value="$PROJECT_DIR$/solvers/sudoku" />
+            <option value="$PROJECT_DIR$/solvers/tester" />
+            <option value="$PROJECT_DIR$/solvers/tetris" />
+            <option value="$PROJECT_DIR$/table-games" />
+            <option value="$PROJECT_DIR$/table-games/game-admin" />
+            <option value="$PROJECT_DIR$/table-games/game-base" />
+            <option value="$PROJECT_DIR$/table-games/game-client" />
+            <option value="$PROJECT_DIR$/table-games/game-controller" />
+            <option value="$PROJECT_DIR$/table-games/game-server" />
+            <option value="$PROJECT_DIR$/table-games/games" />
+            <option value="$PROJECT_DIR$/table-games/games/checkers-client" />
+            <option value="$PROJECT_DIR$/table-games/games/checkers-controller" />
+            <option value="$PROJECT_DIR$/table-games/games/chess-client" />
+            <option value="$PROJECT_DIR$/table-games/games/chess-controller" />
+            <option value="$PROJECT_DIR$/table-games/games/domino-base" />
+            <option value="$PROJECT_DIR$/table-games/games/domino-client" />
+            <option value="$PROJECT_DIR$/table-games/games/domino-controller" />
+            <option value="$PROJECT_DIR$/table-games/games/gomoku-client" />
+            <option value="$PROJECT_DIR$/table-games/games/gomoku-controller" />
+            <option value="$PROJECT_DIR$/table-games/games/joker-client" />
+            <option value="$PROJECT_DIR$/table-games/games/joker-controller" />
+            <option value="$PROJECT_DIR$/table-games/games/poker-client" />
+            <option value="$PROJECT_DIR$/table-games/games/poker-controller" />
+            <option value="$PROJECT_DIR$/tcutils" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

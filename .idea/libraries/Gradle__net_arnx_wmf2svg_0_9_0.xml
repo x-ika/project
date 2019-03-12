@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.arnx:wmf2svg:0.9.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.arnx/wmf2svg/0.9.0/7b27809b43acb48c1ca65d68219256192a5a887b/wmf2svg-0.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.arnx/wmf2svg/0.9.0/81463960aaccb28779684e9faddb059dcb51f232/wmf2svg-0.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
