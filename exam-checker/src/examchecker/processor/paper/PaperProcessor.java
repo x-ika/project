@@ -2,8 +2,8 @@ package examchecker.processor.paper;
 
 import com.simplejcode.commons.av.improc.ImageProcessor;
 import com.simplejcode.commons.av.improc.Rect;
+import com.simplejcode.commons.misc.PropertyManager;
 import examchecker.core.Constants;
-import examchecker.core.PropertyManager;
 import examchecker.processor.IPaperDefinition;
 import examchecker.processor.IPaperDiv;
 import examchecker.processor.IRecResult;

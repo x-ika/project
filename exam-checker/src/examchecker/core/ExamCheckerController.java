@@ -53,6 +53,8 @@ public class ExamCheckerController {
     }
 
     private void init() throws Exception {
+        PropertyManager.setPropertiesFileName(Constants.PROPERTIES_FILE);
+
         frame = new CustomFrame(Constants.MAIN_FRAME_TITLE);
         frame.setJMenuBar(
                 new String[][]{
