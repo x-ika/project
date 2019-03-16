@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612f2a0c-0fbd-4fda-92ca-095f9a4e7664" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules/clienta/clienta.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/modules/server/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../desktop/server/resources/mac.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../desktop/server/resources/win.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/client/client.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/client/resources/client.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/client/resources/client.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/client/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/client/src/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/gen/sr/client/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/clienta/gen/sr/client/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/library.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/resources/logo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/resources/logo.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/client/src/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/client/src/settings/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/server/resources/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/resources/server.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/run.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/server.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/server/src/gui/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/gui/AdminFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/server/src/main/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/main/SystemManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/src/sound/SoundManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/starter/src/starter/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/starter/src/starter/Starter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/utils/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/billiard/src/pool/utils/SoundManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/core/PropertyManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PaperProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PaperProcessor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -168,7 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;&lt; 1</find>
       <find>processor.w</find>
       <find>minError</find>
       <find>1e9</find>
@@ -198,6 +185,7 @@
       <find>SoundMa</find>
       <find>PropertyManager</find>
       <find>actionona</find>
+      <find>hooseFile</find>
     </findStrings>
     <replaceStrings>
       <replace>.getConstructor().newInstance()</replace>
@@ -297,7 +285,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -344,17 +342,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -555,11 +543,12 @@
       <workItem from="1552681619853" duration="256000" />
       <workItem from="1552682122927" duration="2217000" />
       <workItem from="1552684646787" duration="40000" />
+      <workItem from="1552766581883" duration="631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112083000" />
+    <option name="totallyTimeSpent" value="112714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,7 +562,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35888252" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36389685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -805,13 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="3350" column="16" selection-start-line="3350" selection-start-column="16" selection-end-line="3350" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/repository/com/simplejcode/commons/graphic-tools/1.0/graphic-tools-1.0.jar!/com/simplejcode/commons/gui/GraphicUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1190,6 +1172,13 @@
             <element signature="method#openFileByProperty#1;class#ExamCheckerController#0" />
             <element signature="method#openDirectoryByProperty#0;class#ExamCheckerController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/repository/com/simplejcode/commons/graphic-tools/1.0/graphic-tools-1.0.jar!/com/simplejcode/commons/gui/GraphicUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="385" column="23" selection-start-line="385" selection-start-column="23" selection-end-line="385" selection-end-column="23" />
         </state>
       </provider>
     </entry>
