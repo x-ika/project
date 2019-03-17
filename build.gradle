@@ -34,10 +34,10 @@ subprojects {
 
     //-----------------------------------------------------------------------------------
     // IDEA
+
     apply plugin: 'idea'
     idea {
         module {
-//            inheritOutputDirs = true
             outputDir = new File(rootProject.projectDir, '.out')
             testOutputDir = new File(rootProject.projectDir, '.out')
         }
