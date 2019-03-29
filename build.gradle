@@ -114,6 +114,7 @@ subprojects {
 
         doc4j            'org.docx4j:docx4j:2.8.1'
         poi              'org.apache.poi:poi:4.0.1'
+        poi              'org.apache.poi:poi-ooxml:4.0.1'
         imageproc        'com.drewnoakes:metadata-extractor:2.11.0'
 
     }

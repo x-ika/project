@@ -1,8 +1,8 @@
 package proc;
 
 import com.simplejcode.commons.misc.DateUtils;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -11,10 +11,12 @@ import java.util.concurrent.TimeUnit;
 
 public class DataParser {
 
-    private static final String PATTERN = "dd.MM.yyyy HH:mm";
+    private static final String DATE_PATTERN = "dd.MM.yyyy";
+    private static final String TIME_PATTERN = "HH:mm";
+    private static final String PATTERN = DATE_PATTERN + " " + TIME_PATTERN;
 
     public static List<InOutRecord> readData(File file) throws Exception {
-        Workbook workbook = new HSSFWorkbook(new FileInputStream(file));
+        Workbook workbook = new XSSFWorkbook(new FileInputStream(file));
         Sheet sheet = workbook.getSheetAt(0);
 
         List<InOutRecord> data = new ArrayList<>();
@@ -92,9 +94,9 @@ public class DataParser {
             long requiredInTime = t.day + TimeUnit.HOURS.toMillis(6) + TimeUnit.MINUTES.toMillis(30);
             long requiredOutTime = t.day + TimeUnit.HOURS.toMillis(15);
 
-            t.dayStr = DateUtils.formatTime(t.day, "dd.MM.yyyy");
-            t.inTimeStr = DateUtils.formatTime(inTime, PATTERN);
-            t.outTimeStr = DateUtils.formatTime(outTime, "dd.MM.yyyy HH:mm");
+            t.dayStr = DateUtils.formatTime(t.day, DATE_PATTERN);
+            t.inTimeStr = DateUtils.formatTime(inTime, TIME_PATTERN);
+            t.outTimeStr = DateUtils.formatTime(outTime, TIME_PATTERN);
 
             long pre = inTime - requiredInTime;
             if (pre > 0) {

@@ -1,23 +1,23 @@
 package proc;
 
-import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.*;
-import java.util.*;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ExcelIO {
 
     public void export(List<DayRecord> list, File file) throws Exception {
 
-        HSSFWorkbook workbook = new HSSFWorkbook();
-        HSSFSheet sheet = workbook.createSheet("summary");
+        Workbook workbook = new HSSFWorkbook();
+        Sheet sheet = workbook.createSheet("summary");
 
-        HSSFCellStyle headerStyle = createHeaderStyle(workbook);
-        HSSFCellStyle contentStyle = createContentStyle(workbook);
-        HSSFCellStyle warnStyle = createWarnStyle(workbook);
+        CellStyle headerStyle = createHeaderStyle(workbook);
+        CellStyle contentStyle = createContentStyle(workbook);
+        CellStyle warnStyle = createWarnStyle(workbook);
 
         for (int i = 0; i <= list.size(); i++) {
             sheet.createRow(i);
@@ -55,7 +55,7 @@ public class ExcelIO {
             };
 //            boolean warning = t.preDelay != null || t.postDelay != null;
             boolean warning = t.outTime - t.inTime < TimeUnit.HOURS.toMillis(9);
-            HSSFCellStyle style = warning ? warnStyle : contentStyle;
+            CellStyle style = warning ? warnStyle : contentStyle;
             populate(sheet, style, rowInd, 0, rowContent);
             // end row
 
@@ -73,12 +73,12 @@ public class ExcelIO {
 
     }
 
-    private HSSFCellStyle createHeaderStyle(HSSFWorkbook workbook) {
+    private CellStyle createHeaderStyle(Workbook workbook) {
 
-        HSSFCellStyle style = workbook.createCellStyle();
+        CellStyle style = workbook.createCellStyle();
         style.setAlignment(HorizontalAlignment.CENTER);
         style.setVerticalAlignment(VerticalAlignment.CENTER);
-        HSSFFont font = workbook.createFont();
+        Font font = workbook.createFont();
         font.setBold(true);
         font.setFontHeight((short) 300);
         style.setFont(font);
@@ -91,12 +91,12 @@ public class ExcelIO {
         return style;
     }
 
-    private HSSFCellStyle createContentStyle(HSSFWorkbook workbook) {
+    private CellStyle createContentStyle(Workbook workbook) {
 
-        HSSFCellStyle style = workbook.createCellStyle();
+        CellStyle style = workbook.createCellStyle();
         style.setAlignment(HorizontalAlignment.CENTER);
         style.setVerticalAlignment(VerticalAlignment.CENTER);
-        HSSFFont font = workbook.createFont();
+        Font font = workbook.createFont();
         font.setBold(true);
         font.setFontHeight((short) 200);
         style.setFont(font);
@@ -109,12 +109,12 @@ public class ExcelIO {
         return style;
     }
 
-    private HSSFCellStyle createWarnStyle(HSSFWorkbook workbook) {
+    private CellStyle createWarnStyle(Workbook workbook) {
 
-        HSSFCellStyle style = workbook.createCellStyle();
+        CellStyle style = workbook.createCellStyle();
         style.setAlignment(HorizontalAlignment.CENTER);
         style.setVerticalAlignment(VerticalAlignment.CENTER);
-        HSSFFont font = workbook.createFont();
+        Font font = workbook.createFont();
         font.setBold(true);
         font.setFontHeight((short) 200);
         style.setFont(font);
@@ -130,10 +130,10 @@ public class ExcelIO {
         return style;
     }
 
-    private static void populate(HSSFSheet sheet, HSSFCellStyle style, int rowInd, int colInd, String[] values) {
-        HSSFRow row = sheet.getRow(rowInd);
+    private static void populate(Sheet sheet, CellStyle style, int rowInd, int colInd, String[] values) {
+        Row row = sheet.getRow(rowInd);
         for (Object value : values) {
-            HSSFCell col = row.createCell(colInd++);
+            Cell col = row.createCell(colInd++);
             col.setCellValue(value == null ? "" : value.toString());
             System.out.print((value == null ? "" : value.toString()) + " \t ");
             col.setCellStyle(style);

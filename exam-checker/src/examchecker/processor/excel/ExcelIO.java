@@ -2,10 +2,8 @@ package examchecker.processor.excel;
 
 import com.simplejcode.commons.misc.StreamUtils;
 import examchecker.core.Constants;
-import examchecker.processor.ITestDefinition;
-import examchecker.processor.ITestDiv;
-import examchecker.processor.ICheckResult;
-import org.apache.poi.hssf.usermodel.*;
+import examchecker.processor.*;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
@@ -26,12 +24,12 @@ public class ExcelIO {
         divs = new ArrayList<>(divs);
         divs.sort(Comparator.comparingInt(ITestDiv::getSequenceNumber));
 
-        HSSFWorkbook workbook = new HSSFWorkbook();
-        HSSFSheet sheet = workbook.createSheet("summary");
+        Workbook workbook = new HSSFWorkbook();
+        Sheet sheet = workbook.createSheet("summary");
 
-        HSSFCellStyle headerStyle = createHeaderStyle(workbook);
-        HSSFCellStyle contentStyle = createContentStyle(workbook);
-        HSSFCellStyle warnStyle = createWarnStyle(workbook);
+        CellStyle headerStyle = createHeaderStyle(workbook);
+        CellStyle contentStyle = createContentStyle(workbook);
+        CellStyle warnStyle = createWarnStyle(workbook);
 
         // create
         Set<String> distinct = new HashSet<>();
@@ -69,7 +67,7 @@ public class ExcelIO {
                 for (ITestDiv div : divs) {
                     rowContent.add(result.getValue(div.getId()));
                 }
-                HSSFCellStyle style = rowContent.stream().anyMatch(t -> t.contains(Constants.UNDEFINED)) ?
+                CellStyle style = rowContent.stream().anyMatch(t -> t.contains(Constants.UNDEFINED)) ?
                         warnStyle : contentStyle;
                 populate(sheet, style, rowInd, 0, rowContent);
                 // end row
@@ -95,12 +93,12 @@ public class ExcelIO {
         return s.contains(Constants.UNDEFINED) ? 1 : 0;
     }
 
-    private HSSFCellStyle createHeaderStyle(HSSFWorkbook workbook) {
+    private CellStyle createHeaderStyle(Workbook workbook) {
 
-        HSSFCellStyle style = workbook.createCellStyle();
+        CellStyle style = workbook.createCellStyle();
         style.setAlignment(HorizontalAlignment.CENTER);
         style.setVerticalAlignment(VerticalAlignment.CENTER);
-        HSSFFont font = workbook.createFont();
+        Font font = workbook.createFont();
         font.setBold(true);
         font.setFontHeight((short) 300);
         style.setFont(font);
@@ -113,12 +111,12 @@ public class ExcelIO {
         return style;
     }
 
-    private HSSFCellStyle createContentStyle(HSSFWorkbook workbook) {
+    private CellStyle createContentStyle(Workbook workbook) {
 
-        HSSFCellStyle style = workbook.createCellStyle();
+        CellStyle style = workbook.createCellStyle();
         style.setAlignment(HorizontalAlignment.CENTER);
         style.setVerticalAlignment(VerticalAlignment.CENTER);
-        HSSFFont font = workbook.createFont();
+        Font font = workbook.createFont();
         font.setBold(true);
         font.setFontHeight((short) 200);
         style.setFont(font);
@@ -131,12 +129,12 @@ public class ExcelIO {
         return style;
     }
 
-    private HSSFCellStyle createWarnStyle(HSSFWorkbook workbook) {
+    private CellStyle createWarnStyle(Workbook workbook) {
 
-        HSSFCellStyle style = workbook.createCellStyle();
+        CellStyle style = workbook.createCellStyle();
         style.setAlignment(HorizontalAlignment.CENTER);
         style.setVerticalAlignment(VerticalAlignment.CENTER);
-        HSSFFont font = workbook.createFont();
+        Font font = workbook.createFont();
         font.setBold(true);
         font.setFontHeight((short) 200);
         style.setFont(font);
@@ -152,10 +150,10 @@ public class ExcelIO {
         return style;
     }
 
-    private static void populate(HSSFSheet sheet, HSSFCellStyle style, int rowInd, int colInd, List<String> values) {
-        HSSFRow row = sheet.getRow(rowInd);
+    private static void populate(Sheet sheet, CellStyle style, int rowInd, int colInd, List<String> values) {
+        Row row = sheet.getRow(rowInd);
         for (Object value : values) {
-            HSSFCell col = row.createCell(colInd++);
+            Cell col = row.createCell(colInd++);
             col.setCellValue(value == null ? "" : value.toString());
             col.setCellStyle(style);
         }
