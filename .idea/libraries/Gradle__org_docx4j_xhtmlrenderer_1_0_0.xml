@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: org.docx4j:xhtmlrenderer:1.0.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.docx4j/xhtmlrenderer/1.0.0/8f55a761ecb4851aff35bb265cb1ad4845104ddb/xhtmlrenderer-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.settings/.gradle/caches/modules-2/files-2.1/org.docx4j/xhtmlrenderer/1.0.0/8f55a761ecb4851aff35bb265cb1ad4845104ddb/xhtmlrenderer-1.0.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.docx4j/xhtmlrenderer/1.0.0/6a657c1b148eb0196ec8b638e625139f3cefa71d/xhtmlrenderer-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.settings/.gradle/caches/modules-2/files-2.1/org.docx4j/xhtmlrenderer/1.0.0/6a657c1b148eb0196ec8b638e625139f3cefa71d/xhtmlrenderer-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

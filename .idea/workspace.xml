@@ -2,21 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612f2a0c-0fbd-4fda-92ca-095f9a4e7664" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/artifacts/client_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/artifacts/extinstaller_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/artifacts/server_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/artifacts/starter_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/artifacts/wclient_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules/clienta/gen/sr/client/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/modules/clienta/gen/sr/client/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules/desktop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/modules/desktop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/clienta/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/src/sr/client/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/clienta/src/sr/client/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lowagie_itext_2_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_audio_video_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_db_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_graphic_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_logical_analyzer_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_misc_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_net_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_media_jmf_2_1_1e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_arnx_wmf2svg_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_platform_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_api_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_impl_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_collections4_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_configuration2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_scratchpad_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_fop_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_xmlgraphics_commons_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_docx4j_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_xhtmlrenderer_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_svg11_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xmldsig_core_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xslfo_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_serializer_2_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_xalan_2_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xml_apis_xml_apis_1_3_04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/exam-checker/com.simplejcode.tools.exam-checker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/exam-checker/com.simplejcode.tools.exam-checker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/excel-reader/com.simplejcode.tools.excel-reader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/excel-reader/com.simplejcode.tools.excel-reader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/onjob-client/com.simplejcode.tools.onjob-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/onjob-client/com.simplejcode.tools.onjob-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -97,6 +136,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -121,24 +174,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="project" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="project" type="f1a62948:ProjectNode" />
-                <item name=":onjob-client" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="project" type="f1a62948:ProjectNode" />
-                <item name=":onjob-client" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="project" type="f1a62948:ProjectNode" />
-                <item name=":onjob-client" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -147,12 +182,12 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            <state relative-caret-position="68">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -300,18 +335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -358,6 +381,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,10 +405,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/solvers/simplepoker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -560,11 +595,12 @@
       <workItem from="1552684646787" duration="40000" />
       <workItem from="1552766581883" duration="631000" />
       <workItem from="1552839688401" duration="134000" />
+      <workItem from="1553941629986" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112848000" />
+    <option name="totallyTimeSpent" value="113094000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,7 +615,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3696275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37535816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -608,7 +644,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.3295129" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3295129" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
@@ -1194,8 +1230,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        <state relative-caret-position="68">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1243,7 +1279,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
