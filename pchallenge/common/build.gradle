@@ -1,4 +1,4 @@
-group 'com.simplejcode.var.pchallenge'
+group 'com.simplejcode.pchallenge'
 
 configurations {
     testCompile.extendsFrom junit

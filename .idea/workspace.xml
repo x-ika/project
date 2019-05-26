@@ -1,471 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="idea update">
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/resources/init.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/resources/logo-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/resources/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/resources/task1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/resources/task2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/src/CommandPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/src/CommandRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/src/ProcessExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/command-runner/src/ProcessListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/Intructions.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/A20.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/O15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/O20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/O20x.bmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/P10.paper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/P15.paper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/P20.paper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/T10.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/T15.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/data/models/T20.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/resources/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/model/ModelIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/model/PaperDivModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/model/PaperDivType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/model/PaperModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/model/TestDivModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/model/TestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/DivType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/ICheckResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/IPaperDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/IPaperDiv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/IRecResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/ITestDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/ITestDiv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/div/DivProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/div/PaperDivImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/div/TestDivImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/excel/ExcelIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/DetectionMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/IRecResultImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PaperProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PointPatternMatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/test/DivAndValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/test/TestProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/view/HeaderCellRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/view/ImageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/view/LabelCellRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/view/PaperModelView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/view/TableView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/view/TestModelView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/Intructions.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/resources/init.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/resources/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/resources/lucida_console72-o.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/resources/lucida_console72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/src/LucidaRec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/src/PatternRecognizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/002.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/004.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/006.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/008.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/010.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/012.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/014.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/016.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/018.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/020.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/exam-tools/testdoc/form.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/resources/init.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/resources/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/src/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/src/proc/DataParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/src/proc/DayRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/src/proc/ExcelIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/excel-reader/src/proc/InOutRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/onjob-client/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/onjob-client/resources/init.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/onjob-client/resources/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobContactLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/palette-visualizer/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/palette-visualizer/resources/init.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/palette-visualizer/resources/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/palette-visualizer/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/palette-visualizer/src/PaletteVisualizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/client/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/client/resources/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/client/resources/client.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/client/resources/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/client/src/MainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/resources/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/resources/ticket.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/resources/tmp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/resources/users.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/src/MainServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/src/OperatorData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/queuemng/server/src/OperatorsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/jl1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/docs/players.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/docs/results.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball0.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball10.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball11.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball12.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball13.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball14.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball15.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball5.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball6.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball7.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball8.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/ball9.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/cue.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/cursor.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/desk.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/images/picture.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/balls.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/blow.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/border.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/extra/Toledo.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/extra/hitting.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/extra/pool.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/extra/poolh.MID" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/extra/single.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/extra/solid-.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/extra/ss.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/pocket.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/pool.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/resources/sounds/zoom.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/geom/Ball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/geom/Border.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/geom/Pocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/geom/Sphere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/geom/TableObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/geom/Vector2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/HeadPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/MenuComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/PlayerInfoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/menu/About.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/menu/BasicDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/menu/BestResults.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/menu/NewGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/menu/RegistrationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/menu/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/primitive/JButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/gui/primitive/LabelAndField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/logic/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/logic/Motion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/logic/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/logic/PoolAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/logic/TableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/utils/Consts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/utils/ImageFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/billiard/src/pool/utils/SoundManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/Samples/.grp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/Samples/a.GRP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/Samples/asd.grp..GRP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/gui/FileChooser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/gui/GraphPainter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/gui/GraphTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/gui/LeftPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/gui/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/gui/primitive/JButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/io/GraphReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/io/GraphWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/logic/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/logic/Vertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/graphpainter/src/logic/VertexInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/resources/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/resources/logo2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/src/ButtonEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/src/Loto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/src/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/src/NewSimulationForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/loto/src/NumbersDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/out.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/Mover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/Cycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/DinamicStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/Hanoy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/Jgraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/N1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/QS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/Turne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/TurneString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/oldprog/read.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/math/src/paata/P1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/skileton/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/skileton/resources/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/skileton/src/gui/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/skileton/src/gui/Visualizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/skileton/src/proc/MODImageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/src/mm/MMStatistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/src/util/Contestant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/src/util/MMUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/src/util/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/src/util/TCProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/tcutils/src/util/Utils.java" afterDir="false" />
+    <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="modules moved">
       <change beforePath="$PROJECT_DIR$/../_Competitions/Algo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_Competitions/Algo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/jl1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/docs/players.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/docs/results.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball0.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball10.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball11.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball12.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball13.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball14.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball15.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball4.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball5.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball6.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball7.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball8.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/ball9.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/cue.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/cursor.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/desk.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/images/picture.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/balls.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/blow.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/border.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/extra/Toledo.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/extra/hitting.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/extra/pool.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/extra/poolh.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/extra/single.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/extra/solid-.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/extra/ss.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/pocket.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/pool.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/resources/sounds/zoom.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/geom/Ball.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/geom/Border.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/geom/Pocket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/geom/Sphere.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/geom/TableObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/geom/Vector2D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/GamePanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/HeadPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/MenuComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/PlayerInfoPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/menu/About.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/menu/BasicDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/menu/BestResults.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/menu/NewGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/menu/RegistrationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/menu/Settings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/primitive/JButtons.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/gui/primitive/LabelAndField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/logic/GameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/logic/Motion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/logic/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/logic/PoolAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/logic/TableModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/utils/Consts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/utils/ImageFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billiard/src/pool/utils/SoundManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/resources/init.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/resources/logo-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/resources/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/resources/task1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/resources/task2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/src/CommandPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/src/CommandRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/src/ProcessExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/command-runner/src/ProcessListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/Intructions.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/A20.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/O15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/O20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/O20x.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/P10.paper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/P15.paper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/P20.paper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/T10.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/T15.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/data/models/T20.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/resources/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/core/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/model/ModelIO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/model/PaperDivModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/model/PaperDivType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/model/PaperModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/model/TestDivModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/model/TestModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/DivType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/ICheckResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/IPaperDefinition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/IPaperDiv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/IRecResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/ITestDefinition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/ITestDiv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/div/DivProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/div/PaperDivImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/div/TestDivImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/excel/ExcelIO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/DetectionMode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/IRecResultImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PaperProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PointPatternMatcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/test/DivAndValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/processor/test/TestProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/view/HeaderCellRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/view/ImageView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/view/LabelCellRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/view/PaperModelView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/view/TableView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-checker/src/examchecker/view/TestModelView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/Intructions.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/resources/init.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/resources/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/resources/lucida_console72-o.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/resources/lucida_console72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/src/LucidaRec.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/src/PatternRecognizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/002.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/004.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/006.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/008.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/010.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/012.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/014.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/016.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/018.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/020.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-tools/testdoc/form.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/resources/init.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/resources/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/src/ExcelReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/src/proc/DataParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/src/proc/DayRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/src/proc/ExcelIO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel-reader/src/proc/InOutRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/Samples/.grp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/Samples/a.GRP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/Samples/asd.grp..GRP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/gui/FileChooser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/gui/GraphPainter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/gui/GraphTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/gui/LeftPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/gui/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/gui/primitive/JButtons.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/io/GraphReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/io/GraphWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/logic/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/logic/Vertex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphpainter/src/logic/VertexInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/resources/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/resources/logo2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/src/ButtonEditor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/src/Loto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/src/Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/src/NewSimulationForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loto/src/NumbersDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/Mover.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/Cycle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/DinamicStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/Hanoy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/Jgraph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/N1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/QS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/Turne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/TurneString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/oldprog/read.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/src/paata/P1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onjob-client/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onjob-client/resources/init.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onjob-client/resources/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onjob-client/src/onjobclient/OnJobClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/onjob-client/src/onjobclient/OnJobContactLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palette-visualizer/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palette-visualizer/resources/init.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palette-visualizer/resources/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palette-visualizer/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palette-visualizer/src/PaletteVisualizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/client/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/client/resources/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/client/resources/client.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/client/resources/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/client/src/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/client/src/MainPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/resources/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/resources/ticket.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/resources/tmp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/resources/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/src/MainServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/src/OperatorData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queuemng/server/src/OperatorsPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skileton/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skileton/resources/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skileton/src/gui/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skileton/src/gui/Visualizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skileton/src/proc/MODImageHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/src/mm/MMStatistics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/src/util/Contestant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/src/util/MMUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/src/util/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/src/util/TCProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcutils/src/util/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/testers/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/testers/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/bluster/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/bluster/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/brianbubs/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/brianbubs/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/minesweeper/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/minesweeper/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/proover/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/proover/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/simplepoker/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/simplepoker/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/sudoku/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/tester/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/tester/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/tetris/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/tetris/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-admin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-base/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/chess-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/chess-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/chess-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/chess-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/domino-base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/domino-base/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/domino-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/domino-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/domino-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/domino-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/gomoku-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/gomoku-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/gomoku-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/gomoku-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/joker-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/poker-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/poker-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/poker-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/poker-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/queuemng/client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/queuemng/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/server/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.build/" />
@@ -571,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -591,9 +162,16 @@
     <findStrings>
       <find>group 'com.simplejcode.</find>
       <find>group 'com.simplejcode.tools</find>
+      <find>group 'com.simplejcode.var.pchallenge</find>
+      <find>group 'com.simplejcode.var.table-games</find>
+      <find>group 'com.simplejcode.var.solver</find>
+      <find>group 'com.simplejcode.var</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>group 'com.simplejcode.pchallenge</replace>
+      <replace>group 'com.simplejcode.table-games</replace>
+      <replace>group 'com.simplejcode.solver</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -630,13 +208,7 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="table-games" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="table-games" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="game-server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -735,6 +307,7 @@
       <workItem from="1558875174718" duration="183000" />
       <workItem from="1558875505276" duration="296000" />
       <workItem from="1558875810072" duration="34000" />
+      <workItem from="1558875908455" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="idea update">
       <created>1558875330573</created>
@@ -743,17 +316,23 @@
       <option name="project" value="LOCAL" />
       <updated>1558875330573</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="modules moved">
+      <created>1558876097172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558876097172</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="905000" />
+    <option name="totallyTimeSpent" value="1283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -788,20 +367,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea update" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea update" />
+    <MESSAGE value="modules moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="modules moved" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/table-games/game-server/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

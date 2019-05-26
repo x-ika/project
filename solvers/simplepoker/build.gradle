@@ -1,4 +1,4 @@
-group 'com.simplejcode.var.solver'
+group 'com.simplejcode.solver'
 
 configurations {
     testCompile.extendsFrom junit

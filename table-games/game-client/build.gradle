@@ -1,4 +1,4 @@
-group 'com.simplejcode.var.table-games'
+group 'com.simplejcode.table-games'
 
 dependencies {
     compile project(':table-games:game-base')
