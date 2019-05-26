@@ -62,6 +62,7 @@
             <option value="$PROJECT_DIR$/var/math" />
             <option value="$PROJECT_DIR$/var/skileton" />
             <option value="$PROJECT_DIR$/var/tcutils" />
+            <option value="$PROJECT_DIR$/var/zmsc" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

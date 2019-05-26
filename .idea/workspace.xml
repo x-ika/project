@@ -2,41 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="modules moved">
-      <change beforePath="$PROJECT_DIR$/../_Competitions/Algo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_Competitions/Algo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/testers/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/testers/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/bluster/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/bluster/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/brianbubs/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/brianbubs/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/minesweeper/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/minesweeper/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/proover/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/proover/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/simplepoker/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/simplepoker/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/sudoku/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/tester/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/tester/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/tetris/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/tetris/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-admin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-base/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/chess-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/chess-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/chess-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/chess-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/domino-base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/domino-base/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/domino-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/domino-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/domino-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/domino-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/gomoku-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/gomoku-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/gomoku-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/gomoku-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/joker-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/poker-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/poker-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/poker-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/poker-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/queuemng/client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/queuemng/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/var/zmsc/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/var/zmsc/src/MouseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/math/src/Mover.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/zmsc/src/Mover.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.build/" />
@@ -112,6 +82,7 @@
     <ignored path="$PROJECT_DIR$/var/tcutils/.gradle/" />
     <ignored path="$PROJECT_DIR$/tools/queuemng/client/.gradle/" />
     <ignored path="$PROJECT_DIR$/tools/queuemng/server/.gradle/" />
+    <ignored path="$PROJECT_DIR$/var/zmsc/.gradle/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,20 +109,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="238">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/table-games/game-server/build.gradle">
+        <entry file="file://$PROJECT_DIR$/var/zmsc/src/MouseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/var/zmsc/src/Mover.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -182,6 +162,10 @@
       <list>
         <option value="$PROJECT_DIR$/tools/queuemng/client/build.gradle" />
         <option value="$PROJECT_DIR$/tools/queuemng/server/build.gradle" />
+        <option value="$PROJECT_DIR$/var/zmsc/src/Mover.java" />
+        <option value="$PROJECT_DIR$/var/math/src/Mover.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/var/zmsc/src/PhotoGrouping.java" />
       </list>
     </option>
   </component>
@@ -197,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,13 +193,38 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="math" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="math" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zmsc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zmsc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,6 +239,14 @@
     <property name="project.structure.side.proportion" value="0.37356323" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ika\projects\project\var\zmsc\src" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -241,17 +259,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.build">
-    <configuration name="CommandRunner" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CommandRunner" />
-      <module name="project.command-runner" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/command-runner" />
+  <component name="RunManager" selected="Application.group photos">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="group photos" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Mover" />
+      <module name="project.var.zmsc" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -292,7 +309,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CommandRunner" />
+      <item itemvalue="Application.group photos" />
       <item itemvalue="Gradle.build" />
     </list>
   </component>
@@ -307,7 +324,8 @@
       <workItem from="1558875174718" duration="183000" />
       <workItem from="1558875505276" duration="296000" />
       <workItem from="1558875810072" duration="34000" />
-      <workItem from="1558875908455" duration="378000" />
+      <workItem from="1558875908455" duration="829000" />
+      <workItem from="1558876757006" duration="237000" />
     </task>
     <task id="LOCAL-00001" summary="idea update">
       <created>1558875330573</created>
@@ -323,16 +341,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558876097172</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="group ids fixed">
+      <created>1558876539971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558876539971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1283000" />
+    <option name="totallyTimeSpent" value="1971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -368,20 +394,72 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea update" />
     <MESSAGE value="modules moved" />
-    <option name="LAST_COMMIT_MESSAGE" value="modules moved" />
+    <MESSAGE value="group ids fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="group ids fixed" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/tools/queuemng/server/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/exam-tools/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/command-runner/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/table-games/game-server/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="70" column="19" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/math/src/Mover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/zmsc/src/MouseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/zmsc/src/PhotoGrouping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/zmsc/src/Mover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
