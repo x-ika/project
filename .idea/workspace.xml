@@ -1,84 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612f2a0c-0fbd-4fda-92ca-095f9a4e7664" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lowagie_itext_2_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lowagie_itext_2_1_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_2_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_2_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_1_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_activation_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_media_jmf_2_1_1e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_media_jmf_2_1_1e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_15.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_arnx_wmf2svg_0_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_arnx_wmf2svg_0_9_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_4_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_4_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_platform_4_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_platform_4_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_api_4_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_api_4_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_impl_4_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_impl_4_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_collections4_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_collections4_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_configuration2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_configuration2_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_3_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_4_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_scratchpad_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_scratchpad_3_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_fop_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_fop_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_xmlgraphics_commons_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_xmlgraphics_commons_1_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_docx4j_2_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_docx4j_2_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_xhtmlrenderer_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_xhtmlrenderer_1_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_svg11_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_svg11_1_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xmldsig_core_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xmldsig_core_1_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xslfo_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xslfo_1_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_serializer_2_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_serializer_2_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_xalan_2_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_xalan_2_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xml_apis_xml_apis_1_3_04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xml_apis_xml_apis_1_3_04.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/exam-checker/com.simplejcode.tools.exam-checker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/exam-checker/com.simplejcode.tools.exam-checker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/excel-reader/com.simplejcode.tools.excel-reader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/excel-reader/com.simplejcode.tools.excel-reader.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/onjob-client/com.simplejcode.tools.onjob-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/onjob-client/com.simplejcode.tools.onjob-client.iml" afterDir="false" />
+    <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../common-library/.idea/modules/audio-video-tools/common-library.audio-video-tools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-library/.idea/modules/db-tools/common-library.db-tools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-library/.idea/modules/graphic-tools/common-library.graphic-tools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-library/.idea/modules/logical-analyzer/common-library.logical-analyzer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-library/.idea/modules/misc/common-library.misc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-library/.idea/modules/net-tools/common-library.net-tools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-library/.idea/modules/pdf-tools/common-library.pdf-tools.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_Competitions/Algo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_Competitions/Algo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-library/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-library/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-library/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules/audio-video-tools/com.simplejcode.commons.audio-video-tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules/db-tools/com.simplejcode.commons.db-tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules/graphic-tools/com.simplejcode.commons.graphic-tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules/logical-analyzer/com.simplejcode.commons.logical-analyzer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules/misc/com.simplejcode.commons.misc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules/net-tools/com.simplejcode.commons.net-tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/modules/pdf-tools/com.simplejcode.commons.pdf-tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_virtuald_curvesapi_1_05.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lowagie_itext_2_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_audio_video_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_db_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_graphic_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_logical_analyzer_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_misc_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simplejcode_commons_net_tools_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_media_jmf_2_1_1e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_arnx_wmf2svg_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_platform_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_api_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_avalon_framework_avalon_framework_impl_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_collections4_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_compress_1_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_configuration2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_ooxml_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_ooxml_schemas_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_scratchpad_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlbeans_xmlbeans_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_fop_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlgraphics_xmlgraphics_commons_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_docx4j_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_docx4j_xhtmlrenderer_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_svg11_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xmldsig_core_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_plutext_jaxb_xslfo_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_serializer_2_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xalan_xalan_2_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xml_apis_xml_apis_1_3_04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/billiard/com.simplejcode.var.billiard.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.simplejcode.various.project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/command-runner/com.simplejcode.tools.command-runner.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/exam-checker/com.simplejcode.tools.exam-checker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/exam-tools/com.simplejcode.tools.exam-tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/excel-reader/com.simplejcode.tools.excel-reader.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/graphpainter/com.simplejcode.var.graphpainter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/loto/com.simplejcode.var.loto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/math/com.simplejcode.var.math.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/onjob-client/com.simplejcode.tools.onjob-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/palette-visualizer/com.simplejcode.tools.palette-visualizer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/pchallenge/client/com.simplejcode.var.pchallenge.client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/pchallenge/common/com.simplejcode.var.pchallenge.common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/pchallenge/project.pchallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/pchallenge/server/com.simplejcode.var.pchallenge.server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/pchallenge/testers/com.simplejcode.var.pchallenge.testers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/queuemng/client/com.simplejcode.tools.queuemng.client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/queuemng/project.queuemng.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/queuemng/server/com.simplejcode.tools.queuemng.server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/skileton/com.simplejcode.var.skileton.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/bluster/com.simplejcode.var.solver.bluster.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/brianbubs/com.simplejcode.var.solver.brianbubs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/floodit/com.simplejcode.var.solver.floodit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/minesweeper/com.simplejcode.var.solver.minesweeper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/project.solvers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/proover/com.simplejcode.var.solver.proover.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/simplepoker/com.simplejcode.var.solver.simplepoker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/spamdetector/com.simplejcode.var.solver.spamdetector.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/sudoku/com.simplejcode.var.solver.sudoku.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/tester/com.simplejcode.var.solver.tester.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/solvers/tetris/com.simplejcode.var.solver.tetris.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/game-admin/com.simplejcode.var.table-games.game-admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/game-base/com.simplejcode.var.table-games.game-base.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/game-client/com.simplejcode.var.table-games.game-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/game-controller/com.simplejcode.var.table-games.game-controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/game-server/com.simplejcode.var.table-games.game-server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/checkers-client/com.simplejcode.var.table-games.checkers-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/checkers-controller/com.simplejcode.var.table-games.checkers-controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/chess-client/com.simplejcode.var.table-games.chess-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/chess-controller/com.simplejcode.var.table-games.chess-controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/domino-base/com.simplejcode.var.table-games.domino-base.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/domino-client/com.simplejcode.var.table-games.domino-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/domino-controller/com.simplejcode.var.table-games.domino-controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/gomoku-client/com.simplejcode.var.table-games.gomoku-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/gomoku-controller/com.simplejcode.var.table-games.gomoku-controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/joker-client/com.simplejcode.var.table-games.joker-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/joker-controller/com.simplejcode.var.table-games.joker-controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/poker-client/com.simplejcode.var.table-games.poker-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/poker-controller/com.simplejcode.var.table-games.poker-controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/games/project.table-games.games.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/table-games/project.table-games.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tcutils/com.simplejcode.var.tcutils.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.build/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.out/" />
-    <ignored path="$PROJECT_DIR$/billiard/.build/" />
     <ignored path="$PROJECT_DIR$/billiard/.gradle/" />
-    <ignored path="$PROJECT_DIR$/billiard/.idea/" />
-    <ignored path="$PROJECT_DIR$/billiard/.out/" />
-    <ignored path="$PROJECT_DIR$/math/.build/" />
+    <ignored path="$PROJECT_DIR$/command-runner/.gradle/" />
+    <ignored path="$PROJECT_DIR$/exam-checker/.gradle/" />
+    <ignored path="$PROJECT_DIR$/exam-tools/.gradle/" />
+    <ignored path="$PROJECT_DIR$/excel-reader/.gradle/" />
+    <ignored path="$PROJECT_DIR$/graphpainter/.gradle/" />
+    <ignored path="$PROJECT_DIR$/loto/.gradle/" />
     <ignored path="$PROJECT_DIR$/math/.gradle/" />
-    <ignored path="$PROJECT_DIR$/math/.idea/" />
-    <ignored path="$PROJECT_DIR$/math/.out/" />
-    <ignored path="$PROJECT_DIR$/skileton/.build/" />
+    <ignored path="$PROJECT_DIR$/onjob-client/.gradle/" />
+    <ignored path="$PROJECT_DIR$/palette-visualizer/.gradle/" />
+    <ignored path="$PROJECT_DIR$/pchallenge/.gradle/" />
+    <ignored path="$PROJECT_DIR$/queuemng/.gradle/" />
     <ignored path="$PROJECT_DIR$/skileton/.gradle/" />
-    <ignored path="$PROJECT_DIR$/skileton/.idea/" />
-    <ignored path="$PROJECT_DIR$/skileton/.out/" />
-    <ignored path="$PROJECT_DIR$/tcutils/.build/" />
+    <ignored path="$PROJECT_DIR$/solvers/.gradle/" />
+    <ignored path="$PROJECT_DIR$/table-games/.gradle/" />
     <ignored path="$PROJECT_DIR$/tcutils/.gradle/" />
-    <ignored path="$PROJECT_DIR$/tcutils/.idea/" />
-    <ignored path="$PROJECT_DIR$/tcutils/.out/" />
     <ignored path="$PROJECT_DIR$/pchallenge/client/.gradle/" />
     <ignored path="$PROJECT_DIR$/pchallenge/common/.gradle/" />
     <ignored path="$PROJECT_DIR$/pchallenge/server/.gradle/" />
     <ignored path="$PROJECT_DIR$/pchallenge/testers/.gradle/" />
-    <ignored path="$PROJECT_DIR$/pchallenge/.gradle/" />
-    <ignored path="$PROJECT_DIR$/solvers/.gradle/" />
+    <ignored path="$PROJECT_DIR$/queuemng/client/.gradle/" />
+    <ignored path="$PROJECT_DIR$/queuemng/server/.gradle/" />
     <ignored path="$PROJECT_DIR$/solvers/bluster/.gradle/" />
     <ignored path="$PROJECT_DIR$/solvers/brianbubs/.gradle/" />
     <ignored path="$PROJECT_DIR$/solvers/floodit/.gradle/" />
@@ -89,10 +175,6 @@
     <ignored path="$PROJECT_DIR$/solvers/sudoku/.gradle/" />
     <ignored path="$PROJECT_DIR$/solvers/tester/.gradle/" />
     <ignored path="$PROJECT_DIR$/solvers/tetris/.gradle/" />
-    <ignored path="$PROJECT_DIR$/table-games/.build/" />
-    <ignored path="$PROJECT_DIR$/table-games/.gradle/" />
-    <ignored path="$PROJECT_DIR$/table-games/.idea/" />
-    <ignored path="$PROJECT_DIR$/table-games/.out/" />
     <ignored path="$PROJECT_DIR$/table-games/game-admin/.gradle/" />
     <ignored path="$PROJECT_DIR$/table-games/game-base/.gradle/" />
     <ignored path="$PROJECT_DIR$/table-games/game-client/.gradle/" />
@@ -112,37 +194,15 @@
     <ignored path="$PROJECT_DIR$/table-games/games/joker-controller/.gradle/" />
     <ignored path="$PROJECT_DIR$/table-games/games/poker-client/.gradle/" />
     <ignored path="$PROJECT_DIR$/table-games/games/poker-controller/.gradle/" />
-    <ignored path="$PROJECT_DIR$/command-runner/.gradle/" />
-    <ignored path="$PROJECT_DIR$/exam-checker/.gradle/" />
-    <ignored path="$PROJECT_DIR$/exam-tools/.gradle/" />
-    <ignored path="$PROJECT_DIR$/palette-visualizer/.gradle/" />
-    <ignored path="$PROJECT_DIR$/examchecker/.gradle/" />
-    <ignored path="$PROJECT_DIR$/graphpainter/.gradle/" />
-    <ignored path="$PROJECT_DIR$/loto/.gradle/" />
-    <ignored path="$PROJECT_DIR$/onjob-client/.gradle/" />
-    <ignored path="$PROJECT_DIR$/queuemng/.gradle/" />
-    <ignored path="$PROJECT_DIR$/queuemng/client/.gradle/" />
-    <ignored path="$PROJECT_DIR$/queuemng/server/.gradle/" />
-    <ignored path="$PROJECT_DIR$/excel-reader/.gradle/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -152,157 +212,15 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/table-games/game-server">
+        <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <task path="$PROJECT_DIR$/excel-reader">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/onjob-client">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="project" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>processor.w</find>
-      <find>minError</find>
-      <find>1e9</find>
-      <find>5</find>
-      <find>P20</find>
-      <find>system.out</find>
-      <find>minError =</find>
-      <find>minError = 4</find>
-      <find>minError = 5</find>
-      <find>minError = 6</find>
-      <find>minError = 7</find>
-      <find>minError = 9</find>
-      <find>graphic_to</find>
-      <find>GRaphicUtils.pause</find>
-      <find>new Random</find>
-      <find>pokerTable.</find>
-      <find>shuff</find>
-      <find>.getConstructor().newInstance()</find>
-      <find>lombok</find>
-      <find>ThreadUtils.pause</find>
-      <find>processabou</find>
-      <find>actiononab</find>
-      <find>onabou</find>
-      <find>AudioS</find>
-      <find>PropertyMa</find>
-      <find>proper</find>
-      <find>SoundMa</find>
-      <find>PropertyManager</find>
-      <find>actionona</find>
-      <find>hooseFile</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>.getConstructor().newInstance()</replace>
-      <replace>'table-games:</replace>
-      <replace>project(':table-games:</replace>
-      <replace>games:</replace>
-      <replace>getConstructor().newInstance()</replace>
-      <replace>Rect</replace>
-      <replace>compile.extendsFrom common_misc</replace>
-      <replace>compile.extendsFrom common_net_tools</replace>
-      <replace>compile.extendsFrom common_graphic_tools</replace>
-      <replace>compile.extendsFrom common_audio_video_tools</replace>
-      <replace>compile.extendsFrom common_logical_analyzer</replace>
-      <replace>&quot;,\n&quot;</replace>
-      <replace>)</replace>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\ika\projects\Various\project\table-games</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/natroshvili/implementation.java" />
-        <option value="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/ujmajuridze/ComputerPlayer.java" />
-        <option value="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/students/kote/PlayerKote.java" />
-        <option value="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/xidasheli/allWays.java" />
-        <option value="$PROJECT_DIR$/skileton/build.gradle" />
-        <option value="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/eakhv/FloodIt.java" />
-        <option value="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/lgure/Graph.java" />
-        <option value="$PROJECT_DIR$/table-games/games/gomoku-controller/src/ika/games/gomoku/controller/GomokuLogic.java" />
-        <option value="$PROJECT_DIR$/table-games/games/gomoku-client/src/ika/games/gomoku/client/GomokuClient.java" />
-        <option value="$PROJECT_DIR$/table-games/games/gomoku-client/build.gradle" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/excel-reader/build.gradle" />
-        <option value="$PROJECT_DIR$/excel-reader/src/OnJobContactLoader.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/ExcelReade.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/RecordInput.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/InOutRecord.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/processor/excel/ExcelIO1.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/ExcelIO1.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/DayRecord.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/ExcelIO.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/proc/ExcelIO.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PaperProcessor2.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/processor/IPaperDefinition.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/processor/div/DivProcessor.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/model/PaperDivType.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/model/PaperDivModel.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/model/PaperModel.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/core/Constants.java" />
-        <option value="$PROJECT_DIR$/onjob-client/build.gradle" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/model/TestDivModel.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/model/TestModel.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerHelper.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" />
-        <option value="$PROJECT_DIR$/exam-checker/build.gradle" />
-        <option value="$PROJECT_DIR$/exam-checker/resources/application.properties" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PointPatternMatcher.java" />
-        <option value="$PROJECT_DIR$/excel-reader/src/proc/DataParser.java" />
-        <option value="$PROJECT_DIR$/onjob-client/src/onjobclient/OnJobContactLoader.java" />
-        <option value="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/controller/Player.java" />
-        <option value="$PROJECT_DIR$/solvers/simplepoker/build.gradle" />
-        <option value="$PROJECT_DIR$/palette-visualizer/src/PaletteVisualizer.java" />
-        <option value="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/gui/PokerTable.java" />
-        <option value="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/controller/SimplePoker.java" />
-        <option value="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/controller/SimplePokerController.java" />
-        <option value="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/core/PropertyManager.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerController.java" />
-        <option value="$PROJECT_DIR$/billiard/src/pool/utils/SoundManager.java" />
-        <option value="$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PaperProcessor.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -316,53 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project" type="58d84e3e:PackageViewProjectNode" />
-              <item name="com.simplejcode" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="project" type="58d84e3e:PackageViewProjectNode" />
-              <item name="com.simplejcode" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tools" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="project" type="58d84e3e:PackageViewProjectNode" />
-              <item name="com.simplejcode" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tools" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="com.simplejcode.tools.exam-checker" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="project" type="58d84e3e:PackageViewProjectNode" />
-              <item name="com.simplejcode" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tools" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="com.simplejcode.tools.exam-checker" type="616d4139:PackageViewModuleNode" />
-              <item name="examchecker" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="project" type="58d84e3e:PackageViewProjectNode" />
-              <item name="com.simplejcode" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tools" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="com.simplejcode.tools.exam-checker" type="616d4139:PackageViewModuleNode" />
-              <item name="examchecker" type="1f31426a:PackageElementNode" />
-              <item name="processor" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="project" type="58d84e3e:PackageViewProjectNode" />
-              <item name="com.simplejcode" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="tools" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="com.simplejcode.tools.exam-checker" type="616d4139:PackageViewModuleNode" />
-              <item name="examchecker" type="1f31426a:PackageElementNode" />
-              <item name="processor" type="1f31426a:PackageElementNode" />
-              <item name="paper" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -374,37 +245,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="აპპ&#9;FILE&#9;file://D:/ika/projects/project/exam-checker/resources/application.properties&#10;Geom&#9;FILE&#9;jar://C:/Users/Irakli/.m2/repository/com/simplejcode/commons/misc/1.0/misc-1.0.jar!/com/simplejcode/commons/misc/GeometryUtils.class&#10;app&#9;FILE&#9;file://D:/ika/projects/project/exam-checker/resources/application.properties&#10;contr&#9;FILE&#9;file://D:/ika/projects/project/exam-checker/src/examchecker/core/ExamCheckerController.java&#10;excelre&#9;FILE&#9;file://D:/ika/projects/project/excel-reader/src/ExcelReader.java&#10;excelio&#9;FILE&#9;file://D:/ika/projects/project/excel-reader/src/ExcelIO.java&#10;excel&#9;FILE&#9;file://D:/ika/projects/project/excel-reader/src/ExcelReader.java&#10;gomok&#9;PSI&#9;JAVA://ika.games.gomoku.client.GomokuClient&#10;proceexe&#9;FILE&#9;file://D:/ika/projects/project/command-runner/src/ProcessExecutor.java&#10;onjob&#9;FILE&#9;file://D:/ika/projects/project/onjob-client/src/OnJobContactLoader.java&#10;palett&#9;FILE&#9;file://D:/ika/projects/project/palette-visualizer/src/PaletteVisualizer.java&#10;examche&#9;FILE&#9;file://D:/ika/projects/project/exam-checker/src/examchecker/core/ExamCheckerController.java&#10;imagepro&#9;PSI&#9;JAVA://com.simplejcode.commons.av.improc.ImageProcessor&#10;luc&#9;FILE&#9;file://D:/ika/projects/project/exam-tools/src/LucidaRec.java&#10;აპპლ&#9;PSI&#9;JAVA://floodit.solver.students.lgure.Application" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="C:/soft/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552684122136" />
-    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/solvers/simplepoker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="simplepoker.controller" />
-      <recent name="examchecker.processor.paper" />
-      <recent name="examchecker.processor.excel" />
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ika\projects\project\queuemng\server" />
-      <recent name="D:\ika\projects\project\queuemng\client" />
-      <recent name="D:\ika\projects\project\graphpainter" />
-      <recent name="D:\ika\projects\project\loto" />
-      <recent name="D:\ika\projects\project\onjob-client" />
-    </key>
+    <property name="project.structure.side.proportion" value="0.37356323" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -418,58 +273,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.build">
+  <component name="RunManager" selected="Application.CommandRunner">
+    <configuration name="CommandRunner" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CommandRunner" />
+      <module name="project.command-runner" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/command-runner" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="exam-checker" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="examchecker.core.ExamCheckerController" />
-      <module name="com.simplejcode.tools.exam-checker" />
-      <option name="PROGRAM_PARAMETERS" value="debug" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/exam-checker" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="excel-reader" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ExcelReader" />
-      <module name="com.simplejcode.tools.excel-reader" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/excel-reader" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="game-server" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ika.games.gameserver.Server" />
-      <module name="com.simplejcode.var.table-games.game-server" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/table-games/game-server" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gomoku" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ika.games.gomoku.client.GomokuClient" />
-      <module name="com.simplejcode.var.table-games.gomoku-client" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/table-games/games/gomoku-client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="onjob-client" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="onjobclient.OnJobContactLoader" />
-      <module name="com.simplejcode.tools.onjob-client" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/onjob-client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="simplepoker" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="simplepoker.controller.SimplePoker" />
-      <module name="com.simplejcode.var.solver.simplepoker" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/solvers/simplepoker" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -510,727 +324,58 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.simplepoker" />
-      <item itemvalue="Application.onjob-client" />
-      <item itemvalue="Application.excel-reader" />
-      <item itemvalue="Application.exam-checker" />
-      <item itemvalue="Application.game-server" />
-      <item itemvalue="Application.gomoku" />
+      <item itemvalue="Application.CommandRunner" />
       <item itemvalue="Gradle.build" />
     </list>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="612f2a0c-0fbd-4fda-92ca-095f9a4e7664" name="Default" comment="" />
-      <created>1539026878029</created>
+      <changelist id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="" />
+      <created>1558874626465</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1539026878029</updated>
-      <workItem from="1539026880872" duration="1481000" />
-      <workItem from="1539028398517" duration="86000" />
-      <workItem from="1539028514678" duration="4776000" />
-      <workItem from="1539103553823" duration="9404000" />
-      <workItem from="1539150187836" duration="3489000" />
-      <workItem from="1540023580641" duration="108000" />
-      <workItem from="1542453487532" duration="9675000" />
-      <workItem from="1542607974263" duration="1813000" />
-      <workItem from="1543241355825" duration="2729000" />
-      <workItem from="1543297307688" duration="972000" />
-      <workItem from="1543298300284" duration="4944000" />
-      <workItem from="1543303656446" duration="2000" />
-      <workItem from="1543477527681" duration="73000" />
-      <workItem from="1543562239604" duration="7000" />
-      <workItem from="1544421403883" duration="2707000" />
-      <workItem from="1544447259150" duration="433000" />
-      <workItem from="1546761555057" duration="10267000" />
-      <workItem from="1546883999872" duration="470000" />
-      <workItem from="1546970731049" duration="1892000" />
-      <workItem from="1547142293291" duration="19345000" />
-      <workItem from="1547279165325" duration="13575000" />
-      <workItem from="1547377463260" duration="1314000" />
-      <workItem from="1547379533984" duration="236000" />
-      <workItem from="1547382161394" duration="36000" />
-      <workItem from="1547386396389" duration="47000" />
-      <workItem from="1548704692094" duration="3578000" />
-      <workItem from="1548874562945" duration="100000" />
-      <workItem from="1550602759340" duration="4602000" />
-      <workItem from="1550857013903" duration="9762000" />
-      <workItem from="1552149083632" duration="472000" />
-      <workItem from="1552149790163" duration="68000" />
-      <workItem from="1552150552274" duration="220000" />
-      <workItem from="1552151066369" duration="47000" />
-      <workItem from="1552151174031" duration="5000" />
-      <workItem from="1552151221808" duration="21000" />
-      <workItem from="1552151284485" duration="53000" />
-      <workItem from="1552153050429" duration="163000" />
-      <workItem from="1552154567380" duration="218000" />
-      <workItem from="1552419313631" duration="51000" />
-      <workItem from="1552419676581" duration="17000" />
-      <workItem from="1552679869840" duration="267000" />
-      <workItem from="1552681564417" duration="45000" />
-      <workItem from="1552681619853" duration="256000" />
-      <workItem from="1552682122927" duration="2217000" />
-      <workItem from="1552684646787" duration="40000" />
-      <workItem from="1552766581883" duration="631000" />
-      <workItem from="1552839688401" duration="134000" />
-      <workItem from="1553941629986" duration="246000" />
-      <workItem from="1553941887736" duration="88000" />
+      <updated>1558874626465</updated>
+      <workItem from="1558874628285" duration="392000" />
     </task>
-    <task id="LOCAL-00001" summary="gradle moved">
-      <created>1553941972391</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1553941972391</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113182000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="392000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38108882" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32791328" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46567968" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928367" weight="0.5121951" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3257066" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007163" side_tool="true" weight="0.62059623" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Build" order="11" weight="0.41666666" />
-      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.47696477" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.48373982" />
-      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.32974428" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.3295129" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3295129" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="gradle moved" />
-    <option name="LAST_COMMIT_MESSAGE" value="gradle moved" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/AppData/Local/Temp/7zO85830128/OnJobClient.class</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>ind&gt;300</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="watch">
-      <expression>
-        <expression-string>postRequest(&quot;http://onjob.ge/Home/CreateClient&quot;, params.toString(), cookie)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.sqrt(d1/d2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>d1/d2</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.pow(Math.abs(d1 - d2) / Math.min(d1, d2),1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.pow(Math.abs(d1 - d2) / Math.min(d1, d2),0.5)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.pow(Math.abs(d1 - d2) / Math.min(d1, d2),2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.pow(Math.abs(d1 - d2) / Math.min(d1, d2))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.abs(d1 - d2) / Math.min(d1, d2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.hypot(X-bx2, Y-by2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.hypot(bx1 - bx2, by1 - by2)/Math.hypot(bx1 - ox, by1 - oy)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/repository/com/simplejcode/commons/misc/1.0/misc-1.0.jar!/com/simplejcode/commons/misc/GeometryUtils.class" />
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/DetectionMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/palette-visualizer/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skileton/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table-games/game-admin/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/data/models/P20.paper">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PointPatternMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onjob-client/src/onjobclient/OnJobContactLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excel-reader/src/proc/DataParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excel-reader/src/proc/ExcelIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO85830128/OnJobClient.class" />
-    <entry file="file://$PROJECT_DIR$/onjob-client/resources/init.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO8586335B/OnJobContactLoader.class" />
-    <entry file="file://$PROJECT_DIR$/onjob-client/src/onjobclient/OnJobClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onjob-client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="3350" column="16" selection-start-line="3350" selection-start-column="16" selection-end-line="3350" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/palette-visualizer/src/PaletteVisualizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="220" column="32" selection-start-line="220" selection-start-column="32" selection-end-line="220" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/SmarterThanSimplePlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/Caller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/PredictablePlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/controller/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/SimplePlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/SimpleAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/students/julberta/testPlayer5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/students/kikola/MyPlayer3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/students/barbi/MyPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/gui/PokerTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/students/dioba/DemeDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/player/students/dioba/MainPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/controller/SimplePoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/controller/SimplePokerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solvers/sudoku/src/sudoku/SudokuTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skileton/src/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-          <folding>
-            <element signature="docComment;class#Main#0" />
-            <element signature="method#createMainFrame#0;class#Main#0" />
-            <element signature="method#setContentPane#0;class#Main#0" />
-            <element signature="method#processOpenVideo#0;class#Main#0" />
-            <element signature="e#2438#2469#1" />
-            <element signature="e#2482#2817#0" />
-            <element signature="e#2512#2554#1" />
-            <element signature="e#2838#2882#0" />
-            <element signature="method#processProcessImages#0;class#Main#0" />
-            <element signature="e#2943#3368#0" />
-            <element signature="e#3046#3358#1" />
-            <element signature="e#3101#3344#1" />
-            <element signature="e#3391#3435#0" />
-            <element signature="method#processWriteVideo#0;class#Main#0" />
-            <element signature="method#processPause#0;class#Main#0" />
-            <element signature="method#processStart#0;class#Main#0" />
-            <element signature="method#show#0;class#Main#0" />
-            <element signature="e#4399#4550#1" />
-            <element signature="e#4417#4456#0" />
-            <element signature="e#4488#4540#0" />
-            <element signature="method#mouseDragged#0;class#Main#0" />
-            <element signature="e#4621#4858#1" />
-            <element signature="method#mouseMoved#0;class#Main#0" />
-            <element signature="method#main#0;class#Main#0" />
-            <element signature="method#getImage#0;class#Main#0" />
-            <element signature="e#5258#5321#0" />
-            <element signature="e#5344#5380#0" />
-            <element signature="method#getResource#0;class#Main#0" />
-            <element signature="e#5457#5628#0" />
-            <element signature="e#5649#5718#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/core/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/core/PropertyManager.java" />
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/processor/paper/PaperProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="568" lean-forward="true" selection-start-line="568" selection-end-line="568" />
-          <folding>
-            <element signature="e#756#788#0" />
-            <element signature="e#1621#2289#0" />
-            <element signature="e#2295#3582#0" />
-            <element signature="e#3129#3460#0" />
-            <element signature="e#3713#5210#0" />
-            <element signature="e#4109#4257#1" />
-            <element signature="e#5346#6584#0" />
-            <element signature="e#5594#6125#1" />
-            <element signature="e#5708#5804#1" />
-            <element signature="e#5886#5950#1" />
-            <element signature="e#5988#6026#1" />
-            <element signature="e#6167#6272#1" />
-            <element signature="e#6590#7045#0" />
-            <element signature="e#6706#6870#1" />
-            <element signature="e#6955#7039#1" />
-            <element signature="e#7178#8184#0" />
-            <element signature="e#7423#7640#1" />
-            <element signature="e#7545#7630#1" />
-            <element signature="e#7691#8153#1" />
-            <element signature="e#7770#8143#1" />
-            <element signature="e#7899#8129#1" />
-            <element signature="e#7946#8014#1" />
-            <element signature="e#8020#8086#1" />
-            <element signature="e#8190#10357#0" />
-            <element signature="e#8357#8393#1" />
-            <element signature="e#8549#10328#1" />
-            <element signature="e#8598#10318#1" />
-            <element signature="e#8692#8741#1" />
-            <element signature="e#8838#10304#1" />
-            <element signature="e#8964#9021#1" />
-            <element signature="e#9145#10286#1" />
-            <element signature="e#9290#9355#1" />
-            <element signature="e#9409#9687#1" />
-            <element signature="e#9586#9661#1" />
-            <element signature="e#10060#10263#1" />
-            <element signature="e#10133#10237#1" />
-            <element signature="e#10501#10817#0" />
-            <element signature="e#10628#10685#1" />
-            <element signature="e#10725#10764#1" />
-            <element signature="e#10914#11673#0" />
-            <element signature="e#11112#11222#1" />
-            <element signature="e#11360#11469#1" />
-            <element signature="e#11583#11622#1" />
-            <element signature="e#11679#12260#0" />
-            <element signature="e#11848#12234#1" />
-            <element signature="e#12357#14235#0" />
-            <element signature="e#12535#13446#1" />
-            <element signature="e#12629#13436#1" />
-            <element signature="e#12798#13236#1" />
-            <element signature="e#12985#13039#1" />
-            <element signature="e#13299#13347#1" />
-            <element signature="e#13499#14146#1" />
-            <element signature="e#13697#13971#1" />
-            <element signature="e#13733#13957#1" />
-            <element signature="e#13829#13939#1" />
-            <element signature="e#13995#14136#1" />
-            <element signature="e#14241#14647#0" />
-            <element signature="e#14390#14621#1" />
-            <element signature="e#14508#14583#1" />
-            <element signature="e#14653#15047#0" />
-            <element signature="e#14794#14838#1" />
-            <element signature="e#14924#14992#1" />
-            <element signature="e#15053#15315#0" />
-            <element signature="e#15446#16448#0" />
-            <element signature="e#15661#15975#1" />
-            <element signature="e#16177#16371#1" />
-            <element signature="e#16584#17006#0" />
-            <element signature="e#17012#18720#0" />
-            <element signature="e#17423#17611#1" />
-            <element signature="e#17501#17601#1" />
-            <element signature="e#17760#17877#1" />
-            <element signature="e#18578#18693#1" />
-            <element signature="e#18817#19022#0" />
-            <element signature="e#19028#19336#0" />
-            <element signature="e#19342#19636#0" />
-            <element signature="e#19458#19630#1" />
-            <element signature="e#19500#19620#1" />
-            <element signature="e#19541#19606#1" />
-            <element signature="e#19642#20017#0" />
-            <element signature="e#19739#20011#1" />
-            <element signature="e#19793#20001#1" />
-            <element signature="e#19851#19987#1" />
-            <element signature="e#19896#19969#1" />
-            <element signature="e#20023#20449#0" />
-            <element signature="e#20106#20443#1" />
-            <element signature="e#20160#20433#1" />
-            <element signature="e#20218#20419#1" />
-            <element signature="e#20320#20401#1" />
-            <element signature="e#20455#20688#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/billiard/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/billiard/src/pool/utils/SoundManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
-          <folding>
-            <element signature="method#createAudioClips#0;class#SoundManager#0" />
-            <element signature="class#MyClip#0;class#SoundManager#0" />
-            <element signature="method#MyClip#0;class#MyClip#0;class#SoundManager#0" />
-            <element signature="e#1916#2193#0" />
-            <element signature="e#2214#2266#0" />
-            <element signature="method#play#0;class#MyClip#0;class#SoundManager#0" />
-            <element signature="e#2405#2629#0" />
-            <element signature="e#2650#2718#0" />
-            <element signature="method#stop#0;class#MyClip#0;class#SoundManager#0" />
-            <element signature="e#2828#2877#1" />
-            <element signature="method#SoundManager#0;class#SoundManager#0" />
-            <element signature="method#loadResource#0;class#SoundManager#0" />
-            <element signature="method#setMusicFlag#0;class#SoundManager#0" />
-            <element signature="e#3610#3837#1" />
-            <element signature="e#3663#3827#1" />
-            <element signature="e#3699#3755#1" />
-            <element signature="e#3761#3813#1" />
-            <element signature="method#play#1;class#SoundManager#0" />
-            <element signature="e#4004#4035#1" />
-            <element signature="method#dispose#0;class#SoundManager#0" />
-            <element signature="e#4246#4282#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excel-reader/src/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="method#init#0;class#ExcelReader#0" />
-            <element signature="method#actionOnAbout#0;class#ExcelReader#0" />
-            <element signature="method#handle#0;class#ExcelReader#0" />
-            <element signature="method#reloadSettings#0;class#ExcelReader#0" />
-            <element signature="method#saveSettings#0;class#ExcelReader#0" />
-            <element signature="method#loadFile#0;class#ExcelReader#0" />
-            <element signature="e#2669#2700#1" />
-            <element signature="method#export#0;class#ExcelReader#0" />
-            <element signature="e#3207#3238#1" />
-            <element signature="method#main#0;class#ExcelReader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam-checker/src/examchecker/core/ExamCheckerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-          <folding>
-            <element signature="method#main#0;class#ExamCheckerController#0" />
-            <element signature="docComment;field#frame#0;class#ExamCheckerController#0" />
-            <element signature="docComment;field#helper#0;class#ExamCheckerController#0" />
-            <element signature="method#init#0;class#ExamCheckerController#0" />
-            <element signature="method#actionOnAbout#0;class#ExamCheckerController#0" />
-            <element signature="method#handle#0;class#ExamCheckerController#0" />
-            <element signature="class#CustomCheckFailureException#0;class#ExamCheckerController#0" />
-            <element signature="method#loadPaperModel#0;class#ExamCheckerController#0" />
-            <element signature="method#exportPaperModel#0;class#ExamCheckerController#0" />
-            <element signature="method#loadTestModel#0;class#ExamCheckerController#0" />
-            <element signature="method#exportTestModel#0;class#ExamCheckerController#0" />
-            <element signature="method#repaint#0;class#ExamCheckerController#0" />
-            <element signature="method#checkPapers#0;class#ExamCheckerController#0" />
-            <element signature="method#renamePapers#0;class#ExamCheckerController#0" />
-            <element signature="method#exportToExcel#0;class#ExamCheckerController#0" />
-            <element signature="method#showBlackWhiteImage#0;class#ExamCheckerController#0" />
-            <element signature="method#debugPaper#0;class#ExamCheckerController#0" />
-            <element signature="method#showLog#0;class#ExamCheckerController#0" />
-            <element signature="method#checkModel#0;class#ExamCheckerController#0" />
-            <element signature="method#checkPaperModel#0;class#ExamCheckerController#0" />
-            <element signature="method#checkTestModel#0;class#ExamCheckerController#0" />
-            <element signature="method#checkResults#0;class#ExamCheckerController#0" />
-            <element signature="method#openFileByProperty#0;class#ExamCheckerController#0" />
-            <element signature="method#openFileByProperty#1;class#ExamCheckerController#0" />
-            <element signature="method#openDirectoryByProperty#0;class#ExamCheckerController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/repository/com/simplejcode/commons/graphic-tools/1.0/graphic-tools-1.0.jar!/com/simplejcode/commons/gui/GraphicUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="385" column="23" selection-start-line="385" selection-start-column="23" selection-end-line="385" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1260,7 +405,6 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>config</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1272,7 +416,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1284,11 +428,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>tools|simplejcode</last-edited>
+          <last-edited>exam-tools|project</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37356323" />
               </list>
             </option>
           </splitter-proportions>
@@ -1308,11 +452,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
+          <last-edited>Gradle: commons-codec:commons-codec:1.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37356323" />
               </list>
             </option>
           </splitter-proportions>
