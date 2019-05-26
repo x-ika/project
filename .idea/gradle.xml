@@ -9,25 +9,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/billiard" />
-            <option value="$PROJECT_DIR$/command-runner" />
-            <option value="$PROJECT_DIR$/exam-checker" />
-            <option value="$PROJECT_DIR$/exam-tools" />
-            <option value="$PROJECT_DIR$/excel-reader" />
-            <option value="$PROJECT_DIR$/graphpainter" />
-            <option value="$PROJECT_DIR$/loto" />
-            <option value="$PROJECT_DIR$/math" />
-            <option value="$PROJECT_DIR$/onjob-client" />
-            <option value="$PROJECT_DIR$/palette-visualizer" />
             <option value="$PROJECT_DIR$/pchallenge" />
             <option value="$PROJECT_DIR$/pchallenge/client" />
             <option value="$PROJECT_DIR$/pchallenge/common" />
             <option value="$PROJECT_DIR$/pchallenge/server" />
             <option value="$PROJECT_DIR$/pchallenge/testers" />
-            <option value="$PROJECT_DIR$/queuemng" />
-            <option value="$PROJECT_DIR$/queuemng/client" />
-            <option value="$PROJECT_DIR$/queuemng/server" />
-            <option value="$PROJECT_DIR$/skileton" />
             <option value="$PROJECT_DIR$/solvers" />
             <option value="$PROJECT_DIR$/solvers/bluster" />
             <option value="$PROJECT_DIR$/solvers/brianbubs" />
@@ -59,7 +45,23 @@
             <option value="$PROJECT_DIR$/table-games/games/joker-controller" />
             <option value="$PROJECT_DIR$/table-games/games/poker-client" />
             <option value="$PROJECT_DIR$/table-games/games/poker-controller" />
-            <option value="$PROJECT_DIR$/tcutils" />
+            <option value="$PROJECT_DIR$/tools" />
+            <option value="$PROJECT_DIR$/tools/command-runner" />
+            <option value="$PROJECT_DIR$/tools/exam-checker" />
+            <option value="$PROJECT_DIR$/tools/exam-tools" />
+            <option value="$PROJECT_DIR$/tools/excel-reader" />
+            <option value="$PROJECT_DIR$/tools/onjob-client" />
+            <option value="$PROJECT_DIR$/tools/palette-visualizer" />
+            <option value="$PROJECT_DIR$/tools/queuemng" />
+            <option value="$PROJECT_DIR$/tools/queuemng/client" />
+            <option value="$PROJECT_DIR$/tools/queuemng/server" />
+            <option value="$PROJECT_DIR$/var" />
+            <option value="$PROJECT_DIR$/var/billiard" />
+            <option value="$PROJECT_DIR$/var/graphpainter" />
+            <option value="$PROJECT_DIR$/var/loto" />
+            <option value="$PROJECT_DIR$/var/math" />
+            <option value="$PROJECT_DIR$/var/skileton" />
+            <option value="$PROJECT_DIR$/var/tcutils" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

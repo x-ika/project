@@ -1,22 +1,22 @@
 rootProject.name = 'project'
 
 // various
-include 'billiard'
-include 'skileton'
-include 'tcutils'
-include 'math'
-include 'loto'
-include 'graphpainter'
+include 'var:billiard'
+include 'var:skileton'
+include 'var:tcutils'
+include 'var:math'
+include 'var:loto'
+include 'var:graphpainter'
 
 // tools
-include 'command-runner'
-include 'palette-visualizer'
-include 'exam-checker'
-include 'exam-tools'
-include 'excel-reader'
-include 'onjob-client'
-include 'queuemng:client'
-include 'queuemng:server'
+include 'tools:command-runner'
+include 'tools:palette-visualizer'
+include 'tools:exam-checker'
+include 'tools:exam-tools'
+include 'tools:excel-reader'
+include 'tools:onjob-client'
+include 'tools:queuemng:client'
+include 'tools:queuemng:server'
 
 // programming challenge
 include 'pchallenge:common'
