@@ -1,7 +1,8 @@
 import java.io.File;
 import java.util.*;
 
-public class Mover {
+public class FileGrouping {
+
     public static void main(String[] args) {
 
         String dir = "d:/tmp";
@@ -27,4 +28,5 @@ public class Mover {
         }
 
     }
+
 }

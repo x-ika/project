@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="modules moved">
-      <change afterPath="$PROJECT_DIR$/var/zmsc/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/zmsc/src/MouseTest.java" afterDir="false" />
+    <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/math/src/Mover.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/zmsc/src/Mover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/zmsc/src/Mover.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/zmsc/src/FileGrouping.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.build/" />
@@ -128,10 +125,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/var/zmsc/src/Mover.java">
+        <entry file="file://$PROJECT_DIR$/var/zmsc/src/FileGrouping.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="119">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="method#main#0;class#Mover#0" />
+                <element signature="e#193#813#1" />
+                <element signature="e#728#802#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,10 +164,11 @@
       <list>
         <option value="$PROJECT_DIR$/tools/queuemng/client/build.gradle" />
         <option value="$PROJECT_DIR$/tools/queuemng/server/build.gradle" />
-        <option value="$PROJECT_DIR$/var/zmsc/src/Mover.java" />
         <option value="$PROJECT_DIR$/var/math/src/Mover.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/var/zmsc/src/PhotoGrouping.java" />
+        <option value="$PROJECT_DIR$/var/zmsc/src/Mover.java" />
+        <option value="$PROJECT_DIR$/var/zmsc/src/FileGrouping.java" />
       </list>
     </option>
   </component>
@@ -267,7 +270,7 @@
       </method>
     </configuration>
     <configuration name="group photos" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Mover" />
+      <option name="MAIN_CLASS_NAME" value="FileGrouping" />
       <module name="project.var.zmsc" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -325,7 +328,7 @@
       <workItem from="1558875505276" duration="296000" />
       <workItem from="1558875810072" duration="34000" />
       <workItem from="1558875908455" duration="829000" />
-      <workItem from="1558876757006" duration="237000" />
+      <workItem from="1558876757006" duration="995000" />
     </task>
     <task id="LOCAL-00001" summary="idea update">
       <created>1558875330573</created>
@@ -348,11 +351,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558876539971</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <created>1558877104348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558877104348</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1971000" />
+    <option name="totallyTimeSpent" value="2729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -395,7 +405,8 @@
     <MESSAGE value="idea update" />
     <MESSAGE value="modules moved" />
     <MESSAGE value="group ids fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="group ids fixed" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tools/queuemng/server/build.gradle">
@@ -456,10 +467,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/zmsc/src/Mover.java">
+    <entry file="file://$PROJECT_DIR$/var/zmsc/src/FileGrouping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="119">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="method#main#0;class#Mover#0" />
+            <element signature="e#193#813#1" />
+            <element signature="e#728#802#1" />
+          </folding>
         </state>
       </provider>
     </entry>
