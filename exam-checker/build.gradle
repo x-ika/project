@@ -3,11 +3,12 @@ group 'com.simplejcode.tools'
 configurations {
     testCompile.extendsFrom junit
 
+    compileOnly.extendsFrom lombok
+
     compile.extendsFrom common_misc
     compile.extendsFrom common_graphic_tools
     compile.extendsFrom common_audio_video_tools
 
-    compile.extendsFrom lombok
     compile.extendsFrom apache_config
     compile.extendsFrom google_gson
     compile.extendsFrom poi

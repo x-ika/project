@@ -46,19 +46,20 @@ subprojects {
     //-----------------------------------------------------------------------------------
     // JAVA
 
-    if (new File(projectDir, "build.gradle").exists()) {
+    if (!new File(projectDir, "build.gradle").exists()) {
+        return;
+    }
 
-        apply plugin: 'java'
-        sourceSets {
-            main.java.srcDirs = ['src']
-            //main.resources.srcDirs = ['resources']
-        }
+    apply plugin: 'java'
 
-        tasks.withType(JavaCompile) {
-            sourceCompatibility = '10'
-            targetCompatibility = '10'
-        }
+    sourceSets {
+        main.java.srcDirs = ['src']
+        //main.resources.srcDirs = ['resources']
+    }
 
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = '10'
+        targetCompatibility = '10'
     }
 
     //-----------------------------------------------------------------------------------
@@ -99,23 +100,24 @@ subprojects {
         common_audio_video_tools   'com.simplejcode.commons:audio-video-tools:1.0'
         common_logical_analyzer    'com.simplejcode.commons:logical-analyzer:1.0'
 
-        javax_media      'javax.media:jmf:2.1.1e'
+        javax_media        'javax.media:jmf:2.1.1e'
 
-        javax_xml_bind   'javax.xml.bind:jaxb-api:2.1'
-        javax_xml_bind   'com.sun.xml.bind:jaxb-impl:2.2.11'
-        javax_xml_bind   'com.sun.xml.bind:jaxb-core:2.2.11'
+        javax_xml_bind     'javax.xml.bind:jaxb-api:2.1'
+        javax_xml_bind     'com.sun.xml.bind:jaxb-impl:2.2.11'
+        javax_xml_bind     'com.sun.xml.bind:jaxb-core:2.2.11'
 
-        java_jna         'net.java.dev.jna:jna:4.0.0'
-        java_jna         'net.java.dev.jna:jna-platform:4.0.0'
+        java_jna           'net.java.dev.jna:jna:4.0.0'
+        java_jna           'net.java.dev.jna:jna-platform:4.0.0'
 
-        lombok           'org.projectlombok:lombok:1.18.2'
-        apache_config    'org.apache.commons:commons-configuration2:2.0'
-        google_gson      'com.google.code.gson:gson:2.8.5'
+        lombok             'org.projectlombok:lombok:1.18.8'
+        annotationProcessor('org.projectlombok:lombok:1.18.8')
+        apache_config      'org.apache.commons:commons-configuration2:2.0'
+        google_gson        'com.google.code.gson:gson:2.8.5'
 
-        doc4j            'org.docx4j:docx4j:2.8.1'
-        poi              'org.apache.poi:poi:4.0.1'
-        poi              'org.apache.poi:poi-ooxml:4.0.1'
-        imageproc        'com.drewnoakes:metadata-extractor:2.11.0'
+        doc4j              'org.docx4j:docx4j:2.8.1'
+        poi                'org.apache.poi:poi:4.0.1'
+        poi                'org.apache.poi:poi-ooxml:4.0.1'
+        imageproc          'com.drewnoakes:metadata-extractor:2.11.0'
 
     }
 
