@@ -1,7 +1,7 @@
 package ika.games.base.controller;
 
-import com.simplejcode.commons.misc.ArrayUtils;
-import com.simplejcode.commons.misc.structures.MersenneTwister;
+import com.simplejcode.commons.algo.ArrayUtils;
+import com.simplejcode.commons.misc.MersenneTwister;
 
 import java.util.*;
 

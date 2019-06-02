@@ -1,6 +1,6 @@
 package examchecker.processor.excel;
 
-import com.simplejcode.commons.misc.StreamUtils;
+import com.simplejcode.commons.misc.util.StreamUtils;
 import examchecker.core.Constants;
 import examchecker.processor.*;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;

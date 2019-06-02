@@ -1,6 +1,6 @@
 package tapi;
 
-import com.simplejcode.commons.misc.structures.DataReader;
+import com.simplejcode.commons.misc.DataReader;
 
 import java.io.*;
 import java.util.*;

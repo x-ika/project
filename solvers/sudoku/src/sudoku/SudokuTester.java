@@ -1,10 +1,9 @@
 package sudoku;
 
-import com.simplejcode.commons.misc.FileSystemUtils;
+import com.simplejcode.commons.misc.util.FileSystemUtils;
 import tester.*;
 
 import java.util.*;
-import java.util.List;
 
 import com.simplejcode.commons.gui.GraphicUtils;
 import sudoku.solver.IkasSolver;

@@ -68,6 +68,7 @@ subprojects {
     configurations {
         junit
 
+        common_algorithms
         common_misc
         common_net_tools
         common_db_tools
@@ -93,6 +94,7 @@ subprojects {
     dependencies {
         junit 'junit:junit:4.12'
 
+        common_algorithms          'com.simplejcode.commons:algorithms:1.0'
         common_misc                'com.simplejcode.commons:misc:1.0'
         common_net_tools           'com.simplejcode.commons:net-tools:1.0'
         common_db_tools            'com.simplejcode.commons:db-tools:1.0'

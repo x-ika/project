@@ -2,7 +2,7 @@ package ika.games.base.client;
 
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.*;
+import com.simplejcode.commons.misc.util.*;
 import com.simplejcode.commons.net.sockets.*;
 import com.simplejcode.commons.net.util.ByteMessageBuilder;
 import ika.games.base.*;

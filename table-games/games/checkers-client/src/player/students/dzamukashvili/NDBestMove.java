@@ -1,9 +1,7 @@
 package player.students.dzamukashvili;
 import main.*;
-import java.awt.print.Book;
+
 import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
 
 
 public class NDBestMove implements Player{

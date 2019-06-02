@@ -3,7 +3,8 @@ package examchecker.core;
 import examchecker.view.*;
 
 import com.simplejcode.commons.gui.*;
-import com.simplejcode.commons.misc.*;
+import com.simplejcode.commons.misc.PropertyManager;
+import com.simplejcode.commons.misc.util.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

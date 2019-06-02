@@ -4,7 +4,6 @@ import floodit.solver.Solver;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
 
 public class MySolver implements Solver {
 	public int[] solve(int[][] board) {

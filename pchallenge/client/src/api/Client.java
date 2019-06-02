@@ -15,7 +15,7 @@ import gui.*;
 import com.simplejcode.commons.gui.GraphicUtils;
 import com.simplejcode.commons.gui.DesktopFrame;
 import com.simplejcode.commons.gui.AboutDialogPanel;
-import com.simplejcode.commons.misc.ReflectionUtils;
+import com.simplejcode.commons.misc.util.ReflectionUtils;
 import message.ContestStatus;
 import message.Login;
 import message.Request;

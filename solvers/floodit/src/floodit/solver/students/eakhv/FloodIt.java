@@ -3,10 +3,6 @@ package floodit.solver.students.eakhv;
 import floodit.solver.Solver;
 
 import java.util.*;
-import java.io.*;
-
-import javax.swing.Spring;
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
 
 public class FloodIt implements Solver {
 	private int n, m, k;

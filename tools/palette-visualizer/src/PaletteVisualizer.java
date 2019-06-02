@@ -1,6 +1,6 @@
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.*;
+import com.simplejcode.commons.misc.util.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

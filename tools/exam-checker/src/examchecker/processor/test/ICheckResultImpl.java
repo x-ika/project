@@ -1,6 +1,6 @@
 package examchecker.processor.test;
 
-import com.simplejcode.commons.misc.StreamUtils;
+import com.simplejcode.commons.misc.util.StreamUtils;
 import examchecker.processor.ITestDiv;
 import examchecker.processor.ICheckResult;
 

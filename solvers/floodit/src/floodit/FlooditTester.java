@@ -8,7 +8,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.PrintWriter;
 import java.io.File;
-import java.util.Scanner;
 import java.util.*;
 import java.util.List;
 

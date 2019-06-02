@@ -2,8 +2,8 @@ package ika.games.base.controller;
 
 import static ika.games.base.controller.Constants.*;
 
-import com.simplejcode.commons.misc.pool.*;
-import com.simplejcode.commons.misc.structures.DynamicStruct;
+import com.simplejcode.commons.misc._pattern.pool.*;
+import com.simplejcode.commons.misc.DynamicStruct;
 import com.simplejcode.commons.net.sockets.*;
 import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
@@ -33,7 +33,7 @@ import java.util.concurrent.TimeUnit;
  */
 public abstract class Controller extends AsynchronousConnectionManager {
 
-    protected abstract class PoolingHelper implements GPoolHandler<GameDAO> {
+    protected abstract class PoolingHelper implements IPoolHandler<GameDAO> {
         public void destroy(GameDAO dao) throws Exception {
             dao.close();
         }
@@ -43,7 +43,7 @@ public abstract class Controller extends AsynchronousConnectionManager {
 
     protected final String propertiesFile;
     protected final DynamicStruct game;
-    protected final GPooler<GameDAO> pooler;
+    protected final ObjectPool<GameDAO> pooler;
 
     protected Thread appUpdateThread;
     protected long nextCleanupTime;
@@ -59,7 +59,7 @@ public abstract class Controller extends AsynchronousConnectionManager {
         game.put(REPAIR_TIMEOUT, 1000);
         loadProperties(propertiesFile);
         lobby = new HashMap<>();
-        pooler = new GPooler<>(getForPooler());
+        pooler = new ObjectPool<>(getForPooler());
 
         updateApp();
         appUpdateThread = new Thread() {
@@ -230,7 +230,7 @@ public abstract class Controller extends AsynchronousConnectionManager {
         return pooler.get();
     }
 
-    public GPoolHandler<GameDAO> getForPooler() {
+    public IPoolHandler<GameDAO> getForPooler() {
         return new PoolingHelper() {
             public GameDAO create() throws Exception {
                 try {

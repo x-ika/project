@@ -1,6 +1,5 @@
 package spamdetector.detector.students.mkapa;
 
-import java.security.Principal;
 import java.util.ArrayList;
 import java.util.HashSet;
 

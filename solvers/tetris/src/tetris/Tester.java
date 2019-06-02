@@ -2,7 +2,6 @@ package tetris;
 
 import com.simplejcode.commons.gui.Console;
 import tetris.logic.*;
-import tetris.students.ika.SimplePlayer;
 
 public class Tester implements PortListener {
 

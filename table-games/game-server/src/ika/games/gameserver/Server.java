@@ -1,6 +1,6 @@
 package ika.games.gameserver;
 
-import com.simplejcode.commons.misc.ThreadUtils;
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import ika.games.base.controller.Controller;
 import com.simplejcode.commons.net.sockets.*;
 import com.simplejcode.commons.net.util.*;

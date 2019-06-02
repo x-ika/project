@@ -1,6 +1,6 @@
 package ika.games.base.controller.dao;
 
-import com.simplejcode.commons.misc.structures.DynamicStruct;
+import com.simplejcode.commons.misc.DynamicStruct;
 import ika.games.base.controller.Constants;
 import ika.games.base.controller.ProvablyFair;
 

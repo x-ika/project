@@ -1,6 +1,6 @@
 package onjobclient;
 
-import com.simplejcode.commons.misc.FileSystemUtils;
+import com.simplejcode.commons.misc.util.FileSystemUtils;
 
 import java.io.*;
 import java.net.*;

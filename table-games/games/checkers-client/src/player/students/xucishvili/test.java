@@ -2,7 +2,6 @@ package player.students.xucishvili;
 
 import main.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class test implements Player {
     public void gameOver() {}

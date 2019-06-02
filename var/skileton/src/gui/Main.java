@@ -4,7 +4,7 @@ import com.simplejcode.commons.av.improc.ImageMetrics;
 import com.simplejcode.commons.av.videoio.*;
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.ReflectionUtils;
+import com.simplejcode.commons.misc.util.ReflectionUtils;
 import proc.*;
 
 import javax.swing.*;

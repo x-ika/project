@@ -7,6 +7,7 @@ dependencies {
 configurations {
     testCompile.extendsFrom junit
 
+    compile.extendsFrom common_algorithms
     compile.extendsFrom common_graphic_tools
 }
 

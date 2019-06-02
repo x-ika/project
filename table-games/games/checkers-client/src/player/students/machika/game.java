@@ -4,10 +4,8 @@ import main.Turn;
 import main.Checker;
 import main.Player;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
 public class game implements Player {
     public void gameOver() {}
 	public static void main(String[] args) {

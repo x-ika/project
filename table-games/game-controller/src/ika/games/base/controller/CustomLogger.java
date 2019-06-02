@@ -1,6 +1,6 @@
 package ika.games.base.controller;
 
-import com.simplejcode.commons.misc.structures.FastLogger;
+import com.simplejcode.commons.misc.FastLogger;
 
 public class CustomLogger extends FastLogger {
 

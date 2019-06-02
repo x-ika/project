@@ -1,6 +1,6 @@
 package util;
 
-import com.simplejcode.commons.misc.*;
+import com.simplejcode.commons.misc.util.*;
 
 import java.io.*;
 import java.net.*;

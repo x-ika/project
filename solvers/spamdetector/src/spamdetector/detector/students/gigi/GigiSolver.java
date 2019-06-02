@@ -1,7 +1,6 @@
 package spamdetector.detector.students.gigi;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import spamdetector.detector.Classifier;
 import spamdetector.detector.TestCase;

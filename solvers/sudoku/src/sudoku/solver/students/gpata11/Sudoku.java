@@ -1,8 +1,6 @@
 package sudoku.solver.students.gpata11;
 import java.util.*;
 
-import tester.Solver;
-
 public class Sudoku{
 	public static final int[][] myTest = Sudoku.stringsToGrid(
 	"0 0 0 0 9 0 0 5 0", 

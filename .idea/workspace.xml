@@ -1,9 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SHOW_STRUCTURE" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/src/server/gui/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/server/gui/AdminFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/src/server/main/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/server/main/SystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktopa/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktopa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktopa/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/zmsc/src/Mover.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/zmsc/src/FileGrouping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/client/src/api/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/client/src/api/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/client/src/gui/SolutionSubmitForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/client/src/gui/SolutionSubmitForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/server/src/logic/SubmissionProcessThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/src/logic/SubmissionProcessThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/server/src/logic/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/src/logic/SystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/testers/src/UnderwaysTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/testers/src/UnderwaysTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pchallenge/testers/src/tapi/ProblemTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/testers/src/tapi/ProblemTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/FlooditTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/FlooditTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/adoli/MySolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/adoli/MySolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/eakhv/FloodIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/eakhv/FloodIt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ggigl/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ggigl/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gmarg/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gmarg/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gpata/MySolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gpata/MySolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ndarj/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ndarj/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/minesweeper/src/minesweeper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/minesweeper/src/minesweeper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/gui/PokerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/gui/PokerTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/eakhv/ElenesSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/eakhv/ElenesSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/gigi/GigiSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/gigi/GigiSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/mkapa/MyDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/mkapa/MyDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/SudokuTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/SudokuTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gkoch/GkochSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gkoch/GkochSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gpata11/Sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gpata11/Sudoku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solvers/tetris/src/tetris/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/tetris/src/tetris/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-admin/src/ika/games/admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-admin/src/ika/games/admin/AdminPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-client/src/ika/games/base/client/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-client/src/ika/games/base/client/GameClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/CustomLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/CustomLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/GameRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/GameRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/PersistentObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/PersistentObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/game-server/src/ika/games/gameserver/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-server/src/ika/games/gameserver/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/alpenidze/main/BestMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/alpenidze/main/BestMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/dzamukashvili/NDBestMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/dzamukashvili/NDBestMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/GUIPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/GUIPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/ReconstructingTurnTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/ReconstructingTurnTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/machika/game.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/machika/game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/natroshvili/implementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/natroshvili/implementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/xucishvili/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/xucishvili/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerNamespace.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerNamespace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-games/games/poker-controller/src/ika/games/poker/controller/PokerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/poker-controller/src/ika/games/poker/controller/PokerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/command-runner/src/CommandRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/command-runner/src/CommandRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/exam-checker/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/excel/ExcelIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/excel/ExcelIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/exam-tools/src/LucidaRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-tools/src/LucidaRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/excel-reader/src/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/excel-reader/src/ExcelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/excel-reader/src/proc/DataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/excel-reader/src/proc/DataParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobContactLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobContactLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/palette-visualizer/src/PaletteVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/palette-visualizer/src/PaletteVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/queuemng/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/queuemng/server/src/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/server/src/MainServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/loto/src/Loto.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/loto/src/Loto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/skileton/src/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/skileton/src/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/tcutils/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/tcutils/src/mm/MMStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/src/mm/MMStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/tcutils/src/util/MMUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/src/util/MMUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/tcutils/src/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/src/util/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.build/" />
@@ -105,40 +184,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/var/zmsc/src/MouseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/var/zmsc/src/FileGrouping.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="method#main#0;class#Mover#0" />
-                <element signature="e#193#813#1" />
-                <element signature="e#728#802#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -148,12 +194,17 @@
       <find>group 'com.simplejcode.var.table-games</find>
       <find>group 'com.simplejcode.var.solver</find>
       <find>group 'com.simplejcode.var</find>
+      <find>import com.simplejcode.commons.misc.([a-zA-Z]*)Utils;</find>
+      <find>import com.simplejcode.commons.misc.structures.</find>
+      <find>import com.simplejcode.commons.misc.*</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>group 'com.simplejcode.pchallenge</replace>
       <replace>group 'com.simplejcode.table-games</replace>
       <replace>group 'com.simplejcode.solver</replace>
+      <replace>import com.simplejcode.commons.misc.util.$1Utils;</replace>
+      <replace>import com.simplejcode.commons.misc.</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -169,6 +220,29 @@
         <option value="$PROJECT_DIR$/var/zmsc/src/PhotoGrouping.java" />
         <option value="$PROJECT_DIR$/var/zmsc/src/Mover.java" />
         <option value="$PROJECT_DIR$/var/zmsc/src/FileGrouping.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/pchallenge/server/src/logic/SubmissionProcessThread.java" />
+        <option value="$PROJECT_DIR$/pchallenge/server/build.gradle" />
+        <option value="$PROJECT_DIR$/pchallenge/server/src/logic/SystemManager.java" />
+        <option value="$PROJECT_DIR$/table-games/game-controller/build.gradle" />
+        <option value="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/GameRandom.java" />
+        <option value="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java" />
+        <option value="$PROJECT_DIR$/table-games/game-client/src/ika/games/base/client/GameClient.java" />
+        <option value="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/PersistentObject.java" />
+        <option value="$PROJECT_DIR$/tools/command-runner/src/CommandRunner.java" />
+        <option value="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" />
+        <option value="$PROJECT_DIR$/tools/exam-checker/build.gradle" />
+        <option value="$PROJECT_DIR$/var/loto/src/Loto.java" />
+        <option value="$PROJECT_DIR$/var/tcutils/src/util/Utils.java" />
+        <option value="$PROJECT_DIR$/var/tcutils/src/util/MMUtils.java" />
+        <option value="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerController.java" />
+        <option value="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobContactLoader.java" />
+        <option value="$PROJECT_DIR$/tools/palette-visualizer/src/PaletteVisualizer.java" />
+        <option value="$PROJECT_DIR$/var/tcutils/build.gradle" />
+        <option value="$PROJECT_DIR$/var/tcutils/src/mm/MMStatistics.java" />
+        <option value="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java" />
+        <option value="$PROJECT_DIR$/tools/excel-reader/src/ExcelReader.java" />
       </list>
     </option>
   </component>
@@ -184,45 +258,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="math" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="math" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="zmsc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="var" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="zmsc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.group photos">
+  <component name="RunManager" selected="Gradle.build">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -295,6 +338,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="compile" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -314,6 +376,7 @@
     <list>
       <item itemvalue="Application.group photos" />
       <item itemvalue="Gradle.build" />
+      <item itemvalue="Gradle.compile" />
     </list>
   </component>
   <component name="TaskManager">
@@ -329,6 +392,7 @@
       <workItem from="1558875810072" duration="34000" />
       <workItem from="1558875908455" duration="829000" />
       <workItem from="1558876757006" duration="995000" />
+      <workItem from="1559477086462" duration="2181000" />
     </task>
     <task id="LOCAL-00001" summary="idea update">
       <created>1558875330573</created>
@@ -362,18 +426,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2729000" />
+    <option name="totallyTimeSpent" value="4910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
@@ -429,52 +493,718 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/var/math/src/Mover.java" />
+    <entry file="file://$PROJECT_DIR$/var/zmsc/src/PhotoGrouping.java" />
+    <entry file="file://$PROJECT_DIR$/var/zmsc/src/FileGrouping.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="19" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="method#main#0;class#FileGrouping#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/zmsc/src/MouseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="method#main#0;class#MouseTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solvers/sudoku/src/sudoku/SudokuTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="class#SudokuChecker#0;class#SudokuTester#0" />
+            <element signature="method#isCorrect#0;class#SudokuChecker#0;class#SudokuTester#0" />
+            <element signature="e#1228#1273#1" />
+            <element signature="e#1416#1787#1" />
+            <element signature="e#1462#1773#1" />
+            <element signature="e#1535#1596#1" />
+            <element signature="e#1828#1963#1" />
+            <element signature="e#1896#1949#1" />
+            <element signature="method#clone#0;class#SudokuChecker#0;class#SudokuTester#0" />
+            <element signature="e#2120#2172#1" />
+            <element signature="method#main#0;class#SudokuTester#0" />
+            <element signature="e#3293#3504#1" />
+            <element signature="e#3375#3468#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/math/src/Mover.java">
+    <entry file="file://$PROJECT_DIR$/pchallenge/server/src/logic/SubmissionProcessThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="459">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="method#SubmissionProcessThread#0;class#SubmissionProcessThread#0" />
+            <element signature="method#startHandlerThread#0;class#SubmissionProcessThread#0" />
+            <element signature="e#807#1070#1" />
+            <element signature="e#833#963#0" />
+            <element signature="e#984#1052#0" />
+            <element signature="method#process#0;class#SubmissionProcessThread#0" />
+            <element signature="e#1256#1375#1" />
+            <element signature="e#1817#2760#1" />
+            <element signature="e#2066#2212#1" />
+            <element signature="e#2639#2750#1" />
+            <element signature="e#2799#2833#1" />
+            <element signature="method#compile#0;class#SubmissionProcessThread#0" />
+            <element signature="e#3494#4321#0" />
+            <element signature="method#getOutput#0;class#SubmissionProcessThread#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/pchallenge/server/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="153">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/zmsc/src/MouseTest.java">
+    <entry file="file://$PROJECT_DIR$/pchallenge/server/src/logic/SystemManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pchallenge/testers/src/tapi/ProblemTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="36" selection-start-line="2" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/zmsc/src/PhotoGrouping.java">
+    <entry file="file://$PROJECT_DIR$/table-games/game-controller/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/GameRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table-games/game-client/src/ika/games/base/client/GameClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/PersistentObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="26" />
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/zmsc/src/FileGrouping.java">
+    <entry file="file://$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7313#7607#0" expanded="true" />
+            <element signature="e#7606#7607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/command-runner/src/CommandRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/exam-checker/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/loto/src/Loto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="method#main#0;class#Mover#0" />
-            <element signature="e#193#813#1" />
-            <element signature="e#728#802#1" />
+            <element signature="e#423#928#0" />
+            <element signature="e#520#715#0" />
+            <element signature="e#725#922#0" />
+            <element signature="e#934#1509#0" />
+            <element signature="e#1048#1503#0" />
+            <element signature="e#1435#1493#1" />
+            <element signature="e#2187#2481#0" />
+            <element signature="e#2487#2646#0" />
+            <element signature="e#2821#6194#0" />
+            <element signature="e#3576#3624#1" />
+            <element signature="e#3645#3698#1" />
+            <element signature="e#3704#3778#1" />
+            <element signature="e#4127#4548#1" />
+            <element signature="e#4207#4293#1" />
+            <element signature="e#4782#4915#1" />
+            <element signature="e#5104#5152#1" />
+            <element signature="e#5177#5411#1" />
+            <element signature="e#5286#5366#1" />
+            <element signature="e#5436#6117#1" />
+            <element signature="e#5534#5659#1" />
+            <element signature="e#5578#5645#1" />
+            <element signature="e#5731#6059#1" />
+            <element signature="e#5809#5922#1" />
+            <element signature="e#5851#5904#1" />
+            <element signature="e#5951#6045#1" />
+            <element signature="e#6200#6598#0" />
+            <element signature="e#6264#6307#1" />
+            <element signature="e#6342#6426#1" />
+            <element signature="e#6432#6592#1" />
+            <element signature="e#6604#9273#0" />
+            <element signature="e#6815#6984#1" />
+            <element signature="e#6871#6925#1" />
+            <element signature="e#7036#7095#1" />
+            <element signature="e#7183#8093#1" />
+            <element signature="e#7231#8083#0" />
+            <element signature="e#7317#7658#1" />
+            <element signature="e#7367#7636#1" />
+            <element signature="e#7462#7575#1" />
+            <element signature="e#7807#7989#1" />
+            <element signature="e#7858#7967#1" />
+            <element signature="e#8137#9075#1" />
+            <element signature="e#8181#9065#0" />
+            <element signature="e#9114#9244#1" />
+            <element signature="e#9169#9234#1" />
+            <element signature="e#9279#9875#0" />
+            <element signature="e#9398#9457#1" />
+            <element signature="e#9470#9751#0" />
+            <element signature="e#9516#9741#1" />
+            <element signature="e#9557#9727#1" />
+            <element signature="e#9772#9828#0" />
+            <element signature="e#9968#10975#0" />
+            <element signature="e#10126#10178#1" />
+            <element signature="e#10200#10525#1" />
+            <element signature="e#10236#10309#1" />
+            <element signature="e#10441#10515#1" />
+            <element signature="e#10531#10931#1" />
+            <element signature="e#10586#10921#1" />
+            <element signature="e#10648#10710#1" />
+            <element signature="e#10800#10869#1" />
+            <element signature="e#10981#11527#0" />
+            <element signature="e#11145#11235#1" />
+            <element signature="e#11279#11521#1" />
+            <element signature="e#11409#11511#1" />
+            <element signature="e#11533#11736#0" />
+            <element signature="e#11620#11711#1" />
+            <element signature="e#11660#11701#1" />
+            <element signature="e#11742#11827#0" />
+            <element signature="e#11853#11963#0" />
+            <element signature="e#11969#12119#0" />
+            <element signature="e#12014#12050#0" />
+            <element signature="e#12071#12113#0" />
+            <element signature="e#12125#12558#0" />
+            <element signature="e#12202#12517#0" />
+            <element signature="e#12564#14525#0" />
+            <element signature="e#12877#13091#1" />
+            <element signature="e#12955#13062#1" />
+            <element signature="e#12997#13048#1" />
+            <element signature="e#13295#13940#1" />
+            <element signature="e#13333#13930#1" />
+            <element signature="e#13429#13848#1" />
+            <element signature="e#13641#13761#1" />
+            <element signature="e#14047#14391#1" />
+            <element signature="e#14182#14318#1" />
+            <element signature="e#14531#18125#0" />
+            <element signature="e#14935#15465#1" />
+            <element signature="e#14988#15251#1" />
+            <element signature="e#15300#15454#1" />
+            <element signature="e#15501#15545#1" />
+            <element signature="e#15590#15904#1" />
+            <element signature="e#15682#15894#1" />
+            <element signature="e#15728#15880#1" />
+            <element signature="e#15789#15862#1" />
+            <element signature="e#16116#16408#1" />
+            <element signature="e#16589#17692#1" />
+            <element signature="e#16699#17505#1" />
+            <element signature="e#17018#17274#1" />
+            <element signature="e#17085#17256#1" />
+            <element signature="e#17356#17408#1" />
+            <element signature="e#17755#18092#1" />
+            <element signature="e#17974#18028#1" />
+            <element signature="e#18131#18374#0" />
+            <element signature="e#18250#18368#1" />
+            <element signature="e#18380#19082#0" />
+            <element signature="e#18460#19050#1" />
+            <element signature="e#18504#18770#1" />
+            <element signature="e#18813#19040#1" />
+            <element signature="e#19088#19201#0" />
+            <element signature="e#19207#19409#0" />
+            <element signature="e#19415#19631#0" />
+            <element signature="e#19767#19995#0" />
+            <element signature="e#20001#20454#0" />
+            <element signature="e#20150#20427#1" />
+            <element signature="e#20376#20417#1" />
+            <element signature="e#20551#21192#0" />
+            <element signature="e#20697#20862#1" />
+            <element signature="e#20891#21131#1" />
+            <element signature="e#20985#21041#1" />
+            <element signature="e#21047#21121#1" />
+            <element signature="e#21198#21377#0" />
+            <element signature="e#21297#21371#1" />
+            <element signature="e#21383#21817#0" />
+            <element signature="e#21510#21607#1" />
+            <element signature="e#21537#21597#1" />
+            <element signature="e#21661#21810#1" />
+            <element signature="e#21717#21800#1" />
+            <element signature="e#21823#23637#0" />
+            <element signature="e#22119#22333#1" />
+            <element signature="e#22161#22323#1" />
+            <element signature="e#22228#22309#1" />
+            <element signature="e#22370#22571#1" />
+            <element signature="e#22476#22561#1" />
+            <element signature="e#22609#22834#1" />
+            <element signature="e#22651#22824#1" />
+            <element signature="e#22717#22810#1" />
+            <element signature="e#22872#23070#1" />
+            <element signature="e#22914#23060#1" />
+            <element signature="e#22953#23046#1" />
+            <element signature="e#23107#23631#1" />
+            <element signature="e#23141#23621#1" />
+            <element signature="e#23178#23436#1" />
+            <element signature="e#23237#23418#1" />
+            <element signature="e#23442#23607#1" />
+            <element signature="e#23643#24540#0" />
+            <element signature="e#23740#23790#1" />
+            <element signature="e#23815#24028#1" />
+            <element signature="e#23861#23965#1" />
+            <element signature="e#23899#23951#1" />
+            <element signature="e#24123#24224#1" />
+            <element signature="e#24158#24214#1" />
+            <element signature="e#24262#24485#1" />
+            <element signature="e#24350#24475#1" />
+            <element signature="e#24409#24461#1" />
+            <element signature="e#24546#25049#0" />
+            <element signature="e#24644#24688#1" />
+            <element signature="e#24722#24926#1" />
+            <element signature="e#25055#25818#0" />
+            <element signature="e#25424#25812#1" />
+            <element signature="e#25660#25802#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/tcutils/src/mm/MMStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="method#summarizeContest#0;class#MMStatistics#0" />
+            <element signature="e#351#380#0" />
+            <element signature="e#1523#2531#1" />
+            <element signature="e#1697#1745#1" />
+            <element signature="e#1769#1816#1" />
+            <element signature="e#1841#1896#1" />
+            <element signature="e#1921#1976#1" />
+            <element signature="e#2001#2056#1" />
+            <element signature="e#2062#2117#1" />
+            <element signature="method#process#0;class#MMStatistics#0" />
+            <element signature="e#2950#3084#1" />
+            <element signature="e#2991#3074#1" />
+            <element signature="e#3198#3279#0" />
+            <element signature="e#3458#3655#1" />
+            <element signature="e#3665#3746#0" />
+            <element signature="e#3849#4009#1" />
+            <element signature="e#3893#3999#1" />
+            <element signature="e#4173#4385#1" />
+            <element signature="e#4214#4375#1" />
+            <element signature="method#getCompetitionFactory#0;class#MMStatistics#0" />
+            <element signature="e#4569#4633#1" />
+            <element signature="e#4735#4884#1" />
+            <element signature="method#getActualRanks#0;class#MMStatistics#0" />
+            <element signature="e#5123#5314#1" />
+            <element signature="e#5210#5246#1" />
+            <element signature="method#getExpectedRank#0;class#MMStatistics#0" />
+            <element signature="e#5514#5807#1" />
+            <element signature="method#adjust#0;class#MMStatistics#0" />
+            <element signature="e#6479#6576#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/tcutils/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobContactLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="method#init#0;class#OnJobContactLoader#0" />
+            <element signature="method#actionOnAbout#0;class#OnJobContactLoader#0" />
+            <element signature="method#handle#0;class#OnJobContactLoader#0" />
+            <element signature="method#reloadSettings#0;class#OnJobContactLoader#0" />
+            <element signature="method#saveSettings#0;class#OnJobContactLoader#0" />
+            <element signature="initializer##0;class#OnJobContactLoader#0" />
+            <element signature="e#2913#3078#1" />
+            <element signature="e#2960#3068#1" />
+            <element signature="method#translit#0;class#OnJobContactLoader#0" />
+            <element signature="e#3248#3607#1" />
+            <element signature="e#3325#3453#1" />
+            <element signature="e#3516#3597#1" />
+            <element signature="method#loadFile#0;class#OnJobContactLoader#0" />
+            <element signature="e#3950#3981#1" />
+            <element signature="e#4293#4896#1" />
+            <element signature="e#4440#4530#0" />
+            <element signature="e#4551#4648#0" />
+            <element signature="e#4691#4752#1" />
+            <element signature="e#4817#4886#1" />
+            <element signature="method#addContactsEn#0;class#OnJobContactLoader#0" />
+            <element signature="method#addContactsGe#0;class#OnJobContactLoader#0" />
+            <element signature="method#addContacts#0;class#OnJobContactLoader#0" />
+            <element signature="e#5348#5565#1" />
+            <element signature="e#5454#5553#0" />
+            <element signature="method#addContact#0;class#OnJobContactLoader#0" />
+            <element signature="e#5825#6363#0" />
+            <element signature="e#6049#6144#1" />
+            <element signature="e#6384#6428#0" />
+            <element signature="method#main#0;class#OnJobContactLoader#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/palette-visualizer/src/PaletteVisualizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="method#init#0;class#PaletteVisualizer#0" />
+            <element signature="e#1529#1607#0" />
+            <element signature="e#1628#1688#0" />
+            <element signature="method#actionOnAbout#0;class#PaletteVisualizer#0" />
+            <element signature="method#handle#0;class#PaletteVisualizer#0" />
+            <element signature="method#reloadSettings#0;class#PaletteVisualizer#0" />
+            <element signature="method#saveSettings#0;class#PaletteVisualizer#0" />
+            <element signature="method#paint#0;class#PaletteVisualizer#0" />
+            <element signature="e#3524#3555#1" />
+            <element signature="e#3580#3749#1" />
+            <element signature="e#3774#4233#1" />
+            <element signature="e#3957#4067#1" />
+            <element signature="e#4116#4222#1" />
+            <element signature="e#4258#4465#1" />
+            <element signature="method#loadFile#0;class#PaletteVisualizer#0" />
+            <element signature="e#4735#4766#1" />
+            <element signature="e#5028#5064#1" />
+            <element signature="e#5436#5671#1" />
+            <element signature="e#5560#5661#1" />
+            <element signature="e#5709#6727#1" />
+            <element signature="e#5800#6717#1" />
+            <element signature="e#6210#6703#1" />
+            <element signature="e#6263#6685#1" />
+            <element signature="e#6579#6662#1" />
+            <element signature="method#showAll#0;class#PaletteVisualizer#0" />
+            <element signature="method#showWithPause#0;class#PaletteVisualizer#0" />
+            <element signature="e#7300#7403#1" />
+            <element signature="method#showColumn#0;class#PaletteVisualizer#0" />
+            <element signature="e#7663#7818#1" />
+            <element signature="method#main#0;class#PaletteVisualizer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/tcutils/src/util/MMUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="method#getList#0;class#MMUtils#0" />
+            <element signature="e#951#1122#1" />
+            <element signature="e#1298#1583#1" />
+            <element signature="e#1448#1500#1" />
+            <element signature="e#1506#1573#1" />
+            <element signature="method#getInt#0;class#MMUtils#0" />
+            <element signature="e#1676#1738#0" />
+            <element signature="method#get#0;class#MMUtils#0" />
+            <element signature="e#1928#2085#1" />
+            <element signature="e#1984#2075#1" />
+            <element signature="method#updateList#0;class#MMUtils#0" />
+            <element signature="e#2153#2240#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/excel-reader/src/ExcelReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#ExcelReader#0" />
+            <element signature="method#actionOnAbout#0;class#ExcelReader#0" />
+            <element signature="method#handle#0;class#ExcelReader#0" />
+            <element signature="method#reloadSettings#0;class#ExcelReader#0" />
+            <element signature="method#saveSettings#0;class#ExcelReader#0" />
+            <element signature="method#loadFile#0;class#ExcelReader#0" />
+            <element signature="method#export#0;class#ExcelReader#0" />
+            <element signature="method#main#0;class#ExcelReader#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="method#readPaperModel#0;class#ExamCheckerHelper#0" />
+            <element signature="method#exportPaperModel#0;class#ExamCheckerHelper#0" />
+            <element signature="method#readTestModel#0;class#ExamCheckerHelper#0" />
+            <element signature="method#exportTestModel#0;class#ExamCheckerHelper#0" />
+            <element signature="method#checkPapers#0;class#ExamCheckerHelper#0" />
+            <element signature="e#1761#2275#1" />
+            <element signature="e#1815#1854#1" />
+            <element signature="method#renamePapers#0;class#ExamCheckerHelper#0" />
+            <element signature="e#2469#3453#1" />
+            <element signature="e#2843#2891#1" />
+            <element signature="e#3147#3216#1" />
+            <element signature="method#exportToExcel#0;class#ExamCheckerHelper#0" />
+            <element signature="method#showBlackWhiteImage#0;class#ExamCheckerHelper#0" />
+            <element signature="method#debugPaper#0;class#ExamCheckerHelper#0" />
+            <element signature="e#4095#4117#0" />
+            <element signature="method#testSingleFile#0;class#ExamCheckerHelper#0" />
+            <element signature="method#loadTemplate#0;class#ExamCheckerHelper#0" />
+            <element signature="e#4556#4709#1" />
+            <element signature="method#getModelForTestProcessing#0;class#ExamCheckerHelper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-658">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="method#main#0;class#ExamCheckerController#0" />
+            <element signature="e#851#883#0" />
+            <element signature="docComment;field#frame#0;class#ExamCheckerController#0" />
+            <element signature="docComment;field#helper#0;class#ExamCheckerController#0" />
+            <element signature="method#init#0;class#ExamCheckerController#0" />
+            <element signature="e#4050#4407#1" />
+            <element signature="method#actionOnAbout#0;class#ExamCheckerController#0" />
+            <element signature="method#handle#0;class#ExamCheckerController#0" />
+            <element signature="e#4894#5011#1" />
+            <element signature="e#5017#5195#1" />
+            <element signature="class#CustomCheckFailureException#0;class#ExamCheckerController#0" />
+            <element signature="e#5482#5518#0" />
+            <element signature="method#loadPaperModel#0;class#ExamCheckerController#0" />
+            <element signature="e#5690#5721#1" />
+            <element signature="method#exportPaperModel#0;class#ExamCheckerController#0" />
+            <element signature="e#6032#6063#1" />
+            <element signature="method#loadTestModel#0;class#ExamCheckerController#0" />
+            <element signature="e#6387#6418#1" />
+            <element signature="method#exportTestModel#0;class#ExamCheckerController#0" />
+            <element signature="e#6722#6753#1" />
+            <element signature="method#repaint#0;class#ExamCheckerController#0" />
+            <element signature="e#7003#7150#0" />
+            <element signature="method#checkPapers#0;class#ExamCheckerController#0" />
+            <element signature="e#7355#7386#1" />
+            <element signature="method#renamePapers#0;class#ExamCheckerController#0" />
+            <element signature="e#7683#7775#1" />
+            <element signature="method#exportToExcel#0;class#ExamCheckerController#0" />
+            <element signature="e#8113#8144#1" />
+            <element signature="method#showBlackWhiteImage#0;class#ExamCheckerController#0" />
+            <element signature="e#8487#8518#1" />
+            <element signature="method#debugPaper#0;class#ExamCheckerController#0" />
+            <element signature="e#8749#8780#1" />
+            <element signature="method#showLog#0;class#ExamCheckerController#0" />
+            <element signature="method#checkModel#0;class#ExamCheckerController#0" />
+            <element signature="method#checkPaperModel#0;class#ExamCheckerController#0" />
+            <element signature="e#9140#9233#1" />
+            <element signature="method#checkTestModel#0;class#ExamCheckerController#0" />
+            <element signature="e#9320#9412#1" />
+            <element signature="method#checkResults#0;class#ExamCheckerController#0" />
+            <element signature="e#9500#9589#1" />
+            <element signature="method#openFileByProperty#0;class#ExamCheckerController#0" />
+            <element signature="method#openFileByProperty#1;class#ExamCheckerController#0" />
+            <element signature="e#10148#10237#1" />
+            <element signature="method#openDirectoryByProperty#0;class#ExamCheckerController#0" />
+            <element signature="e#10515#10610#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/tcutils/src/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="method#find#0;class#Utils#0" />
+            <element signature="method#readInt#0;class#Utils#0" />
+            <element signature="e#395#427#1" />
+            <element signature="e#500#578#1" />
+            <element signature="method#readString#0;class#Utils#0" />
+            <element signature="e#775#824#1" />
+            <element signature="method#readUrl#0;class#Utils#0" />
+            <element signature="e#956#1029#1" />
+            <element signature="e#1072#1138#0" />
+            <element signature="e#1178#1272#0" />
+            <element signature="e#1351#1387#1" />
+            <element signature="class#1429:1575" />
+            <element signature="e#1608#1840#1" />
+            <element signature="e#1626#1726#0" />
+            <element signature="e#1749#1830#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#BasicRoom#0" />
+            <element signature="e#2042#2503#0" />
+            <element signature="e#2599#2628#0" />
+            <element signature="e#2943#3650#0" />
+            <element signature="e#3170#3241#0" />
+            <element signature="e#3262#3392#0" />
+            <element signature="e#3287#3350#1" />
+            <element signature="e#3401#3547#0" />
+            <element signature="e#3453#3529#0" />
+            <element signature="e#3784#4027#0" />
+            <element signature="e#4163#4371#0" />
+            <element signature="e#4315#4365#1" />
+            <element signature="e#4377#4468#0" />
+            <element signature="e#4474#4813#0" />
+            <element signature="e#4819#5183#0" />
+            <element signature="e#5012#5064#1" />
+            <element signature="e#5189#5529#0" />
+            <element signature="e#5333#5523#1" />
+            <element signature="e#5351#5452#0" />
+            <element signature="e#5638#5864#0" />
+            <element signature="e#5701#5858#0" />
+            <element signature="e#5719#5764#0" />
+            <element signature="e#5796#5848#0" />
+            <element signature="e#5960#5988#0" />
+            <element signature="e#5994#6259#0" />
+            <element signature="e#6265#6835#0" />
+            <element signature="e#6562#6829#1" />
+            <element signature="e#6580#6728#0" />
+            <element signature="e#6756#6819#0" />
+            <element signature="e#6841#7009#0" />
+            <element signature="e#7015#7405#0" />
+            <element signature="e#7151#7399#1" />
+            <element signature="e#7169#7298#0" />
+            <element signature="e#7326#7389#0" />
+            <element signature="e#7411#7830#0" />
+            <element signature="e#7569#7824#1" />
+            <element signature="e#7587#7723#0" />
+            <element signature="e#7751#7814#0" />
+            <element signature="e#7836#8002#0" />
+            <element signature="e#8008#8190#0" />
+            <element signature="e#8117#8149#1" />
+            <element signature="e#8286#8347#0" />
+            <element signature="e#8353#8645#0" />
+            <element signature="e#8441#8618#1" />
+            <element signature="e#8474#8582#1" />
+            <element signature="e#8651#8818#0" />
+            <element signature="e#8746#8812#1" />
+            <element signature="e#8824#9052#0" />
+            <element signature="e#8922#9046#1" />
+            <element signature="e#8961#9036#1" />
+            <element signature="e#9058#9203#0" />
+            <element signature="e#9146#9197#1" />
+            <element signature="e#9209#9356#0" />
+            <element signature="e#9299#9350#1" />
+            <element signature="e#9363#9472#0" />
+            <element signature="e#9478#10114#0" />
+            <element signature="e#9640#9793#0" />
+            <element signature="e#9803#9931#0" />
+            <element signature="e#9941#10060#0" />
+            <element signature="e#10250#10347#0" />
+            <element signature="e#10353#10505#0" />
+            <element signature="e#10418#10475#1" />
+            <element signature="e#10511#11249#0" />
+            <element signature="e#10795#11172#1" />
+            <element signature="e#10841#10889#1" />
+            <element signature="e#10927#11041#1" />
+            <element signature="e#11256#11536#0" />
+            <element signature="e#11542#11884#0" />
+            <element signature="e#11605#11653#1" />
+            <element signature="e#11659#11878#1" />
+            <element signature="e#11740#11795#1" />
+            <element signature="e#11890#12131#0" />
+            <element signature="e#12252#12440#0" />
+            <element signature="e#12446#12723#0" />
+            <element signature="class#12585:12715" />
+            <element signature="e#12729#13123#0" />
+            <element signature="class#12901:13115" />
+            <element signature="method#write#0;class#12901:13115" />
+            <element signature="e#13129#13339#0" />
+            <element signature="e#13345#13976#0" />
+            <element signature="class#13542:13968" />
+            <element signature="method#writeHeader#0;class#13542:13968" />
+            <element signature="method#writeNextStruct#0;class#13542:13968" />
+            <element signature="e#13983#14167#0" />
+            <element signature="e#14391#14530#0" />
+            <element signature="e#14536#14665#0" />
+            <element signature="e#14671#14838#0" />
+            <element signature="e#14845#15050#0" />
+            <element signature="e#14975#15044#1" />
+            <element signature="e#15056#15309#0" />
+            <element signature="e#15315#15549#0" />
+            <element signature="e#15937#16074#0" />
+            <element signature="e#16170#16204#0" />
+            <element signature="e#16354#16400#0" />
+            <element signature="e#16406#16577#0" />
+            <element signature="e#16754#17283#0" />
+            <element signature="e#16835#16959#1" />
+            <element signature="e#16981#17012#1" />
+            <element signature="e#17129#17277#1" />
+            <element signature="e#17147#17190#0" />
           </folding>
         </state>
       </provider>

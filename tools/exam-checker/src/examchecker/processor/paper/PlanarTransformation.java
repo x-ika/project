@@ -1,6 +1,6 @@
 package examchecker.processor.paper;
 
-import com.simplejcode.commons.misc.GeometryUtils;
+import com.simplejcode.commons.algo.GeometryUtils;
 
 public class PlanarTransformation {
 

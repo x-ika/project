@@ -1,6 +1,6 @@
 package simplepoker.gui;
 
-import com.simplejcode.commons.misc.ThreadUtils;
+import com.simplejcode.commons.misc.util.ThreadUtils;
 
 import javax.swing.*;
 import java.awt.*;

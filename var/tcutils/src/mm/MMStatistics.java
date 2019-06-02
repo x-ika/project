@@ -4,7 +4,7 @@ import java.awt.*;
 import java.util.Arrays;
 
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.Statistics;
+import com.simplejcode.commons.algo.Statistics;
 import util.*;
 
 public class MMStatistics {

@@ -3,7 +3,7 @@ package ika.games.joker.server.logic;
 import static ika.games.base.controller.CardComplect.*;
 import static ika.games.joker.server.JokerNamespace.*;
 
-import com.simplejcode.commons.misc.ArrayUtils;
+import com.simplejcode.commons.algo.ArrayUtils;
 import ika.games.base.*;
 import ika.games.base.controller.*;
 import ika.games.base.controller.action.*;

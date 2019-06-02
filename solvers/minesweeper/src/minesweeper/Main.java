@@ -8,8 +8,6 @@ import java.util.Calendar;
 import minesweeper.strategy.SimplePlayer;
 import minesweeper.strategy.GameSolver;
 
-import javax.swing.*;
-
 public class Main {
 
     private static int[] stats = new int[500];

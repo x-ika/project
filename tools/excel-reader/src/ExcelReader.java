@@ -1,11 +1,10 @@
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.*;
+import com.simplejcode.commons.misc.util.*;
 import proc.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
 import java.util.*;
 

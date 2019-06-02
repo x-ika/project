@@ -3,7 +3,7 @@ package ika.games.base.controller;
 import static ika.games.base.controller.Constants.*;
 
 import com.simplejcode.commons.misc.*;
-import com.simplejcode.commons.misc.structures.*;
+import com.simplejcode.commons.misc.util.*;
 import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
 import ika.games.base.controller.action.*;

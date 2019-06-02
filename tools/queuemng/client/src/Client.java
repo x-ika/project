@@ -1,5 +1,5 @@
 import com.simplejcode.commons.gui.*;
-import com.simplejcode.commons.misc.ReflectionUtils;
+import com.simplejcode.commons.misc.util.ReflectionUtils;
 import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.*;
 

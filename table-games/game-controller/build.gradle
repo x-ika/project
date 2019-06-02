@@ -7,6 +7,7 @@ dependencies {
 configurations {
     testCompile.extendsFrom junit
 
+    compile.extendsFrom common_algorithms
     compile.extendsFrom common_misc
     compile.extendsFrom common_net_tools
     compile.extendsFrom common_db_tools

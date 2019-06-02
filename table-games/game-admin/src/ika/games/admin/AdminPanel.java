@@ -1,7 +1,7 @@
 package ika.games.admin;
 
 import com.simplejcode.commons.gui.*;
-import com.simplejcode.commons.misc.ReflectionUtils;
+import com.simplejcode.commons.misc.util.ReflectionUtils;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

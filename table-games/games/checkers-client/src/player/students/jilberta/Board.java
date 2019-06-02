@@ -1,6 +1,5 @@
 package player.students.jilberta;
 
-import main.*;
 import java.util.ArrayList;
 
 public class Board {

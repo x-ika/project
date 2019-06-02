@@ -1,6 +1,6 @@
 package logic;
 
-import com.simplejcode.commons.misc.structures.FastLogger;
+import com.simplejcode.commons.misc.FastLogger;
 import model.TestResult;
 
 import java.util.*;
@@ -9,7 +9,7 @@ import java.io.*;
 import java.net.Socket;
 
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.StringUtils;
+import com.simplejcode.commons.algo.StringUtils;
 import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.*;
 import logic.db.Team;

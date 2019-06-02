@@ -1,7 +1,6 @@
 package ika.games.joker.server;
 
 import ika.games.base.*;
-import ika.games.base.ObjectType;
 import ika.games.base.controller.action.*;
 
 public class JokerNamespace {

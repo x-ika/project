@@ -2,7 +2,7 @@ package onjobclient;
 
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.*;
+import com.simplejcode.commons.misc.util.*;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;

@@ -9,7 +9,7 @@ import java.awt.event.*;
 import java.io.*;
 
 import com.simplejcode.commons.gui.GraphicUtils;
-import com.simplejcode.commons.misc.ReflectionUtils;
+import com.simplejcode.commons.misc.util.ReflectionUtils;
 import com.simplejcode.commons.net.csbase.Message;
 import com.simplejcode.commons.net.sockets.SocketConnection;
 import api.Client;

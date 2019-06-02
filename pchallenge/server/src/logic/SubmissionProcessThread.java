@@ -6,8 +6,8 @@ import model.TestResult;
 import java.util.concurrent.*;
 import java.io.*;
 
-import com.simplejcode.commons.misc.ProgramRunner;
-import com.simplejcode.commons.misc.FileSystemUtils;
+import com.simplejcode.commons.misc.util.ProcessUtils;
+import com.simplejcode.commons.misc.util.FileSystemUtils;
 
 public class SubmissionProcessThread {
 
@@ -60,14 +60,14 @@ public class SubmissionProcessThread {
             test++;
             // run solution
             FileSystemUtils.copy(input, solutionInput);
-            int exitValue = ProgramRunner.runProgram(compiled, problem.getTimeLimit());
+            int exitValue = ProcessUtils.execute(compiled, problem.getTimeLimit());
             // tle, re
             if (exitValue != 0) {
-                result = exitValue == ProgramRunner.TIME_LIMIT_ERROR_CODE ? TestResult.TLE : TestResult.RE;
+                result = exitValue == ProcessUtils.TIME_LIMIT_ERROR_CODE ? TestResult.TLE : TestResult.RE;
                 break;
             }
             // run tester
-            exitValue = ProgramRunner.runProgram(
+            exitValue = ProcessUtils.execute(
                     new File(problem.getTesterExec()),
                     problem.getTesterTimeLimit(),
                     f(input.getAbsolutePath()),
@@ -114,7 +114,7 @@ public class SubmissionProcessThread {
                 break;
         }
         String compilationTimeLimit = SystemManager.getInstance().getProperty("compilationtimelimit");
-        ProgramRunner.runProgram(compile, Integer.parseInt(compilationTimeLimit));
+        ProcessUtils.execute(compile, Integer.parseInt(compilationTimeLimit));
         source.delete();
         return new File(output);
     }

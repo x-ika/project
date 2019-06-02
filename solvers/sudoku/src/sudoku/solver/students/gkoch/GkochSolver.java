@@ -1,7 +1,6 @@
 package sudoku.solver.students.gkoch;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import tester.Solver;

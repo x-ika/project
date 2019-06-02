@@ -2,7 +2,7 @@ import tapi.ProblemTester;
 
 import java.util.*;
 
-import com.simplejcode.commons.misc.structures.DataReader;
+import com.simplejcode.commons.misc.DataReader;
 
 public class UnderwaysTester extends ProblemTester {
     public static void main(String[] args) throws Exception {

@@ -3,8 +3,6 @@ package floodit.solver.students.gmarg;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class Vertex {
 	private int id, count, color, depth, heurist, distance;

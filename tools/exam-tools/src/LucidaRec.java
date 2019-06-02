@@ -1,7 +1,7 @@
 import com.simplejcode.commons.av.improc.*;
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.ReflectionUtils;
+import com.simplejcode.commons.misc.util.ReflectionUtils;
 
 import java.util.*;
 import java.util.List;

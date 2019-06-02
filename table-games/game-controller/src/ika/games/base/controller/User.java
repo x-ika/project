@@ -1,6 +1,6 @@
 package ika.games.base.controller;
 
-import com.simplejcode.commons.misc.structures.DynamicStruct;
+import com.simplejcode.commons.misc.DynamicStruct;
 
 public class User extends PersistentObject {
 

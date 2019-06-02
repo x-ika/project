@@ -1,13 +1,9 @@
 package player.students.laki;
-import java.util.*;
-import java.util.List;
-import main.*;
 
 //import acm.graphics.*;
 //import acm.program.*;
 //import acmx.export.java.io.FileReader;
-import java.awt.*;
-import java.io.*;
+
 
 public class GUIPlayer extends Object {
 //	public void run(){
