@@ -4,86 +4,7 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/src/server/gui/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/server/gui/AdminFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/server/src/server/main/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/server/main/SystemManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktopa/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktopa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktopa/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/client/src/api/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/client/src/api/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/client/src/gui/SolutionSubmitForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/client/src/gui/SolutionSubmitForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/server/src/logic/SubmissionProcessThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/src/logic/SubmissionProcessThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/server/src/logic/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/server/src/logic/SystemManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/testers/src/UnderwaysTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/testers/src/UnderwaysTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pchallenge/testers/src/tapi/ProblemTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/pchallenge/testers/src/tapi/ProblemTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/FlooditTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/FlooditTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/adoli/MySolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/adoli/MySolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/eakhv/FloodIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/eakhv/FloodIt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ggigl/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ggigl/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gmarg/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gmarg/Vertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gpata/MySolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/gpata/MySolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ndarj/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/floodit/src/floodit/solver/students/ndarj/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/minesweeper/src/minesweeper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/minesweeper/src/minesweeper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/gui/PokerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/simplepoker/src/simplepoker/gui/PokerTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/eakhv/ElenesSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/eakhv/ElenesSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/gigi/GigiSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/gigi/GigiSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/mkapa/MyDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/spamdetector/src/spamdetector/detector/students/mkapa/MyDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/SudokuTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/SudokuTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gkoch/GkochSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gkoch/GkochSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gpata11/Sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/sudoku/src/sudoku/solver/students/gpata11/Sudoku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solvers/tetris/src/tetris/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/solvers/tetris/src/tetris/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-admin/src/ika/games/admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-admin/src/ika/games/admin/AdminPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-client/src/ika/games/base/client/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-client/src/ika/games/base/client/GameClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/BasicRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/CustomLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/CustomLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/GameRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/GameRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/PersistentObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/PersistentObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-controller/src/ika/games/base/controller/dao/GameDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/game-server/src/ika/games/gameserver/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/game-server/src/ika/games/gameserver/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/alpenidze/main/BestMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/alpenidze/main/BestMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/dzamukashvili/NDBestMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/dzamukashvili/NDBestMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/jilberta/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/GUIPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/GUIPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/ReconstructingTurnTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/laki/ReconstructingTurnTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/machika/game.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/machika/game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/natroshvili/implementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/natroshvili/implementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/xucishvili/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/checkers-client/src/player/students/xucishvili/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerNamespace.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/JokerNamespace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table-games/games/poker-controller/src/ika/games/poker/controller/PokerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/table-games/games/poker-controller/src/ika/games/poker/controller/PokerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/command-runner/src/CommandRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/command-runner/src/CommandRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/exam-checker/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/core/ExamCheckerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/excel/ExcelIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/excel/ExcelIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/exam-tools/src/LucidaRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/exam-tools/src/LucidaRec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/excel-reader/src/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/excel-reader/src/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/excel-reader/src/proc/DataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/excel-reader/src/proc/DataParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobContactLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/onjob-client/src/onjobclient/OnJobContactLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/palette-visualizer/src/PaletteVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/palette-visualizer/src/PaletteVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/queuemng/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/client/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/queuemng/server/src/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/queuemng/server/src/MainServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/loto/src/Loto.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/loto/src/Loto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/skileton/src/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/skileton/src/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/tcutils/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/tcutils/src/mm/MMStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/src/mm/MMStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/tcutils/src/util/MMUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/src/util/MMUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/tcutils/src/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/var/tcutils/src/util/Utils.java" afterDir="false" />
-    </list>
+    <list default="true" id="4562359f-1f20-4621-963b-85b2ab0fed75" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.build/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -184,7 +105,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -259,7 +180,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,6 +191,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,6 +227,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.build">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -364,20 +294,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.group photos" />
       <item itemvalue="Gradle.build" />
       <item itemvalue="Gradle.compile" />
     </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -393,6 +317,7 @@
       <workItem from="1558875908455" duration="829000" />
       <workItem from="1558876757006" duration="995000" />
       <workItem from="1559477086462" duration="2181000" />
+      <workItem from="1560085469981" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="idea update">
       <created>1558875330573</created>
@@ -426,18 +351,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4910000" />
+    <option name="totallyTimeSpent" value="4941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
@@ -452,6 +376,8 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32936078" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -464,6 +390,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea update" />
