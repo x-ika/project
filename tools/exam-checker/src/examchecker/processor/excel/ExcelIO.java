@@ -4,6 +4,7 @@ import com.simplejcode.commons.misc.util.*;
 import examchecker.core.Constants;
 import examchecker.processor.*;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.*;
@@ -15,7 +16,7 @@ public class ExcelIO {
                        String primaryId,
                        ITestDefinition def,
                        List<ICheckResult> checkResults,
-                       File file) throws Exception
+                       File file)
     {
 
         // ordering
@@ -26,9 +27,9 @@ public class ExcelIO {
         Workbook workbook = new HSSFWorkbook();
         Sheet sheet = workbook.createSheet("summary");
 
-        CellStyle headerStyle = ExcelUtils.createHeaderStyle(workbook);
-        CellStyle contentStyle = ExcelUtils.createContentStyle(workbook);
-        CellStyle warnStyle = ExcelUtils.createWarnStyle(workbook);
+        CellStyle headerStyle = createHeaderStyle(workbook);
+        CellStyle contentStyle = createContentStyle(workbook);
+        CellStyle warnStyle = createWarnStyle(workbook);
 
         // create
         Set<String> distinct = new HashSet<>();
@@ -81,15 +82,31 @@ public class ExcelIO {
             sheet.autoSizeColumn(i);
         }
 
-        FileOutputStream out = new FileOutputStream(file);
-        workbook.write(out);
-        out.close();
+        ExcelUtils.writeToFile(workbook, file);
 
     }
 
     private int getScore(ICheckResult t, String id) {
         String s = t.getValue(id);
         return s.contains(Constants.UNDEFINED) ? 1 : 0;
+    }
+
+    private static CellStyle createHeaderStyle(Workbook workbook) {
+        CellStyle style = ExcelUtils.createCellStyle(workbook);
+        style.setFont(ExcelUtils.createFont(workbook, (short) 300));
+        return style;
+    }
+
+    private static CellStyle createContentStyle(Workbook workbook) {
+        CellStyle style = ExcelUtils.createCellStyle(workbook);
+        style.setFont(ExcelUtils.createFont(workbook, (short) 200));
+        return style;
+    }
+
+    private static CellStyle createWarnStyle(Workbook workbook) {
+        CellStyle style = ExcelUtils.createCellStyle(workbook, HSSFColor.HSSFColorPredefined.LIGHT_YELLOW.getIndex());
+        style.setFont(ExcelUtils.createFont(workbook, (short) 200));
+        return style;
     }
 
 }

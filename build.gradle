@@ -94,32 +94,32 @@ subprojects {
     dependencies {
         junit 'junit:junit:4.12'
 
-        common_algorithms          'com.simplejcode.commons:algorithms:1.0'
-        common_misc                'com.simplejcode.commons:misc:1.0'
-        common_net_tools           'com.simplejcode.commons:net-tools:1.0'
-        common_db_tools            'com.simplejcode.commons:db-tools:1.0'
-        common_graphic_tools       'com.simplejcode.commons:graphic-tools:1.0'
-        common_audio_video_tools   'com.simplejcode.commons:audio-video-tools:1.0'
-        common_logical_analyzer    'com.simplejcode.commons:logical-analyzer:1.0'
+        common_algorithms              'com.simplejcode.commons:algorithms:1.0'
+        common_misc                    'com.simplejcode.commons:misc:1.0'
+        common_net_tools               'com.simplejcode.commons:net-tools:1.0'
+        common_db_tools                'com.simplejcode.commons:db-tools:1.0'
+        common_graphic_tools           'com.simplejcode.commons:graphic-tools:1.0'
+        common_audio_video_tools       'com.simplejcode.commons:audio-video-tools:1.0'
+        common_logical_analyzer        'com.simplejcode.commons:logical-analyzer:1.0'
 
-        javax_media        'javax.media:jmf:2.1.1e'
+        javax_media                    'javax.media:jmf:2.1.1e'
 
-        javax_xml_bind     'javax.xml.bind:jaxb-api:2.1'
-        javax_xml_bind     'com.sun.xml.bind:jaxb-impl:2.2.11'
-        javax_xml_bind     'com.sun.xml.bind:jaxb-core:2.2.11'
+        javax_xml_bind                 'javax.xml.bind:jaxb-api:2.1'
+        javax_xml_bind                 'com.sun.xml.bind:jaxb-impl:2.2.11'
+        javax_xml_bind                 'com.sun.xml.bind:jaxb-core:2.2.11'
 
-        java_jna           'net.java.dev.jna:jna:4.0.0'
-        java_jna           'net.java.dev.jna:jna-platform:4.0.0'
+        java_jna                       'net.java.dev.jna:jna:4.0.0'
+        java_jna                       'net.java.dev.jna:jna-platform:4.0.0'
 
-        lombok             'org.projectlombok:lombok:1.18.8'
-        annotationProcessor('org.projectlombok:lombok:1.18.8')
-        apache_config      'org.apache.commons:commons-configuration2:2.0'
-        google_gson        'com.google.code.gson:gson:2.8.5'
+        lombok                         'org.projectlombok:lombok:1.18.8'
+        annotationProcessor            ('org.projectlombok:lombok:1.18.8')
+        apache_config                  'org.apache.commons:commons-configuration2:2.0'
+        google_gson                    'com.google.code.gson:gson:2.8.5'
 
-        doc4j              'org.docx4j:docx4j:2.8.1'
-        poi                'org.apache.poi:poi:4.0.1'
-        poi                'org.apache.poi:poi-ooxml:4.0.1'
-        imageproc          'com.drewnoakes:metadata-extractor:2.11.0'
+        doc4j                          'org.docx4j:docx4j:2.8.1'
+        poi                            'org.apache.poi:poi:4.0.1'
+        poi                            'org.apache.poi:poi-ooxml:4.0.1'
+        imageproc                      'com.drewnoakes:metadata-extractor:2.11.0'
 
     }
 
