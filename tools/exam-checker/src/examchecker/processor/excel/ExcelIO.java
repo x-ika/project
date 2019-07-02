@@ -1,10 +1,9 @@
 package examchecker.processor.excel;
 
-import com.simplejcode.commons.misc.util.StreamUtils;
+import com.simplejcode.commons.misc.util.*;
 import examchecker.core.Constants;
 import examchecker.processor.*;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.*;
@@ -27,9 +26,9 @@ public class ExcelIO {
         Workbook workbook = new HSSFWorkbook();
         Sheet sheet = workbook.createSheet("summary");
 
-        CellStyle headerStyle = createHeaderStyle(workbook);
-        CellStyle contentStyle = createContentStyle(workbook);
-        CellStyle warnStyle = createWarnStyle(workbook);
+        CellStyle headerStyle = ExcelUtils.createHeaderStyle(workbook);
+        CellStyle contentStyle = ExcelUtils.createContentStyle(workbook);
+        CellStyle warnStyle = ExcelUtils.createWarnStyle(workbook);
 
         // create
         Set<String> distinct = new HashSet<>();
@@ -48,7 +47,7 @@ public class ExcelIO {
                 headerContent.add(div.getExcelHeader());
             }
         }
-        populate(sheet, headerStyle, 0, 0, headerContent);
+        ExcelUtils.populate(sheet, headerStyle, 0, 0, headerContent);
         // end header
 
         int rowInd = 1;
@@ -69,7 +68,7 @@ public class ExcelIO {
                 }
                 CellStyle style = rowContent.stream().anyMatch(t -> t.contains(Constants.UNDEFINED)) ?
                         warnStyle : contentStyle;
-                populate(sheet, style, rowInd, 0, rowContent);
+                ExcelUtils.populate(sheet, style, rowInd, 0, rowContent);
                 // end row
 
             }
@@ -91,72 +90,6 @@ public class ExcelIO {
     private int getScore(ICheckResult t, String id) {
         String s = t.getValue(id);
         return s.contains(Constants.UNDEFINED) ? 1 : 0;
-    }
-
-    private CellStyle createHeaderStyle(Workbook workbook) {
-
-        CellStyle style = workbook.createCellStyle();
-        style.setAlignment(HorizontalAlignment.CENTER);
-        style.setVerticalAlignment(VerticalAlignment.CENTER);
-        Font font = workbook.createFont();
-        font.setBold(true);
-        font.setFontHeight((short) 300);
-        style.setFont(font);
-
-        style.setBorderLeft(BorderStyle.THIN);
-        style.setBorderRight(BorderStyle.THIN);
-        style.setBorderTop(BorderStyle.THIN);
-        style.setBorderBottom(BorderStyle.THIN);
-
-        return style;
-    }
-
-    private CellStyle createContentStyle(Workbook workbook) {
-
-        CellStyle style = workbook.createCellStyle();
-        style.setAlignment(HorizontalAlignment.CENTER);
-        style.setVerticalAlignment(VerticalAlignment.CENTER);
-        Font font = workbook.createFont();
-        font.setBold(true);
-        font.setFontHeight((short) 200);
-        style.setFont(font);
-
-        style.setBorderLeft(BorderStyle.THIN);
-        style.setBorderRight(BorderStyle.THIN);
-        style.setBorderTop(BorderStyle.THIN);
-        style.setBorderBottom(BorderStyle.THIN);
-
-        return style;
-    }
-
-    private CellStyle createWarnStyle(Workbook workbook) {
-
-        CellStyle style = workbook.createCellStyle();
-        style.setAlignment(HorizontalAlignment.CENTER);
-        style.setVerticalAlignment(VerticalAlignment.CENTER);
-        Font font = workbook.createFont();
-        font.setBold(true);
-        font.setFontHeight((short) 200);
-        style.setFont(font);
-
-        style.setBorderLeft(BorderStyle.THIN);
-        style.setBorderRight(BorderStyle.THIN);
-        style.setBorderTop(BorderStyle.THIN);
-        style.setBorderBottom(BorderStyle.THIN);
-
-        style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-        style.setFillForegroundColor(HSSFColor.HSSFColorPredefined.LIGHT_YELLOW.getIndex());
-
-        return style;
-    }
-
-    private static void populate(Sheet sheet, CellStyle style, int rowInd, int colInd, List<String> values) {
-        Row row = sheet.getRow(rowInd);
-        for (Object value : values) {
-            Cell col = row.createCell(colInd++);
-            col.setCellValue(value == null ? "" : value.toString());
-            col.setCellStyle(style);
-        }
     }
 
 }
