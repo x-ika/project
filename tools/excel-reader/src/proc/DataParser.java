@@ -2,7 +2,6 @@ package proc;
 
 import com.simplejcode.commons.misc.util.DateUtils;
 import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -16,7 +15,7 @@ public class DataParser {
     private static final String PATTERN = DATE_PATTERN + " " + TIME_PATTERN;
 
     public static List<InOutRecord> readData(File file) throws Exception {
-        Workbook workbook = new XSSFWorkbook(new FileInputStream(file));
+        Workbook workbook = WorkbookFactory.create(new FileInputStream(file));
         Sheet sheet = workbook.getSheetAt(0);
 
         List<InOutRecord> data = new ArrayList<>();

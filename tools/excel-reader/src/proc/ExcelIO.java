@@ -1,7 +1,6 @@
 package proc;
 
 import com.simplejcode.commons.misc.util.ExcelUtils;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
@@ -13,7 +12,7 @@ public class ExcelIO {
 
     public void export(List<DayRecord> list, File file) {
 
-        Workbook workbook = new HSSFWorkbook();
+        Workbook workbook = ExcelUtils.createWorkbook(true);
         Sheet sheet = workbook.createSheet("summary");
 
         CellStyle headerStyle = createHeaderStyle(workbook);

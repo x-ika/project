@@ -3,7 +3,6 @@ package examchecker.processor.excel;
 import com.simplejcode.commons.misc.util.*;
 import examchecker.core.Constants;
 import examchecker.processor.*;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
@@ -24,7 +23,7 @@ public class ExcelIO {
         divs = new ArrayList<>(divs);
         divs.sort(Comparator.comparingInt(ITestDiv::getSequenceNumber));
 
-        Workbook workbook = new HSSFWorkbook();
+        Workbook workbook = ExcelUtils.createWorkbook(true);
         Sheet sheet = workbook.createSheet("summary");
 
         CellStyle headerStyle = createHeaderStyle(workbook);

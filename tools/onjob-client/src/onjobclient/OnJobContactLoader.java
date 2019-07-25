@@ -4,7 +4,6 @@ import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
 import com.simplejcode.commons.misc.util.*;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 
 import javax.imageio.ImageIO;
@@ -126,7 +125,7 @@ public class OnJobContactLoader {
         saveSettings();
 
         // load file here
-        Workbook workbook = new HSSFWorkbook(new FileInputStream(file));
+        Workbook workbook = WorkbookFactory.create(new FileInputStream(file));
         Sheet sheet = workbook.getSheetAt(0);
 
         data = new ArrayList<>();
