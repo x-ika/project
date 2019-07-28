@@ -11,12 +11,12 @@ import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class DominoLogic extends BasicRoom implements Runnable {
+public class DominoLogic extends BasicRoom {
 
     private static final int EV_USERS_UPDATED = 1;
     private static final int EV_PLAY = 2;
 
-    private int nPlayers, here, whoPlayes, score[];
+    private int nPlayers, here, whoPlays, score[];
     private boolean first, open;
     private int[][] stones;
     private DominoMove played;
@@ -99,11 +99,11 @@ public class DominoLogic extends BasicRoom implements Runnable {
     }
 
     private Result userPlay(Player player, PlayAction done) {
-        if (whoPlayes == -1 || players[whoPlayes] != player || played != null) {
+        if (whoPlays == -1 || players[whoPlays] != player || played != null) {
             return BasicResult.UNEXPECTED_MOVE;
         }
         try {
-            for (DominoMove move : getPossibleTurns(whoPlayes)) {
+            for (DominoMove move : getPossibleTurns(whoPlays)) {
                 if (equals(move, done)) {
                     played = move;
                     notify(EV_PLAY);
@@ -138,7 +138,7 @@ public class DominoLogic extends BasicRoom implements Runnable {
 
     public synchronized void startWorking() {
         super.startWorking();
-        startWorker(this, true);
+        startWorker(this::run, true);
     }
 
     protected byte[][] writeState(Player receiver, GameAction action, Player actor, boolean wholeState) {
@@ -151,7 +151,7 @@ public class DominoLogic extends BasicRoom implements Runnable {
         builder.writeInt(nPlayers);
         int sit = getPlayerSit(receiver);
         builder.writeInt(sit);
-        builder.writeInt(whoPlayes);
+        builder.writeInt(whoPlays);
         builder.writeInt(isWaitingFor(EV_PLAY) ? TimeUnit.MILLISECONDS.toSeconds(timeRest(EV_PLAY)) : -1);
         builder.writeInt(getMoveTime());
         for (int i = 0; i < nPlayers; i++) {
@@ -190,10 +190,10 @@ public class DominoLogic extends BasicRoom implements Runnable {
         return buffer.toArray(new byte[0][]);
     }
 
-    public synchronized void run() {
+    private synchronized void run() {
 
         first = true;
-        whoPlayes = -1;
+        whoPlays = -1;
         score[0] = score[1] = 0;
 
         while (here < nPlayers) {
@@ -206,7 +206,7 @@ public class DominoLogic extends BasicRoom implements Runnable {
 
         pause(3000);
 
-        whoPlayes = 0;
+        whoPlays = 0;
         boolean riba = false;
 
         WHOLE:
@@ -217,8 +217,8 @@ public class DominoLogic extends BasicRoom implements Runnable {
             HAND:
             while (true) {
 
-                for (int counter = 0; getPossibleTurns(whoPlayes).isEmpty(); ) {
-                    whoPlayes = next(whoPlayes);
+                for (int counter = 0; getPossibleTurns(whoPlays).isEmpty(); ) {
+                    whoPlays = next(whoPlays);
                     if (++counter == 4) {
                         endHand(riba = true);
                         break HAND;
@@ -230,9 +230,8 @@ public class DominoLogic extends BasicRoom implements Runnable {
                 makeTurn(played);
 
                 if (dominoTree.getNodes().size() == 1 &&
-                        getPossibleTurns(next(whoPlayes)).isEmpty() &&
-                        getPossibleTurns(prev(whoPlayes)).isEmpty())
-                {
+                        getPossibleTurns(next(whoPlays)).isEmpty() &&
+                        getPossibleTurns(prev(whoPlays)).isEmpty()) {
                     pause(3000);
                     continue WHOLE;
                 }
@@ -241,17 +240,17 @@ public class DominoLogic extends BasicRoom implements Runnable {
 
                 int sum = dominoTree.getScore();
                 if (sum % 5 == 0) {
-                    score[whoPlayes % 2] += sum;
+                    score[whoPlays % 2] += sum;
                 }
 
                 sendStates(BasicGameAction.MAKE_MOVE, null, true);
 
-                if (stones[whoPlayes].length == 0) {
+                if (stones[whoPlays].length == 0) {
                     endHand(riba = false);
                     break;
                 }
 
-                whoPlayes = next(whoPlayes);
+                whoPlays = next(whoPlays);
 
             }
 
@@ -313,15 +312,15 @@ public class DominoLogic extends BasicRoom implements Runnable {
     private void endHand(boolean riba) {
         open = true;
         if (riba) {
-            whoPlayes = prev(whoPlayes);
-            int closerSide = whoPlayes % 2;
+            whoPlays = prev(whoPlays);
+            int closerSide = whoPlays % 2;
             if (getSum(closerSide) <= getSum(1 - closerSide)) {
                 score[closerSide] += (getSum(1 - closerSide) + 4) / 5 * 5;
             } else {
                 score[1 - closerSide] += (getSum(closerSide) + 4) / 5 * 5;
             }
         } else {
-            int winnerSide = whoPlayes % 2;
+            int winnerSide = whoPlays % 2;
             int looserSide = 1 - winnerSide;
             score[winnerSide] += (getSum(looserSide) + 4) / 5 * 5;
         }
@@ -350,17 +349,17 @@ public class DominoLogic extends BasicRoom implements Runnable {
     private void makeTurn(DominoMove t) {
 
         if (t == null) {
-            int[] a = stones[whoPlayes];
+            int[] a = stones[whoPlays];
             a = Arrays.copyOf(a, a.length + 1);
             a[a.length - 1] = buyDomino();
-            stones[whoPlayes] = a;
+            stones[whoPlays] = a;
         } else {
             dominoTree.makeTurn(t);
-            int[] a = stones[whoPlayes];
+            int[] a = stones[whoPlays];
             for (int i = 0; i < a.length; i++) {
                 if (t.newNode.getStone() == a[i]) {
                     System.arraycopy(a, i + 1, a, i, a.length - i - 1);
-                    stones[whoPlayes] = Arrays.copyOf(a, a.length - 1);
+                    stones[whoPlays] = Arrays.copyOf(a, a.length - 1);
                 }
             }
         }
@@ -379,8 +378,8 @@ public class DominoLogic extends BasicRoom implements Runnable {
         return (i + nPlayers - 1) % nPlayers;
     }
 
-    private List<DominoMove> getPossibleTurns(int whoPlayes) {
-        return dominoTree.getPossibleMoves(stones[whoPlayes], allStones.size(), first);
+    private List<DominoMove> getPossibleTurns(int whoPlays) {
+        return dominoTree.getPossibleMoves(stones[whoPlays], allStones.size(), first);
     }
 
 }

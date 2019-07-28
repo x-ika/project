@@ -16,7 +16,7 @@ import ika.games.gomoku.controller.player.GomokuAI;
 import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeUnit;
 
-public class GomokuLogic extends BasicRoom implements Runnable {
+public class GomokuLogic extends BasicRoom {
 
     public static final int WIN_SEQUENCE_LENGTH = 5;
     public static final int N_ROWS = 20;
@@ -25,7 +25,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
     private static final int EV_USERS_UPDATED = 1;
     private static final int EV_PLAY = 2;
 
-    private int nPlayers, here, whoPlayes;
+    private int nPlayers, here, whoPlays;
     private GomokuMove played;
     private Player[] players;
     private int[][] desk;
@@ -33,7 +33,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
     public GomokuLogic(PersistentObject settings, Controller controller) throws NoSuchAlgorithmException {
         super(settings, controller);
         players = new Player[nPlayers = 2];
-        desk = new int[N_ROWS][N_COLUMNS]; 
+        desk = new int[N_ROWS][N_COLUMNS];
     }
 
     private int getMoveTime() {
@@ -106,7 +106,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
     }
 
     private Result userPlay(Player player, GomokuMove move) {
-        if (whoPlayes == -1 || players[whoPlayes] != player || played != null) {
+        if (whoPlays == -1 || players[whoPlays] != player || played != null) {
             return BasicResult.UNEXPECTED_MOVE;
         }
         if (desk[move.i][move.j] != 0) {
@@ -134,7 +134,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
 
     public synchronized void startWorking() {
         super.startWorking();
-        startWorker(this, true);
+        startWorker(this::run, true);
     }
 
     protected byte[][] writeState(Player receiver, GameAction action, Player actor, boolean wholeState) {
@@ -147,7 +147,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
         builder.writeInt(nPlayers);
         int sit = getPlayerSit(receiver);
         builder.writeInt(sit);
-        builder.writeInt(whoPlayes);
+        builder.writeInt(whoPlays);
         builder.writeInt(isWaitingFor(EV_PLAY) ? TimeUnit.MILLISECONDS.toSeconds(timeRest(EV_PLAY)) : -1);
         builder.writeInt(getMoveTime());
         for (int i = 0; i < nPlayers; i++) {
@@ -175,9 +175,9 @@ public class GomokuLogic extends BasicRoom implements Runnable {
         return buffer.toArray(new byte[0][]);
     }
 
-    public synchronized void run() {
+    private synchronized void run() {
 
-        whoPlayes = -1;
+        whoPlays = -1;
 
         while (here < nPlayers) {
             waitFor(EV_USERS_UPDATED);
@@ -185,7 +185,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
             sendStates(BasicGameAction.SIT_DOWN, null, false);
         }
 
-        whoPlayes = 0;
+        whoPlays = 0;
         sendStates(BasicGameAction.ROOM_ROUND_STARTED, null, true);
 
         pause(3000);
@@ -203,13 +203,13 @@ public class GomokuLogic extends BasicRoom implements Runnable {
 
             desk[played.i][played.j] = currentValue();
             played = null;
-            whoPlayes = next(whoPlayes);
+            whoPlays = next(whoPlays);
 
             sendStates(BasicGameAction.ROOM_STATE_CHANGED, null, true);
 
         }
 
-        whoPlayes = -1;
+        whoPlays = -1;
         sendStates(BasicGameAction.ROOM_ROUND_FINISHED, null, true);
 
         pause(5000);
@@ -217,7 +217,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
     }
 
     private void waitForPlay() {
-        if (players[whoPlayes].local) {
+        if (players[whoPlays].local) {
             int[][] copy = new int[desk.length][];
             for (int i = 0; i < desk.length; i++) {
                 copy[i] = desk[i].clone();
@@ -232,7 +232,7 @@ public class GomokuLogic extends BasicRoom implements Runnable {
     }
 
     private int currentValue() {
-        return whoPlayes == 0 ? 1 : 2;
+        return whoPlays == 0 ? 1 : 2;
     }
 
     private int next(int i) {

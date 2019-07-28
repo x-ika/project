@@ -11,7 +11,7 @@ import ika.games.base.controller.action.*;
 import java.security.*;
 import java.util.*;
 
-public class JokerLogic extends BasicRoom implements Runnable {
+public class JokerLogic extends BasicRoom {
 
     private static final class Turn {
 
@@ -63,7 +63,7 @@ public class JokerLogic extends BasicRoom implements Runnable {
     protected Player[] originalPlayers;
     protected int nPlayers = 4, botSet;
     protected int[] inhand, sums[];
-    protected int stage, roundInStage, bonusSet, trump, taker, whoPlayes;
+    protected int stage, roundInStage, bonusSet, trump, taker, whoPlays;
     protected HistoryRow currentRow, history[][];
     protected Turn[] done;
     protected Turn played;
@@ -110,7 +110,7 @@ public class JokerLogic extends BasicRoom implements Runnable {
             builder.writeString(CardComplect.toString(trump));
         }
         int sit = getPlayerSit(receiver);
-        builder.writeInt(whoPlayes == -1 ? -1 : (whoPlayes + nPlayers - sit) % nPlayers);
+        builder.writeInt(whoPlays == -1 ? -1 : (whoPlays + nPlayers - sit) % nPlayers);
         builder.writeInt(isWaitingFor(EV_PLAY) ? timeRest(EV_PLAY) / 1000 : -1);
         builder.writeInt(jokerSettings.playerTurnDelay);
         builder.setDelimiter(';');
@@ -135,7 +135,7 @@ public class JokerLogic extends BasicRoom implements Runnable {
             c[2 * i + 1] = rankChar(currentRow.cards[sit][i]);
         }
         builder.writeAscii(c);
-        int yourTurn = whoPlayes == sit ? possibleTurns.get(0).playType : 0;
+        int yourTurn = whoPlays == sit ? possibleTurns.get(0).playType : 0;
         builder.writeInt(yourTurn);
         if (yourTurn == 0 || yourTurn == 3) {
             builder.writeString("");
@@ -224,7 +224,7 @@ public class JokerLogic extends BasicRoom implements Runnable {
                     break;
                 case USER_PLAY_CARD:
                     PlayAction pAction = (PlayAction) param;
-                    controller.std.log( "CARD IS: " + pAction.card );
+                    controller.std.log("CARD IS: " + pAction.card);
                     result = userPlay(actor, (PlayAction) param);
                     break;
                 case USER_SUIT:
@@ -249,14 +249,14 @@ public class JokerLogic extends BasicRoom implements Runnable {
     }
 
     private Result userPlay(Player player, PlayAction done) {
-        if (whoPlayes == -1 || players[whoPlayes] != player) {
+        if (whoPlays == -1 || players[whoPlays] != player) {
             return JokerResult.UNEXPECTED_TURN;
         }
         try {
             for (Turn turn : possibleTurns) {
                 if (turn.equals(done)) {
                     played = turn;
-                    whoPlayes = -1;
+                    whoPlays = -1;
                     notify(EV_PLAY);
                     return BasicResult.OK;
                 }
@@ -334,10 +334,10 @@ public class JokerLogic extends BasicRoom implements Runnable {
 
     public synchronized void startWorking() {
         super.startWorking();
-        startWorker(this, true);
+        startWorker(this::run, true);
     }
 
-    public synchronized void run() {
+    private synchronized void run() {
         try {
             nextRound();
         } catch (Exception e) {
@@ -357,7 +357,7 @@ public class JokerLogic extends BasicRoom implements Runnable {
 
     private void nextRound() throws Exception {
 
-        stage = roundInStage = whoPlayes = -1;
+        stage = roundInStage = whoPlays = -1;
         Arrays.fill(inhand, 0);
         Arrays.fill(done, null);
         trump = -6;
@@ -515,10 +515,10 @@ public class JokerLogic extends BasicRoom implements Runnable {
 
     }
 
-    private void endGame(){
+    private void endGame() {
         PlayerScore[] pScores = new PlayerScore[4];
         for (int k = 0; k < nPlayers; k++) {
-            pScores[k] = new PlayerScore( originalPlayers[k].user.getHexName(), sums[history.length][k] );
+            pScores[k] = new PlayerScore(originalPlayers[k].user.getHexName(), sums[history.length][k]);
         }
     }
 
@@ -580,7 +580,7 @@ public class JokerLogic extends BasicRoom implements Runnable {
 
     protected void waitForPlay(int sit, int type, long delay) {
         played = null;
-        whoPlayes = sit;
+        whoPlays = sit;
         if ((botSet & 1 << sit) == 0) {
             setWaitFlags(EV_PLAY, delay);
             logAndSendToAll(JokerAction.ROOM_GET_BETS, null, false, null);
@@ -595,7 +595,7 @@ public class JokerLogic extends BasicRoom implements Runnable {
                 played = random.pickRandom(possibleTurns);
             }
         }
-        whoPlayes = -1;
+        whoPlays = -1;
         possibleTurns.clear();
     }
 
