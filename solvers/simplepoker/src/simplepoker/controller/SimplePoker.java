@@ -5,7 +5,7 @@ import simplepoker.player.*;
 import java.util.*;
 import java.io.File;
 
-@SuppressWarnings({"StatementWithEmptyBody"})
+@SuppressWarnings("unchecked")
 public class SimplePoker {
 
     public static void main(String[] args) throws Exception {

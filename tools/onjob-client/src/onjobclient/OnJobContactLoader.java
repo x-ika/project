@@ -87,7 +87,7 @@ public class OnJobContactLoader {
         String[] t = pattern.split(" ");
         for (int i = 0; i < t.length; i++) {
             for (String s : t[i].split(",")) {
-                char geo = (char) ('\u10d0' + i);
+                char geo = (char) ('ა' + i);
                 translit.put(s, "" + geo);
             }
         }

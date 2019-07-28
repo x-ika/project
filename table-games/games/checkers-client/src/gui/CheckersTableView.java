@@ -16,13 +16,13 @@ public class CheckersTableView extends Frame implements ActionListener, MouseLis
     private Color[] color = new Color[6];
     private String result = null;
     private boolean gameOver;
-    private CheckersControler controler;
+    private CheckersController controller;
 
     private ArrayList<TableListener> listeners = new ArrayList<>();
 
-    public CheckersTableView(CheckersControler controler) throws HeadlessException {
+    public CheckersTableView(CheckersController controller) throws HeadlessException {
         super("Checkers");
-        this.controler = controler;
+        this.controller = controller;
         setMenuBar(createManuBar());
         addMouseListener(this);
         addWindowListener(new WindowAdapter() {
@@ -174,7 +174,7 @@ public class CheckersTableView extends Frame implements ActionListener, MouseLis
         }
     }
 
-    public void actionPerformed(final ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {
         new Thread() {
             public void run() {
                 handle(e);
@@ -187,27 +187,27 @@ public class CheckersTableView extends Frame implements ActionListener, MouseLis
         if (command.equals("Exit")) {
             System.exit(0);
         } else if (command.equals("Back")) {
-            controler.back();
+            controller.back();
         } else if (command.equals("8 X 8")) {
-            controler.playNewGame(8);
+            controller.playNewGame(8);
         } else if (command.equals("10 X 10")) {
-            controler.playNewGame(10);
+            controller.playNewGame(10);
         } else if (command.equals("Player vs Computer")) {
-            controler.playNewGame(new User(), new Computer());
+            controller.playNewGame(new User(), new Computer());
         } else if (command.equals("Computer vs Player")) {
-            controler.playNewGame(new Computer(), new User());
+            controller.playNewGame(new Computer(), new User());
         } else if (command.equals("Player vs Player")) {
-            controler.playNewGame(new User(), new User());
+            controller.playNewGame(new User(), new User());
         }
     }
 
     public void itemStateChanged(ItemEvent e) {
         String s = (String) e.getItem();
         if (s.equals("Music")) {
-            if (e.getStateChange() == 1) {
-                CheckersControler.Song.play();
+            if (e.getStateChange() == ItemEvent.SELECTED) {
+                CheckersController.Song.play();
             } else {
-                CheckersControler.Song.stopPlay();
+                CheckersController.Song.stopPlay();
             }
         }
     }

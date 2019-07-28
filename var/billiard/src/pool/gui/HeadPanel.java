@@ -49,7 +49,7 @@ public class HeadPanel extends JPanel {
         add(quit);
     }
 
-    public void paint(final Graphics gr) {
+    public void paint(Graphics gr) {
         Graphics2D g = (Graphics2D) gr;
         double sx = 1d * getWidth() / image.getWidth();
         double sy = 1d * getHeight() / image.getHeight();

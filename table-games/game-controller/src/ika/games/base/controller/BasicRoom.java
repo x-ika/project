@@ -74,7 +74,7 @@ public abstract class BasicRoom extends MultiStateObject implements Room {
         return runningThreads.containsKey(Thread.currentThread());
     }
 
-    protected void startWorker(final Runnable runnable, final boolean loop, Thread.UncaughtExceptionHandler eh) {
+    protected void startWorker(Runnable runnable, boolean loop, Thread.UncaughtExceptionHandler eh) {
         Thread thread = new Thread() {
             public void run() {
                 synchronized (BasicRoom.this) {
@@ -95,7 +95,7 @@ public abstract class BasicRoom extends MultiStateObject implements Room {
         thread.start();
     }
 
-    protected void startWorker(final Runnable runnable, final boolean loop) {
+    protected void startWorker(Runnable runnable, boolean loop) {
         startWorker(runnable, loop, null);
     }
 
@@ -403,7 +403,7 @@ public abstract class BasicRoom extends MultiStateObject implements Room {
         return builder.getMessage();
     }
 
-    protected byte[][] writeGeneratorState(final String initialState, final int[] clientSeeds) {
+    protected byte[][] writeGeneratorState(String initialState, int[] clientSeeds) {
         return writePaging(MessageTypes.MSG_TYPE_GEN_HEADER, MessageTypes.MSG_TYPE_GEN_PAGING, 900, new StructWriter() {
             int ind = 0;
 

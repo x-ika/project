@@ -16,6 +16,7 @@ import floodit.solver.students.vmask.MySolver;
 import tester.Checker;
 import tester.AbstractTester;
 
+@SuppressWarnings("unchecked")
 public class FlooditTester extends AbstractTester<int[][], int[]> {
 
     private static class FlooditChecker implements Checker<int[][], int[]> {
@@ -52,7 +53,7 @@ public class FlooditTester extends AbstractTester<int[][], int[]> {
         super(new FlooditChecker());
     }
 
-    public synchronized void visualize(final int[][] board) {
+    public synchronized void visualize(int[][] board) {
         try {
             final int n = board.length;
             final int m = board[0].length;

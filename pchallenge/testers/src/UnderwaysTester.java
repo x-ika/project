@@ -143,7 +143,7 @@ public class UnderwaysTester extends ProblemTester {
     }
 
     private static boolean[] t = new boolean[8888];
-    private static void dj(int n, int s, final long[] f, long[] d, long add, List<List<T>> g) {
+    private static void dj(int n, int s, long[] f, long[] d, long add, List<List<T>> g) {
         PriorityQueue<Integer> q = new PriorityQueue<>(n, (o1, o2) -> Long.signum(f[o1] - f[o2]));
         Arrays.fill(t, false);
         Arrays.fill(f, (long) 1e15);

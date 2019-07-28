@@ -279,7 +279,7 @@ public abstract class GameClient extends ConnectionAdapter<byte[]> {
     public void messageSent(SocketConnection<byte[]> source, byte[] message) {
     }
 
-    public void messageReceived(SocketConnection<byte[]> source, final byte[] message) {
+    public void messageReceived(SocketConnection<byte[]> source, byte[] message) {
         try {
             SwingUtilities.invokeLater(() -> handle(message));
         } catch (Exception e) {

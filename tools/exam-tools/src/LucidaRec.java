@@ -542,7 +542,7 @@ public class LucidaRec {
 
     //-----------------------------------------------------------------------------------
 
-    public synchronized File chooseDir(final String def) throws InterruptedException {
+    public synchronized File chooseDir(String def) throws InterruptedException {
         return GraphicUtils.chooseFile(frame, def, JFileChooser.DIRECTORIES_ONLY);
     }
 

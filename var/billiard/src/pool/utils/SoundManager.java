@@ -74,7 +74,7 @@ public class SoundManager {
             }
         }
 
-        void play(final boolean loop) {
+        void play(boolean loop) {
             new Thread() {
                 public void run() {
                     try {

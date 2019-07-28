@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class NumbersDialog extends JDialog {
 
-    public NumbersDialog(Frame owner, final int[][] numbers) {
+    public NumbersDialog(Frame owner, int[][] numbers) {
         super(owner, "Numbers that do not appear", true);
         setSize(500, 30 + 30 * ((numbers[0].length + 9) / 10));
         setContentPane(new JPanel() {

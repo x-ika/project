@@ -11,7 +11,7 @@ import java.lang.reflect.*;
 
 import gui.CheckersTableView;
 
-public class CheckersControler {
+public class CheckersController {
 
     public static int N = 8;
     private int[][] desk, previousDesk;
@@ -41,7 +41,7 @@ public class CheckersControler {
         }
     }
 
-    private CheckersControler() throws IOException {
+    private CheckersController() throws IOException {
         new Song("spacemusic.au").start();
     }
 
@@ -253,7 +253,7 @@ public class CheckersControler {
     }
 
     private static int play(Class<? extends Player> a, Class<? extends Player> b) throws Exception {
-        CheckersControler instance = new CheckersControler();
+        CheckersController instance = new CheckersController();
         int winner = instance.playNewGame(8, a.getConstructor().newInstance(), b.getConstructor().newInstance());
         System.out.printf("%-50s %-50s %d\n", a.getName(), b.getName(), winner);
 //        instance.dispose();

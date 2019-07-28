@@ -33,7 +33,7 @@ public class MainServer extends ConnectionsManager<Message> {
 
     //-----------------------------------------------------------------------------------
 
-    private void checkLogin(SocketConnection socketConnection, MapMessage record) {
+    private void checkLogin(SocketConnection<Message> socketConnection, MapMessage record) {
         String user = record.getString("user");
         String pass = record.getString("pass");
         Properties p = new Properties();
@@ -62,8 +62,8 @@ public class MainServer extends ConnectionsManager<Message> {
         if (front == end) {
             return;
         }
-        SocketConnection free = null;
-        for (SocketConnection c : connections) {
+        SocketConnection<Message> free = null;
+        for (SocketConnection<Message> c : connections) {
             OperatorData d = data.get(c);
             if (!d.isFree()) {
                 continue;
@@ -120,12 +120,12 @@ public class MainServer extends ConnectionsManager<Message> {
 
     //-----------------------------------------------------------------------------------
 
-    public void disconnected(SocketConnection socketConnection) {
+    public void disconnected(SocketConnection<Message> socketConnection) {
         super.disconnected(socketConnection);
         data.remove(socketConnection);
     }
 
-    public void messageReceived(final SocketConnection socketConnection, final Message message) {
+    public void messageReceived(SocketConnection<Message> socketConnection, Message message) {
         new Thread() {
             public void run() {
                 handle((MapMessage) message, socketConnection);
@@ -133,7 +133,7 @@ public class MainServer extends ConnectionsManager<Message> {
         }.start();
     }
 
-    private void handle(MapMessage record, SocketConnection socketConnection) {
+    private void handle(MapMessage record, SocketConnection<Message> socketConnection) {
         if (record.get("type").equals("login")) {
             checkLogin(socketConnection, record);
         }

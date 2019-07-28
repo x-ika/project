@@ -5,7 +5,7 @@ import logic.db.*;
 import java.io.*;
 import java.util.*;
 
-@SuppressWarnings({"EmptyCatchBlock", "unchecked"})
+@SuppressWarnings("unchecked")
 public class DBManager {
 
     private static final String DB_FILE = "resources\\db";
@@ -21,7 +21,7 @@ public class DBManager {
             if (o instanceof Map) {
                 map.putAll((Map) o);
             }
-        } catch (Exception e) {
+        } catch (Exception ignore) {
         }
 
         if (!map.containsKey(TEAMS)) {

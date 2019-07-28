@@ -80,7 +80,7 @@ public class P1 {
         return z;
     }
 
-    private static void paint(final int... s) {
+    private static void paint(int... s) {
         JFrame f = new JFrame("V");
         f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         f.setSize(900, 600);

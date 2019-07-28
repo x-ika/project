@@ -21,6 +21,7 @@ import sudoku.solver.students.vmask.VatoSolver;
 import sudoku.solver.students.gpata11.Gpata11solver;
 import sudoku.solver.students.ggigl.GiglemaSolver;
 
+@SuppressWarnings("unchecked")
 public class SudokuTester extends AbstractTester<int[][], int[][]> {
 
     private static class SudokuChecker implements Checker<int[][], int[][]> {
@@ -63,7 +64,7 @@ public class SudokuTester extends AbstractTester<int[][], int[][]> {
         super(new SudokuChecker());
     }
 
-    public void visualize(final int[][] board) {
+    public void visualize(int[][] board) {
         GraphicUtils.showMatrix(board);
     }
 

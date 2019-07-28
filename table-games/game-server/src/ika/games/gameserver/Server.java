@@ -20,6 +20,7 @@ import ika.games.base.*;
  * - list of games which should be loaded<p>
  *<p>
  */
+@SuppressWarnings("unchecked")
 public class Server extends AsynchronousConnectionManager {
 
     private static final int SOCKET_BUFFER_CAPACITY = 1 << 12;

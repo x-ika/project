@@ -19,7 +19,7 @@ class Motion implements ActionListener {
 
     private Timer timer;
 
-    Motion(GameController game, final int MAX_TIME) {
+    Motion(GameController game, int MAX_TIME) {
         timer = new Timer(1000 / Consts.CADRES_IN_SECOND, this);
         this.game = game;
         timeOfAim = 30 - MAX_TIME / 5;

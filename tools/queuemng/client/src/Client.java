@@ -10,11 +10,11 @@ import java.io.*;
 import java.awt.image.BufferedImage;
 import java.util.*;
 
-public class Client extends ConnectionAdapter {
+public class Client extends ConnectionAdapter<Message> {
 
     public static Client client;
 
-    private SocketConnection socketConnection;
+    private SocketConnection<Message> socketConnection;
 
     private LoginForm loginForm;
     private AboutDialogPanel aboutDialogPanel;

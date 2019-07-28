@@ -29,9 +29,10 @@ public abstract class AbstractTester<T, R> {
         return new int[]{correct, tl, exc, mistake};
     }
 
-    public synchronized long test(final Solver<T, R> solver,
-                                  final T test,
-                                  int wait, boolean vis) throws Exception {
+    public synchronized long test(Solver<T, R> solver,
+                                  T test,
+                                  int wait, boolean vis) throws Exception
+    {
 
         Thread t = new Thread() {
             public void run() {

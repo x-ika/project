@@ -193,7 +193,7 @@ public class Loto extends JPanel {
         updateAll();
     }
 
-    private JPanel create(String labelText, final JTextField field) {
+    private JPanel create(String labelText, JTextField field) {
         JLabel label = new JLabel(labelText);
         label.setDisplayedMnemonic(labelText.charAt(0));
         JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER));

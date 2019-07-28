@@ -24,6 +24,7 @@ import spamdetector.detector.students.vmask11.VatoDetector;
 import spamdetector.detector.students.zgven.ZurasDetector;
 import spamdetector.detector.students.adoli11.SandroDetector;
 
+@SuppressWarnings("unchecked")
 public class DetectorChecker extends AbstractTester<TestCase, Classifier> {
 
     public DetectorChecker() {

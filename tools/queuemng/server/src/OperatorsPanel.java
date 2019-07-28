@@ -125,7 +125,7 @@ public class OperatorsPanel extends JPanel {
         column.setResizable(false);
     }
 
-    public void updateTable(final Map<SocketConnection, OperatorData> map) {
+    public void updateTable(Map<SocketConnection, OperatorData> map) {
         EventQueue.invokeLater(new Thread() {
             public void run() {
                 model.setRowCount(0);

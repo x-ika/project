@@ -175,7 +175,7 @@ public abstract class BasicPlayer implements Player {
     }
 
     private int getValue(int i, int v) {
-        return i == (CheckersControler.N - 1) * (v % 3 - 1) ? v % 3 + 3 : v;
+        return i == (CheckersController.N - 1) * (v % 3 - 1) ? v % 3 + 3 : v;
     }
 
     private boolean isEmpty(int i, int j) {
@@ -183,7 +183,7 @@ public abstract class BasicPlayer implements Player {
     }
 
     private boolean isOnTheDesk(int i, int j) {
-        return 0 <= i && i < CheckersControler.N && 0 <= j && j < CheckersControler.N;
+        return 0 <= i && i < CheckersController.N && 0 <= j && j < CheckersController.N;
     }
 
     //-----------------------------------------------------------------------------------

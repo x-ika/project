@@ -174,7 +174,7 @@ public class GameController implements MouseListener, MouseMotionListener {
         }
     }
 
-    public void mousePressed(final MouseEvent e) {
+    public void mousePressed(MouseEvent e) {
         if (moving || gameOver || e.getButton() != 1) {
             return;
         }

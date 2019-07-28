@@ -19,8 +19,8 @@ import message.Request;
 
 public class SolutionSubmitForm extends BaseListener {
 
-    private JComboBox problems;
-    private JComboBox languages;
+    private JComboBox<String> problems;
+    private JComboBox<Language> languages;
     private JTextField pathField;
     private JTextArea solutionTextArea;
 
@@ -33,11 +33,11 @@ public class SolutionSubmitForm extends BaseListener {
 
     private JPanel createContent(ContestInfo info) {
 
-        languages = new JComboBox();
+        languages = new JComboBox<>();
         for (Language language : Language.values()) {
             languages.addItem(language);
         }
-        problems = new JComboBox();
+        problems = new JComboBox<>();
         for (int i = 0; i < info.getNProblems(); i++) {
             problems.addItem(info.getProblemNames()[i]);
         }
