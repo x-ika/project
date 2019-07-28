@@ -57,7 +57,7 @@ public class DominoClient extends GameClient {
             int nPlayers = parser.nextInt();
 
             int sit = parser.nextInt();
-            int playes = parser.nextInt();
+            int plays = parser.nextInt();
             int restTime = parser.nextInt();
             int totalTime = parser.nextInt();
 
@@ -96,7 +96,7 @@ public class DominoClient extends GameClient {
             }
             tree.setRoot(root);
 
-            ((DominoRoom) openedTables.get(roomName)).update(sit, playes, stones, users, score, restTime, totalTime, first, tree);
+            ((DominoRoom) openedTables.get(roomName)).update(sit, plays, stones, users, score, restTime, totalTime, first, tree);
 
         }
 

@@ -56,7 +56,7 @@ public class GomokuClient extends GameClient {
             int nPlayers = parser.nextInt();
 
             int sit = parser.nextInt();
-            int playes = parser.nextInt();
+            int plays = parser.nextInt();
             int restTime = parser.nextInt();
             int totalTime = parser.nextInt();
 

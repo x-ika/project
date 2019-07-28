@@ -73,12 +73,12 @@ public class DominoRoom extends JComponent implements ComponentListener {
         setBackground(Color.orange);
     }
 
-    public void update(int sit, int playes, int[][] stones, String[] users,
+    public void update(int sit, int plays, int[][] stones, String[] users,
                        int[] score, int rest, int total, boolean first, DominoTree tree)
     {
         place = sit;
 
-        boolean myMove = place != -1 && place == playes;
+        boolean myMove = place != -1 && place == plays;
 
         if (!myMove) {
             moves = null;
@@ -90,7 +90,7 @@ public class DominoRoom extends JComponent implements ComponentListener {
             init();
         }
         for (int i = 0; i < 4; i++) {
-            boolean curMoves = i == playes;
+            boolean curMoves = i == plays;
             int canMove = 0;
             if (myMove && curMoves) {
                 for (int j = 0; j < stones[i].length; j++) {
