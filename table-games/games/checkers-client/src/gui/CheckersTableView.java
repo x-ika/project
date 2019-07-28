@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import main.*;
 import player.User;
 import player.Computer;
@@ -175,11 +176,7 @@ public class CheckersTableView extends Frame implements ActionListener, MouseLis
     }
 
     public void actionPerformed(ActionEvent e) {
-        new Thread() {
-            public void run() {
-                handle(e);
-            }
-        }.start();
+        ThreadUtils.executeInNewThread(() -> handle(e));
     }
 
     private void handle(ActionEvent e) {

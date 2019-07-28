@@ -18,7 +18,7 @@ import ika.games.base.*;
  * - server port<p>
  * - path to folder where game .jar files ar located<p>
  * - list of games which should be loaded<p>
- *<p>
+ * <p>
  */
 @SuppressWarnings("unchecked")
 public class Server extends AsynchronousConnectionManager {
@@ -182,15 +182,13 @@ public class Server extends AsynchronousConnectionManager {
             }
             if (action == 2) {
                 if (adminConnection == source) {
-                    new Thread() {
-                        public void run() {
-                            try {
-                                process(parser.nextString());
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
+                    ThreadUtils.executeInNewThread(() -> {
+                        try {
+                            process(parser.nextString());
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
-                    }.start();
+                    });
                 }
                 return;
             }

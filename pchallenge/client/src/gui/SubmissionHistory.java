@@ -1,5 +1,6 @@
 package gui;
 
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.csbase.Message;
 import com.simplejcode.commons.net.sockets.SocketConnection;
 import model.RequestType;
@@ -110,27 +111,25 @@ public class SubmissionHistory extends BaseListener {
     }
 
     private void updateTable() {
-        EventQueue.invokeLater(new Thread() {
-            public void run() {
+        EventQueue.invokeLater(ThreadUtils.createThread(() -> {
 
-                model.setRowCount(0);
-                int ind = 0;
-                for (TeamHistory.Attempt attempt : myHistory.getAttempts()) {
+            model.setRowCount(0);
+            int ind = 0;
+            for (TeamHistory.Attempt attempt : myHistory.getAttempts()) {
 
-                    Object[] row = new Object[N_COLUMNS];
-                    int index = 0;
-                    String space = "          ";
-                    row[index++] = space + String.format("%d", ++ind);
-                    row[index++] = space + String.format("%02d:%02d", attempt.time / 60, attempt.time % 60);
-                    row[index++] = space + String.format("%s", contestInfo.getProblemNames()[attempt.problem].substring(0, 1));
-                    row[index++] = space + String.format("%s", attempt.result);
-                    row[index++] = space + String.format("%d", attempt.failedTest);
-                    model.addRow(row);
+                Object[] row = new Object[N_COLUMNS];
+                int index = 0;
+                String space = "          ";
+                row[index++] = space + String.format("%d", ++ind);
+                row[index++] = space + String.format("%02d:%02d", attempt.time / 60, attempt.time % 60);
+                row[index++] = space + String.format("%s", contestInfo.getProblemNames()[attempt.problem].substring(0, 1));
+                row[index++] = space + String.format("%s", attempt.result);
+                row[index++] = space + String.format("%d", attempt.failedTest);
+                model.addRow(row);
 
-                    validate();
-                }
+                validate();
             }
-        });
+        }));
     }
 
 }

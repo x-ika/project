@@ -1,13 +1,11 @@
 package logic;
 
+import com.simplejcode.commons.misc.util.*;
 import message.Submission;
 import model.TestResult;
 
 import java.util.concurrent.*;
 import java.io.*;
-
-import com.simplejcode.commons.misc.util.ProcessUtils;
-import com.simplejcode.commons.misc.util.FileSystemUtils;
 
 public class SubmissionProcessThread {
 
@@ -25,19 +23,17 @@ public class SubmissionProcessThread {
     }
 
     private void startHandlerThread() {
-        new Thread() {
-            public void run() {
-                //noinspection InfiniteLoopStatement
-                while (true) {
-                    try {
-                        Submission submission = queue.take();
-                        process(submission);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+        ThreadUtils.executeInNewThread(() -> {
+            //noinspection InfiniteLoopStatement
+            while (true) {
+                try {
+                    Submission submission = queue.take();
+                    process(submission);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
-        }.start();
+        });
     }
 
     private void process(Submission submission) throws Exception {

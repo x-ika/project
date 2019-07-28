@@ -2,6 +2,9 @@ group 'com.simplejcode.var'
 
 configurations {
     testCompile.extendsFrom junit
+
+    compile.extendsFrom common_misc
+
 }
 
 jar {

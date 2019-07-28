@@ -1,5 +1,6 @@
 package main;
 
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import player.*;
 
 import java.applet.Applet;
@@ -101,11 +102,7 @@ public class CheckersController {
                 checkersTableView.addListener((TableListener) player);
             }
         }
-        turns = new Thread() {
-            public void run() {
-                turnsThread(players);
-            }
-        };
+        turns = ThreadUtils.createThread(() -> turnsThread(players));
         turns.start();
         waitingForEnd = true;
         while (waitingForEnd) {

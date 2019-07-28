@@ -1,5 +1,7 @@
 package pool.utils;
 
+import com.simplejcode.commons.misc.util.ThreadUtils;
+
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.AudioInputStream;
@@ -75,17 +77,15 @@ public class SoundManager {
         }
 
         void play(boolean loop) {
-            new Thread() {
-                public void run() {
-                    try {
-                        audioClip = AudioSystem.getClip();
-                        audioClip.open(format, audio, 0, audio.length);
-                        audioClip.loop(loop ? Integer.MAX_VALUE : 0);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+            ThreadUtils.executeInNewThread(() -> {
+                try {
+                    audioClip = AudioSystem.getClip();
+                    audioClip.open(format, audio, 0, audio.length);
+                    audioClip.loop(loop ? Integer.MAX_VALUE : 0);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            }.start();
+            });
         }
 
         void stop() {

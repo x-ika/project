@@ -83,7 +83,7 @@ public class GameDAOImpl implements GameDAO {
 
     //-----------------------------------------------------------------------------------
 
-    public long logAction(int gameId, int roomId, int userId, int roundId, GameAction action, Result result, Object... params) {
+    public long logAction(int gameId, int roomId, int userId, int roundId, GameAction action, Result result, Object[] params) {
         return 0;
     }
 

@@ -4,6 +4,7 @@ import static java.lang.Math.*;
 
 import com.simplejcode.commons.av.improc.ImageProcessor;
 import com.simplejcode.commons.gui.Console;
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import tetris.logic.*;
 
 import javax.imageio.ImageIO;
@@ -52,37 +53,34 @@ public class VisualPort implements TetrisPort {
         console.dispose();
         robot.delay(1000);
 
-        new Thread() {
-            public void run() {
-                synchronized (VisualPort.this) {
-                    while (true) {
-                        turn = null;
-                        getBoard();
-                        getPile();
-                        listener.eventOcuured(new PortEvent(1, board, pile));
-                        while (turn == null) {
-                            try {
-                                wait();
-                            } catch (InterruptedException e) {
-                                // nothing to do
-                            }
+        ThreadUtils.executeInNewThread(() -> {
+            synchronized (VisualPort.this) {
+                while (true) {
+                    turn = null;
+                    getBoard();
+                    getPile();
+                    listener.eventOcuured(new PortEvent(1, board, pile));
+                    while (turn == null) {
+                        try {
+                            wait();
+                        } catch (InterruptedException ignore) {
                         }
-                        int n = turn.commands.size(), j = n;
-                        while (j > 0 && turn.commands.get(j - 1) == Command.DOWN) {
-                            j--;
-                        }
-                        for (int i = 0; i < j; i++) {
-                            doit(turn.commands.get(i));
-                        }
-                        if (j < n) {
-//                            press(Command.DOWN.press);
-//                            robot.delay(100 * (n - j));
-//                            release(Command.DOWN.press);
-                        }
+                    }
+                    int n = turn.commands.size(), j = n;
+                    while (j > 0 && turn.commands.get(j - 1) == Command.DOWN) {
+                        j--;
+                    }
+                    for (int i = 0; i < j; i++) {
+                        doit(turn.commands.get(i));
+                    }
+                    if (j < n) {
+//                        press(Command.DOWN.press);
+//                        robot.delay(100 * (n - j));
+//                        release(Command.DOWN.press);
                     }
                 }
             }
-        }.start();
+        });
 
     }
 
@@ -172,7 +170,7 @@ public class VisualPort implements TetrisPort {
     private void getPile() {
         int[] t = board.getBitsetPrepresentation();
         int min = R, max = 0;
-        for (int i = TetrisUtils.top(t); ++i < R;) {
+        for (int i = TetrisUtils.top(t); ++i < R; ) {
             if (t[i] != 0) {
                 min = min(min, i);
                 max = i;

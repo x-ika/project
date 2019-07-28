@@ -31,7 +31,7 @@ public interface GameDAO extends Closeable {
 
     //-----------------------------------------------------------------------------------
 
-    long logAction(int gameId, int roomId, int userId, int roundId, GameAction action, Result result, Object... params);
+    long logAction(int gameId, int roomId, int userId, int roundId, GameAction action, Result result, Object[] params);
 
     long updateAction(long actionId, Result result);
 

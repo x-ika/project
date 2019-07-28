@@ -2,6 +2,8 @@ package pool.logic;
 
 import static pool.utils.ImageFactory.*;
 import static pool.utils.Consts.*;
+
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import pool.gui.PlayerInfoPanel;
 import pool.gui.GamePanel;
 
@@ -179,23 +181,21 @@ public class GameController implements MouseListener, MouseMotionListener {
             return;
         }
         final int value = strengthBar.getValue();
-        new Thread() {
-            public void run() {
-                moving = true;
-                model.getBalls()[0].speedChanged(e.getX(), e.getY(),
-                        (double) strengthBar.getValue() / strengthBar.getMaximum());
-                current.init();
-                new Motion(GameController.this, value).start();
-                moving = false;
-                needCue = true;
-                Player next = current.whoIsNext();
-                if (next != null) {
-                    (current = next).info.startTimer();
-                } else {
-                    PoolAPI.getInstance().theWinnerIs(current);
-                }
+        ThreadUtils.executeInNewThread(() -> {
+            moving = true;
+            model.getBalls()[0].speedChanged(e.getX(), e.getY(),
+                    (double) strengthBar.getValue() / strengthBar.getMaximum());
+            current.init();
+            new Motion(GameController.this, value).start();
+            moving = false;
+            needCue = true;
+            Player next = current.whoIsNext();
+            if (next != null) {
+                (current = next).info.startTimer();
+            } else {
+                PoolAPI.getInstance().theWinnerIs(current);
             }
-        }.start();
+        });
     }
 
     public void mouseReleased(MouseEvent e) {

@@ -1,6 +1,7 @@
 package ika.games.admin;
 
 import com.simplejcode.commons.gui.*;
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.sockets.*;
 
 import java.net.Socket;
@@ -20,13 +21,11 @@ public class LiveAdmin extends CustomInternalFrame implements ConnectionListener
     }
 
     private void start() {
-        new Thread() {
-            public void run() {
-                while (console != null) {
-                    sendCommand(console.readLine());
-                }
+        ThreadUtils.executeInNewThread(() -> {
+            while (console != null) {
+                sendCommand(console.readLine());
             }
-        }.start();
+        });
     }
 
     public void sendLogin(String host, String user, String pass) {

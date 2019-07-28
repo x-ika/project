@@ -1,6 +1,7 @@
 package tetris;
 
 import com.simplejcode.commons.gui.GraphicUtils;
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import tetris.logic.*;
 
 import java.util.*;
@@ -58,36 +59,33 @@ public class StaticPort implements TetrisPort {
 //            e.printStackTrace();
 //        }
 
-        new Thread() {
-            public void run() {
-                synchronized (StaticPort.this) {
-                    while (true) {
-                        turn = null;
-                        Pile pile = getPile();
-                        listener.eventOcuured(new PortEvent(PortEvent.TYPE_MAKE_TURN, board, pile));
-                        while (turn == null) {
-                            try {
-                                StaticPort.this.wait();
-                            } catch (InterruptedException e) {
-                                // nothing to do
-                            }
-                        }
-                        if (!apply(pile)) {
-//                            score = 0;
-                            break;
-                        }
-                        if (visualizer != null) {
-                            visualizer.setRectangle(board, score);
-                            GraphicUtils.pause(delayBetweenTurns);
-                        }
-                        if (TetrisUtils.top(board.getBitsetPrepresentation()) >= h - 5) {
-                            break;
+        ThreadUtils.executeInNewThread(() -> {
+            synchronized (StaticPort.this) {
+                while (true) {
+                    turn = null;
+                    Pile pile = getPile();
+                    listener.eventOcuured(new PortEvent(PortEvent.TYPE_MAKE_TURN, board, pile));
+                    while (turn == null) {
+                        try {
+                            StaticPort.this.wait();
+                        } catch (InterruptedException ignore) {
                         }
                     }
-                    listener.eventOcuured(new PortEvent(PortEvent.TYPE_GAME_OVER, board, null));
+                    if (!apply(pile)) {
+//                        score = 0;
+                        break;
+                    }
+                    if (visualizer != null) {
+                        visualizer.setRectangle(board, score);
+                        GraphicUtils.pause(delayBetweenTurns);
+                    }
+                    if (TetrisUtils.top(board.getBitsetPrepresentation()) >= h - 5) {
+                        break;
+                    }
                 }
+                listener.eventOcuured(new PortEvent(PortEvent.TYPE_GAME_OVER, board, null));
             }
-        }.start();
+        });
 
     }
 

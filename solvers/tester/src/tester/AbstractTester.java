@@ -1,5 +1,7 @@
 package tester;
 
+import com.simplejcode.commons.misc.util.ThreadUtils;
+
 import java.util.*;
 
 public abstract class AbstractTester<T, R> {
@@ -34,21 +36,19 @@ public abstract class AbstractTester<T, R> {
                                   int wait, boolean vis) throws Exception
     {
 
-        Thread t = new Thread() {
-            public void run() {
-                try {
-                    long startTime = System.nanoTime();
-                    ret = solver.solve(checker.clone(test));
-                    time = System.nanoTime() - startTime;
-                } catch (Exception e) {
-                    time = -1;
-                }
+        Thread solverThread = ThreadUtils.createThread(() -> {
+            try {
+                long startTime = System.nanoTime();
+                ret = solver.solve(checker.clone(test));
+                time = System.nanoTime() - startTime;
+            } catch (Exception e) {
+                time = -1;
             }
-        };
+        });
         ret = null;
-        t.start();
-        t.join(wait);
-        t.stop();
+        solverThread.start();
+        solverThread.join(wait);
+        solverThread.stop();
         if (time == -1) {
             return -1;
         }

@@ -4,6 +4,7 @@ import static ika.games.base.controller.Constants.*;
 
 import com.simplejcode.commons.misc._pattern.pool.*;
 import com.simplejcode.commons.misc.DynamicStruct;
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.sockets.*;
 import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
@@ -62,18 +63,16 @@ public abstract class Controller extends AsynchronousConnectionManager {
         pooler = new ObjectPool<>(getForPooler());
 
         updateApp();
-        appUpdateThread = new Thread() {
-            public void run() {
-                while (appUpdateThread != null) {
-                    try {
-                        sleep(TimeUnit.SECONDS.toMillis(game.getInt(APP_UPDATE_INTERVAL)));
-                        updateApp();
-                    } catch (Exception e) {
-                        handleException(e);
-                    }
+        appUpdateThread = ThreadUtils.createThread(() -> {
+            while (appUpdateThread != null) {
+                try {
+                    Thread.sleep(TimeUnit.SECONDS.toMillis(game.getInt(APP_UPDATE_INTERVAL)));
+                    updateApp();
+                } catch (Exception e) {
+                    handleException(e);
                 }
             }
-        };
+        });
         appUpdateThread.start();
         start();
     }

@@ -1,3 +1,4 @@
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.sockets.SocketConnection;
 
 import javax.swing.table.DefaultTableModel;
@@ -126,21 +127,19 @@ public class OperatorsPanel extends JPanel {
     }
 
     public void updateTable(Map<SocketConnection, OperatorData> map) {
-        EventQueue.invokeLater(new Thread() {
-            public void run() {
-                model.setRowCount(0);
-                SocketConnection[] t = map.keySet().toArray(new SocketConnection[0]);
-                Arrays.sort(t, new ConnectionComparator());
-                for (int i = 0; i < t.length; i++) {
-                    OperatorData data = map.get(t[i]);
-                    rowColors[i] = data.isFree() ? Color.red : Color.white;
-                    String[] row = new String[2];
-                    row[0] = t[i].getHost().toString();
-                    row[1] = data.isFree() ? "" : "" + data.getTicket();
-                    model.addRow(row);
-                }
+        EventQueue.invokeLater(ThreadUtils.createThread(() -> {
+            model.setRowCount(0);
+            SocketConnection[] t = map.keySet().toArray(new SocketConnection[0]);
+            Arrays.sort(t, new ConnectionComparator());
+            for (int i = 0; i < t.length; i++) {
+                OperatorData data = map.get(t[i]);
+                rowColors[i] = data.isFree() ? Color.red : Color.white;
+                String[] row = new String[2];
+                row[0] = t[i].getHost().toString();
+                row[1] = data.isFree() ? "" : "" + data.getTicket();
+                model.addRow(row);
             }
-        });
+        }));
     }
 
 }

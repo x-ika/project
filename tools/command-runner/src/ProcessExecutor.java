@@ -1,3 +1,4 @@
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.sun.jna.*;
 import com.sun.jna.platform.win32.Kernel32;
 import com.sun.jna.platform.win32.WinNT;
@@ -49,7 +50,7 @@ public class ProcessExecutor {
 
         updateStatus(Status.RUNNING);
 
-        new Thread(this::startReading).start();
+        ThreadUtils.executeInNewThread(this::startReading);
     }
 
     private void startReading() {

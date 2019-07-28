@@ -1,5 +1,6 @@
 package gui;
 
+import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.csbase.Message;
 import com.simplejcode.commons.net.sockets.SocketConnection;
 import message.TeamHistory;
@@ -240,24 +241,22 @@ public class StandingsView extends BaseListener {
     }
 
     private void updateTable() {
-        EventQueue.invokeLater(new Thread() {
-            public void run() {
-                model.setRowCount(0);
-                Color current = Color.white;
-                TeamHistory[] t = teams.keySet().toArray(new TeamHistory[0]);
-                Arrays.sort(t, comparator);
-                for (int i = 0; i < t.length; i++) {
-                    if (i != 0 && t[i].getSolved() < t[i - 1].getSolved()) {
-                        current = current == Color.white ? new Color(208, 240, 255) : Color.white;
-                    }
-                    rowColors[i] = i % 2 == 0 ? current : darker(current, 8);
-                    if (t[i].getTeamName().equals(Client.getInstance().getTeamName())) {
-                        rowColors[i] = Color.yellow;
-                    }
-                    model.addRow(teams.get(t[i]));
+        EventQueue.invokeLater(ThreadUtils.createThread(() -> {
+            model.setRowCount(0);
+            Color current = Color.white;
+            TeamHistory[] t = teams.keySet().toArray(new TeamHistory[0]);
+            Arrays.sort(t, comparator);
+            for (int i = 0; i < t.length; i++) {
+                if (i != 0 && t[i].getSolved() < t[i - 1].getSolved()) {
+                    current = current == Color.white ? new Color(208, 240, 255) : Color.white;
                 }
+                rowColors[i] = i % 2 == 0 ? current : darker(current, 8);
+                if (t[i].getTeamName().equals(Client.getInstance().getTeamName())) {
+                    rowColors[i] = Color.yellow;
+                }
+                model.addRow(teams.get(t[i]));
             }
-        });
+        }));
     }
 
     private static Color darker(Color c, int d) {

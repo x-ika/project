@@ -252,28 +252,24 @@ public class Loto extends JPanel {
     }
 
     public void updateTable() {
-        EventQueue.invokeLater(new Thread() {
-            public void run() {
-                int pos = scrollPane.getVerticalScrollBar().getValue();
-                model.setRowCount(0);
-                Color current = new Color(208, 240, 255);
-                for (int i = 0; i < data.getSize(); i++) {
-                    addRow(i, current);
-                }
-                scrollPane.getVerticalScrollBar().setValue(pos);
+        EventQueue.invokeLater(ThreadUtils.createThread(() -> {
+            int pos = scrollPane.getVerticalScrollBar().getValue();
+            model.setRowCount(0);
+            Color current = new Color(208, 240, 255);
+            for (int i = 0; i < data.getSize(); i++) {
+                addRow(i, current);
             }
-        });
+            scrollPane.getVerticalScrollBar().setValue(pos);
+        }));
     }
 
     public void rowAdded() {
-        EventQueue.invokeLater(new Thread() {
-            public void run() {
-                int pos = scrollPane.getVerticalScrollBar().getValue();
-                Color current = new Color(208, 240, 255);
-                addRow(model.getRowCount(), current);
-                scrollPane.getVerticalScrollBar().setValue(pos);
-            }
-        });
+        EventQueue.invokeLater(ThreadUtils.createThread(() -> {
+            int pos = scrollPane.getVerticalScrollBar().getValue();
+            Color current = new Color(208, 240, 255);
+            addRow(model.getRowCount(), current);
+            scrollPane.getVerticalScrollBar().setValue(pos);
+        }));
 
     }
 

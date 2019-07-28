@@ -1,5 +1,5 @@
 import com.simplejcode.commons.gui.*;
-import com.simplejcode.commons.misc.util.ReflectionUtils;
+import com.simplejcode.commons.misc.util.*;
 import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.*;
 
@@ -126,11 +126,7 @@ public class MainServer extends ConnectionsManager<Message> {
     }
 
     public void messageReceived(SocketConnection<Message> socketConnection, Message message) {
-        new Thread() {
-            public void run() {
-                handle((MapMessage) message, socketConnection);
-            }
-        }.start();
+        ThreadUtils.executeInNewThread(() -> handle((MapMessage) message, socketConnection));
     }
 
     private void handle(MapMessage record, SocketConnection<Message> socketConnection) {
