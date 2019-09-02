@@ -94,8 +94,8 @@ public class DataParser {
             long requiredOutTime = t.day + TimeUnit.HOURS.toMillis(15);
 
             t.dayStr = DateUtils.formatDateTime(DateUtils.fromTimestamp(t.day), DATE_PATTERN);
-            t.inTimeStr = DateUtils.formatDateTime(DateUtils.fromTimestamp(inTime), TIME_PATTERN);
-            t.outTimeStr = DateUtils.formatDateTime(DateUtils.fromTimestamp(outTime), TIME_PATTERN);
+            t.inTimeStr = DateUtils.formatDateTime(DateUtils.fromTimestamp(t.inTime), TIME_PATTERN);
+            t.outTimeStr = DateUtils.formatDateTime(DateUtils.fromTimestamp(t.outTime), TIME_PATTERN);
 
             long pre = inTime - requiredInTime;
             if (pre > 0) {

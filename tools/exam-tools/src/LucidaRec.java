@@ -1,23 +1,20 @@
 import com.simplejcode.commons.av.improc.*;
-import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.misc.util.ReflectionUtils;
-
-import java.util.*;
-import java.util.List;
-import java.io.*;
-import java.awt.Color;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.text.SimpleDateFormat;
+import com.simplejcode.commons.gui.*;
+import com.simplejcode.commons.misc.util.*;
+import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
+import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
+import org.docx4j.wml.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.xml.bind.JAXBElement;
-
-import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
-import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
-import org.docx4j.wml.*;
+import java.awt.Color;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.util.List;
+import java.util.*;
 
 public class LucidaRec {
 
@@ -452,11 +449,11 @@ public class LucidaRec {
                 return;
             }
 
-            String date = new SimpleDateFormat("dd.MM.yyy").format(new Date());
+            String date = DateUtils.currentTime();
             for (Text text : dateHolders) {
                 text.setValue(date);
             }
-            for (int i = 0; i < num;) {
+            for (int i = 0; i < num; ) {
                 for (Text text : codeHolders) {
                     String end = String.format("%03d", ++i);
                     text.setValue(params[0] + end);
