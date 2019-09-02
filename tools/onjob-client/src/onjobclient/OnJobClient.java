@@ -2,7 +2,7 @@ package onjobclient;
 
 import com.simplejcode.commons.misc.util.FileSystemUtils;
 
-import java.io.*;
+import java.io.OutputStreamWriter;
 import java.net.*;
 
 public class OnJobClient {

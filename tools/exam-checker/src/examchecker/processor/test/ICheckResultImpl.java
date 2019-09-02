@@ -1,11 +1,9 @@
 package examchecker.processor.test;
 
 import com.simplejcode.commons.misc.util.StreamUtils;
-import examchecker.processor.ITestDiv;
-import examchecker.processor.ICheckResult;
+import examchecker.processor.*;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 class ICheckResultImpl implements ICheckResult {
 

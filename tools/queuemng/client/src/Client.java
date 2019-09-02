@@ -3,12 +3,12 @@ import com.simplejcode.commons.misc.util.ReflectionUtils;
 import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.*;
 
-import javax.swing.*;
 import javax.imageio.ImageIO;
-import java.net.Socket;
-import java.io.*;
+import javax.swing.*;
 import java.awt.image.BufferedImage;
-import java.util.*;
+import java.io.*;
+import java.net.Socket;
+import java.util.Properties;
 
 public class Client extends ConnectionAdapter<Message> {
 

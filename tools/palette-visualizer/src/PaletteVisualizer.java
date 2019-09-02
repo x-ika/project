@@ -1,5 +1,5 @@
-import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
+import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.util.*;
 
 import javax.imageio.ImageIO;
@@ -7,9 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 public class PaletteVisualizer {
 

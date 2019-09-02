@@ -1,5 +1,5 @@
-import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
+import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.util.*;
 import proc.*;
 

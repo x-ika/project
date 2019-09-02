@@ -3,14 +3,14 @@ import com.simplejcode.commons.misc.util.*;
 import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.*;
 
-import javax.print.*;
 import javax.imageio.ImageIO;
+import javax.print.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.*;
 import java.net.Socket;
 import java.util.*;
-import java.io.*;
-import java.awt.image.BufferedImage;
-import java.awt.*;
 
 public class MainServer extends ConnectionsManager<Message> {
 

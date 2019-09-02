@@ -50,7 +50,7 @@ public class CommandPanel extends JPanel {
         add(titlePanel);
         add(createMainPanel());
 
-        BasicStroke stroke = new BasicStroke(1, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND, 0, new float[] {5}, 0);
+        BasicStroke stroke = new BasicStroke(1, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND, 0, new float[]{5}, 0);
         setBorder(new CompoundBorder(new EmptyBorder(10, 10, 10, 10), new StrokeBorder(stroke, Color.gray)));
 
     }

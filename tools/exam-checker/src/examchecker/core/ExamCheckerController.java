@@ -1,15 +1,14 @@
 package examchecker.core;
 
-import examchecker.view.*;
-
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.PropertyManager;
 import com.simplejcode.commons.misc.util.*;
+import examchecker.view.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.io.*;
+import java.io.File;
 
 import static java.awt.GridBagConstraints.*;
 

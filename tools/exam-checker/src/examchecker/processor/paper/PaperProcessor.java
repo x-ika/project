@@ -1,20 +1,17 @@
 package examchecker.processor.paper;
 
-import com.simplejcode.commons.av.improc.ImageProcessor;
-import com.simplejcode.commons.av.improc.Rect;
+import com.simplejcode.commons.av.improc.*;
 import com.simplejcode.commons.misc.PropertyManager;
 import examchecker.core.Constants;
-import examchecker.processor.IPaperDefinition;
-import examchecker.processor.IPaperDiv;
-import examchecker.processor.IRecResult;
+import examchecker.processor.*;
 import examchecker.view.ImageView;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
-import java.util.*;
+import java.io.File;
 import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public final class PaperProcessor {

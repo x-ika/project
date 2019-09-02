@@ -6,7 +6,7 @@ import examchecker.processor.*;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
-import java.io.*;
+import java.io.File;
 import java.util.*;
 
 public class ExcelIO {

@@ -4,8 +4,7 @@ import examchecker.model.*;
 import examchecker.processor.*;
 import examchecker.processor.div.DivProcessor;
 import examchecker.processor.excel.ExcelIO;
-import examchecker.processor.paper.DetectionMode;
-import examchecker.processor.paper.PaperProcessor;
+import examchecker.processor.paper.*;
 import examchecker.processor.test.TestProcessor;
 
 import java.io.File;

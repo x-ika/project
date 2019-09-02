@@ -1,19 +1,18 @@
 package logic;
 
-import com.simplejcode.commons.misc.FastLogger;
-import model.TestResult;
-
-import java.util.*;
-import java.util.concurrent.TimeUnit;
-import java.io.*;
-import java.net.Socket;
-
 import com.simplejcode.commons.gui.Console;
+import com.simplejcode.commons.misc.FastLogger;
 import com.simplejcode.commons.misc.util.StringUtils;
 import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.*;
 import logic.db.Team;
 import message.*;
+import model.TestResult;
+
+import java.io.*;
+import java.net.Socket;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class SystemManager extends ConnectionsManager<Message> {
 

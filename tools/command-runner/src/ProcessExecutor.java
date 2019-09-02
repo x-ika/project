@@ -1,7 +1,6 @@
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.sun.jna.*;
-import com.sun.jna.platform.win32.Kernel32;
-import com.sun.jna.platform.win32.WinNT;
+import com.sun.jna.platform.win32.*;
 
 import java.io.*;
 import java.lang.reflect.Field;

@@ -1,17 +1,15 @@
 package onjobclient;
 
-import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
+import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.util.*;
-
 import org.apache.poi.ss.usermodel.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.io.*;
 import java.util.*;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 public class OnJobContactLoader {
 

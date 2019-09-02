@@ -1,7 +1,6 @@
 package examchecker.processor.div;
 
-import examchecker.processor.DivType;
-import examchecker.processor.ITestDiv;
+import examchecker.processor.*;
 
 public class TestDivImpl implements ITestDiv {
 

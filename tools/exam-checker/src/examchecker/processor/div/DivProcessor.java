@@ -1,14 +1,9 @@
 package examchecker.processor.div;
 
 import examchecker.model.*;
-import examchecker.processor.DivType;
-import examchecker.processor.ITestDiv;
-import examchecker.processor.IPaperDiv;
-import examchecker.processor.IPaperDefinition;
-import examchecker.processor.ITestDefinition;
+import examchecker.processor.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class DivProcessor {
 

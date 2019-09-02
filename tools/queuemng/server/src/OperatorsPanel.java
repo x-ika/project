@@ -1,14 +1,10 @@
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.sockets.SocketConnection;
 
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableCellRenderer;
 import javax.swing.*;
+import javax.swing.table.*;
 import java.awt.*;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.Comparator;
+import java.util.*;
 
 public class OperatorsPanel extends JPanel {
 
@@ -22,7 +18,8 @@ public class OperatorsPanel extends JPanel {
 
         public Component getTableCellRendererComponent(JTable table, Object value,
                                                        boolean isSelected, boolean hasFocus,
-                                                       int row, int column) {
+                                                       int row, int column)
+        {
             setBackground(rowColors[row]);
             text.setBackground(getBackground());
             if (column == 0) {
@@ -54,7 +51,8 @@ public class OperatorsPanel extends JPanel {
 
         public Component getTableCellRendererComponent(JTable table, Object value,
                                                        boolean isSelected, boolean hasFocus,
-                                                       int row, int column) {
+                                                       int row, int column)
+        {
             if (column == 0) {
                 setBorder(BorderFactory.createEmptyBorder(0, 15, 0, 0));
                 setLayout(new BorderLayout());
@@ -80,7 +78,7 @@ public class OperatorsPanel extends JPanel {
 
     public OperatorsPanel(Action nextAction) {
         super(new BorderLayout());
-        
+
         model = new DefaultTableModel(0, 2);
         table = new JTable(model);
         table.setRowHeight(50);
