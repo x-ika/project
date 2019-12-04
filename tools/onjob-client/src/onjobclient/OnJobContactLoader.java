@@ -131,6 +131,9 @@ public class OnJobContactLoader {
         data = new ArrayList<>();
         for (int i = 1; i <= sheet.getLastRowNum(); i++) {
             Row row = sheet.getRow(i);
+            if (row == null || row.getCell(0) == null) {
+                continue;
+            }
             String name = row.getCell(0).getStringCellValue();
             String mobile;
             try {
@@ -171,7 +174,7 @@ public class OnJobContactLoader {
             });
         }
 
-        Executors.newFixedThreadPool(8).invokeAll(tasks);
+        Executors.newFixedThreadPool(1).invokeAll(tasks);
 
         JOptionPane.showMessageDialog(frame, "Command complete", "Info", JOptionPane.INFORMATION_MESSAGE);
 
@@ -183,8 +186,8 @@ public class OnJobContactLoader {
             String name = contact[0];
             String mobile = contact[1];
 
-            String first = name.toLowerCase().split(" ")[0];
-            String last = name.toLowerCase().split(" ")[1];
+            String first = name.toLowerCase().split(" ")[1];
+            String last = name.toLowerCase().split(" ")[0];
 
             if (en) {
                 first = translit(first);
