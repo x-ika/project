@@ -5,7 +5,7 @@ public class FileGrouping {
 
     public static void main(String[] args) {
 
-        String dir = "d:/tmp";
+        String dir = "d:/ika/z/1";
 
         for (File file : new File(dir).listFiles()) {
             Date date = new Date(file.lastModified());

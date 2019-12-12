@@ -29,7 +29,7 @@ public class OnJobClient {
         params.append("IsProperty=").append("true").append('&');
         params.append("IsProperty=").append("false").append('&');
         params.append("IsAgro=").append("false").append('&');
-        params.append("CityId=").append("").append('&');
+        params.append("CityId=").append("27").append('&');
         params.append("save=").append("Save").append('&');
 
         return postRequest("http://onjob.ge/Home/CreateClient", params.toString(), cookie);
