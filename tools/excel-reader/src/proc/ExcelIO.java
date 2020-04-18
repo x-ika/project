@@ -73,19 +73,19 @@ public class ExcelIO {
 
     private static CellStyle createHeaderStyle(Workbook workbook) {
         CellStyle style = ExcelUtils.createCellStyle(workbook);
-        style.setFont(ExcelUtils.createFont(workbook, (short) 300));
+        style.setFont(ExcelUtils.createFont(workbook, true, (short) 300));
         return style;
     }
 
     private static CellStyle createContentStyle(Workbook workbook) {
         CellStyle style = ExcelUtils.createCellStyle(workbook);
-        style.setFont(ExcelUtils.createFont(workbook, (short) 200));
+        style.setFont(ExcelUtils.createFont(workbook, false, (short) 200));
         return style;
     }
 
     private static CellStyle createWarnStyle(Workbook workbook) {
         CellStyle style = ExcelUtils.createCellStyle(workbook, HSSFColor.HSSFColorPredefined.LIGHT_YELLOW.getIndex());
-        style.setFont(ExcelUtils.createFont(workbook, (short) 200));
+        style.setFont(ExcelUtils.createFont(workbook, false, (short) 200));
         return style;
     }
 
