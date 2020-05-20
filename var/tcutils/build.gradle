@@ -1,5 +1,7 @@
 group 'com.simplejcode.var'
 
+apply plugin: 'maven-publish'
+
 configurations {
     testCompile.extendsFrom junit
 
@@ -23,4 +25,15 @@ jar {
         into file("${buildDir}/libs/resources")
     }
 
+}
+
+publishing {
+    repositories {
+        mavenLocal()
+    }
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
