@@ -65,6 +65,17 @@ subprojects {
     }
 
     //-----------------------------------------------------------------------------------
+    // PUBLISH
+
+    apply plugin: 'maven-publish'
+
+    publishing {
+        repositories {
+            mavenLocal()
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
     // DEPENDENCIES
 
     configurations {
