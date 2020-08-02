@@ -4,44 +4,53 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Parameters {
-    public static final String seed = "seed";
-    public static final String exec = "exec";
-    public static final String debug = "debug";
-    public static final String timeLimit = "timeLimit";
-    public static final String printRuntime = "printRuntime";
-    public static final String noOutput = "noOutput";
-    public static final String threads = "threads";
     public static final String controlBests = "bests";
+    public static final String debug = "debug";
+    public static final String delay = "delay";
+    public static final String exec = "exec";
+    public static final String loadSolOutput = "loadSolOutput";
+    public static final String noAntialiasing = "noAntialiasing";
+    public static final String noOutput = "noOutput";
+    public static final String noSummary = "noSummary";
+    public static final String noVis = "novis";
+    public static final String paintInfo = "paintInfo";
+    public static final String printRuntime = "printRuntime";
+    public static final String saveAll = "saveAll";
+    public static final String saveScores = "saveScores";
+    public static final String saveSolError = "saveSolError";
     public static final String saveSolInput = "saveSolInput";
     public static final String saveSolOutput = "saveSolOutput";
-    public static final String saveSolError = "saveSolError";
-    public static final String saveAll = "saveAll";
-    public static final String loadSolOutput = "loadSolOutput";
-    public static final String noVis = "novis";
+    public static final String seed = "seed";
     public static final String size = "size";
-    public static final String delay = "delay";
     public static final String startPaused = "pause";
+    public static final String threads = "threads";
+    public static final String timeLimit = "timeLimit";
+
 
     private static final Map<String, String> equivalentParams = new HashMap<String, String>();
 
     static {
-        equivalentParams.put("sd", seed);
-        equivalentParams.put("ex", exec);
-        equivalentParams.put("db", debug);
-        equivalentParams.put("tl", timeLimit);
-        equivalentParams.put("pr", printRuntime);
-        equivalentParams.put("no", noOutput);
-        equivalentParams.put("th", threads);
         equivalentParams.put("bs", controlBests);
+        equivalentParams.put("db", debug);
+        equivalentParams.put("dl", delay);
+        equivalentParams.put("ex", exec);
+        equivalentParams.put("lo", loadSolOutput);
+        equivalentParams.put("na", noAntialiasing);
+        equivalentParams.put("no", noOutput);
+        equivalentParams.put("ns", noAntialiasing);
+        equivalentParams.put("nv", noVis);
+        equivalentParams.put("pi", paintInfo);
+        equivalentParams.put("pr", printRuntime);
+        equivalentParams.put("ps", startPaused);
+        equivalentParams.put("sa", saveAll);
+        equivalentParams.put("sd", seed);
+        equivalentParams.put("se", saveSolError);
         equivalentParams.put("si", saveSolInput);
         equivalentParams.put("so", saveSolOutput);
-        equivalentParams.put("se", saveSolError);
-        equivalentParams.put("sa", saveAll);
-        equivalentParams.put("lo", loadSolOutput);
-        equivalentParams.put("nv", noVis);
+        equivalentParams.put("ss", saveScores);
         equivalentParams.put("sz", size);
-        equivalentParams.put("dl", delay);
-        equivalentParams.put("ps", startPaused);
+        equivalentParams.put("th", threads);
+        equivalentParams.put("tl", timeLimit);
     }
 
     private final Map<String, String> params = new HashMap<String, String>();

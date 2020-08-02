@@ -1,8 +1,5 @@
 package com.topcoder.marathon;
 
-import com.simplejcode.commons.misc.DynamicMap;
-import mm.MMTester;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,11 +8,18 @@ import java.io.FileWriter;
 import java.lang.reflect.Constructor;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class MarathonController {
+    private final Object statsLock = new Object();
+    private long maxRunTime, avgRunTime;
+    private int numFails, numCases, numImproved, numTied, numNew;
+    private double prevTotScore, currTotScore;
+    private static final double eps = 1e-9;
+
     private Parameters parseArgs(String[] args) {
         Parameters parameters = new Parameters();
         String last = null;
@@ -76,6 +80,22 @@ public class MarathonController {
             e.printStackTrace();
         }
         return best;
+    }
+
+    private void saveScores(File scoresFile, Map<Long, Double> currentScores) {
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(scoresFile));
+            StringBuilder sb = new StringBuilder();
+            for (long a : currentScores.keySet()) {
+                sb.delete(0, sb.length());
+                sb.append(a).append('=').append(currentScores.get(a));
+                out.write(sb.toString());
+                out.newLine();
+            }
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     //Called by server tester using a direct call
@@ -200,6 +220,13 @@ public class MarathonController {
         }
         File bestsFile = bf;
 
+        //Save current scores to a file if enabled
+        Map<Long, Double> currentScores = new TreeMap<Long, Double>();
+        File scoresFile = null;
+        if (parameters.isDefined(Parameters.saveScores)) {
+            scoresFile = new File(parameters.getString(Parameters.saveScores));
+        }
+
         //Instantiate the concrete class (actual MarathonTester) 
         Class<?> c = null;
         Constructor<?> ct = null;
@@ -230,12 +257,6 @@ public class MarathonController {
         long timeLimit = tl;
 
         //Run tests
-        // IM
-        int n = 1;
-        double[] sum = new double[n + 1];
-        double[] cur = new double[n + 1];
-        DynamicMap<Long> map = bestsFile == null ? null : new DynamicMap<>(!im, bestsFile.getName());
-        // IM
         Thread[] threads = new Thread[numThreads];
         for (int i = 0; i < numThreads; i++) {
             (threads[i] = new Thread() {
@@ -254,37 +275,40 @@ public class MarathonController {
                             if (timeLimit != 0) tester.setTimeLimit(timeLimit);
 
                             double score = tester.runTest();
+                            long runTime = tester.getRunTime();
 
                             sb.delete(0, sb.length());
-                            // IM
-                            if (multipleSeeds) sb.append(">>>Seed = ").append(seed).append('\n');
-                            sb.append(">>>Score = ").append(score).append('\n');
-                            if (printRuntime) sb.append(">>>RunTime = ").append(String.format("%.3f\n", tester.getRunTime() / 1e3));
-                            if (bestsFile != null) {
-                                cur[n] = map.get(seed);
-                                for (int i = 0; i < n; i++) {
-                                    cur[i] = score;
-                                    if (cur[i] != errorScore) {
-                                        map.update(seed, cur[i]);
+                            if (multipleSeeds) sb.append("Seed = ").append(seed).append(", ");
+                            sb.append("Score = ").append(score);
+                            Double best = checkBest(bestsFile, isMaximize, errorScore, seed, score);
+                            if (best != null) sb.append(", PreviousBest = ").append(best);
+                            if (printRuntime) sb.append(", RunTime = ").append(runTime).append(" ms");
+                            System.out.println(sb.toString());
+                            System.out.flush();
+
+                            synchronized (statsLock) {
+                                numCases++;
+                                if (score == tester.getErrorScore()) numFails++;
+                                avgRunTime += runTime;
+                                maxRunTime = Math.max(maxRunTime, runTime);
+                                currentScores.put(seed, score);
+                                if (bestsFile != null) {
+                                    if (best == null) {
+                                        numNew++;
+                                        if (score != tester.getErrorScore()) {
+                                            currTotScore++;
+                                        }
+                                    } else if (score != tester.getErrorScore()) {
+                                        double newBest = best;
+                                        if ((isMaximize && score > best + eps) || (!isMaximize && score < best - eps)) {
+                                            numImproved++;
+                                            newBest = score;
+                                        } else if (Math.abs(score - best) < eps) numTied++;
+                                        currTotScore += isMaximize ? (newBest <= 0 ? 0 : score / newBest) : (score <= 0 ? 0 : newBest / score);
+                                        prevTotScore += isMaximize ? (newBest <= 0 ? 0 : best / newBest) : (best <= 0 ? 0 : newBest / best);
                                     }
                                 }
-                                double best = map.get(seed);
-                                for (int i = 0; i <= n; i++) {
-                                    sum[i] += cur[i] = cur[i] == errorScore ? 0 : calc(cur[i], best, isMaximize);
-                                }
-                                sb.append(MMTester.getScoreString(cur));
                             }
-                            // IM
-                            // orig
-//                            if (multipleSeeds) sb.append("Seed = ").append(seed).append(", ");
-//                            sb.append("Score = ").append(score);
-//                            Double best = checkBest(bestsFile, isMaximize, errorScore, seed, score);
-//                            if (best != null) sb.append(", PreviousBest = ").append(best);
-//                            if (printRuntime) sb.append(", RunTime = ").append(tester.getRunTime()).append(" ms");
-                            // orig
-                            System.out.println(sb.toString());
-                            System.out.println();
-                            System.out.flush();
                         } catch (Exception e) {
                             System.out.println("ERROR calling tester " + className);
                             e.printStackTrace();
@@ -293,24 +317,37 @@ public class MarathonController {
                     }
                 }
             }).start();
-            for (Thread thread : threads) {
-                try {
-                    thread.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        }
+        for (int i = 0; i < numThreads; i++) {
+            try {
+                threads[i].join();
+            } catch (InterruptedException e) {
             }
-            System.out.println(MMTester.getScoreString(sum));
-            if (map != null) {
-                map.close();
+        }
+        if (scoresFile != null) {
+            saveScores(scoresFile, currentScores);
+        }
+        if (multipleSeeds && !parameters.isDefined(Parameters.noSummary)) {
+            avgRunTime /= numCases;
+            System.out.println();
+            System.out.println("            Seeds: " + startSeed + " to " + endSeed);
+            System.out.println("   Executed Cases: " + numCases);
+            System.out.println("     Failed Cases: " + numFails);
+            System.out.println("    Avg. Run Time: " + avgRunTime + " ms");
+            System.out.println("    Max. Run Time: " + maxRunTime + " ms");
+            if (bestsFile != null) {
+                DecimalFormat df = new DecimalFormat("0.00000");
+                System.out.println();
+                if (numImproved > 0) System.out.println("   Improved Bests: " + numImproved);
+                if (numTied > 0) System.out.println("       Tied Cases: " + numTied);
+                if (numNew > 0) System.out.println("        New Cases: " + numNew);
+                if (numCases - numNew > 0) {
+                    prevTotScore /= numCases - numNew;
+                    System.out.println("Prev. Bests Score: " + df.format(prevTotScore * 100));
+                }
+                currTotScore /= numCases;
+                System.out.println("    Current Score: " + df.format(currTotScore * 100));
             }
         }
     }
-
-    public static double calc(double score, double best, boolean isMaximize) {
-        return isMaximize ?
-                best == 0 ? 1 : score / best :
-                score == 0 ? 1 : best / score;
-    }
-
 }

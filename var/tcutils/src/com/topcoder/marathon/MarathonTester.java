@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -37,6 +39,7 @@ public abstract class MarathonTester {
     private String lastLine = "";
     private StringBuilder executionErrors = new StringBuilder();
     private boolean timeout;
+    private boolean readFailed;
 
     public void setParameters(Parameters parameters) {
         this.parameters = parameters;
@@ -123,7 +126,18 @@ public abstract class MarathonTester {
             end();
         } catch (Exception e) {
             stopTime();
-            if (!timeout && !ending) e.printStackTrace();
+            if (!timeout && !ending) {
+                String msg = "";
+                if (readFailed) {
+                    msg = "ERROR! " + e.getMessage();
+                } else {
+                    StringWriter errors = new StringWriter();
+                    e.printStackTrace(new PrintWriter(errors));
+                    msg = "UNEXPECTED ERROR!\n" + errors;
+                }
+                System.out.println(msg);
+                executionErrors.append(msg).append("\n");
+            }
         }
         if (timeout) {
             String msg = "TIMEOUT! Time limit of " + timeLimit / 1_000_000 + " ms exceeded.";
@@ -158,7 +172,6 @@ public abstract class MarathonTester {
     protected final int readLineToInt(int invalid) throws Exception {
         try {
             String line = readLine();
-            if (line == null) throw new NullPointerException();
             return Integer.parseInt(line);
         } catch (NumberFormatException e) {
             return invalid;
@@ -181,6 +194,16 @@ public abstract class MarathonTester {
 
     protected final String readLine() throws Exception {
         lastLine = solOutputReader.readLine();
+        if (lastLine == null) {
+            readFailed = true;
+            if (parameters.isDefined(Parameters.loadSolOutput)) {
+                throw new RuntimeException("Solution file unexpected end.");
+            }
+            if (process == null || !process.isAlive()) {
+                throw new RuntimeException("Solution process terminated before outputting the expected data.");
+            }
+            throw new RuntimeException("Failed to read output from solution.");
+        }
         if (solOutputWriter != null) {
             solOutputWriter.write(lastLine);
             solOutputWriter.newLine();
@@ -232,15 +255,14 @@ public abstract class MarathonTester {
             String cmd = parameters.getString(Parameters.exec);
             if (cmd != null) {
                 try {
-                    Runtime rt = Runtime.getRuntime();
-                    process = rt.exec(cmd);
-                    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
-                    solInputWriters.add(out);
-                    solOutputReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
                     boolean printMessages = true;
                     if (parameters.isDefined(Parameters.noOutput)) printMessages = false;
+                    process = Runtime.getRuntime().exec(cmd);
                     solErrorReader = new ErrorReader(process.getErrorStream(), printMessages, solErrorWriter);
                     solErrorReader.start();
+                    solOutputReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
+                    solInputWriters.add(out);
                 } catch (Exception e) {
                     e.printStackTrace();
                     System.exit(-1);
@@ -263,16 +285,11 @@ public abstract class MarathonTester {
     }
 
     protected void end() {
+        if (ending) return;
         ending = true;
         for (BufferedWriter out : solInputWriters) {
             try {
                 out.close();
-            } catch (Exception e) {
-            }
-        }
-        if (process != null) {
-            try {
-                process.destroy();
             } catch (Exception e) {
             }
         }
@@ -295,7 +312,14 @@ public abstract class MarathonTester {
             }
         }
         if (solErrorReader != null) {
+            solErrorReader.close();
             solutionError = solErrorReader.getOutput();
+        }
+        if (process != null) {
+            try {
+                process.destroy();
+            } catch (Exception e) {
+            }
         }
     }
 
