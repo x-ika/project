@@ -108,7 +108,7 @@ subprojects {
         junit 'junit:junit:4.12'
 
         common_algorithms              'com.simplejcode.commons:algorithms:1.0'
-        common_misc                    'com.simplejcode.commons:misc:1.1.0'
+        common_misc                    'com.simplejcode.commons:misc:1.1.1'
         common_net_tools               'com.simplejcode.commons:net-tools:1.0'
         common_db_tools                'com.simplejcode.commons:db-tools:1.0'
         common_graphic_tools           'com.simplejcode.commons:graphic-tools:1.0'
