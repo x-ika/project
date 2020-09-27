@@ -13,9 +13,9 @@ publishing {
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_algorithms
-    compile.extendsFrom common_misc
-    compile.extendsFrom common_graphic_tools
+    implementation.extendsFrom common_algorithms
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_graphic_tools
 }
 
 jar {
