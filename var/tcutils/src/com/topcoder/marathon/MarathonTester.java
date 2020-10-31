@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Base class for Topcoder Marathon testers. Should be extended directly for
- * problems with no visualization.
+ * problems with no visualization. Updated: 2020/09/28
  */
 public abstract class MarathonTester {
     protected Parameters parameters;
@@ -40,6 +40,7 @@ public abstract class MarathonTester {
     private StringBuilder executionErrors = new StringBuilder();
     private boolean timeout;
     private boolean readFailed;
+    private Thread lastTimeoutThread;
 
     public void setParameters(Parameters parameters) {
         this.parameters = parameters;
@@ -68,6 +69,15 @@ public abstract class MarathonTester {
         return -1;
     }
 
+    /**
+     * Concrete implementations may override this method to be notified about
+     * timeout. It usually makes sense when it is necessary to update the
+     * visualizer after a timeout, as the normal actions (like returning the
+     * error score, interrupting the solution) is automatically handled.
+     */
+    protected void timeout() {
+    }
+
     protected abstract void generate();
 
     protected abstract boolean isMaximize();
@@ -78,6 +88,10 @@ public abstract class MarathonTester {
         return elapsedTime / 1_000_000;
     }
 
+    public final boolean isTimeout() {
+        return timeout;
+    }
+
     protected final void startTime() {
         synchronized (timeLock) {
             if (lastStart != 0) {
@@ -86,29 +100,40 @@ public abstract class MarathonTester {
             }
             lastStart = System.nanoTime();
             if (timeLimit > 0) {
-                new Thread() {
+                lastTimeoutThread = new Thread() {
                     public void run() {
                         try {
                             boolean finished = process.waitFor(timeLimit - elapsedTime, TimeUnit.NANOSECONDS);
                             if (!finished) {
                                 synchronized (timeLock) {
+                                    if (lastStart > 0) elapsedTime += System.nanoTime() - lastStart;
+                                    lastStart = 0;
                                     if (process != null) process.destroy();
-                                    timeout = true;
+                                    if (!timeout) {
+                                        timeout = true;
+                                        timeout();
+                                    }
                                 }
                             }
                         } catch (Exception e) {
                         }
                     }
-                }.start();
+                };
+                lastTimeoutThread.start();
             }
         }
     }
 
     protected final void stopTime() {
         synchronized (timeLock) {
-            if (lastStart > 0) {
-                elapsedTime += System.nanoTime() - lastStart;
+            try {
+                if (lastTimeoutThread != null && lastTimeoutThread.isAlive()) {
+                    lastTimeoutThread.interrupt();
+                    lastTimeoutThread = null;
+                }
+            } catch (Exception e) {
             }
+            if (lastStart > 0) elapsedTime += System.nanoTime() - lastStart;
             lastStart = 0;
         }
     }
@@ -121,7 +146,12 @@ public abstract class MarathonTester {
             score = getErrorScore();
             score = run();
             if (timeLimit > 0 && getRunTime() > timeLimit) {
-                timeout = true;
+                synchronized (timeLock) {
+                    if (!timeout) {
+                        timeout = true;
+                        timeout();
+                    }
+                }
             }
             end();
         } catch (Exception e) {
@@ -368,7 +398,9 @@ public abstract class MarathonTester {
         double origin = range[0];
         double bound = range[1];
         if (origin < minRange) origin = minRange;
+        if (origin > maxRange) origin = maxRange;
         if (bound > maxRange) bound = maxRange;
+        if (bound < minRange) bound = minRange;
         return randomDouble(origin, bound);
     }
 }
