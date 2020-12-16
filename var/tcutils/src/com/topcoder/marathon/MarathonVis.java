@@ -1,49 +1,20 @@
 package com.topcoder.marathon;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.GradientPaint;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
-import java.awt.Insets;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.Shape;
-import java.awt.Toolkit;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.font.FontRenderContext;
-import java.awt.font.GlyphVector;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Line2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
-import java.awt.image.ConvolveOp;
-import java.awt.image.Kernel;
-import java.util.ArrayList;
-import java.util.HashMap;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.font.*;
+import java.awt.geom.*;
+import java.awt.image.*;
 import java.util.List;
-import java.util.Map;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
+import java.util.*;
 
 /**
  * Base class for Topcoder Marathon testers with visualization. Should be
  * extended directly for problems with a visual representation, but no
  * animation, i.e. only a single (final) state is shown.
- * 
- * Updated: 2020/07/30 
+ * <p>
+ * Updated: 2020/11/19 - Handle -windowPos and -screen parameters.
  */
 public abstract class MarathonVis extends MarathonTester {
     protected final Object updateLock = new Object();
@@ -132,7 +103,7 @@ public abstract class MarathonVis extends MarathonTester {
                         paintVis(g, getWidth(), getHeight());
                     }
                 };
-                
+
                 panel.addMouseListener(new MouseAdapter() {
                     public void mouseClicked(MouseEvent e) {
                         if (contentScreen != null && contentScreen.contains(e.getPoint())) {
@@ -163,7 +134,7 @@ public abstract class MarathonVis extends MarathonTester {
 
                 SwingUtilities.invokeLater(new Runnable() {
                     public void run() {
-                        frame.setSize(1000, 1000);
+                        frame.setSize(1000, 800);
                         frame.setTitle(className + " - Seed: " + seed);
                         frame.setIconImage(getIcon());
                         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -176,45 +147,127 @@ public abstract class MarathonVis extends MarathonTester {
                         infoFontHeight = (int) Math.ceil(rc.getHeight());
 
                         border = resolution / 7;
-
-                        frame.setVisible(true);
-                        if (size <= 0) {
-                            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-                            Rectangle bounds = new Rectangle(0, 0, screenSize.width, screenSize.height);
-                            try {
-                                GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration();
-                                bounds = new Rectangle(gc.getBounds());
-                                Insets insets = Toolkit.getDefaultToolkit().getScreenInsets(gc);
-                                bounds.x += insets.left;
-                                bounds.y += insets.top;
-                                bounds.width -= insets.left + insets.right;
-                                bounds.height -= insets.top + insets.bottom;
-                            } catch (Throwable t) {
-                            }
-                            Insets fi = frame.getInsets();
-                            int fw = bounds.width - fi.left - fi.right;
-                            int fh = bounds.height - fi.top - fi.bottom;
-                            double sw = (fw - 3 * border - infoColumns * infoFontWidth) / contentRect.getWidth();
-                            double sh = (fh - 2 * border) / contentRect.getHeight();
-                            size = Math.min(sw, sh);
-                        }
-                        int width = 3 * border + infoColumns * infoFontWidth + (int) (contentRect.getWidth() * size);
-                        int height = 2 * border + (int) Math.max(infoLines * infoFontHeight * lineSpacing, contentRect.getHeight() * size);
-                        panel.setPreferredSize(new Dimension(width, height));
-                        frame.pack();
+                        showAndAdjustWindowBounds();
                     }
                 });
             }
         }
         panel.repaint();
     }
-    
-    @SuppressWarnings("unused")
+
+    private void showAndAdjustWindowBounds() {
+        Rectangle screenBounds = null;
+        Insets screenInsets = null;
+        int screen = 1;
+        if (parameters.isDefined(Parameters.screen)) {
+            try {
+                screen = Integer.parseInt(parameters.getString(Parameters.screen));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            GraphicsDevice[] graphicsDevices = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices();
+            int numScreen = 0;
+            for (GraphicsDevice gd : graphicsDevices) {
+                numScreen++;
+                if (numScreen == 1 || numScreen == screen) {
+                    GraphicsConfiguration gc = gd.getDefaultConfiguration();
+                    screenBounds = new Rectangle(gc.getBounds());
+                    screenInsets = Toolkit.getDefaultToolkit().getScreenInsets(gc);
+                }
+            }
+        } catch (Throwable t) {
+            t.printStackTrace();
+        }
+        int x = Integer.MIN_VALUE, y = Integer.MIN_VALUE, w = Integer.MIN_VALUE, h = Integer.MIN_VALUE;
+        if (parameters.isDefined(Parameters.windowPosition)) {
+            String[] v = parameters.getString(Parameters.windowPosition).split(",");
+            boolean ok = v.length == 2 || v.length == 4;
+            if (ok) {
+                try {
+                    x = Integer.parseInt(v[0]);
+                    y = Integer.parseInt(v[1]);
+                    if (screenBounds != null) {
+                        x += screenBounds.x;
+                        y += screenBounds.y;
+                    }
+                    if (screenInsets != null) {
+                        x += screenInsets.left;
+                        y += screenInsets.top;
+                    }
+                    if (v.length > 2) {
+                        w = Integer.parseInt(v[2]);
+                        h = Integer.parseInt(v[3]);
+                        if (w > 0 && h > 0) {
+                            frame.setVisible(true);
+                            frame.setBounds(x, y, w, h);
+                        } else {
+                            ok = false;
+                        }
+                    }
+                } catch (Exception e) {
+                    ok = false;
+                }
+            }
+            if (!ok) {
+                System.err.println("Parameter -" + Parameters.windowPosition + " should be followed by 2 or 4 integers: x,y[,width,height] of desired window position.");
+                System.exit(0);
+            }
+        }
+        if (w == Integer.MIN_VALUE || h == Integer.MIN_VALUE) {
+            frame.setVisible(true);
+            if (x != Integer.MIN_VALUE && y != Integer.MIN_VALUE) {
+                frame.setLocation(x, y);
+            } else if (screenBounds != null) {
+                int xf = screenBounds.x;
+                int yf = screenBounds.y;
+                if (screenInsets != null) {
+                    xf += screenInsets.left;
+                    yf += screenInsets.top;
+                }
+                frame.setLocation(xf, yf);
+            } else {
+                frame.setLocation(0, 0);
+            }
+            if (size <= 0 && screenBounds != null) {
+                Rectangle bounds = new Rectangle(screenBounds);
+                if (x != Integer.MIN_VALUE && y != Integer.MIN_VALUE) {
+                    bounds.x = x;
+                    bounds.y = y;
+                }
+                if (screenInsets != null) {
+                    int dx = 0;
+                    int dy = 0;
+                    if (bounds.x - screenBounds.x < screenInsets.left) dx = screenInsets.left - bounds.x;
+                    if (bounds.y - screenBounds.y < screenInsets.top) dy = screenInsets.top - bounds.y;
+                    bounds.x += dx;
+                    bounds.y += dy;
+                    if (bounds.x >= screenBounds.x && bounds.x < screenBounds.x + screenBounds.width) {
+                        bounds.width -= Math.max(0, bounds.x - screenBounds.x + bounds.width - (screenBounds.width - screenInsets.right));
+                    }
+                    if (bounds.y >= screenBounds.y && bounds.y < screenBounds.y + screenBounds.height) {
+                        bounds.height -= Math.max(0, bounds.y - screenBounds.y + bounds.height - (screenBounds.height - screenInsets.bottom));
+                    }
+                }
+                Insets fi = frame.getInsets();
+                int fw = bounds.width - fi.left - fi.right;
+                int fh = bounds.height - fi.top - fi.bottom;
+                double sw = (fw - 3 * border - infoColumns * infoFontWidth) / contentRect.getWidth();
+                double sh = (fh - 2 * border) / contentRect.getHeight();
+                size = Math.min(sw, sh);
+            }
+            int width = 3 * border + infoColumns * infoFontWidth + (int) (contentRect.getWidth() * size);
+            int height = 2 * border + (int) Math.max(infoLines * infoFontHeight * lineSpacing, contentRect.getHeight() * size);
+            panel.setPreferredSize(new Dimension(width, height));
+            frame.pack();
+        }
+    }
+
     protected void checkChanged(Object key, boolean newValue) {
         panel.repaint();
     }
-    
-    @SuppressWarnings("unused")
+
     protected void contentClicked(double x, double y, int mouseButton, int clickCount) {
     }
 
@@ -252,7 +305,7 @@ public abstract class MarathonVis extends MarathonTester {
         infoMap.put(key, null);
         infoChecked.put(key, checked);
     }
-    
+
     protected final void addInfoBreak() {
         if (!vis) return;
         infoSequence.add(null);
@@ -263,7 +316,7 @@ public abstract class MarathonVis extends MarathonTester {
         if (checked != null) return checked.booleanValue();
         return false;
     }
-    
+
     protected final Rectangle2D getPaintRect() {
         return contentRect;
     }
@@ -365,7 +418,7 @@ public abstract class MarathonVis extends MarathonTester {
         g.fill(rc);
         g.setColor(Color.black);
         g.draw(rc);
-        return (int)rc.getMinX();
+        return (int) rc.getMinX();
     }
 
     private void drawChecked(Graphics2D g, Object key, boolean checked, int x, int y) {
@@ -382,7 +435,7 @@ public abstract class MarathonVis extends MarathonTester {
             g.draw(new Line2D.Double(rc.getMinX(), rc.getMaxY(), rc.getMaxX(), rc.getMinY()));
         }
     }
-    
+
     private int drawString(Graphics2D g, String s, int x, int y, int align) {
         FontMetrics metrics = g.getFontMetrics();
         Rectangle2D rect = metrics.getStringBounds(s, g);
@@ -449,7 +502,7 @@ public abstract class MarathonVis extends MarathonTester {
         g.draw(e4);
         g.draw(e5);
         g.dispose();
-        float[] blurKernel = {0.1f,0.1f,0.1f,0.1f,0.2f,0.1f,0.1f,0.1f,0.1f};
+        float[] blurKernel = {0.1f, 0.1f, 0.1f, 0.1f, 0.2f, 0.1f, 0.1f, 0.1f, 0.1f};
         BufferedImageOp blurFilter = new ConvolveOp(new Kernel(3, 3, blurKernel), ConvolveOp.EDGE_NO_OP, hints);
         blurFilter.filter(img, null);
         return img;

@@ -20,9 +20,11 @@ public class Parameters {
     public static final String saveSolError = "saveSolError";
     public static final String saveSolInput = "saveSolInput";
     public static final String saveSolOutput = "saveSolOutput";
+    public static final String screen = "screen";
     public static final String seed = "seed";
     public static final String size = "size";
     public static final String startPaused = "pause";
+    public static final String windowPosition = "windowPos";
     public static final String threads = "threads";
     public static final String timeLimit = "timeLimit";
 
@@ -43,6 +45,7 @@ public class Parameters {
         equivalentParams.put("pr", printRuntime);
         equivalentParams.put("ps", startPaused);
         equivalentParams.put("sa", saveAll);
+        equivalentParams.put("sc", screen);
         equivalentParams.put("sd", seed);
         equivalentParams.put("se", saveSolError);
         equivalentParams.put("si", saveSolInput);
@@ -51,6 +54,7 @@ public class Parameters {
         equivalentParams.put("sz", size);
         equivalentParams.put("th", threads);
         equivalentParams.put("tl", timeLimit);
+        equivalentParams.put("wp", windowPosition);
     }
 
     private final Map<String, String> params = new HashMap<String, String>();
