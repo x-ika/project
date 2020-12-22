@@ -78,17 +78,28 @@ public class Parameters {
 
     public long[] getLongRange(String key) {
         String value = params.get(normalize(key));
-        long[] ret = new long[2];
         try {
-            boolean plus = value.indexOf('+') > 0;
-            String[] s = value.split(plus ? "\\+" : ",");
-            ret[0] = Long.parseLong(s[0]);
-            ret[1] = Long.parseLong(s[s.length - 1]);
-            if (plus) ret[1] += ret[0] - 1;
+            boolean range = value.indexOf('-') > 0;
+            String[] s = value.split(range ? "-" : ",");
+            if (range) {
+                int from = Integer.parseInt(s[0]);
+                int to = Integer.parseInt(s[1]);
+                long[] ret = new long[to - from + 1];
+                for (int seed = from; seed <= to; seed++) {
+                    ret[seed - from] = seed;
+                }
+                return ret;
+            } else {
+                long[] ret = new long[s.length];
+                for (int i = 0; i < s.length; i++) {
+                    ret[i] = Long.parseLong(s[i]);
+                }
+                return ret;
+            }
         } catch (Exception e) {
             error("ERROR getting parameter long value/range!", e, key, value);
         }
-        return ret;
+        return null;
     }
 
     public double[] getDoubleRange(String key) {

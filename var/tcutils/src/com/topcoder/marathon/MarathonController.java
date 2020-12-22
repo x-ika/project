@@ -144,17 +144,14 @@ public class MarathonController {
         Parameters parameters = parseArgs(args);
 
         //Get seeds range (default is seed=1)
-        long startSeed = 1;
-        long endSeed = 1;
+        long[] seedRange = {1};
         if (parameters.isDefined(Parameters.seed)) {
-            long[] seedRange = parameters.getLongRange(Parameters.seed);
-            startSeed = seedRange[0];
-            endSeed = seedRange[1];
+            seedRange = parameters.getLongRange(Parameters.seed);
             parameters.remove(Parameters.seed);
         }
 
         //Multiple seeds?
-        boolean multipleSeeds = endSeed > startSeed;
+        boolean multipleSeeds = seedRange.length > 1;
 
         //Check and expand saveAll parameter
         if (parameters.isDefined(Parameters.saveAll)) {
@@ -199,14 +196,13 @@ public class MarathonController {
             numThreads = parameters.getIntValue(Parameters.threads);
             numThreads = Math.max(numThreads, 1);
             numThreads = Math.min(numThreads, Runtime.getRuntime().availableProcessors());
-            long numSeeds = endSeed - startSeed + 1;
-            if (numSeeds < numThreads) numThreads = (int) numSeeds;
+            numThreads = Math.min(numThreads, seedRange.length);
             parameters.remove(Parameters.threads);
         }
 
         //Put requested seeds on a queue
         LinkedList<Long> seeds = new LinkedList<Long>();
-        for (long seed = startSeed; seed <= endSeed; seed++) {
+        for (long seed : seedRange) {
             seeds.add(seed);
         }
 
@@ -330,7 +326,7 @@ public class MarathonController {
         if (multipleSeeds && !parameters.isDefined(Parameters.noSummary)) {
             avgRunTime /= numCases;
             System.out.println();
-            System.out.println("            Seeds: " + startSeed + " to " + endSeed);
+            System.out.println("            Seeds: " + seedRange[0] + " to " + seedRange[seedRange.length - 1]);
             System.out.println("   Executed Cases: " + numCases);
             System.out.println("     Failed Cases: " + numFails);
             System.out.println("    Avg. Run Time: " + avgRunTime + " ms");
