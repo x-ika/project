@@ -5,11 +5,12 @@ import logic.*;
 import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.tree.*;
-import java.awt.event.*;
 import java.awt.*;
+import java.awt.event.*;
 
 class GraphTree extends JTree
-    implements ActionListener, MouseListener, TreeSelectionListener {
+        implements ActionListener, MouseListener, TreeSelectionListener
+{
 
     private static final String ADD_VERTEX = "Add Vertex";
 
@@ -83,52 +84,51 @@ class GraphTree extends JTree
 
     public void actionPerformed(ActionEvent e) {
         String command = e.getActionCommand();
-        if(selected instanceof Graph) {
-            Graph g = (Graph)selected;
-            if(command.equals(ADD_VERTEX)) {
+        if (selected instanceof Graph) {
+            Graph g = (Graph) selected;
+            if (command.equals(ADD_VERTEX)) {
                 g.addVertex(100, 100);
-            } else
-            if(command.equals(DELETE_G)) {
-            } else
-            if(command.equals(RENAME_G)) {
+            } else if (command.equals(DELETE_G)) {
+            } else if (command.equals(RENAME_G)) {
                 g.setName("Super Graph");
-            } else
-            if(command.equals(COPY_G)) {
+            } else if (command.equals(COPY_G)) {
             }
-            if(command.equals(CUT_G)) {
+            if (command.equals(CUT_G)) {
             }
-        } else
-        if(selected instanceof Vertex) {
-            Vertex v = (Vertex)selected;
-            if(command.equals(RENAME_V)) {
+        } else if (selected instanceof Vertex) {
+            Vertex v = (Vertex) selected;
+            if (command.equals(RENAME_V)) {
                 v.setName("Super Vertex");
-            } else
-            if(command.equals(DELETE_V)) {
-            } else
-            if(command.equals(COPY_V)) {
-            } else
-            if(command.equals(CUT_V)) {
+            } else if (command.equals(DELETE_V)) {
+            } else if (command.equals(COPY_V)) {
+            } else if (command.equals(CUT_V)) {
             }
         }
     }
 
     public void mousePressed(MouseEvent e) {
-        if(e.getButton() == 3) {
-            if(selected instanceof Graph) {
+        if (e.getButton() == 3) {
+            if (selected instanceof Graph) {
                 graphMenu.show(this, e.getX(), e.getY());
-            } else
-            if(selected instanceof Vertex) {
+            } else if (selected instanceof Vertex) {
                 vertexMenu.show(this, e.getX(), e.getY());
             }
         }
     }
 
     public void valueChanged(TreeSelectionEvent e) {
-        selected = ((DefaultMutableTreeNode)e.getPath().getLastPathComponent()).getUserObject();
+        selected = ((DefaultMutableTreeNode) e.getPath().getLastPathComponent()).getUserObject();
     }
 
-    public void mouseClicked(MouseEvent e) {}
-    public void mouseReleased(MouseEvent e) {}
-    public void mouseEntered(MouseEvent e) {}
-    public void mouseExited(MouseEvent e) {}
+    public void mouseClicked(MouseEvent e) {
+    }
+
+    public void mouseReleased(MouseEvent e) {
+    }
+
+    public void mouseEntered(MouseEvent e) {
+    }
+
+    public void mouseExited(MouseEvent e) {
+    }
 }

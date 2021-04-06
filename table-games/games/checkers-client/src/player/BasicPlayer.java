@@ -75,7 +75,7 @@ public abstract class BasicPlayer implements Player {
     protected void recursiveCount(Checker f, int i, int j, int val, int si, int sj, List<Checker> v, List<Turn> list) {
         for (int nsi = -1; nsi < 2; nsi += 2) {
             for (int nsj = -1; nsj < 2; nsj += 2) {
-                if (nsi == - si && nsj == -sj) {
+                if (nsi == -si && nsj == -sj) {
                     continue;
                 }
                 Checker killed = canKill(i, j, val, nsi, nsj);

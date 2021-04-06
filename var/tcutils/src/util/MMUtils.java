@@ -1,12 +1,9 @@
 package util;
 
 import com.simplejcode.commons.misc.util.*;
+import org.w3c.dom.*;
 
 import java.util.*;
-
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
 
 @Deprecated
 public class MMUtils {
@@ -48,7 +45,9 @@ public class MMUtils {
     private static int getInt(Node node, String s) {
         try {
             return Integer.parseInt(get(node, s));
-        } catch (Exception e) {return 0;}
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
     private static String get(Node node, String s) {

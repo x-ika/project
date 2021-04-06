@@ -1,13 +1,12 @@
 package ika.games.poker.client.gui;
 
 import com.simplejcode.commons.net.csbase.MapMessage;
+import ika.games.poker.client.PokerClient;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.awt.event.*;
-
-import ika.games.poker.client.PokerClient;
+import java.awt.image.BufferedImage;
 
 public class PokerRoom extends JPanel implements ActionListener, ComponentListener {
 

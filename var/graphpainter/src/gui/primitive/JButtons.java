@@ -1,7 +1,7 @@
 package gui.primitive;
 
 import javax.swing.*;
-import javax.swing.border.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
@@ -23,21 +23,21 @@ public class JButtons extends JPanel {
         setBackground(bgColor);
         setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
         setBorder(new EmptyBorder(5, 10, 5, 10));
-        for(int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             add(Box.createHorizontalGlue());
         }
         add(panel);
-        for(int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             add(Box.createHorizontalGlue());
         }
     }
 
     public JButtons(ActionListener al, String text1, String text2) {
-        this(al,  text1, text2, Color.white);
+        this(al, text1, text2, Color.white);
     }
 
     public JButtons(ActionListener al) {
-        this(al,  "Ok", "Cancel", Color.white);
+        this(al, "Ok", "Cancel", Color.white);
     }
 
     public JButton getFirst() {

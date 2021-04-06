@@ -2,16 +2,16 @@ package gui;
 
 import com.simplejcode.commons.av.improc.ImageMetrics;
 import com.simplejcode.commons.av.videoio.*;
-import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
+import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.util.ReflectionUtils;
-import proc.*;
+import proc.MODImageHandler;
 
-import javax.swing.*;
-import java.awt.image.BufferedImage;
-import java.awt.*;
 import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
 import java.io.*;
 
 /**

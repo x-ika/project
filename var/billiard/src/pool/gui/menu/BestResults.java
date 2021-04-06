@@ -1,13 +1,13 @@
 package pool.gui.menu;
 
-import pool.utils.Consts;
-import pool.logic.Player;
 import pool.gui.MainFrame;
+import pool.logic.Player;
+import pool.utils.Consts;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
-import java.util.*;
+import java.util.Vector;
 
 public class BestResults extends BasicDialog {
     private static int MAX_SIZE = 10;

@@ -1,7 +1,8 @@
 package ika.games.gomoku.controller.player;
 
-import static java.lang.Math.*;
 import java.util.*;
+
+import static java.lang.Math.*;
 
 @SuppressWarnings({"StatementWithEmptyBody"})
 class Stats {
@@ -110,6 +111,7 @@ class Stats {
 
     /**
      * Finds the all winning trees.
+     *
      * @param max upper bound for index of the tree.
      * @return Returns the number of trees found.
      */
@@ -124,8 +126,9 @@ class Stats {
 
     /**
      * Finds the all winning trees.
-     * @param p index of the additional cell.
-     * @param v value for additional cell.
+     *
+     * @param p   index of the additional cell.
+     * @param v   value for additional cell.
      * @param max upper bound for index of the tree.
      * @return Returns the number of trees found.
      */
@@ -140,9 +143,10 @@ class Stats {
 
     /**
      * Finds the all winning trees.
-     * @param q tree, children of i are 2*i and 2*i+1.
-     * @param c index of the current node.
-     * @param d desk array.
+     *
+     * @param q   tree, children of i are 2*i and 2*i+1.
+     * @param c   index of the current node.
+     * @param d   desk array.
      * @param max upper bound for index of the tree.
      */
     private void findTrees(int[] q, int c, int[] d, int max) {

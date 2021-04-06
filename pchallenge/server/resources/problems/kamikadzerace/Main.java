@@ -141,7 +141,7 @@ public class Main implements Runnable {
             }
             for (int i = 0; i < ans.z; i++) {
                 ans.x[i] += 1e-12;
-                ans.x[i+1] -= 1e-12;
+                ans.x[i + 1] -= 1e-12;
             }
 
             prevPossible = curPossible;
@@ -157,7 +157,7 @@ public class Main implements Runnable {
         out.close();
     }
 
-    private SegmentList get(double event, int WAY, int[] x, int[] y, int [] a, int[] b, int[] c) {
+    private SegmentList get(double event, int WAY, int[] x, int[] y, int[] a, int[] b, int[] c) {
         int last = 0;
         SegmentList res = new SegmentList();
         for (int i = 0; i < x.length; i++) {

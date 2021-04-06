@@ -1,7 +1,7 @@
 package pool.logic;
 
-import pool.gui.PlayerInfoPanel;
 import pool.geom.Vector2D;
+import pool.gui.PlayerInfoPanel;
 import pool.utils.Consts;
 
 public class Player {

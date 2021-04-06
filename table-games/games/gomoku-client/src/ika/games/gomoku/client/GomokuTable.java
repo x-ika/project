@@ -1,12 +1,11 @@
 package ika.games.gomoku.client;
 
-import ika.games.base.BasicGameAction;
 import com.simplejcode.commons.net.util.ByteMessageBuilder;
+import ika.games.base.BasicGameAction;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 
 public class GomokuTable extends JComponent implements MouseListener {

@@ -1,6 +1,7 @@
 import tapi.ProblemTester;
 
 import java.util.Arrays;
+
 import static java.lang.Math.abs;
 
 public class BWStonesTester extends ProblemTester {

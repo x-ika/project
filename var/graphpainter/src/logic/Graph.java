@@ -46,14 +46,14 @@ public class Graph implements java.io.Serializable {
     }
 
     public boolean addVerge(int n1, int n2) {
-        if(vertexs.size() < n1 || vertexs.size() < n2) {
+        if (vertexs.size() < n1 || vertexs.size() < n2) {
             return false;
         }
         return addVerge(vertexs.get(n1), vertexs.get(n2));
     }
 
     public boolean addVerge(Vertex v1, Vertex v2) {
-        if(v1.isConnected(v2) || v1 == v2) {
+        if (v1.isConnected(v2) || v1 == v2) {
             return false;
         }
         v1.add(v2);

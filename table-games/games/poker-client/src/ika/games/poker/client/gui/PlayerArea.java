@@ -1,9 +1,9 @@
 package ika.games.poker.client.gui;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import javax.swing.*;
 import javax.swing.border.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class PlayerArea extends JComponent {
 
@@ -89,7 +89,7 @@ public class PlayerArea extends JComponent {
         g.fillOval(10, yoff, 10, 10);
         g.setColor(inGame ? bg : Color.black);
         g.fillOval(30, yoff, 10, 10);
-        g.setColor(current ? Color.red: bg);
+        g.setColor(current ? Color.red : bg);
         g.fillOval(50, yoff, 10, 10);
 
         yoff += 15;

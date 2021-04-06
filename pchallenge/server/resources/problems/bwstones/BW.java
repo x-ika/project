@@ -1,4 +1,5 @@
 import static java.lang.Math.*;
+
 import java.util.*;
 
 public class BW {

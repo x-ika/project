@@ -4,8 +4,8 @@ import com.simplejcode.commons.misc.util.*;
 import message.Submission;
 import model.TestResult;
 
+import java.io.File;
 import java.util.concurrent.*;
-import java.io.*;
 
 public class SubmissionProcessThread {
 

@@ -1,14 +1,14 @@
 package pool.gui.menu;
 
-import pool.gui.primitive.*;
 import pool.gui.MainFrame;
+import pool.gui.primitive.*;
 import pool.utils.Consts;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
-import java.util.*;
+import java.util.Properties;
 
 public class RegistrationManager extends BasicDialog implements ActionListener {
     private final String REGISTRATION = "Registration";

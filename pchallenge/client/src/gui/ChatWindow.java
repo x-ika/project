@@ -1,15 +1,14 @@
 package gui;
 
-import com.simplejcode.commons.net.csbase.*;
-import com.simplejcode.commons.net.sockets.SocketConnection;
+import api.Client;
 import com.simplejcode.commons.gui.ChatPanel;
+import com.simplejcode.commons.net.csbase.Message;
+import com.simplejcode.commons.net.sockets.SocketConnection;
 import message.TextMessage;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
-
-import api.Client;
 
 public class ChatWindow extends BaseListener {
 

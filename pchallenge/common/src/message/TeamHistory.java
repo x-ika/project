@@ -3,9 +3,9 @@ package message;
 import com.simplejcode.commons.net.csbase.Message;
 import model.TestResult;
 
+import java.io.Serializable;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.io.Serializable;
 
 public class TeamHistory extends Message {
 

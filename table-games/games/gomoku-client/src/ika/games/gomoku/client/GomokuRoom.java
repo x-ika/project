@@ -4,8 +4,7 @@ import com.simplejcode.commons.gui.GraphicUtils;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
+import java.awt.event.*;
 
 public class GomokuRoom extends JComponent implements ComponentListener {
 

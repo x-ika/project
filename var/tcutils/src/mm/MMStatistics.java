@@ -1,14 +1,14 @@
 package mm;
 
+import com.simplejcode.commons.algo.Statistics;
+import com.simplejcode.commons.gui.Console;
+import util.*;
+
 import java.awt.*;
 import java.util.Arrays;
 
-import com.simplejcode.commons.gui.Console;
-import com.simplejcode.commons.algo.Statistics;
-import util.*;
-
 public class MMStatistics {
-    
+
     private static void summarizeContest() {
         Contestant[] contestants = TCProxy.parseRankings(16704, false, false).toArray(new Contestant[0]);
 

@@ -1,8 +1,8 @@
 package ika.games.domino.base;
 
-import static ika.games.domino.base.DominoTopology.*;
-
 import java.util.*;
+
+import static ika.games.domino.base.DominoTopology.*;
 
 public class DominoTree {
 

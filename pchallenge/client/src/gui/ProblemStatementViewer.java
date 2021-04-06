@@ -2,17 +2,14 @@ package gui;
 
 import com.simplejcode.commons.net.csbase.Message;
 import com.simplejcode.commons.net.sockets.SocketConnection;
+import message.*;
 import model.RequestType;
 
 import javax.swing.*;
-import javax.swing.text.*;
+import javax.swing.text.Document;
 import javax.swing.text.rtf.RTFEditorKit;
 import java.awt.*;
-import java.io.*;
-
-import message.ProblemInfo;
-import message.ContestInfo;
-import message.Request;
+import java.io.ByteArrayInputStream;
 
 public class ProblemStatementViewer extends BaseListener {
 

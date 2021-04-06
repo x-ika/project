@@ -1,7 +1,7 @@
 package ika.games.domino.client.gui;
 
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 class PlayerArea extends JComponent {
 

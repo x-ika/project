@@ -2,7 +2,7 @@ package tester;
 
 import com.simplejcode.commons.misc.util.ThreadUtils;
 
-import java.util.*;
+import java.util.Collection;
 
 public abstract class AbstractTester<T, R> {
 

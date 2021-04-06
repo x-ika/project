@@ -13,7 +13,7 @@ public class TCProxy {
                 HOME_PAGE_URL + "longcontest/stats/?module=ViewOverview&rd=" + contestId :
                 HOME_PAGE_URL + "longcontest/?module=ViewStandings&rd=" + contestId;
         StringBuilder builder = new StringBuilder(1 << 20);
-        for (int i = 1; ;) {
+        for (int i = 1; ; ) {
             String content = Utils.readUrl(standingsUrl + "&sc=&sd=&nr=100&sr=" + i, CHARSET, useCache);
             builder.append(content);
             if ((i += 100) > getNumCompetitors(content)) {

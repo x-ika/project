@@ -1,15 +1,8 @@
 package ika.games.gomoku.controller;
 
-import ika.games.base.BasicGameAction;
-import ika.games.base.BasicResult;
-import ika.games.base.GameAction;
-import ika.games.base.Result;
-import ika.games.base.controller.BasicRoom;
-import ika.games.base.controller.Controller;
-import ika.games.base.controller.PersistentObject;
-import ika.games.base.controller.Player;
-import ika.games.base.controller.action.SitDown;
-import ika.games.base.controller.action.UserActionParam;
+import ika.games.base.*;
+import ika.games.base.controller.*;
+import ika.games.base.controller.action.*;
 import ika.games.gomoku.controller.action.GomokuMove;
 import ika.games.gomoku.controller.player.GomokuAI;
 

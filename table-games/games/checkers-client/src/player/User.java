@@ -1,8 +1,6 @@
 package player;
 
-import main.Checker;
-import main.Turn;
-import main.TableListener;
+import main.*;
 
 import java.util.*;
 

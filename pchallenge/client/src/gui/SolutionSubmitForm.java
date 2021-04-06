@@ -1,21 +1,17 @@
 package gui;
 
-import model.RequestType;
-import model.Language;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-
+import api.Client;
 import com.simplejcode.commons.gui.GraphicUtils;
 import com.simplejcode.commons.misc.util.ReflectionUtils;
 import com.simplejcode.commons.net.csbase.Message;
 import com.simplejcode.commons.net.sockets.SocketConnection;
-import api.Client;
-import message.Submission;
-import message.ContestInfo;
-import message.Request;
+import message.*;
+import model.*;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.File;
 
 public class SolutionSubmitForm extends BaseListener {
 

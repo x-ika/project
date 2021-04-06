@@ -1,8 +1,8 @@
 package gui;
 
 import javax.swing.*;
-import java.awt.image.BufferedImage;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 /**
  * This class is used to show on screen image, represented as array of pixels.

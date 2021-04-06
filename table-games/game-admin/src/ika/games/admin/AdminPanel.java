@@ -5,8 +5,8 @@ import com.simplejcode.commons.misc.util.ReflectionUtils;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.io.*;
 import java.awt.*;
+import java.io.*;
 
 public class AdminPanel {
 
@@ -27,7 +27,7 @@ public class AdminPanel {
         }
 
         frame.setJMenuBar(GraphicUtils.createMenuBar(
-                new String[][] {
+                new String[][]{
                         {"Game Server", "Login", null, "Exit"},
                         {"Help", "About"}},
                 this,

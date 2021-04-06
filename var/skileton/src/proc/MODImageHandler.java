@@ -1,14 +1,14 @@
 package proc;
 
-import static java.lang.Math.*;
-
 import com.simplejcode.commons.av.improc.*;
 import com.simplejcode.commons.av.videoio.ImageHandler;
 import gui.*;
 
 import java.awt.*;
-import java.util.*;
 import java.util.List;
+import java.util.*;
+
+import static java.lang.Math.*;
 
 /**
  * The main class, which is processed images extracted from video.
@@ -145,7 +145,7 @@ public final class MODImageHandler implements ImageHandler {
             for (int b = 3; b < m; b++) {
                 if (tmp[a][b] - tmp[a][b - 3] == 3) {
 
-                    for (int c = n; c-- > 1;) {
+                    for (int c = n; c-- > 1; ) {
                         for (int d = 3; d < m; d++) {
                             if (tmp[c][d] - tmp[c][d - 3] == 3) {
 
@@ -193,11 +193,11 @@ public final class MODImageHandler implements ImageHandler {
 
     private void clusterize() {
         // clusterize parts
-        for (int i = list.size(); i-- > 0;) {
+        for (int i = list.size(); i-- > 0; ) {
             Rect r1 = list.get(i);
             while (true) {
                 boolean done = true;
-                for (int j = i; ++j < list.size();) {
+                for (int j = i; ++j < list.size(); ) {
                     Rect r2 = list.get(j);
                     if (r1.dist(r2) < 20) {
                         r1.union(r2);

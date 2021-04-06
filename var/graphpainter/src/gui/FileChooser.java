@@ -40,22 +40,21 @@ public class FileChooser extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent av) {
         String command = av.getActionCommand();
-        if(command.equals(APPROVE_SELECTION)) {
+        if (command.equals(APPROVE_SELECTION)) {
             File file = fileChooser.getSelectedFile();
-            if(!isRight(file)) {
+            if (!isRight(file)) {
                 file = new File(file.getAbsolutePath() + ".GRP");
             }
             frame.choose(file, getTitle());
             this.dispose();
-        } else
-        if(command.equals(CANCEL_SELECTION)) {
+        } else if (command.equals(CANCEL_SELECTION)) {
             this.dispose();
         }
     }
 
     private static boolean isRight(File file) {
         String name = file.getName();
-        if(name.length() < 4) {
+        if (name.length() < 4) {
             return false;
         }
         name = name.substring(name.length() - 4);

@@ -71,7 +71,7 @@ public class GapsOnLineTester extends ProblemTester {
         d[0] = 0;
         b[0] = true;
 
-        for (int r = 0, w = 1; r < w;) {
+        for (int r = 0, w = 1; r < w; ) {
             int x = q[r++];
             for (int i : a) {
 

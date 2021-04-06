@@ -1,7 +1,7 @@
 package ika.games.base.controller;
 
+import com.simplejcode.commons.misc.struct.DynamicStruct;
 import com.simplejcode.commons.misc.util.CryptoUtils;
-import com.simplejcode.commons.misc.DynamicStruct;
 
 public class PersistentObject extends DynamicStruct {
 

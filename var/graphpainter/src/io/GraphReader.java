@@ -24,6 +24,6 @@ public class GraphReader {
     }
 
     public GraphPainter readGraphPainter() {
-        return (GraphPainter)read();
+        return (GraphPainter) read();
     }
 }

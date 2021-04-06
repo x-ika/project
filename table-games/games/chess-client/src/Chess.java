@@ -1,5 +1,5 @@
-import java.awt.event.*;
 import java.awt.*;
+import java.awt.event.*;
 import java.io.*;
 
 public class Chess extends Frame implements ActionListener, MouseListener {

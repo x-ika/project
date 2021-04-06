@@ -7,11 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 
-import gui.FileChooser;
-import gui.GraphPainter;
-import gui.LeftPanel;
-
-public class MainFrame extends JFrame implements ActionListener  {
+public class MainFrame extends JFrame implements ActionListener {
     private static final String NEW = "New";
 
     private static final String OPEN = "Open";
@@ -114,48 +110,40 @@ public class MainFrame extends JFrame implements ActionListener  {
 
     public void actionPerformed(ActionEvent e) {
         String command = e.getActionCommand();
-        if(command.equals(NEW)) {
+        if (command.equals(NEW)) {
             currentFile = null;
             graphPainter = new GraphPainter(leftPanel, STANDART);
             sp.setRightComponent(new JScrollPane(graphPainter));
-        } else
-        if(command.equals(OPEN)) {
+        } else if (command.equals(OPEN)) {
             new FileChooser(this, command);
-        } else
-        if(command.equals(SAVE)) {
-            if(currentFile != null) {
+        } else if (command.equals(SAVE)) {
+            if (currentFile != null) {
                 new GraphWriter(currentFile).write(graphPainter);
             } else {
                 new FileChooser(this, SAVE_AS);
             }
-        } else
-        if(command.equals(SAVE_AS)) {
+        } else if (command.equals(SAVE_AS)) {
             new FileChooser(this, command);
         }
-        if(command.equals(EXIT)) {
+        if (command.equals(EXIT)) {
             dispose();
-        } else
-        if(command.equals(A)) {
+        } else if (command.equals(A)) {
             //graphPainter.add
-        } else
-        if(command.equals(B)) {
+        } else if (command.equals(B)) {
             //graphPainter.addVerge();
-        } else
-        if(command.equals(C)) {
+        } else if (command.equals(C)) {
             //saveAS();
-        } else
-        if(command.equals(D)) {
+        } else if (command.equals(D)) {
             //exit();
         }
     }
 
     void choose(File file, String title) {
-        if(title.equals(OPEN)) {
+        if (title.equals(OPEN)) {
             graphPainter = new GraphReader(file).readGraphPainter();
             sp.setRightComponent(new JScrollPane(graphPainter));
             currentFile = file;
-        } else
-        if(title.equals(SAVE_AS)) {
+        } else if (title.equals(SAVE_AS)) {
             new GraphWriter(file).write(graphPainter);
             currentFile = file;
         }

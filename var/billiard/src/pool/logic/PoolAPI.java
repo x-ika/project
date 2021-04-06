@@ -1,14 +1,11 @@
 package pool.logic;
 
-import pool.utils.SoundManager;
-import pool.utils.ImageFactory;
-
-import java.awt.*;
-
 import pool.gui.MainFrame;
 import pool.gui.menu.BestResults;
+import pool.utils.*;
 
 import javax.swing.*;
+import java.awt.*;
 
 public final class PoolAPI {
 
@@ -28,7 +25,6 @@ public final class PoolAPI {
     public static GraphicsDevice getDevice() {
         return GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
     }
-
 
 
     private MainFrame mainFrame;

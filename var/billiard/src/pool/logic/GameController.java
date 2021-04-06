@@ -1,19 +1,15 @@
 package pool.logic;
 
-import static pool.utils.ImageFactory.*;
-import static pool.utils.Consts.*;
-
 import com.simplejcode.commons.misc.util.ThreadUtils;
-import pool.gui.PlayerInfoPanel;
-import pool.gui.GamePanel;
+import pool.gui.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
-import java.awt.event.MouseAdapter;
+
+import static pool.utils.Consts.*;
+import static pool.utils.ImageFactory.*;
 
 public class GameController implements MouseListener, MouseMotionListener {
 
@@ -169,7 +165,8 @@ public class GameController implements MouseListener, MouseMotionListener {
         if (!moving && !gameOver && foulMode &&
                 e.getY() > Y_MIN + BALL_RADIUS &&
                 e.getY() < Y_MAX - BALL_RADIUS &&
-                model.getCenter(0).distanceTo(e.getX(), e.getY()) < BALL_RADIUS) {
+                model.getCenter(0).distanceTo(e.getX(), e.getY()) < BALL_RADIUS)
+        {
             mouseMoved(e);
             model.getBalls()[0].init(model.getBalls()[0].getCenter().x, e.getY());
             update();

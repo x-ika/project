@@ -2,12 +2,9 @@ package pool.utils;
 
 import com.simplejcode.commons.misc.util.ThreadUtils;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import java.util.*;
+import javax.sound.sampled.*;
 import java.io.File;
+import java.util.*;
 
 public class SoundManager {
 

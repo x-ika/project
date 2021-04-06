@@ -1,7 +1,6 @@
 package com.topcoder.marathon;
 
-import java.io.BufferedWriter;
-import java.io.InputStream;
+import java.io.*;
 
 class ErrorReader extends Thread {
     private final InputStream errorStream;

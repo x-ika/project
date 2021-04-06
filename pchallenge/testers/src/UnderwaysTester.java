@@ -1,8 +1,7 @@
+import com.simplejcode.commons.misc.DataReader;
 import tapi.ProblemTester;
 
 import java.util.*;
-
-import com.simplejcode.commons.misc.DataReader;
 
 public class UnderwaysTester extends ProblemTester {
     public static void main(String[] args) throws Exception {
@@ -14,7 +13,6 @@ public class UnderwaysTester extends ProblemTester {
     }
 
     public void generateTests() {
-
 
 
         for (int test = 49; test <= 50; test++) {
@@ -143,6 +141,7 @@ public class UnderwaysTester extends ProblemTester {
     }
 
     private static boolean[] t = new boolean[8888];
+
     private static void dj(int n, int s, long[] f, long[] d, long add, List<List<T>> g) {
         PriorityQueue<Integer> q = new PriorityQueue<>(n, (o1, o2) -> Long.signum(f[o1] - f[o2]));
         Arrays.fill(t, false);

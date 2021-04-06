@@ -1,10 +1,10 @@
 package pool.gui;
 
+import pool.utils.SoundManager;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
-import pool.utils.SoundManager;
 
 public class MenuComponent extends JComponent implements MouseListener {
     private static final Color ACTIVE_COLOR = new Color(255, 200, 0);

@@ -1,19 +1,16 @@
 package gui;
 
+import api.Client;
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.csbase.Message;
 import com.simplejcode.commons.net.sockets.SocketConnection;
-import message.TeamHistory;
-import message.ContestInfo;
-import message.Request;
+import message.*;
 import model.RequestType;
 
 import javax.swing.*;
 import javax.swing.table.*;
 import java.awt.*;
 import java.util.*;
-
-import api.Client;
 
 public class StandingsView extends BaseListener {
 
@@ -39,7 +36,8 @@ public class StandingsView extends BaseListener {
 
         public Component getTableCellRendererComponent(JTable table, Object value,
                                                        boolean isSelected, boolean hasFocus,
-                                                       int row, int column) {
+                                                       int row, int column)
+        {
             setBackground(rowColors[row]);
             text.setBackground(getBackground());
             if (column == 0) {
@@ -92,7 +90,8 @@ public class StandingsView extends BaseListener {
 
         public Component getTableCellRendererComponent(JTable table, Object value,
                                                        boolean isSelected, boolean hasFocus,
-                                                       int row, int column) {
+                                                       int row, int column)
+        {
             if (column == 0) {
                 setBorder(BorderFactory.createEmptyBorder(0, 15, 0, 0));
                 setLayout(new BorderLayout());

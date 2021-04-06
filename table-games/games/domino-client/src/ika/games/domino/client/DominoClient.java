@@ -4,7 +4,6 @@ import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
 import ika.games.base.client.GameClient;
 import ika.games.domino.base.*;
-
 import ika.games.domino.client.gui.DominoRoom;
 
 public class DominoClient extends GameClient {

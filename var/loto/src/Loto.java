@@ -3,9 +3,7 @@ import com.simplejcode.commons.misc.util.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
+import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -31,7 +29,8 @@ public class Loto extends JPanel {
 
         public Component getTableCellRendererComponent(JTable table, Object value,
                                                        boolean isSelected, boolean hasFocus,
-                                                       final int row, int column) {
+                                                       final int row, int column)
+        {
             setBackground(rowColors[row]);
             label.setBackground(getBackground());
             if (column == 0) {
@@ -85,7 +84,8 @@ public class Loto extends JPanel {
 
         public Component getTableCellRendererComponent(JTable table, Object value,
                                                        boolean isSelected, boolean hasFocus,
-                                                       int row, int column) {
+                                                       int row, int column)
+        {
             if (column == 0) {
                 setBorder(BorderFactory.createEmptyBorder(0, 15, 0, 0));
                 setLayout(new BorderLayout());
@@ -338,7 +338,6 @@ public class Loto extends JPanel {
     public void cancel() {
         form.dispose();
     }
-
 
 
     public void actionOnExit() {

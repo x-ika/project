@@ -1,7 +1,6 @@
 package com.topcoder.marathon;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Parameters {
     public static final String controlBests = "bests";

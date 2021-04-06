@@ -1,12 +1,11 @@
 package ika.games.base.controller.dao;
 
-import java.io.Closeable;
-import java.util.*;
-
-import com.simplejcode.commons.misc.DynamicStruct;
+import com.simplejcode.commons.misc.struct.DynamicStruct;
 import ika.games.base.*;
-
 import ika.games.base.controller.ProvablyFair;
+
+import java.io.Closeable;
+import java.util.Collection;
 
 public interface GameDAO extends Closeable {
 

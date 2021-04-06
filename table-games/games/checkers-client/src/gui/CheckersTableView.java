@@ -1,13 +1,12 @@
 package gui;
 
+import com.simplejcode.commons.misc.util.ThreadUtils;
+import main.*;
+import player.*;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
-
-import com.simplejcode.commons.misc.util.ThreadUtils;
-import main.*;
-import player.User;
-import player.Computer;
 
 public class CheckersTableView extends Frame implements ActionListener, MouseListener, ItemListener {
 

@@ -1,9 +1,8 @@
 package pool.logic;
 
-import pool.utils.SoundManager;
-import pool.utils.Consts;
+import pool.utils.*;
 
-import javax.swing.Timer;
+import javax.swing.*;
 import java.awt.event.*;
 
 class Motion implements ActionListener {

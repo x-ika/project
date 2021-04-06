@@ -1,6 +1,7 @@
 package message;
 
 import com.simplejcode.commons.net.csbase.Message;
+
 import java.io.*;
 
 public class FileMessage extends Message {

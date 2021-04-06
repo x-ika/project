@@ -1,12 +1,8 @@
 package ika.games.admin.util;
 
-import java.net.URLClassLoader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.JarURLConnection;
+import java.io.*;
+import java.net.*;
 import java.util.Arrays;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 
 public class JarUnloadTest {
 

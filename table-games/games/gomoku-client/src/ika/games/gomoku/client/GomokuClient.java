@@ -1,9 +1,8 @@
 package ika.games.gomoku.client;
 
+import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
 import ika.games.base.client.GameClient;
-import com.simplejcode.commons.net.util.ByteMessageParser;
-import com.simplejcode.commons.net.util.MessageParser;
 
 public class GomokuClient extends GameClient {
 

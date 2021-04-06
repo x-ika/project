@@ -1,20 +1,17 @@
 package ika.games.domino.client.gui;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.awt.event.*;
-
-import java.util.List;
-
-import static java.lang.Math.max;
-import static java.lang.Math.min;
-
 import com.simplejcode.commons.net.util.ByteMessageBuilder;
 import ika.games.base.BasicGameAction;
-import ika.games.domino.base.DominoMove;
-import ika.games.domino.base.DominoTree;
+import ika.games.domino.base.*;
 import ika.games.domino.client.DominoClient;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.util.List;
+
+import static java.lang.Math.*;
 
 public class DominoRoom extends JComponent implements ComponentListener {
 
@@ -30,7 +27,7 @@ public class DominoRoom extends JComponent implements ComponentListener {
             for (int t = 0; t < 3; t++) {
                 int w = CACHE[ind][t].getWidth();
                 int h = CACHE[ind][t].getHeight();
-                CACHE[ind][t + 1] = new BufferedImage(h, w,  BufferedImage.TYPE_INT_RGB);
+                CACHE[ind][t + 1] = new BufferedImage(h, w, BufferedImage.TYPE_INT_RGB);
                 for (int x = 0; x < w; x++) {
                     for (int y = 0; y < h; y++) {
                         //noinspection SuspiciousNameCombination

@@ -1,17 +1,17 @@
 package ika.games.base.controller;
 
-import static ika.games.base.controller.Constants.*;
-
-import com.simplejcode.commons.misc.*;
+import com.simplejcode.commons.misc.MultiStateObject;
+import com.simplejcode.commons.misc.struct.DynamicStruct;
 import com.simplejcode.commons.misc.util.*;
 import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
 import ika.games.base.controller.action.*;
-
 import ika.games.base.controller.dao.GameDAOException;
 
 import java.security.*;
 import java.util.*;
+
+import static ika.games.base.controller.Constants.*;
 
 /**
  * Basic class containing game logic.<p>

@@ -4,9 +4,9 @@ import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.sockets.*;
 
-import java.net.Socket;
 import java.awt.*;
 import java.io.IOException;
+import java.net.Socket;
 
 public class LiveAdmin extends CustomInternalFrame implements ConnectionListener<byte[]> {
 

@@ -1,7 +1,8 @@
 package pool.logic;
 
-import static pool.utils.Consts.*;
 import pool.geom.*;
+
+import static pool.utils.Consts.*;
 
 class TableModel {
     private Ball[] balls;

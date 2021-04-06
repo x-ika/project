@@ -1,24 +1,17 @@
 package api;
 
+import com.simplejcode.commons.gui.*;
+import com.simplejcode.commons.misc.util.ReflectionUtils;
 import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.*;
+import gui.*;
+import message.*;
 import model.RequestType;
 
-import javax.swing.*;
 import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.io.*;
 import java.net.Socket;
-import java.io.IOException;
-import java.io.File;
-
-import com.simplejcode.commons.gui.LoginForm;
-import gui.*;
-import com.simplejcode.commons.gui.GraphicUtils;
-import com.simplejcode.commons.gui.DesktopFrame;
-import com.simplejcode.commons.gui.AboutDialogPanel;
-import com.simplejcode.commons.misc.util.ReflectionUtils;
-import message.ContestStatus;
-import message.Login;
-import message.Request;
 
 public class Client extends ConnectionAdapter<Message> {
 
@@ -74,7 +67,7 @@ public class Client extends ConnectionAdapter<Message> {
         }
 
         frame.setJMenuBar(GraphicUtils.createMenuBar(
-                new String[][] {
+                new String[][]{
                         {"File", "Reconnect", null, "Exit"},
 //                        {"Open", "Chat Window", "Standings", "Submit Form", "Submission History", "Problem Statements"},
                         {"Help", "About"}},
@@ -98,7 +91,7 @@ public class Client extends ConnectionAdapter<Message> {
         ChatWindow chatWindow = new ChatWindow(socketConnection, "Chat Window");
 
         chatWindow.setJMenuBar(GraphicUtils.createMenuBar(
-                new String[][] {
+                new String[][]{
                         {"File", "Not imlplemented", null, "Close"},
                         {"View", "Colors"},
                         {"Messages", ChatWindow.SEND_MESSAGE, ChatWindow.ATTACH_FILE, "Clear History"},

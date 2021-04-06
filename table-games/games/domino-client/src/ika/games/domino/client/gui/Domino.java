@@ -1,8 +1,8 @@
 package ika.games.domino.client.gui;
 
 import javax.swing.*;
-import java.awt.image.BufferedImage;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 class Domino extends JComponent {
 

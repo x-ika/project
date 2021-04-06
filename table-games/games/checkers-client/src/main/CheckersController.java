@@ -1,16 +1,14 @@
 package main;
 
 import com.simplejcode.commons.misc.util.ThreadUtils;
+import gui.CheckersTableView;
 import player.*;
 
-import java.applet.Applet;
-import java.applet.AudioClip;
+import java.applet.*;
 import java.io.*;
+import java.lang.reflect.Modifier;
 import java.net.URL;
 import java.util.*;
-import java.lang.reflect.*;
-
-import gui.CheckersTableView;
 
 public class CheckersController {
 

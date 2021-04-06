@@ -5,7 +5,8 @@ import ika.games.base.controller.action.*;
 
 public class JokerNamespace {
 
-    private JokerNamespace() {}
+    private JokerNamespace() {
+    }
 
     public static final String JOKER_TYPE_CHOICE = "joker_types";
     public static final String PENALTY_TYPE_CHOICE = "penalty_types";
@@ -24,11 +25,11 @@ public class JokerNamespace {
 
     public enum JokerType implements ObjectType {
 
-        USUAL(       1, "USUAL"),
-        NINES_9999(  2, "NINES_9999"),
-        NINES_999(   3, "NINES_999"),
-        NINES_99(    4, "NINES_99"),
-        NINES_9(     5, "NINES_9");
+        USUAL(1, "USUAL"),
+        NINES_9999(2, "NINES_9999"),
+        NINES_999(3, "NINES_999"),
+        NINES_99(4, "NINES_99"),
+        NINES_9(5, "NINES_9");
 
         public final int type;
         public final String name;
@@ -54,8 +55,8 @@ public class JokerNamespace {
 
     public enum JokerPenaltyType implements ObjectType {
 
-        USUAL( 1, "USUAL"),
-        SPEC(  2, "SPEC");
+        USUAL(1, "USUAL"),
+        SPEC(2, "SPEC");
 
         public final int type;
         public final String name;
@@ -115,25 +116,25 @@ public class JokerNamespace {
 
     public enum JokerAction implements GameAction {
 
-        USER_CLAIM(         21, "USER_CLAIM"),
-        USER_PLAY_CARD(     22, "USER_PLAY_CARD"),
-        USER_SUIT(          23, "USER_SUIT"),
-        USER_KICK_BOT(      24, "USER_SUIT"),
-        USER_GET_LIST(      25, "USER_GET_LIST"),
-        USER_TAKE_QUEUE(    26, "USER_TAKE_QUEUE"),
-        USER_LEAVE_QUEUE(   27, "USER_LEAVE_QUEUE"),
+        USER_CLAIM(21, "USER_CLAIM"),
+        USER_PLAY_CARD(22, "USER_PLAY_CARD"),
+        USER_SUIT(23, "USER_SUIT"),
+        USER_KICK_BOT(24, "USER_SUIT"),
+        USER_GET_LIST(25, "USER_GET_LIST"),
+        USER_TAKE_QUEUE(26, "USER_TAKE_QUEUE"),
+        USER_LEAVE_QUEUE(27, "USER_LEAVE_QUEUE"),
 
-        ROOM_START_ROUND(   51, "ROOM_START_ROUND"),
-        ROOM_END_ROUND(     52, "ROOM_END_ROUND"),
-        ROOM_NEW_GAME(      53, "ROOM_NEW_GAME"),
-        ROOM_ASSIGN_GAME(   54, "ROOM_ASSIGN_GAME"),
-        ROOM_GET_BETS(      55, "ROOM_GET_BETS"),
-        ROOM_SUIT(          56, "ROOM_SUIT"),
-        ROOM_CLAIM(         57, "ROOM_CLAIM"),
-        ROOM_PLAY(          58, "ROOM_PLAY"),
-        ROOM_SET_TRUMP(     59, "ROOM_SET_TRUMP"),
-        ROOM_DISTRIBUTE(    60, "ROOM_DISTRIBUTE"),
-        ROOM_TAKE(          61, "ROOM_TAKE");
+        ROOM_START_ROUND(51, "ROOM_START_ROUND"),
+        ROOM_END_ROUND(52, "ROOM_END_ROUND"),
+        ROOM_NEW_GAME(53, "ROOM_NEW_GAME"),
+        ROOM_ASSIGN_GAME(54, "ROOM_ASSIGN_GAME"),
+        ROOM_GET_BETS(55, "ROOM_GET_BETS"),
+        ROOM_SUIT(56, "ROOM_SUIT"),
+        ROOM_CLAIM(57, "ROOM_CLAIM"),
+        ROOM_PLAY(58, "ROOM_PLAY"),
+        ROOM_SET_TRUMP(59, "ROOM_SET_TRUMP"),
+        ROOM_DISTRIBUTE(60, "ROOM_DISTRIBUTE"),
+        ROOM_TAKE(61, "ROOM_TAKE");
 
         public final int id;
         public final String name;
@@ -155,9 +156,9 @@ public class JokerNamespace {
 
     public enum JokerResult implements Result {
 
-        INVALID_TURN(     21),
-        UNEXPECTED_TURN(  22),
-        INVALID_SETTINGS( 23);
+        INVALID_TURN(21),
+        UNEXPECTED_TURN(22),
+        INVALID_SETTINGS(23);
 
         public final int id;
         public final String name;
@@ -224,10 +225,11 @@ public class JokerNamespace {
 
     }
 
-    public static final class PlayerScore{
+    public static final class PlayerScore {
         public byte[] hexName;
         public int score;
-        public PlayerScore(byte[] hexName,int score){
+
+        public PlayerScore(byte[] hexName, int score) {
             this.hexName = hexName;
             this.score = score;
         }

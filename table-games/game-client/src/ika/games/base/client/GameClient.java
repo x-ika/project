@@ -1,21 +1,21 @@
 package ika.games.base.client;
 
-import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.gui.Console;
+import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.util.*;
 import com.simplejcode.commons.net.sockets.*;
 import com.simplejcode.commons.net.util.ByteMessageBuilder;
-import ika.games.base.*;
+import ika.games.base.BasicGameAction;
 
-import javax.swing.*;
 import javax.imageio.ImageIO;
-import java.beans.PropertyVetoException;
-import java.net.Socket;
-import java.io.*;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.*;
+import java.beans.PropertyVetoException;
+import java.io.*;
 import java.lang.reflect.Field;
+import java.net.Socket;
+import java.util.*;
 
 public abstract class GameClient extends ConnectionAdapter<byte[]> {
 
@@ -76,7 +76,7 @@ public abstract class GameClient extends ConnectionAdapter<byte[]> {
         frame.setSize(1024, 768);
 
         frame.setJMenuBar(GraphicUtils.createMenuBar(
-                new String[][] {
+                new String[][]{
                         {"File", "Reconnect", null, "Exit"},
                         {"Help", "About"}},
                 this,
@@ -94,7 +94,7 @@ public abstract class GameClient extends ConnectionAdapter<byte[]> {
         CustomInternalFrame chatWindow = new CustomInternalFrame("Chat Window");
 
         chatWindow.setJMenuBar(GraphicUtils.createMenuBar(
-                new String[][] {
+                new String[][]{
                         {"File", "Not imlplemented", null, "Close"},
                         {"View", "Colors"},
                         {"Messages", "Send Message", "Clear Chat History"},
@@ -130,7 +130,7 @@ public abstract class GameClient extends ConnectionAdapter<byte[]> {
         internalFrame.loadContent(container);
 
         internalFrame.setJMenuBar(GraphicUtils.createMenuBar(
-                new String[][] {
+                new String[][]{
                         {"Action", "sit"},
                 },
                 this,

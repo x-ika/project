@@ -1,10 +1,8 @@
 package pool.utils;
 
-import pool.utils.Consts;
-
-import javax.swing.ImageIcon;
 import javax.imageio.ImageIO;
-import java.awt.image.*;
+import javax.swing.*;
+import java.awt.image.BufferedImage;
 import java.io.*;
 
 public final class ImageFactory {

@@ -56,16 +56,16 @@ public class GraphPainter extends JComponent implements
     public void paintComponent(Graphics g) {
         g.setColor(Color.white);
         g.fillRect(0, 0, getSize().width, getSize().height);
-        for(Graph graph : graphs) {
+        for (Graph graph : graphs) {
             paintGraph(g, graph);
         }
     }
 
     private void paintGraph(Graphics g, Graph graph) {
-        for(Vertex v : graph.getVertexes()) {
+        for (Vertex v : graph.getVertexes()) {
             g.setColor(Color.black);
             drawVertex(g, v);
-            for(Vertex fv : v.getConnectedVertexs()) {
+            for (Vertex fv : v.getConnectedVertexs()) {
                 g.drawLine(v.x, v.y, fv.x, fv.y);
             }
         }
@@ -81,36 +81,45 @@ public class GraphPainter extends JComponent implements
 
     public void mousePressed(MouseEvent e) {
         int x = e.getX(),
-            y = e.getY();
+                y = e.getY();
         Vertex v = getVertex(x, y);
-        if(selected != null && v != null) {
+        if (selected != null && v != null) {
             addVerge(v, selected);
         }
         selected = v;
-        if(e.getClickCount() == 2) {
+        if (e.getClickCount() == 2) {
             addVertex(x, y);
         }
     }
 
     public void mouseDragged(MouseEvent e) {
-        if(selected != null) {
+        if (selected != null) {
             selected.move(e.getX(), e.getY());
             repaint();
         }
     }
 
     private Vertex getVertex(int x, int y) {
-        for(Vertex v : currentGraph.getVertexes()) {
-            if(v.contains(x, y)) {
+        for (Vertex v : currentGraph.getVertexes()) {
+            if (v.contains(x, y)) {
                 return v;
             }
         }
         return null;
     }
 
-    public void mouseClicked(MouseEvent e) {}
-    public void mouseReleased(MouseEvent e) {}
-    public void mouseMoved(MouseEvent e) {}
-    public void mouseEntered(MouseEvent e) {}
-    public void mouseExited(MouseEvent e) {}
+    public void mouseClicked(MouseEvent e) {
+    }
+
+    public void mouseReleased(MouseEvent e) {
+    }
+
+    public void mouseMoved(MouseEvent e) {
+    }
+
+    public void mouseEntered(MouseEvent e) {
+    }
+
+    public void mouseExited(MouseEvent e) {
+    }
 }

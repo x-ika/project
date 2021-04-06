@@ -1,11 +1,10 @@
 package ika.games.poker.controller;
 
-import com.simplejcode.commons.net.csbase.Message;
-import com.simplejcode.commons.net.csbase.MapMessage;
+import com.simplejcode.commons.net.csbase.*;
 import com.simplejcode.commons.net.sockets.SocketConnection;
 
-import java.util.*;
 import java.io.*;
+import java.util.Properties;
 
 public class PokerController1 {
 

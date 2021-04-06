@@ -1,6 +1,6 @@
 package mm;
 
-import com.simplejcode.commons.misc.DynamicMap;
+import com.simplejcode.commons.misc.struct.DynamicMap;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

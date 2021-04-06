@@ -1,21 +1,20 @@
 package ika.games.domino.base;
 
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
 
 public final class DominoTopology {
 
     /**
      * *******************************
      * Domino sides numbering:
-     *     0
-     *   +---+
-     *   |   |
+     * 0
+     * +---+
+     * |   |
      * 3 |---| 1
-     *   |   |
-     *   +---+
-     *     2
-     *********************************
+     * |   |
+     * +---+
+     * 2
+     * ********************************
      * Dominoes int representation:
      * bottom << 3 | top
      * *******************************

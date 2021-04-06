@@ -1,14 +1,14 @@
 package pool.gui.menu;
 
-import pool.gui.primitive.*;
 import pool.gui.MainFrame;
+import pool.gui.primitive.*;
 import pool.utils.Consts;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Properties;
 import java.io.*;
+import java.util.Properties;
 
 public class NewGame extends BasicDialog implements ActionListener {
     private static final String[] TITLES = new String[]{"First Player", "Second Player"};

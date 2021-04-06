@@ -1,9 +1,7 @@
 package ika.games.base.controller;
 
-import static ika.games.base.controller.Constants.*;
-
 import com.simplejcode.commons.misc._pattern.pool.*;
-import com.simplejcode.commons.misc.DynamicStruct;
+import com.simplejcode.commons.misc.struct.DynamicStruct;
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.sockets.*;
 import com.simplejcode.commons.net.util.*;
@@ -11,10 +9,12 @@ import ika.games.base.*;
 import ika.games.base.controller.action.*;
 import ika.games.base.controller.dao.*;
 
+import java.io.*;
 import java.nio.channels.AsynchronousSocketChannel;
 import java.util.*;
-import java.io.*;
 import java.util.concurrent.TimeUnit;
+
+import static ika.games.base.controller.Constants.*;
 
 /**
  * Basic class for various game controllers<p>
@@ -111,6 +111,7 @@ public abstract class Controller extends AsynchronousConnectionManager {
 
     /**
      * Updates application settings and lobby.
+     *
      * @throws Exception if any problem raises during the update process
      */
     protected void updateApp() throws Exception {
@@ -245,6 +246,7 @@ public abstract class Controller extends AsynchronousConnectionManager {
     /**
      * Destroys old database connections and creates them again.
      * It is necessary when connection to the db server are lost.
+     *
      * @param force recreate connections even if they are healthy
      */
     public void recreate(boolean force) {
@@ -378,7 +380,7 @@ public abstract class Controller extends AsynchronousConnectionManager {
             action = readAction(parser);
             if (action == BasicGameAction.UNKNOWN) {
                 result = BasicResult.UNKNOWN_ACTION;
-            } else  if (action != BasicGameAction.LOG_IN && player == null) {
+            } else if (action != BasicGameAction.LOG_IN && player == null) {
                 result = BasicResult.UNAUTHORIZED;
             } else {
                 param = readParam(source, parser, player, action);

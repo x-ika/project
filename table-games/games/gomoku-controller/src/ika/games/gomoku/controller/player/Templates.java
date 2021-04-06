@@ -44,8 +44,6 @@ final class Templates {
     public static final Templates instance = new Templates();
 
 
-
-
     private final String[][] DATA = {
 
             {
@@ -64,7 +62,6 @@ final class Templates {
                     ".X...",
                     "#....",
             },
-
 
 
             {

@@ -1,11 +1,10 @@
 package gui;
 
-import com.simplejcode.commons.net.sockets.*;
+import com.simplejcode.commons.gui.CustomInternalFrame;
 import com.simplejcode.commons.net.csbase.Message;
+import com.simplejcode.commons.net.sockets.*;
 
 import java.awt.*;
-
-import com.simplejcode.commons.gui.*;
 
 public class BaseListener extends CustomInternalFrame implements ConnectionListener<Message> {
 

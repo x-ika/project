@@ -1,6 +1,6 @@
 package ika.games.base.controller;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * H A 2 3 4 5 6 7 8 9 10 J Q K
@@ -10,7 +10,8 @@ import java.util.*;
  */
 public final class CardComplect {
 
-    private CardComplect() {}
+    private CardComplect() {
+    }
 
     private static final String SUIT_STRING = "hoxs";
     private static final String RANK_STRING = "e23456789abcd";
@@ -283,10 +284,10 @@ public final class CardComplect {
     }
 
     private static int getFull(int[] c) {
-        for (int i = 13; i-- > 0;) {
+        for (int i = 13; i-- > 0; ) {
             if (h[i] == 3) {
                 int set = getBy(PRANK, i, 3, c, 0);
-                for (int j = 13; j-- > 0;) {
+                for (int j = 13; j-- > 0; ) {
                     if (h[j] > 1 && j != PRANK[c[f(set)]]) {
                         int spair = getBy(PRANK, j, 2, c, 0);
                         return 6 * PS[5] + pokerScore(c, set, spair);
@@ -309,7 +310,7 @@ public final class CardComplect {
 
     private static int getStraight(int[] c) {
         M:
-        for (int i = 13; i-- > 3;) {
+        for (int i = 13; i-- > 3; ) {
             int j = i;
             for (int t = 0; t < 5; t++) {
                 if (h[j] == 0) {
@@ -323,7 +324,7 @@ public final class CardComplect {
     }
 
     private static int getSet(int[] c) {
-        for (int i = 13; i-- > 0;) {
+        for (int i = 13; i-- > 0; ) {
             if (h[i] == 3) {
                 int set = getBy(PRANK, i, 3, c, 0);
                 return 3 * PS[5] + pokerScore(c, set);
@@ -333,10 +334,10 @@ public final class CardComplect {
     }
 
     private static int getTwoPairs(int[] c) {
-        for (int i = 13; i-- > 0;) {
+        for (int i = 13; i-- > 0; ) {
             if (h[i] == 2) {
                 int set = getBy(PRANK, i, 2, c, 0);
-                for (int j = PRANK[c[f(set)]]; j-- > 0;) {
+                for (int j = PRANK[c[f(set)]]; j-- > 0; ) {
                     if (h[j] == 2) {
                         int spair = getBy(PRANK, j, 2, c, 0);
                         return 2 * PS[5] + pokerScore(c, set, spair);
@@ -348,7 +349,7 @@ public final class CardComplect {
     }
 
     private static int getPair(int[] c) {
-        for (int i = 13; i-- > 0;) {
+        for (int i = 13; i-- > 0; ) {
             if (h[i] == 2) {
                 int set = getBy(PRANK, i, 2, c, 0);
                 return PS[5] + pokerScore(c, set);
@@ -365,7 +366,7 @@ public final class CardComplect {
             all |= x;
         }
         int score = getHighestCardsScore(t, c, all);
-        for (int i = s.length; i-- > 0;) {
+        for (int i = s.length; i-- > 0; ) {
             score += PS[t++] * PRANK[c[f(s[i])]];
         }
         return score;
@@ -383,7 +384,7 @@ public final class CardComplect {
             }
         }
         int score = 0;
-        for (int i = 13; i-- > 0 && count > 0;) {
+        for (int i = 13; i-- > 0 && count > 0; ) {
             if ((set & 1 << i) != 0) {
                 score += PS[--count] * i;
             }

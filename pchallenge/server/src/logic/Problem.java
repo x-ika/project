@@ -1,7 +1,7 @@
 package logic;
 
-import java.util.Properties;
 import java.io.*;
+import java.util.Properties;
 
 public class Problem implements Serializable {
 

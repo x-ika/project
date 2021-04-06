@@ -2,7 +2,7 @@ package ika.games.gomoku.controller.player;
 
 import ika.games.gomoku.controller.action.GomokuMove;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class MiniMaxPlayer implements GomokuPlayer {
 

@@ -44,7 +44,7 @@ public class GameRandom extends Random {
 
 
     public void setClientSeed(int clientSeed) {
-        twister.setSeed(new int[] {serverSeed, clientSeed});
+        twister.setSeed(new int[]{serverSeed, clientSeed});
     }
 
     public void setClientSeeds(int[] clientSeeds) {

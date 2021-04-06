@@ -1,13 +1,11 @@
 package logic;
 
+import message.*;
+import model.TestResult;
+
+import java.io.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.io.*;
-
-import message.ContestInfo;
-import message.TeamHistory;
-import message.Submission;
-import model.TestResult;
 
 public class Contest implements Serializable {
 

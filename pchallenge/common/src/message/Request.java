@@ -1,7 +1,6 @@
 package message;
 
 import com.simplejcode.commons.net.csbase.Message;
-
 import model.RequestType;
 
 public class Request extends Message {

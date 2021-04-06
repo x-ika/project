@@ -3,7 +3,7 @@ package tapi;
 import com.simplejcode.commons.misc.DataReader;
 
 import java.io.*;
-import java.util.*;
+import java.util.Random;
 
 public abstract class ProblemTester {
 

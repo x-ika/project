@@ -1,15 +1,14 @@
 package pool.gui.menu;
 
-import pool.utils.Consts;
 import pool.gui.MainFrame;
+import pool.utils.Consts;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.image.BufferedImage;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
-import java.io.File;
-import java.io.IOException;
+import java.awt.image.BufferedImage;
+import java.io.*;
 
 public class About extends BasicDialog {
     private static BufferedImage content;

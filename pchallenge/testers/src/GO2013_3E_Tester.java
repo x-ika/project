@@ -45,7 +45,7 @@ public class GO2013_3E_Tester extends ProblemTester {
     public int test() {
         int n = in.nextInt();
         int m = in.nextInt();
-        int[][] a = new int[2*n][2*m];
+        int[][] a = new int[2 * n][2 * m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 a[i][j] = in.nextInt();
@@ -60,8 +60,8 @@ public class GO2013_3E_Tester extends ProblemTester {
         int k = n * m / 2;
         List<String> ret = new ArrayList<>();
         for (int iter = 0; iter < k; iter++) {
-            int i = iter / (m/2);
-            int j = 2 * (iter % (m/2)) + i % 2;
+            int i = iter / (m / 2);
+            int j = 2 * (iter % (m / 2)) + i % 2;
 
             int fi = -1, fj = 0;
             for (int p = 0; p < n; p++) {
@@ -133,7 +133,7 @@ public class GO2013_3E_Tester extends ProblemTester {
     private static void col(int[][] a, int j, List<String> ret) {
         ret.add("C" + (j + 1));
         int t = a[a.length - 1][j];
-        for (int i = a.length; i-- > 1;) {
+        for (int i = a.length; i-- > 1; ) {
             a[i][j] = a[i - 1][j];
         }
         a[0][j] = t;
@@ -142,7 +142,7 @@ public class GO2013_3E_Tester extends ProblemTester {
     private static void row(int[][] a, int i, List<String> ret) {
         ret.add("R" + (i + 1));
         int t = a[i][a[0].length - 1];
-        for (int j = a[0].length; j-- > 1;) {
+        for (int j = a[0].length; j-- > 1; ) {
             a[i][j] = a[i][j - 1];
         }
         a[i][0] = t;

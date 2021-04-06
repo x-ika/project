@@ -1,11 +1,15 @@
 public class Move {
     public int desk[][], x1, y1, x2, y2, value1, value2, result;
 
-    public Move() {}
+    public Move() {
+    }
+
     public Move(int[][] d, int kx1, int ky1, int kx2, int ky2) {
         desk = d;
-        x1 = kx1; y1 = ky1;
-        x2 = kx2; y2 = ky2;
+        x1 = kx1;
+        y1 = ky1;
+        x2 = kx2;
+        y2 = ky2;
         value1 = desk[x1][y1];
         value2 = desk[x2][y2];
         result = Figure.COST_OF[Math.abs(value2)];
@@ -65,8 +69,10 @@ class HMove extends Move {
 class DMove extends Move {
     public DMove(int[][] d, int kx1, int ky1, int kx2, int ky2) {
         desk = d;
-        x1 = kx1; y1 = ky1;
-        x2 = kx2; y2 = ky2;
+        x1 = kx1;
+        y1 = ky1;
+        x2 = kx2;
+        y2 = ky2;
         value1 = desk[x1][y1];
         value2 = desk[x2][y1];
         result = Figure.COST_OF[Math.abs(value2)];
@@ -102,7 +108,7 @@ class Rook extends Move {
     Rook(int[][] d, int y, int signX) {
         desk = d;
         y1 = y2 = y;
-        x1 = signX > 0? 7 : 0;
+        x1 = signX > 0 ? 7 : 0;
         x2 = 4 + signX;
         kingX2 = 4 + 2 * signX;
         value1 = desk[x1][y];

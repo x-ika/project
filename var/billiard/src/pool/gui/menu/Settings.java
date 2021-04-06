@@ -1,8 +1,8 @@
 package pool.gui.menu;
 
-import pool.utils.SoundManager;
-import pool.gui.primitive.JButtons;
 import pool.gui.MainFrame;
+import pool.gui.primitive.JButtons;
+import pool.utils.SoundManager;
 
 import java.awt.event.*;
 

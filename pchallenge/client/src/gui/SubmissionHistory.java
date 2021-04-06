@@ -1,19 +1,15 @@
 package gui;
 
+import api.Client;
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.csbase.Message;
 import com.simplejcode.commons.net.sockets.SocketConnection;
+import message.*;
 import model.RequestType;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
+import javax.swing.table.*;
 import java.awt.*;
-
-import api.Client;
-import message.TeamHistory;
-import message.ContestInfo;
-import message.Request;
 
 public class SubmissionHistory extends BaseListener {
 

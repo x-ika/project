@@ -3,9 +3,8 @@ package ika.games.domino.controller;
 import ika.games.base.*;
 import ika.games.base.controller.*;
 import ika.games.base.controller.action.*;
-
 import ika.games.domino.base.*;
-import ika.games.domino.controller.action.*;
+import ika.games.domino.controller.action.PlayAction;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
@@ -231,7 +230,8 @@ public class DominoLogic extends BasicRoom {
 
                 if (dominoTree.getNodes().size() == 1 &&
                         getPossibleTurns(next(whoPlays)).isEmpty() &&
-                        getPossibleTurns(prev(whoPlays)).isEmpty()) {
+                        getPossibleTurns(prev(whoPlays)).isEmpty())
+                {
                     pause(3000);
                     continue WHOLE;
                 }

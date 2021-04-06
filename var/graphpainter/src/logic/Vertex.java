@@ -47,7 +47,7 @@ public class Vertex extends Point implements java.io.Serializable {
     }
 
     public Vertex getConnectedVertex(int index) {
-        return (Vertex)friends.toArray()[index];
+        return (Vertex) friends.toArray()[index];
     }
 
     public HashSet<Vertex> getConnectedVertexs() {

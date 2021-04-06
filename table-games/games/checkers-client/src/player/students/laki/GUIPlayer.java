@@ -135,7 +135,6 @@ public class GUIPlayer extends Object {
 //	}
 //
 //	public static final int UNIT_SIZE = 60;
-	
-	
-	
+
+
 }

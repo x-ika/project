@@ -1,7 +1,6 @@
 package com.topcoder.marathon;
 
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 
 /**
  * Base class for Topcoder Marathon testers with animation, i.e.
@@ -27,14 +26,14 @@ public abstract class MarathonAnimatedVis extends MarathonVis {
     protected final int getDelay() {
         return delay;
     }
-    
+
     protected void end() {
         synchronized (pauseLock) {
             delay = 0;
             keyPressed = true;
             paused = false;
             pauseLock.notifyAll();
-        }        
+        }
         super.end();
     }
 
