@@ -1,20 +1,35 @@
 package com.topcoder.marathon;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.font.*;
 import java.awt.geom.*;
 import java.awt.image.*;
+import java.io.*;
 import java.util.List;
 import java.util.*;
 
 /**
- * Base class for Topcoder Marathon testers with visualization. Should be
- * extended directly for problems with a visual representation, but no
- * animation, i.e. only a single (final) state is shown.
+ * Base class for Topcoder Marathon testers with visualization.
+ * Should be extended directly for problems with a visual representation, but no animation,
+ * i.e. only a single (final) state is shown.
  * <p>
- * Updated: 2020/11/19 - Handle -windowPos and -screen parameters.
+ * Updates:
+ * 2020/11/19 - Handle -windowPos and -screen parameters.
+ * 2021/02/05 - Move mouse click events to another (not AWT) thread, to avoid painting/
+ * delay issues after an user action.
+ * - Override paint() instead of paintComponent().
+ * - Use mousePress() event instead of mountClick() for better responsiveness.
+ * - Add -saveVis parameter to allow saving the visualizer content, after
+ * each update.
+ * - Add -infoScale parameter to allow increase/decrease the font used in the
+ * info panel (right side of visualizer). The panel is not displayed if
+ * infoScale is 0 (which may be useful if the user wants to see only the
+ * main content, possibly together with -saveVis parameter).
+ * 2021/09/13 - Small change in the way the frame is created (waiting, instead of doing
+ * it in the background).
  */
 public abstract class MarathonVis extends MarathonTester {
     protected final Object updateLock = new Object();
@@ -34,6 +49,8 @@ public abstract class MarathonVis extends MarathonTester {
     private RenderingHints hints;
     private long paintTime;
     private int paintCnt;
+    private int saveVisSeq;
+    private BufferedImage lastSavedImage;
 
     protected abstract void paintContent(Graphics2D g);
 
@@ -99,18 +116,22 @@ public abstract class MarathonVis extends MarathonTester {
                 panel = new JPanel() {
                     private static final long serialVersionUID = -1008231133177413855L;
 
-                    protected void paintComponent(Graphics g) {
+                    public void paint(Graphics g) {
                         paintVis(g, getWidth(), getHeight());
                     }
                 };
 
                 panel.addMouseListener(new MouseAdapter() {
-                    public void mouseClicked(MouseEvent e) {
+                    public void mousePressed(MouseEvent e) {
                         if (contentScreen != null && contentScreen.contains(e.getPoint())) {
                             if (contentScreen.getWidth() > 0 && contentScreen.getHeight() > 0) {
                                 double x = (e.getX() - contentScreen.getX()) / contentScreen.getWidth() * contentRect.getWidth() + contentRect.getX();
                                 double y = (e.getY() - contentScreen.getY()) / contentScreen.getHeight() * contentRect.getHeight() + contentRect.getY();
-                                contentClicked(x, y, e.getButton(), e.getClickCount());
+                                new Thread() {
+                                    public void run() {
+                                        contentClicked(x, y, e.getButton(), e.getClickCount());
+                                    }
+                                }.start();
                             }
                             return;
                         }
@@ -120,7 +141,11 @@ public abstract class MarathonVis extends MarathonTester {
                                 Boolean checked = infoChecked.get(key);
                                 if (checked != null) {
                                     infoChecked.put(key, !checked);
-                                    checkChanged(key, !checked);
+                                    new Thread() {
+                                        public void run() {
+                                            checkChanged(key, !checked);
+                                        }
+                                    }.start();
                                 }
                                 break;
                             }
@@ -129,30 +154,85 @@ public abstract class MarathonVis extends MarathonTester {
                 });
 
                 final int resolution = Toolkit.getDefaultToolkit().getScreenResolution();
-                infoFontPlain = new Font(Font.SANS_SERIF, Font.PLAIN, resolution / 8);
-                infoFontBold = new Font(Font.SANS_SERIF, Font.BOLD, infoFontPlain.getSize());
+                int infoScale = 100;
+                if (parameters.isDefined(Parameters.infoScale))
+                    infoScale = parameters.getIntValue(Parameters.infoScale);
+                if (infoScale < 0) infoScale = 0;
+                else if (infoScale > 400) infoScale = 400;
+                if (infoScale != 0) {
+                    infoFontPlain = new Font(Font.SANS_SERIF, Font.PLAIN, resolution * infoScale / 800);
+                    infoFontBold = new Font(Font.SANS_SERIF, Font.BOLD, infoFontPlain.getSize());
+                }
 
-                SwingUtilities.invokeLater(new Runnable() {
-                    public void run() {
-                        frame.setSize(1000, 800);
-                        frame.setTitle(className + " - Seed: " + seed);
-                        frame.setIconImage(getIcon());
-                        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                try {
+                    SwingUtilities.invokeAndWait(new Runnable() {
+                        public void run() {
+                            frame.setSize(1000, 800);
+                            frame.setTitle(className + " - Seed: " + seed);
+                            frame.setIconImage(getIcon());
+                            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-                        frame.setContentPane(panel);
+                            frame.setContentPane(panel);
 
-                        FontRenderContext frc = new FontRenderContext(null, true, true);
-                        Rectangle2D rc = infoFontBold.getStringBounds("0", frc);
-                        infoFontWidth = (int) Math.ceil(rc.getWidth());
-                        infoFontHeight = (int) Math.ceil(rc.getHeight());
+                            if (infoFontPlain != null) {
+                                FontRenderContext frc = new FontRenderContext(null, true, true);
+                                Rectangle2D rc = infoFontBold.getStringBounds("0", frc);
+                                infoFontWidth = (int) Math.ceil(rc.getWidth());
+                                infoFontHeight = (int) Math.ceil(rc.getHeight());
+                            }
 
-                        border = resolution / 7;
-                        showAndAdjustWindowBounds();
-                    }
-                });
+                            border = resolution / 7;
+                            showAndAdjustWindowBounds();
+                        }
+                    });
+                } catch (Exception e) {
+                }
             }
         }
+        if (parameters.isDefined(Parameters.saveVis)) saveVis();
         panel.repaint();
+    }
+
+    private void saveVis() {
+        int w = panel.getWidth();
+        if (w > 0) {
+            int h = panel.getHeight();
+            String s = parameters.getStringNull(Parameters.saveVis);
+            File folder = new File(s == null ? "." : s);
+            if (!folder.exists()) folder.mkdirs();
+            BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_BGR);
+            Graphics2D g = img.createGraphics();
+            paintVis(g, w, h);
+            g.dispose();
+            try {
+                synchronized (updateLock) {
+                    boolean eq = false;
+                    if (lastSavedImage != null && lastSavedImage.getWidth() == w && lastSavedImage.getHeight() == h) {
+                        int[] curr = img.getRGB(0, 0, w, h, null, 0, w);
+                        int[] prev = lastSavedImage.getRGB(0, 0, w, h, null, 0, w);
+                        eq = curr.length == prev.length;
+                        if (eq) {
+                            OUT:
+                            for (int i = 0; i < 256; i++) {
+                                for (int j = i; j < curr.length; j += 256) {
+                                    if (curr[j] != prev[j]) {
+                                        eq = false;
+                                        break OUT;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (!eq) {
+                        File file = new File(folder, String.format("%d-%05d.png", seed, ++saveVisSeq));
+                        ImageIO.write(img, "png", file);
+                        lastSavedImage = img;
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void showAndAdjustWindowBounds() {
@@ -257,17 +337,20 @@ public abstract class MarathonVis extends MarathonTester {
                 double sh = (fh - 2 * border) / contentRect.getHeight();
                 size = Math.min(sw, sh);
             }
-            int width = 3 * border + infoColumns * infoFontWidth + (int) (contentRect.getWidth() * size);
+            int width = 2 * border + (int) (contentRect.getWidth() * size);
+            if (infoFontWidth > 0) width += border + infoColumns * infoFontWidth;
             int height = 2 * border + (int) Math.max(infoLines * infoFontHeight * lineSpacing, contentRect.getHeight() * size);
             panel.setPreferredSize(new Dimension(width, height));
             frame.pack();
         }
     }
 
+    @SuppressWarnings("unused")
     protected void checkChanged(Object key, boolean newValue) {
         panel.repaint();
     }
 
+    @SuppressWarnings("unused")
     protected void contentClicked(double x, double y, int mouseButton, int clickCount) {
     }
 
@@ -329,8 +412,8 @@ public abstract class MarathonVis extends MarathonTester {
         g2.setRenderingHints(hints);
 
         synchronized (updateLock) {
-            if (infoColumns > 0) paintInfo(g2, w);
-            paintCenter(g2, w - infoFontWidth * infoColumns - border, h);
+            if (infoColumns > 0 && infoFontWidth > 0) paintInfo(g2, w);
+            paintCenter(g2, infoFontWidth == 0 ? w : w - infoFontWidth * infoColumns - border, h);
             paintTime += System.currentTimeMillis() - t;
             paintCnt++;
         }

@@ -6,6 +6,14 @@ import java.nio.file.*;
 import java.text.DecimalFormat;
 import java.util.*;
 
+/**
+ * Main entry point of the Marathon tester. It handles parameter and calls the solution.
+ * <p>
+ * Updates:
+ * 2020/12/28 - Handle a list of seeds, like -sd {1,9,72,909}.
+ * 2021/02/04 - Allow easy repetition of a single seed, a range or a list,
+ * using suffix "*N", like -sd 1*5 or -sd 1,50*5 or -sd {1,9,72,99}*5.
+ */
 public class MarathonController {
     private final Object statsLock = new Object();
     private long maxRunTime, avgRunTime;
@@ -136,15 +144,44 @@ public class MarathonController {
         //Parse command line parameters
         Parameters parameters = parseArgs(args);
 
+        //Seeds queue
+        LinkedList<Long> seeds = new LinkedList<Long>();
+
         //Get seeds range (default is seed=1)
-        long[] seedRange = {1};
+        String seedsProcessed = "";
         if (parameters.isDefined(Parameters.seed)) {
-            seedRange = parameters.getLongRange(Parameters.seed);
+            if (parameters.isList(Parameters.seed)) {
+                List<Long> l = parameters.getLongList(Parameters.seed);
+                seeds.addAll(l);
+                StringBuilder sb = new StringBuilder();
+                sb.append("{");
+                for (int i = 0; i < l.size(); i++) {
+                    if (i > 0) sb.append(",");
+                    sb.append(l.get(i));
+                    if (i == 10 && l.size() > 15) {
+                        i = l.size() - 2;
+                        sb.append(",...");
+                    }
+                }
+                sb.append("}");
+                seedsProcessed = sb.toString();
+            } else {
+                long[] seedRange = parameters.getLongRange(Parameters.seed);
+                long startSeed = seedRange[0];
+                long endSeed = Math.min(seedRange[1], Parameters.maxListLen + startSeed);
+                seedsProcessed = startSeed + " to " + endSeed;
+                for (long seed = startSeed; seed <= endSeed; seed++) {
+                    seeds.add(seed);
+                }
+            }
             parameters.remove(Parameters.seed);
+        } else {
+            seeds.add(1L);
+            seedsProcessed = "1";
         }
 
         //Multiple seeds?
-        boolean multipleSeeds = seedRange.length > 1;
+        boolean multipleSeeds = seeds.size() > 1;
 
         //Check and expand saveAll parameter
         if (parameters.isDefined(Parameters.saveAll)) {
@@ -189,14 +226,9 @@ public class MarathonController {
             numThreads = parameters.getIntValue(Parameters.threads);
             numThreads = Math.max(numThreads, 1);
             numThreads = Math.min(numThreads, Runtime.getRuntime().availableProcessors());
-            numThreads = Math.min(numThreads, seedRange.length);
+            int numSeeds = seeds.size();
+            if (numSeeds < numThreads) numThreads = numSeeds;
             parameters.remove(Parameters.threads);
-        }
-
-        //Put requested seeds on a queue
-        LinkedList<Long> seeds = new LinkedList<Long>();
-        for (long seed : seedRange) {
-            seeds.add(seed);
         }
 
         //Check if controlling bests is defined (default is turned off)
@@ -319,7 +351,7 @@ public class MarathonController {
         if (multipleSeeds && !parameters.isDefined(Parameters.noSummary)) {
             avgRunTime /= numCases;
             System.out.println();
-            System.out.println("            Seeds: " + seedRange[0] + " to " + seedRange[seedRange.length - 1]);
+            System.out.println("            Seeds: " + seedsProcessed);
             System.out.println("   Executed Cases: " + numCases);
             System.out.println("     Failed Cases: " + numFails);
             System.out.println("    Avg. Run Time: " + avgRunTime + " ms");
