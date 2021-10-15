@@ -16,6 +16,7 @@ import java.io.*;
 import java.util.List;
 import java.util.*;
 
+@SuppressWarnings({"unused"})
 public class LucidaRec {
 
     private CustomFrame frame;
@@ -79,11 +80,7 @@ public class LucidaRec {
         imageProcessor.initComponentAnalysisArrays();
         imageProcessor.initSumCalculationArrays();
         imageProcessor.buildRects(bw, 2, 25, list);
-        Collections.sort(list, new Comparator<>() {
-            public int compare(Rect o1, Rect o2) {
-                return 1000 * ((o1.i1 - o2.i1) / 10) + o1.j1 - o2.j1;
-            }
-        });
+        list.sort((o1, o2) -> 1000 * ((o1.i1 - o2.i1) / 10) + o1.j1 - o2.j1);
         // {[digit], 'M', 'F'}
         for (int i = 36; i-- > 10; ) {
             if (i != 22 && i != 15) {
@@ -121,69 +118,63 @@ public class LucidaRec {
 
     //-----------------------------------------------------------------------------------
 
-    public void updateModel() {
-        try {
+    public void updateModel() throws Exception {
 
-            File dir = chooseDir(settings.getProperty("ocr_path")), files[];
-            if (dir == null || (files = dir.listFiles()) == null) {
-                return;
-            }
-
-            String[] recognize = settings.getProperty("recognize_area").split(",");
-            double px = Double.parseDouble(recognize[0]);
-            double py = Double.parseDouble(recognize[1]);
-            double pw = Double.parseDouble(recognize[2]);
-            double ph = Double.parseDouble(recognize[3]);
-
-            List<Part> data = new ArrayList<>();
-            for (File file : files) {
-                if (file.isFile()) {
-                    BufferedImage im = ImageIO.read(file);
-                    int rx = (int) (im.getWidth() * px), rw = (int) (im.getWidth() * pw);
-                    int ry = (int) (im.getHeight() * py), rh = (int) (im.getHeight() * ph);
-                    data.addAll(getParts(im, rx, ry, rw, rh));
-                }
-            }
-
-            int k = 12;
-
-            Part[] clusters = kmeans(data, k, createExactModel());
-
-            int hh = 0, ww = 0;
-            for (int ind = 0; ind < k; ind++) {
-                Part p = clusters[ind];
-                ww += p.w;
-                hh = Math.max(hh, p.h);
-            }
-            float[] ff = new float[ww * hh];
-            Arrays.fill(ff, 0.99f);
-            int cw = 0;
-            for (int ind = 0; ind < k; ind++) {
-                Part p = clusters[ind];
-                for (int i = 0; i < p.h; i++) {
-                    System.arraycopy(p.f, i * p.w, ff, i * ww + cw, p.w);
-                }
-                cw += p.w;
-            }
-            GraphicUtils.showPixels(ff, ww, hh);
-
-            float[][][] model = new float[k][][];
-            for (int ind = 0; ind < k; ind++) {
-                Part p = clusters[ind];
-                model[ind] = new float[p.h][p.w];
-                for (int i = 0; i < p.h; i++) {
-                    for (int j = 0; j < p.w; j++) {
-                        model[ind][i][j] = p.f[i * p.w + j];
-                    }
-                }
-            }
-            patternRecognizer.setPaterns(model);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(frame, "Exception occured when processing your command!", "Error", JOptionPane.ERROR_MESSAGE);
+        File dir = chooseDir(settings.getProperty("ocr_path")), files[];
+        if (dir == null || (files = dir.listFiles()) == null) {
             return;
         }
+
+        String[] recognize = settings.getProperty("recognize_area").split(",");
+        double px = Double.parseDouble(recognize[0]);
+        double py = Double.parseDouble(recognize[1]);
+        double pw = Double.parseDouble(recognize[2]);
+        double ph = Double.parseDouble(recognize[3]);
+
+        List<Part> data = new ArrayList<>();
+        for (File file : files) {
+            if (file.isFile()) {
+                BufferedImage im = ImageIO.read(file);
+                int rx = (int) (im.getWidth() * px), rw = (int) (im.getWidth() * pw);
+                int ry = (int) (im.getHeight() * py), rh = (int) (im.getHeight() * ph);
+                data.addAll(getParts(im, rx, ry, rw, rh));
+            }
+        }
+
+        int k = 12;
+
+        Part[] clusters = kmeans(data, k, createExactModel());
+
+        int hh = 0, ww = 0;
+        for (int ind = 0; ind < k; ind++) {
+            Part p = clusters[ind];
+            ww += p.w;
+            hh = Math.max(hh, p.h);
+        }
+        float[] ff = new float[ww * hh];
+        Arrays.fill(ff, 0.99f);
+        int cw = 0;
+        for (int ind = 0; ind < k; ind++) {
+            Part p = clusters[ind];
+            for (int i = 0; i < p.h; i++) {
+                System.arraycopy(p.f, i * p.w, ff, i * ww + cw, p.w);
+            }
+            cw += p.w;
+        }
+        GraphicUtils.showPixels(ff, ww, hh);
+
+        float[][][] model = new float[k][][];
+        for (int ind = 0; ind < k; ind++) {
+            Part p = clusters[ind];
+            model[ind] = new float[p.h][p.w];
+            for (int i = 0; i < p.h; i++) {
+                for (int j = 0; j < p.w; j++) {
+                    model[ind][i][j] = p.f[i * p.w + j];
+                }
+            }
+        }
+        patternRecognizer.setPaterns(model);
+
         JOptionPane.showMessageDialog(frame, "Command complete", "Info", JOptionPane.INFORMATION_MESSAGE);
     }
 
@@ -198,7 +189,7 @@ public class LucidaRec {
         }
     }
 
-    private List<Part> getParts(BufferedImage image, int x, int y, int w, int h) throws Exception {
+    private List<Part> getParts(BufferedImage image, int x, int y, int w, int h) {
         List<Part> list = new ArrayList<>();
         for (Rect rect : patternRecognizer.getRects(image, x, y, w, h)) {
             float[] data = ImageProcessor.getBrightnessMap(image, x + rect.j1, y + rect.i1, rect.w(), rect.h());
@@ -300,70 +291,61 @@ public class LucidaRec {
 
     //-----------------------------------------------------------------------------------
 
-    public void reloadSettings() throws IOException {
+    public void reloadSettings() throws Exception {
         settings = new Properties();
         settings.load(new FileReader("resources/init.properties"));
     }
 
     //-----------------------------------------------------------------------------------
 
-    public void renameFiles() {
-        try {
+    public void renameFiles() throws Exception {
 
-            File dir = chooseDir(settings.getProperty("ocr_path")), files[];
-            if (dir == null || (files = dir.listFiles()) == null) {
-                return;
-            }
-
-            String[] recognize = settings.getProperty("recognize_area").split(",");
-            double px = Double.parseDouble(recognize[0]);
-            double py = Double.parseDouble(recognize[1]);
-            double pw = Double.parseDouble(recognize[2]);
-            double ph = Double.parseDouble(recognize[3]);
-
-            Map<String, Integer> paging = new HashMap<>();
-            int ind = 0;
-            String prev = null;
-            for (File file : files) {
-                if (!file.isFile()) {
-                    continue;
-                }
-
-                BufferedImage im = ImageIO.read(file);
-                int rx = (int) (im.getWidth() * px), rw = (int) (im.getWidth() * pw);
-                int ry = (int) (im.getHeight() * py), rh = (int) (im.getHeight() * ph);
-                String label = ind++ % 2 == -1 ? prev : recognize(im, rx, ry, rw, rh);
-                prev = label;
-                System.out.println(label);
-                boolean ok = check(label);
-
-                // add page number
-                int pageNum = !paging.containsKey(label) ? 1 : paging.get(label);
-                paging.put(label, pageNum + 1);
-                label += "_" + pageNum;
-
-                // rename
-                String name = file.getName(), ext = name.substring(name.lastIndexOf('.'));
-                String in = ok ? File.separator : "/ND/";
-                File dest = new File(file.getParent() + in + label + ext);
-                dest.getParentFile().mkdir();
-                file.renameTo(dest);
-
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(frame, "Exception occured when processing your command!", "Error", JOptionPane.ERROR_MESSAGE);
+        File dir = chooseDir(settings.getProperty("ocr_path")), files[];
+        if (dir == null || (files = dir.listFiles()) == null) {
             return;
         }
+
+        String[] recognize = settings.getProperty("recognize_area").split(",");
+        double px = Double.parseDouble(recognize[0]);
+        double py = Double.parseDouble(recognize[1]);
+        double pw = Double.parseDouble(recognize[2]);
+        double ph = Double.parseDouble(recognize[3]);
+
+        Map<String, Integer> paging = new HashMap<>();
+        int ind = 0;
+        String prev = null;
+        for (File file : files) {
+            if (!file.isFile()) {
+                continue;
+            }
+
+            BufferedImage im = ImageIO.read(file);
+            int rx = (int) (im.getWidth() * px), rw = (int) (im.getWidth() * pw);
+            int ry = (int) (im.getHeight() * py), rh = (int) (im.getHeight() * ph);
+            String label = ind++ % 2 == -1 ? prev : recognize(im, rx, ry, rw, rh);
+            prev = label;
+            System.out.println(label);
+            boolean ok = check(label);
+
+            // add page number
+            int pageNum = paging.getOrDefault(label, 1);
+            paging.put(label, pageNum + 1);
+            label += "_" + pageNum;
+
+            // rename
+            String name = file.getName(), ext = name.substring(name.lastIndexOf('.'));
+            String in = ok ? File.separator : "/ND/";
+            File dest = new File(file.getParent() + in + label + ext);
+            dest.getParentFile().mkdir();
+            file.renameTo(dest);
+
+        }
+
         JOptionPane.showMessageDialog(frame, "Command complete", "Info", JOptionPane.INFORMATION_MESSAGE);
     }
 
     private String recognize(BufferedImage image, int x, int y, int w, int h) throws Exception {
-        Map<Rect, Integer> map = new TreeMap<>(new Comparator<>() {
-            public int compare(Rect o1, Rect o2) {
-                return 1000 * (o1.j1 - o2.j1) + o1.i1 - o2.i1;
-            }
-        });
+        Map<Rect, Integer> map = new TreeMap<>((o1, o2) -> 1000 * (o1.j1 - o2.j1) + o1.i1 - o2.i1);
         Map<Rect, float[]> matches = patternRecognizer.recognizePatterns(image, x, y, w, h);
         double threshold = Double.parseDouble(settings.getProperty("match_threshold"));
         for (Rect rect : matches.keySet()) {
@@ -406,95 +388,85 @@ public class LucidaRec {
 
     //-----------------------------------------------------------------------------------
 
-    public void generateDocs() {
-        try {
-            File dir = chooseDir(settings.getProperty("doc_path")), files[];
-            if (dir == null || (files = dir.listFiles()) == null) {
-                return;
-            }
-            String[] params = Console.readString("Enter prefix for labeling and number of documents to be generated", "M0713 200").split(" ");
-            if (params.length != 2) {
-                JOptionPane.showMessageDialog(frame, "You should enter two space separated strings!", "Error", JOptionPane.ERROR_MESSAGE);
-                generateDocs();
-                return;
-            }
-            int num = Integer.parseInt(params[1]);
+    public void generateDocs() throws Exception {
+
+        File dir = chooseDir(settings.getProperty("doc_path")), files[];
+        if (dir == null || (files = dir.listFiles()) == null) {
+            return;
+        }
+        String[] params = Console.readString("Enter prefix for labeling and number of documents to be generated", "M0713 200").split(" ");
+        if (params.length != 2) {
+            JOptionPane.showMessageDialog(frame, "You should enter two space separated strings!", "Error", JOptionPane.ERROR_MESSAGE);
+            generateDocs();
+            return;
+        }
+        int num = Integer.parseInt(params[1]);
 
 
-            WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.load(files[0]);
-            MainDocumentPart documentPart = wordMLPackage.getMainDocumentPart();
+        WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.load(files[0]);
+        MainDocumentPart documentPart = wordMLPackage.getMainDocumentPart();
 
-            List<Text> codeHolders = new ArrayList<>();
-            List<Text> dateHolders = new ArrayList<>();
+        List<Text> codeHolders = new ArrayList<>();
+        List<Text> dateHolders = new ArrayList<>();
 
-            for (Object o1 : documentPart.getContent()) {
-                if (o1.toString().contains("#")) {
-                    P p = (P) o1;
-                    for (Object o2 : p.getContent()) {
-                        R r = (R) o2;
-                        for (Object o3 : r.getContent()) {
-                            Text t = (Text) ((JAXBElement) o3).getValue();
-                            if (t.getValue().equals("#")) {
-                                codeHolders.add(t);
-                            }
-                            if (t.getValue().equals("$")) {
-                                dateHolders.add(t);
-                            }
+        for (Object o1 : documentPart.getContent()) {
+            if (o1.toString().contains("#")) {
+                P p = (P) o1;
+                for (Object o2 : p.getContent()) {
+                    R r = (R) o2;
+                    for (Object o3 : r.getContent()) {
+                        Text t = (Text) ((JAXBElement<?>) o3).getValue();
+                        if (t.getValue().equals("#")) {
+                            codeHolders.add(t);
+                        }
+                        if (t.getValue().equals("$")) {
+                            dateHolders.add(t);
                         }
                     }
                 }
             }
-            if (codeHolders.size() == 0) {
-                JOptionPane.showMessageDialog(frame, "Invalid .docx template file!", "Error", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
-
-            String date = DateUtils.currentTime();
-            for (Text text : dateHolders) {
-                text.setValue(date);
-            }
-            for (int i = 0; i < num; ) {
-                for (Text text : codeHolders) {
-                    String end = String.format("%03d", ++i);
-                    text.setValue(params[0] + end);
-                }
-                wordMLPackage.save(new File(dir.getAbsolutePath() + "/" + String.format("%03d", i) + ".docx"));
-            }
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(frame, "Exception occured when processing your command!", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        if (codeHolders.size() == 0) {
+            JOptionPane.showMessageDialog(frame, "Invalid .docx template file!", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
+
+        String date = DateUtils.currentTime();
+        for (Text text : dateHolders) {
+            text.setValue(date);
+        }
+        for (int i = 0; i < num; ) {
+            for (Text text : codeHolders) {
+                String end = String.format("%03d", ++i);
+                text.setValue(params[0] + end);
+            }
+            wordMLPackage.save(new File(dir.getAbsolutePath() + "/" + String.format("%03d", i) + ".docx"));
+        }
+
         JOptionPane.showMessageDialog(frame, "Command complete", "Info", JOptionPane.INFORMATION_MESSAGE);
     }
 
     //-----------------------------------------------------------------------------------
 
-    public void cleanTitles() {
-        try {
-            File dir = chooseDir(settings.getProperty("cln_path")), files[];
-            if (dir == null || (files = dir.listFiles()) == null) {
-                return;
-            }
-            String[] cleanDims = settings.getProperty("clean_rect").split(",");
-            double pw = Double.parseDouble(cleanDims[0]);
-            double ph = Double.parseDouble(cleanDims[1]);
-            for (File file : files) {
-                if (file.isFile()) {
-                    BufferedImage im = ImageIO.read(file);
-                    Graphics g = im.getGraphics();
-                    g.setColor(Color.white);
-                    g.fillRect(0, 0, (int) (im.getWidth() * pw), (int) (im.getHeight() * ph));
-                    ImageIO.write(im, "jpeg", file);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(frame, "Exception occured when processing your command!", "Error", JOptionPane.ERROR_MESSAGE);
+    public void cleanTitles() throws Exception {
+
+        File dir = chooseDir(settings.getProperty("cln_path")), files[];
+        if (dir == null || (files = dir.listFiles()) == null) {
             return;
         }
+        String[] cleanDims = settings.getProperty("clean_rect").split(",");
+        double pw = Double.parseDouble(cleanDims[0]);
+        double ph = Double.parseDouble(cleanDims[1]);
+        for (File file : files) {
+            if (file.isFile()) {
+                BufferedImage im = ImageIO.read(file);
+                Graphics g = im.getGraphics();
+                g.setColor(Color.white);
+                g.fillRect(0, 0, (int) (im.getWidth() * pw), (int) (im.getHeight() * ph));
+                ImageIO.write(im, "jpeg", file);
+            }
+        }
+
         JOptionPane.showMessageDialog(frame, "Command complete", "Info", JOptionPane.INFORMATION_MESSAGE);
     }
 
@@ -539,7 +511,7 @@ public class LucidaRec {
 
     //-----------------------------------------------------------------------------------
 
-    public synchronized File chooseDir(String def) throws InterruptedException {
+    public synchronized File chooseDir(String def) {
         return GraphicUtils.chooseFile(frame, def, JFileChooser.DIRECTORIES_ONLY);
     }
 
