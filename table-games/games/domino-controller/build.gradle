@@ -1,8 +1,8 @@
 group 'com.simplejcode.table-games'
 
 dependencies {
-    compile project(':table-games:games:domino-base')
-    compile project(':table-games:game-controller')
+    implementation project(':table-games:games:domino-base')
+    implementation project(':table-games:game-controller')
 }
 
 configurations {

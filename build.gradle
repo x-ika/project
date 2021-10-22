@@ -50,7 +50,7 @@ subprojects {
         return;
     }
 
-    apply plugin: 'java'
+    apply plugin: 'java-library'
 
     compileJava.options.encoding = 'UTF-8'
 
@@ -124,8 +124,8 @@ subprojects {
         java_jna                       'net.java.dev.jna:jna:4.0.0'
         java_jna                       'net.java.dev.jna:jna-platform:4.0.0'
 
-        lombok                         'org.projectlombok:lombok:1.18.8'
-        annotationProcessor            ('org.projectlombok:lombok:1.18.8')
+        lombok                         'org.projectlombok:lombok:1.18.22'
+        annotationProcessor            ('org.projectlombok:lombok:1.18.22')
         apache_config                  'org.apache.commons:commons-configuration2:2.0'
         google_gson                    'com.google.code.gson:gson:2.8.5'
 

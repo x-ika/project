@@ -1,23 +1,27 @@
 group 'com.simplejcode.pchallenge'
 
 dependencies {
-    compile project(':pchallenge:common')
+    implementation project(':pchallenge:common')
 }
 
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_graphic_tools
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_net_tools
+    implementation.extendsFrom common_graphic_tools
 }
 
 jar {
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
     manifest {
         attributes 'Main-Class': 'logic.SystemManager'
     }
 
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect{ zipTree(it) }
     }
 
     copy {

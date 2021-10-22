@@ -5,19 +5,21 @@ configurations {
 
     compileOnly.extendsFrom javax_media
 
-    compile.extendsFrom common_misc
-    compile.extendsFrom common_graphic_tools
-    compile.extendsFrom common_audio_video_tools
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_graphic_tools
+    implementation.extendsFrom common_audio_video_tools
 }
 
 jar {
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
     manifest {
         attributes 'Main-Class': 'gui.Main'
     }
 
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect{ zipTree(it) }
     }
 
     copy {

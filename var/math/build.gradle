@@ -3,5 +3,5 @@ group 'com.simplejcode.var'
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_graphic_tools
+    implementation.extendsFrom common_graphic_tools
 }

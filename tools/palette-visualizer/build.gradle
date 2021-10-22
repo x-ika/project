@@ -3,18 +3,20 @@ group 'com.simplejcode.tools'
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_misc
-    compile.extendsFrom common_graphic_tools
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_graphic_tools
 }
 
 jar {
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
     manifest {
         attributes 'Main-Class': 'CommandRunner'
     }
 
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect{ zipTree(it) }
     }
 
     copy {

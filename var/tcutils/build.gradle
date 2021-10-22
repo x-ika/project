@@ -20,12 +20,14 @@ configurations {
 
 jar {
 
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
     manifest {
         attributes 'Main-Class': 'mm.MMStatistics'
     }
 
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect{ zipTree(it) }
     }
 
     copy {

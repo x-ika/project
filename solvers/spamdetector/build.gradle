@@ -1,7 +1,7 @@
 group 'com.simplejcode.solver'
 
 dependencies {
-    compile project(':solvers:tester')
+    implementation project(':solvers:tester')
 }
 
 configurations {

@@ -1,7 +1,7 @@
 group 'com.simplejcode.table-games'
 
 dependencies {
-    compile project(':table-games:game-client')
+    implementation project(':table-games:game-client')
 }
 
 configurations {
@@ -10,12 +10,14 @@ configurations {
 
 jar {
 
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
     manifest {
         attributes 'Main-Class': 'ika.games.gomoku.client.GomokuClient'
     }
 
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect{ zipTree(it) }
     }
 
     copy {

@@ -3,7 +3,7 @@ group 'com.simplejcode.solver'
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_misc
-    compile.extendsFrom common_graphic_tools
-    compile.extendsFrom common_audio_video_tools
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_graphic_tools
+    implementation.extendsFrom common_audio_video_tools
 }

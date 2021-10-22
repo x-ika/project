@@ -3,18 +3,20 @@ group 'com.simplejcode.var'
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_misc
+    implementation.extendsFrom common_misc
 
 }
 
 jar {
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
     manifest {
         attributes 'Main-Class': 'pool.logic.PoolAPI'
     }
 
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect{ zipTree(it) }
     }
 
     copy {

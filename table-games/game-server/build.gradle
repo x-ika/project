@@ -1,24 +1,27 @@
 group 'com.simplejcode.table-games'
 
 dependencies {
-    compile project(':table-games:game-controller')
+    implementation project(':table-games:game-controller')
+    implementation project(':table-games:game-base')
 }
 
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_misc
-    compile.extendsFrom common_net_tools
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_net_tools
 }
 
 jar {
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
     manifest {
         attributes 'Main-Class': 'ika.games.gameserver.Server'
     }
 
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect{ zipTree(it) }
     }
 
     copy {

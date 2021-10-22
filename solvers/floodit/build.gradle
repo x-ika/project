@@ -1,11 +1,11 @@
 group 'com.simplejcode.solver'
 
 dependencies {
-    compile project(':solvers:tester')
+    implementation project(':solvers:tester')
 }
 
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_graphic_tools
+    implementation.extendsFrom common_graphic_tools
 }

@@ -1,5 +1,6 @@
 package logic;
 
+import logic.db.Record;
 import logic.db.*;
 
 import java.io.*;

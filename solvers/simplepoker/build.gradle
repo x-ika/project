@@ -3,6 +3,6 @@ group 'com.simplejcode.solver'
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_misc
+    implementation.extendsFrom common_misc
 
 }

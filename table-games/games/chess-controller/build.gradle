@@ -1,7 +1,7 @@
 group 'com.simplejcode.table-games'
 
 dependencies {
-    compile project(':table-games:game-controller')
+    implementation project(':table-games:game-controller')
 }
 
 configurations {

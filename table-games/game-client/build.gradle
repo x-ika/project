@@ -1,13 +1,13 @@
 group 'com.simplejcode.table-games'
 
 dependencies {
-    compile project(':table-games:game-base')
+    api project(':table-games:game-base')
 }
 
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_misc
-    compile.extendsFrom common_graphic_tools
-    compile.extendsFrom common_net_tools
+    api.extendsFrom common_misc
+    api.extendsFrom common_graphic_tools
+    api.extendsFrom common_net_tools
 }

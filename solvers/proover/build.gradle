@@ -3,5 +3,5 @@ group 'com.simplejcode.solver'
 configurations {
     testCompile.extendsFrom junit
 
-    compile.extendsFrom common_logical_analyzer
+    implementation.extendsFrom common_logical_analyzer
 }
