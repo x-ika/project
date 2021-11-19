@@ -1,0 +1,17 @@
+# ignore all folders starting with '.' (dot)
+# .idea .out .build .gradle .docs .vs .DS_Store
+.*/
+
+# idea configuration
+# !.idea/
+
+# old style
+out/
+# vs
+Debug/
+Release/
+x64/
+
+# git rm -r --cached .
+# git add .
+# git commit -am "Remove ignored files"
