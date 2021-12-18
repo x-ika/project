@@ -1,35 +1,66 @@
 package com.topcoder.marathon;
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.font.*;
-import java.awt.geom.*;
-import java.awt.image.*;
-import java.io.*;
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.GradientPaint;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.Insets;
+import java.awt.Rectangle;
+import java.awt.RenderingHints;
+import java.awt.Shape;
+import java.awt.Toolkit;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.font.FontRenderContext;
+import java.awt.font.GlyphVector;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImageOp;
+import java.awt.image.ConvolveOp;
+import java.awt.image.Kernel;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.*;
+import java.util.Map;
+
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 /**
  * Base class for Topcoder Marathon testers with visualization.
  * Should be extended directly for problems with a visual representation, but no animation,
  * i.e. only a single (final) state is shown.
- * <p>
+ *
  * Updates:
- * 2020/11/19 - Handle -windowPos and -screen parameters.
- * 2021/02/05 - Move mouse click events to another (not AWT) thread, to avoid painting/
- * delay issues after an user action.
- * - Override paint() instead of paintComponent().
- * - Use mousePress() event instead of mountClick() for better responsiveness.
- * - Add -saveVis parameter to allow saving the visualizer content, after
- * each update.
- * - Add -infoScale parameter to allow increase/decrease the font used in the
- * info panel (right side of visualizer). The panel is not displayed if
- * infoScale is 0 (which may be useful if the user wants to see only the
- * main content, possibly together with -saveVis parameter).
- * 2021/09/13 - Small change in the way the frame is created (waiting, instead of doing
- * it in the background).
+ *      2020/11/19 - Handle -windowPos and -screen parameters.
+ *      2021/02/05 - Move mouse click events to another (not AWT) thread, to avoid painting/
+ *                   delay issues after an user action.
+ *                 - Override paint() instead of paintComponent().
+ *                 - Use mousePress() event instead of mountClick() for better responsiveness.
+ *                 - Add -saveVis parameter to allow saving the visualizer content, after
+ *                   each update.
+ *                 - Add -infoScale parameter to allow increase/decrease the font used in the
+ *                   info panel (right side of visualizer). The panel is not displayed if
+ *                   infoScale is 0 (which may be useful if the user wants to see only the
+ *                   main content, possibly together with -saveVis parameter).
+ *      2021/09/13 - Small change in the way the frame is created (waiting, instead of doing
+ *                   it in the background).
  */
 public abstract class MarathonVis extends MarathonTester {
     protected final Object updateLock = new Object();
@@ -155,8 +186,7 @@ public abstract class MarathonVis extends MarathonTester {
 
                 final int resolution = Toolkit.getDefaultToolkit().getScreenResolution();
                 int infoScale = 100;
-                if (parameters.isDefined(Parameters.infoScale))
-                    infoScale = parameters.getIntValue(Parameters.infoScale);
+                if (parameters.isDefined(Parameters.infoScale)) infoScale = parameters.getIntValue(Parameters.infoScale);
                 if (infoScale < 0) infoScale = 0;
                 else if (infoScale > 400) infoScale = 400;
                 if (infoScale != 0) {
@@ -212,8 +242,7 @@ public abstract class MarathonVis extends MarathonTester {
                         int[] prev = lastSavedImage.getRGB(0, 0, w, h, null, 0, w);
                         eq = curr.length == prev.length;
                         if (eq) {
-                            OUT:
-                            for (int i = 0; i < 256; i++) {
+                            OUT: for (int i = 0; i < 256; i++) {
                                 for (int j = i; j < curr.length; j += 256) {
                                     if (curr[j] != prev[j]) {
                                         eq = false;
@@ -585,7 +614,7 @@ public abstract class MarathonVis extends MarathonTester {
         g.draw(e4);
         g.draw(e5);
         g.dispose();
-        float[] blurKernel = {0.1f, 0.1f, 0.1f, 0.1f, 0.2f, 0.1f, 0.1f, 0.1f, 0.1f};
+        float[] blurKernel = {0.1f,0.1f,0.1f,0.1f,0.2f,0.1f,0.1f,0.1f,0.1f};
         BufferedImageOp blurFilter = new ConvolveOp(new Kernel(3, 3, blurKernel), ConvolveOp.EDGE_NO_OP, hints);
         blurFilter.filter(img, null);
         return img;

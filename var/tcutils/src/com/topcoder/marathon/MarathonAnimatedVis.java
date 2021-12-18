@@ -1,14 +1,15 @@
 package com.topcoder.marathon;
 
-import java.awt.event.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * Base class for Topcoder Marathon testers with animation, i.e.
  * intermediate states are displayed in the visualizer.
- * <p>
+ *
  * Updates:
- * 2021/02/03 - Keep the delay setting after end(), to allow pauses after the solution is over,
- * in a manual mode or some kind of animation of the final state.
+ *      2021/02/03 - Keep the delay setting after end(), to allow pauses after the solution is over,
+ *                   in a manual mode or some kind of animation of the final state.
  */
 public abstract class MarathonAnimatedVis extends MarathonVis {
     private int delay = -1;
