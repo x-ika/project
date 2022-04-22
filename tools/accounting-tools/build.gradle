@@ -1,0 +1,30 @@
+group 'com.simplejcode.tools'
+
+configurations {
+    testCompile.extendsFrom junit
+
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_graphic_tools
+
+    implementation.extendsFrom apache_config
+    implementation.extendsFrom poi
+}
+
+jar {
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    manifest {
+        attributes 'Main-Class': 'accounting.AccountingController'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect{ zipTree(it) }
+    }
+
+    copy {
+        from file("resources")
+        into file("${buildDir}/libs/resources")
+    }
+
+}
