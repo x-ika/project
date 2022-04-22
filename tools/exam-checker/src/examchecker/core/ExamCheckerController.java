@@ -129,7 +129,7 @@ public class ExamCheckerController {
 
     public void actionOnAbout() throws Exception {
         AboutDialogPanel panel = new AboutDialogPanel(Constants.ABOUT_DIALOG_TEXT,
-                ImageIO.read(FileSystemUtils.getResource(Constants.LOGO_FILE)));
+                ImageIO.read(IOUtils.getResource(Constants.LOGO_FILE)));
         panel.init();
         panel.showDialog(frame);
     }

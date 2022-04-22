@@ -60,8 +60,8 @@ subprojects {
     }
 
     tasks.withType(JavaCompile) {
-        sourceCompatibility = JavaVersion.VERSION_1_10
-        targetCompatibility = JavaVersion.VERSION_1_10
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     //-----------------------------------------------------------------------------------
@@ -108,7 +108,7 @@ subprojects {
         junit 'junit:junit:4.12'
 
         common_algorithms              'com.simplejcode.commons:algorithms:1.1'
-        common_misc                    'com.simplejcode.commons:misc:1.2.0'
+        common_misc                    'com.simplejcode.commons:misc:1.2.1'
         common_net_tools               'com.simplejcode.commons:net-tools:1.0'
         common_db_tools                'com.simplejcode.commons:db-tools:1.0'
         common_graphic_tools           'com.simplejcode.commons:graphic-tools:1.0'

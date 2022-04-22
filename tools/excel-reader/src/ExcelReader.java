@@ -51,7 +51,7 @@ public class ExcelReader {
 
     public void actionOnAbout() throws Exception {
         AboutDialogPanel aboutDialogPanel = new AboutDialogPanel(
-                "Stats", ImageIO.read(FileSystemUtils.getResource("resources/logo.jpg")));
+                "Stats", ImageIO.read(IOUtils.getResource("resources/logo.jpg")));
         aboutDialogPanel.init();
         aboutDialogPanel.showDialog(frame);
     }

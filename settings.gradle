@@ -18,6 +18,7 @@ include 'tools:excel-reader'
 include 'tools:onjob-client'
 include 'tools:queuemng:client'
 include 'tools:queuemng:server'
+include 'tools:accounting-tools'
 
 // programming challenge
 include 'pchallenge:common'

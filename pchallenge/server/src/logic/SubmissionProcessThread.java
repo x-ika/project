@@ -55,7 +55,7 @@ public class SubmissionProcessThread {
         for (File input : inputs) {
             test++;
             // run solution
-            FileSystemUtils.copy(input, solutionInput);
+            IOUtils.copy(input, solutionInput);
             int exitValue = ProcessUtils.execute(compiled, problem.getTimeLimit());
             // tle, re
             if (exitValue != 0) {
@@ -80,7 +80,7 @@ public class SubmissionProcessThread {
             test = -1;
         }
         SystemManager.getInstance().testingFinished(submission, result, test);
-        FileSystemUtils.delete(new File(workingDirectory), true);
+        IOUtils.delete(new File(workingDirectory), true);
 
     }
 
@@ -90,7 +90,7 @@ public class SubmissionProcessThread {
         String name = submission.getFileName();
         String exec = name.substring(0, name.lastIndexOf('.'));
         File source = new File(workingDirectory + name);
-        FileSystemUtils.writeBytes(source.getAbsolutePath(), submission.getBuff());
+        IOUtils.writeBytes(source.getAbsolutePath(), submission.getBuff());
         String compile = null, output = null, format;
         switch (submission.getLanguage()) {
             case CPP_MINGW:

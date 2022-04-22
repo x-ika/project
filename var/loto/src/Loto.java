@@ -346,7 +346,7 @@ public class Loto extends JPanel {
 
     public void actionOnAbout() throws Exception {
         AboutDialogPanel aboutDialogPanel = new AboutDialogPanel(
-                "XLoto", ImageIO.read(FileSystemUtils.getResource("resources/logo.jpg")));
+                "XLoto", ImageIO.read(IOUtils.getResource("resources/logo.jpg")));
         aboutDialogPanel.init();
         aboutDialogPanel.showDialog(frame);
     }

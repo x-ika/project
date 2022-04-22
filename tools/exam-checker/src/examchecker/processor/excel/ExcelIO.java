@@ -52,7 +52,7 @@ public class ExcelIO {
 
         int rowInd = 1;
 
-        Map<String, List<ICheckResult>> map = new TreeMap<>(StreamUtils.list2list(checkResults, t -> t.getValue(groupById)));
+        Map<String, List<ICheckResult>> map = new TreeMap<>(StreamUtils.groupBy(checkResults, t -> t.getValue(groupById)));
 
         for (List<ICheckResult> testResults : map.values()) {
 

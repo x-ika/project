@@ -1,6 +1,6 @@
 package sudoku;
 
-import com.simplejcode.commons.misc.util.FileSystemUtils;
+import com.simplejcode.commons.misc.util.IOUtils;
 import tester.*;
 
 import java.util.*;
@@ -91,7 +91,7 @@ public class SudokuTester extends AbstractTester<int[][], int[][]> {
         };
 
         List<int[][]> tests = new ArrayList<>();
-        for (String s : FileSystemUtils.read("resources/1.txt").split("\n")) {
+        for (String s : IOUtils.read("resources/1.txt").split("\n")) {
             int[][] a = new int[9][9];
             for (int i = 0; i < 81; i++) {
                 a[i / 9][i % 9] = s.charAt(i) == '.' ? 0 : s.charAt(i) - '0';

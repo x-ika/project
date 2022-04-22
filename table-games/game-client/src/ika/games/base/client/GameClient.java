@@ -300,7 +300,7 @@ public abstract class GameClient extends ConnectionAdapter<byte[]> {
     }
 
     public static InputStream getResource(String path) {
-        return FileSystemUtils.getResource(path);
+        return IOUtils.getResource(path);
     }
 
     private static void quickAndDirtyFixForProblemWithWebStartInJava7u25() {

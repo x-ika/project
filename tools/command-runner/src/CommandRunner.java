@@ -85,7 +85,7 @@ public class CommandRunner implements ProcessListener {
 
     public void actionOnAbout() throws Exception {
         AboutDialogPanel aboutDialogPanel = new AboutDialogPanel(
-                "CMD Ext", ImageIO.read(FileSystemUtils.getResource("resources/" + getProperty("logo_name"))));
+                "CMD Ext", ImageIO.read(IOUtils.getResource("resources/" + getProperty("logo_name"))));
         aboutDialogPanel.init();
         aboutDialogPanel.showDialog(frame);
     }
@@ -123,7 +123,7 @@ public class CommandRunner implements ProcessListener {
     private void updateUI() {
         try {
 
-            BufferedImage logo = ImageIO.read(FileSystemUtils.getResource("resources/" + getProperty("header_logo_name")));
+            BufferedImage logo = ImageIO.read(IOUtils.getResource("resources/" + getProperty("header_logo_name")));
             ImagePanel logoPanel = new ImagePanel(logo);
 
             JLabel headerLabel = new JLabel(getProperty("header_text"));
@@ -145,7 +145,7 @@ public class CommandRunner implements ProcessListener {
                 panels[i].setInputFont(createFont("task_input_font"));
                 panels[i].setComment(createFont("task_comment_font"), getProperty(prefix + "_comment"));
                 panels[i].setStatusFont(createFont("task_status_font"));
-                panels[i].setTaskLogo(ImageIO.read(FileSystemUtils.getResource("resources/" + getProperty(prefix + "_logo"))));
+                panels[i].setTaskLogo(ImageIO.read(IOUtils.getResource("resources/" + getProperty(prefix + "_logo"))));
                 panel.add(panels[i]);
             }
 

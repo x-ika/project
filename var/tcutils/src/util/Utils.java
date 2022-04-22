@@ -54,14 +54,14 @@ public class Utils {
         });
         if (files.length > 0) {
             try {
-                return FileSystemUtils.read(new FileInputStream(files[0]), charset);
+                return IOUtils.read(new FileInputStream(files[0]), charset);
             } catch (IOException e) {
                 e.printStackTrace();
                 return null;
             }
         }
         String ret = HttpUtils.get(url, charset).getResponse();
-        FileSystemUtils.write(dir.getAbsolutePath() + "\\" + encoded, charset, ret);
+        IOUtils.write(dir.getAbsolutePath() + "\\" + encoded, charset, ret);
         return ret;
     }
 

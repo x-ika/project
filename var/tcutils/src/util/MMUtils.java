@@ -28,7 +28,7 @@ public class MMUtils {
         }
         Arrays.sort(members);
 
-        String[] s = FileSystemUtils.read("list.txt").split("\n");
+        String[] s = IOUtils.read("list.txt").split("\n");
         List<Member> top = new ArrayList<>();
         for (String value : s) {
             String name = value.split(" ")[0];

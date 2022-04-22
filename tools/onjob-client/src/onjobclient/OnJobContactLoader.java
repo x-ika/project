@@ -54,7 +54,7 @@ public class OnJobContactLoader {
 
     public void actionOnAbout() throws Exception {
         AboutDialogPanel aboutDialogPanel = new AboutDialogPanel(
-                "OnJob", ImageIO.read(FileSystemUtils.getResource("resources/logo.jpg")));
+                "OnJob", ImageIO.read(IOUtils.getResource("resources/logo.jpg")));
         aboutDialogPanel.init();
         aboutDialogPanel.showDialog(frame);
     }

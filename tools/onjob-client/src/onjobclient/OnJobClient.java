@@ -1,6 +1,6 @@
 package onjobclient;
 
-import com.simplejcode.commons.misc.util.FileSystemUtils;
+import com.simplejcode.commons.misc.util.IOUtils;
 
 import java.io.OutputStreamWriter;
 import java.net.*;
@@ -48,7 +48,7 @@ public class OnJobClient {
         wr.flush();
         wr.close();
 
-        FileSystemUtils.read(conn.getInputStream());
+        IOUtils.read(conn.getInputStream());
         return conn.getResponseCode();
     }
 

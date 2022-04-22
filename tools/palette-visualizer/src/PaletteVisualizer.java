@@ -70,7 +70,7 @@ public class PaletteVisualizer {
 
     public void actionOnAbout() throws Exception {
         AboutDialogPanel aboutDialogPanel = new AboutDialogPanel(
-                "RGB Vis", ImageIO.read(FileSystemUtils.getResource("resources/logo.jpg")));
+                "RGB Vis", ImageIO.read(IOUtils.getResource("resources/logo.jpg")));
         aboutDialogPanel.init();
         aboutDialogPanel.showDialog(frame);
     }
