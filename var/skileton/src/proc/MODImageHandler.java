@@ -1,8 +1,8 @@
 package proc;
 
-import com.simplejcode.commons.av.improc.*;
-import com.simplejcode.commons.av.videoio.ImageHandler;
+import com.simplejcode.commons.misc.improc.*;
 import gui.*;
+import util.ImageHandler;
 
 import java.awt.*;
 import java.util.List;

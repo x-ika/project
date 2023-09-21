@@ -1,7 +1,7 @@
 package ika.games.base.controller.dao;
 
-import com.simplejcode.commons.misc.struct.DynamicStruct;
 import ika.games.base.*;
+import ika.games.base.controller.DynamicStruct;
 import ika.games.base.controller.ProvablyFair;
 
 import java.io.Closeable;

@@ -1,38 +1,45 @@
 package minesweeper.simulator;
 
+import com.simplejcode.commons.gui.GraphicUtils;
+import com.simplejcode.commons.misc.util.ThreadUtils;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
 public class LiveSimulator extends AbstractSimulator {
+
+//    public static final int SCREEN_OFF_X = 650;
+//    public static final int SCREEN_OFF_Y = 250;
+
     private Robot robot;
 
     private BufferedImage screen;
     private BufferedImage cell;
     private BufferedImage pattern;
 
-    private int x, y, w, h;
+    private int boardX, boardY, cellWidth, cellHeight;
 
     public void init() {
         try {
 
             robot = new Robot();
-            cell = ImageIO.read(new File("resources/ms/cell.jpg"));
+            cell = ImageIO.read(new File("resources/ms/cell.png"));
             pattern = ImageIO.read(new File("resources/ms/pattern.bmp"));
-            w = cell.getWidth();
-            h = cell.getHeight();
+            cellWidth = cell.getWidth();
+            cellHeight = cell.getHeight();
 
             M:
             while (true) {
                 robot.delay(1000);
-                screen = robot.createScreenCapture(new Rectangle(0, 0, 600, 400));
+                screen = robot.createScreenCapture(new Rectangle(650, 250, 900, 500));
                 for (int i = 0; i < 100; i++) {
                     for (int j = 50; j < 150; j++) {
 
                         if (matches(screen, i, j, cell, 0, 0)) {
-                            x = i;
-                            y = j;
+                            boardX = i;
+                            boardY = j;
                             break M;
                         }
 
@@ -41,12 +48,14 @@ public class LiveSimulator extends AbstractSimulator {
             }
 
             n = m = 0;
-            while (matches(screen, x, y + n * h, cell, 0, 0)) {
+            while (matches(screen, boardX, boardY + n * cellHeight, cell, 0, 0)) {
                 n++;
             }
-            while (matches(screen, x + m * w, y, cell, 0, 0)) {
+            while (matches(screen, boardX + m * cellWidth, boardY, cell, 0, 0)) {
                 m++;
             }
+            boardX += 650;
+            boardY += 250;
 
             if (n == 9 && m == 9) {
                 k = 10;
@@ -66,9 +75,10 @@ public class LiveSimulator extends AbstractSimulator {
     }
 
     public void openCell(int i, int j) {
+        System.out.println(String.format("Opening [%d, %d]", i, j));
         click(i, j);
-        robot.delay(5);
-        screen = robot.createScreenCapture(new Rectangle(x, y, m * w, n * h));
+        robot.delay(50);
+        screen = robot.createScreenCapture(new Rectangle(boardX, boardY, m * cellWidth, n * cellHeight));
         go(i, j);
     }
 
@@ -96,7 +106,7 @@ public class LiveSimulator extends AbstractSimulator {
     }
 
     public void finish() {
-        robot.mouseMove(x + m * w / 2, y - 30);
+        robot.mouseMove(boardX + m * cellWidth / 2, boardY - 30);
         robot.mousePress(16);
         robot.mouseRelease(16);
     }
@@ -104,32 +114,32 @@ public class LiveSimulator extends AbstractSimulator {
     //-----------------------------------------------------------------------------------
 
     private void click(int i, int j) {
-        robot.mouseMove(x + j * w + w / 2, y + i * h + h / 2);
+        robot.mouseMove(boardX + j * cellWidth + cellWidth / 2, boardY + i * cellHeight + cellHeight / 2);
         robot.mousePress(16);
         robot.mouseRelease(16);
-//        robot.delay(16);
-//        robot.mousePress(16);
-//        robot.mouseRelease(16);
-        robot.mouseMove(x - 32, y - 32);
+        robot.mouseMove(boardX - 32, boardY - 32);
     }
 
     private void read(int i, int j) {
-        if (matches(screen, j * w, i * h, pattern, 9 * w, 0)) {
+        if (matches(screen, j * cellWidth, i * cellHeight, pattern, 9 * cellWidth, 0)) {
+            System.out.println(String.format("[%d, %d] identified as bomb", i, j));
             hasBomb[i][j] = true;
             return;
         }
         for (int t = 0; t < 7; t++) {
-            if (matches(screen, j * w, i * h, pattern, t * w, 0)) {
+            if (matches(screen, j * cellWidth, i * cellHeight, pattern, t * cellWidth, 0)) {
                 numberOfNeighboors[i][j] = t;
+                System.out.println(String.format("[%d, %d] identified as %d", i, j, t));
                 return;
             }
         }
+        System.out.println(String.format("[%d, %d] not identified", i, j));
     }
 
     private boolean matches(BufferedImage screen, int xs, int ys, BufferedImage cell, int xc, int yc) {
         int dist = 0;
-        for (int i = 0; i < w; i++) {
-            for (int j = 0; j < h; j++) {
+        for (int i = 0; i < cellWidth; i++) {
+            for (int j = 0; j < cellHeight; j++) {
                 dist += distance(screen.getRGB(xs + i, ys + j), cell.getRGB(xc + i, yc + j));
             }
         }
@@ -141,6 +151,12 @@ public class LiveSimulator extends AbstractSimulator {
         int dg = (c1 >> 8 & 255) - (c2 >> 8 & 255);
         int db = (c1 & 255) - (c2 & 255);
         return dr * dr + dg * dg + db * db;
+    }
+
+    private void debug(BufferedImage image) {
+        GraphicUtils.showImage(image);
+        ThreadUtils.sleep(100_000);
+
     }
 
 }

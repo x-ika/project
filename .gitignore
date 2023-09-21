@@ -2,12 +2,9 @@
 # .idea .out .build .gradle .docs .vs .DS_Store
 .*/
 
-# idea configuration
-# !.idea/
-
-# old style
+# IDEA
 out/
-# vs
+# VS
 Debug/
 Release/
 x64/

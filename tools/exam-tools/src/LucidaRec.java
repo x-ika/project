@@ -1,4 +1,4 @@
-import com.simplejcode.commons.av.improc.*;
+import com.simplejcode.commons.misc.improc.*;
 import com.simplejcode.commons.gui.Console;
 import com.simplejcode.commons.gui.*;
 import com.simplejcode.commons.misc.util.*;
@@ -313,7 +313,6 @@ public class LucidaRec {
 
         Map<String, Integer> paging = new HashMap<>();
         int ind = 0;
-        String prev = null;
         for (File file : files) {
             if (!file.isFile()) {
                 continue;
@@ -322,8 +321,7 @@ public class LucidaRec {
             BufferedImage im = ImageIO.read(file);
             int rx = (int) (im.getWidth() * px), rw = (int) (im.getWidth() * pw);
             int ry = (int) (im.getHeight() * py), rh = (int) (im.getHeight() * ph);
-            String label = ind++ % 2 == -1 ? prev : recognize(im, rx, ry, rw, rh);
-            prev = label;
+            String label = recognize(im, rx, ry, rw, rh);
             System.out.println(label);
             boolean ok = check(label);
 

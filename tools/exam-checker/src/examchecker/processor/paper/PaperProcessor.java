@@ -1,6 +1,6 @@
 package examchecker.processor.paper;
 
-import com.simplejcode.commons.av.improc.*;
+import com.simplejcode.commons.misc.improc.*;
 import com.simplejcode.commons.misc.PropertyManager;
 import examchecker.core.Constants;
 import examchecker.processor.*;

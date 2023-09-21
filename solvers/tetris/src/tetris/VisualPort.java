@@ -2,7 +2,7 @@ package tetris;
 
 import static java.lang.Math.*;
 
-import com.simplejcode.commons.av.improc.ImageProcessor;
+import com.simplejcode.commons.misc.improc.ImageProcessor;
 import com.simplejcode.commons.gui.Console;
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import tetris.logic.*;

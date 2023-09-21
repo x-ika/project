@@ -1,13 +1,13 @@
 package ika.games.base.controller;
 
-import com.simplejcode.commons.misc._pattern.pool.*;
-import com.simplejcode.commons.misc.struct.DynamicStruct;
 import com.simplejcode.commons.misc.util.ThreadUtils;
 import com.simplejcode.commons.net.sockets.*;
 import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
 import ika.games.base.controller.action.*;
 import ika.games.base.controller.dao.*;
+import ika.games.base.controller.pool.IPoolHandler;
+import ika.games.base.controller.pool.ObjectPool;
 
 import java.io.*;
 import java.nio.channels.AsynchronousSocketChannel;

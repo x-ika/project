@@ -1,4 +1,4 @@
-import com.simplejcode.commons.av.improc.*;
+import com.simplejcode.commons.misc.improc.*;
 
 import java.awt.image.BufferedImage;
 import java.util.*;
@@ -23,7 +23,7 @@ public class PatternRecognizer {
         }
     }
 
-    public Map<Rect, float[]> recognizePatterns(BufferedImage image, int x, int y, int w, int h) throws Exception {
+    public Map<Rect, float[]> recognizePatterns(BufferedImage image, int x, int y, int w, int h) {
 
         List<Rect> list = getRects(image, x, y, w, h);
 
@@ -43,6 +43,7 @@ public class PatternRecognizer {
             bw[i] = ImageProcessor.getBrightness(pixelData[i]) < blackWhiteThreshold ? 1 : 0;
         }
         ImageProcessor processor = new ImageProcessor(w, h);
+        processor.initComponentAnalysisArrays();
         List<Rect> list = new ArrayList<>();
         processor.buildRects(bw, 2, 25, list);
         return list;

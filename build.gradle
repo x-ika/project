@@ -86,7 +86,6 @@ subprojects {
         common_net_tools
         common_db_tools
         common_graphic_tools
-        common_audio_video_tools
         common_logical_analyzer
 
         javax_media
@@ -107,14 +106,12 @@ subprojects {
     dependencies {
         junit 'junit:junit:4.12'
 
-        common_algorithms              'com.simplejcode.commons:algorithms:1.1'
-        common_misc                    'com.simplejcode.commons:misc:1.2.1'
+        common_algorithms              'com.simplejcode.commons:algorithms:1.2'
+        common_misc                    'com.simplejcode.commons:misc:1.3.0'
         common_net_tools               'com.simplejcode.commons:net-tools:1.0'
         common_db_tools                'com.simplejcode.commons:db-tools:1.0'
         common_graphic_tools           'com.simplejcode.commons:graphic-tools:1.0'
-        common_audio_video_tools       'com.simplejcode.commons:audio-video-tools:1.0'
         common_logical_analyzer        'com.simplejcode.commons:logical-analyzer:1.0'
-
         javax_media                    'javax.media:jmf:2.1.1e'
 
         javax_xml_bind                 'javax.xml.bind:jaxb-api:2.1'

@@ -2,4 +2,7 @@ group 'com.simplejcode.solver'
 
 configurations {
     testCompile.extendsFrom junit
+
+    implementation.extendsFrom common_misc
+    implementation.extendsFrom common_graphic_tools
 }

@@ -1,7 +1,6 @@
 package ika.games.base.controller;
 
 import com.simplejcode.commons.misc.MultiStateObject;
-import com.simplejcode.commons.misc.struct.DynamicStruct;
 import com.simplejcode.commons.misc.util.*;
 import com.simplejcode.commons.net.util.*;
 import ika.games.base.*;
